@@ -11,8 +11,8 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ModGlassBase extends BlockBase {
-    public ModGlassBase(String name, Material material) {
+public class Glass extends BlockBase {
+    public Glass(String name, Material material) {
         super(name, material);
         //setLightLevel(1f);
         setLightOpacity(0);

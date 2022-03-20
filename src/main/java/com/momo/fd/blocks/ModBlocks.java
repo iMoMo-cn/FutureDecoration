@@ -55,23 +55,23 @@ public class ModBlocks {
 	public static final Block PRISMARINE_DRAK_WALL = new Wall("prismarine_dark_wall", Blocks.PRISMARINE);
 	public static final Block PRISMARINE_BRICK_WALL = new Wall("prismarine_brick_wall", Blocks.PRISMARINE);
 
-	public static final BlockSlab STONE_SLAB = new Slab("stone_slab", MapColor.STONE);
-	public static final BlockSlab MOSSY_STONE_SLAB = new Slab("mossy_stone_slab", MapColor.STONE);
-	public static final BlockSlab MOSSY_STONE_BRICK_SLAB = new Slab("mossy_stone_brick_slab", MapColor.STONE);
+	public static final BlockSlab STONE_SLAB = new Slab("stone_slab", MapColor.STONE, ModBlocks.STONE_SLAB);
+	public static final BlockSlab MOSSY_STONE_SLAB = new Slab("mossy_stone_slab", MapColor.STONE, ModBlocks.MOSSY_STONE_SLAB);
+	public static final BlockSlab MOSSY_STONE_BRICK_SLAB = new Slab("mossy_stone_brick_slab", MapColor.STONE, ModBlocks.MOSSY_STONE_BRICK_SLAB);
 
-	public static final BlockSlab ANDESITE_SLAB = new Slab("andesite_slab", MapColor.STONE);
-	public static final BlockSlab SMOOTH_ANDESITE_SLAB = new Slab("andesite_slab_smooth", MapColor.STONE);
-	public static final BlockSlab DIORITE_SLAB = new Slab("diorite_slab", MapColor.QUARTZ);
-	public static final BlockSlab SMOOTH_DIORITE_SLAB = new Slab("diorite_slab_smooth", MapColor.QUARTZ);
-	public static final BlockSlab GRANITE_SLAB = new Slab("granite_slab", MapColor.DIRT);
-	public static final BlockSlab SMOOTH_GRANITE_SLAB = new Slab("granite_slab_smooth", MapColor.DIRT);
+	public static final BlockSlab ANDESITE_SLAB = new Slab("andesite_slab", MapColor.STONE, ModBlocks.ANDESITE_SLAB);
+	public static final BlockSlab SMOOTH_ANDESITE_SLAB = new Slab("andesite_slab_smooth", MapColor.STONE, ModBlocks.SMOOTH_ANDESITE_SLAB);
+	public static final BlockSlab DIORITE_SLAB = new Slab("diorite_slab", MapColor.QUARTZ, ModBlocks.DIORITE_SLAB);
+	public static final BlockSlab SMOOTH_DIORITE_SLAB = new Slab("diorite_slab_smooth", MapColor.QUARTZ, ModBlocks.SMOOTH_DIORITE_SLAB);
+	public static final BlockSlab GRANITE_SLAB = new Slab("granite_slab", MapColor.DIRT, ModBlocks.GRANITE_SLAB);
+	public static final BlockSlab SMOOTH_GRANITE_SLAB = new Slab("granite_slab_smooth", MapColor.DIRT, ModBlocks.SMOOTH_GRANITE_SLAB);
 
-	public static final BlockSlab RED_NETHER_BRICK_SLAB = new Slab("red_nether_brick_slab", MapColor.NETHERRACK);
-	public static final BlockSlab END_STONE_BRICK_SLAB = new Slab("end_stone_brick_slab", MapColor.SAND);
+	public static final BlockSlab RED_NETHER_BRICK_SLAB = new Slab("red_nether_brick_slab", MapColor.NETHERRACK, ModBlocks.RED_NETHER_BRICK_SLAB);
+	public static final BlockSlab END_STONE_BRICK_SLAB = new Slab("end_stone_brick_slab", MapColor.SAND, ModBlocks.END_STONE_BRICK_SLAB);
 
-	public static final BlockSlab PRISMARINE_SLAB = new Slab("prismarine_slab", MapColor.CYAN);
-	public static final BlockSlab PRISMARINE_DRAK_SLAB = new Slab("prismarine_dark_slab", MapColor.DIAMOND);
-	public static final BlockSlab PRISMARINE_BRICK_SLAB = new Slab("prismarine_brick_slab", MapColor.DIAMOND);
+	public static final BlockSlab PRISMARINE_SLAB = new Slab("prismarine_slab", MapColor.CYAN, ModBlocks.PRISMARINE_SLAB);
+	public static final BlockSlab PRISMARINE_DRAK_SLAB = new Slab("prismarine_dark_slab", MapColor.DIAMOND, ModBlocks.PRISMARINE_DRAK_SLAB);
+	public static final BlockSlab PRISMARINE_BRICK_SLAB = new Slab("prismarine_brick_slab", MapColor.DIAMOND, ModBlocks.PRISMARINE_BRICK_SLAB);
 
 	public static final Block STONE_STAIRS = new Stair("stone_stairs", Blocks.STONE);
 	public static final Block MOSSY_STONE_STAIRS = new Stair("mossy_stone_stairs", Blocks.MOSSY_COBBLESTONE);

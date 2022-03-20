@@ -25,6 +25,7 @@ public class Button extends BlockButton implements IHasModel {
         super(isWood);
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
+        this.setHardness(0.5F);
 
         this.isWood = isWood;
 

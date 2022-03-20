@@ -16,6 +16,8 @@ public class Fence extends BlockFence implements IHasModel {
         super(materialIn, mapColorIn);
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
+        setHardness(2.0F);
+        setResistance(5.0F);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

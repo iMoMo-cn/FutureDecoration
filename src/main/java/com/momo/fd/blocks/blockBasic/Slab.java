@@ -4,6 +4,8 @@ import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockPurpurSlab;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -13,6 +15,7 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -28,15 +31,19 @@ import java.util.Random;
 
 public class Slab extends BlockSlab implements IHasModel {
     public static final PropertyEnum<Slab.Variant> VARIANT = PropertyEnum.<Slab.Variant>create("variant", Slab.Variant.class);
+    public Block dropBlock;
 
-    public Slab(String name, MapColor mapColor)
+    public Slab(String name, MapColor mapColor, Block block)
     {
         super(Material.ROCK, mapColor);
         IBlockState iblockstate = this.blockState.getBaseState();
         this.setResistance(10.0F);
+        this.setHardness(2.0F);
         this.setSoundType(SoundType.STONE);
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
+
+        this.dropBlock = block;
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -149,9 +156,9 @@ public class Slab extends BlockSlab implements IHasModel {
     @SideOnly(Side.CLIENT)
     protected static boolean isHalfSlab(IBlockState state) { return true; }
 
-    public Item getItemDropped(IBlockState state, Random rand, int fortune) { return Item.getItemFromBlock(this); }
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) { return Item.getItemFromBlock(dropBlock); }
 
-    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) { return new ItemStack(this); }
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) { return new ItemStack(dropBlock); }
 
     @Override
     public boolean isDouble() { return false; }
@@ -165,6 +172,22 @@ public class Slab extends BlockSlab implements IHasModel {
     {
         return Slab.Variant.DEFAULT;
     }
+
+//    public static class Double extends Slab
+//    {
+//        public boolean isDouble()
+//        {
+//            return true;
+//        }
+//    }
+//
+//    public static class Half extends Slab
+//    {
+//        public boolean isDouble()
+//        {
+//            return false;
+//        }
+//    }
 
     public static enum Variant implements IStringSerializable
     {

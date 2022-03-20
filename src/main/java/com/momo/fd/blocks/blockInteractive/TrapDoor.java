@@ -16,6 +16,7 @@ public class TrapDoor extends BlockTrapDoor implements IHasModel {
         super(materialIn);
         setUnlocalizedName(name);
         setRegistryName(name);
+        setHardness(3.0F);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this){
