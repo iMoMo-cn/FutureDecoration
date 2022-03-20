@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "fd:smooth_granite_stairs",
+    "count": 4
+  }
+}

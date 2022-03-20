@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "fd:granite_slab_smooth",
+    "count": 6
+  }
+}

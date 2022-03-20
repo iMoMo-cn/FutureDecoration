@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone",
+      "data": 4
+    }
+  },
+  "result": {
+    "item": "fd:smooth_diorite_stairs",
+    "count": 4
+  }
+}

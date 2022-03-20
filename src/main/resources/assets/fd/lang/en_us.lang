@@ -1,0 +1,113 @@
+#creativeTab
+#itemGroup.tab_name=Tab Name
+
+
+#item
+#item.item_name.name=item name
+#item.item_name_meta.name=item name
+
+item.red_netherbrick.name=Red Nether Brick
+
+#entity
+#entity.entity_name.name=block name
+#entity.Villager.modid.Villager_name=villager name
+
+#block
+#tile.block_name.name=block name
+tile.acacia_trapdoor.name=Acacia Trapdoor
+tile.birch_trapdoor.name=Birch Trapdoor
+tile.dark_oak_trapdoor.name=Dark Trapdoor
+tile.jungle_trapdoor.name=Jungle Trapdoor
+tile.spruce_trapdoor.name=Spruce Trapdoor
+
+tile.acacia_button.name=Acacia Button
+tile.birch_button.name=Birch Button
+tile.dark_oak_button.name=Dark Button
+tile.jungle_button.name=Jungle Button
+tile.spruce_button.name=Spruce Button
+
+tile.red_nether_brick_fence.name=Red Nether Bricks Fence
+
+tile.stone_wall.name=Stone Wall
+tile.stone_brick_wall.name=Stone Brick Wall
+tile.mossy_stone_brick_wall.name=Mossy Stone Bricks Wall
+tile.sand_stone_wall.name=Sand Stone Wall
+tile.red_sand_stone_wall.name=Red Sand Stone Wall
+tile.brick_wall.name=Brick Wall
+tile.nether_brick_wall.name=Nether Brick Wall
+tile.red_nether_brick_wall.name=Red Nether Bricks Wall
+tile.end_stone_brick_wall.name=End Stone Bricks Wall
+tile.purpur_wall.name=Purpur Blocks Wall
+
+tile.andesite_wall.name=Andesite Wall
+tile.andesite_wall_smooth.name=Smooth Andesite Wall
+tile.diorite_wall.name=Diorite Wall
+tile.diorite_wall_smooth.name=Smooth Diorite Wall
+tile.granite_wall.name=Granite Wall
+tile.granite_wall_smooth.name=Smooth Granite Wall
+
+tile.prismarine_wall.name=Prismarine Wall
+tile.prismarine_dark_wall.name=Dark Prismarine Wall
+tile.prismarine_brick_wall.name=Prismarine Bricks Wall
+
+tile.stone_slab.name=Stone Slab
+tile.mossy_stone_slab.name=Mossy Stone Slab
+tile.mossy_stone_brick_slab.name=Mossy Stone Bricks Slab
+tile.andesite_slab.name=Andesite Slab
+tile.andesite_slab_smooth.name=Smooth Andesite Slab
+tile.diorite_slab.name=Diorite Slab
+tile.diorite_slab_smooth.name=Smooth Diorite Slab
+tile.granite_slab.name=Granite Slab
+tile.granite_slab_smooth.name=Smooth Granite Slab
+
+tile.red_nether_brick_slab.name=Red Nether Bricks Slab
+tile.end_stone_brick_slab.name=End Stone Bricks Slab
+
+tile.prismarine_slab.name=Prismarine Slab
+tile.prismarine_dark_slab.name=Dark Prismarine Slab
+tile.prismarine_brick_slab.name=Prismarine Bricks Slab
+
+tile.charcoal_block.name=Block of Charcoal
+
+tile.smooth_stone.name=Stone
+tile.smooth_stone_wall.name=Stone Wall
+
+tile.stone_stairs.name=Stone Stairs
+tile.smooth_stone_stairs.name=Stone Stairs
+tile.mossy_stone_stairs.name=Mossy Stone Stairs
+tile.mossy_stone_brick_stairs.name=Mossy Stone Bricks Stairs
+
+tile.andesite_stairs.name=Andesite Stairs
+tile.smooth_andesite_stairs.name=Smooth Andesite Stairs
+tile.diorite_stairs.name=Diorite Stairs
+tile.smooth_diorite_stairs.name=Smooth Diorite Stairs
+tile.granite_stairs.name=Granite Stairs
+tile.smooth_granite_stairs.name=Smooth Granite Stairs
+
+tile.red_nether_brick_stairs.name=Red Nether Bricks Stairs
+tile.end_stone_brick_stairs.name=End Stone Bricks Stairs
+
+tile.prismarine_stairs.name=Prismarine Stairs
+tile.prismarine_dark_stairs.name=Dark Prismarine Stairs
+tile.prismarine_brick_stairs.name=Prismarine Bricks Stairs
+
+
+
+#effect
+#effect.effect_name=effect name
+
+#potion
+#potion.effect.potion_name=potion_name
+#splash_potion.effect.potion_name=Splash Potion of potion_name
+#lingering_potion.effect.potion_name=Lingering Potion of potion_name
+
+#tipped arrow
+#tipped_arrow.effect.potion_name=Arrow of potion_name
+
+#advancements
+#advancements.modid.root.title=root name
+#advancements.modid.root.description=root description
+#advancements.modid.sub_name.title=sub name
+#advancements.modid.sub_name.description=sub description
+
+

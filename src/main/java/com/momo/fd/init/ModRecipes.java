@@ -1,0 +1,74 @@
+package com.momo.fd.init;
+
+import com.google.common.collect.Sets;
+import com.momo.fd.MoMoFramework;
+import com.momo.fd.blocks.ModBlocks;
+import com.momo.fd.util.Reference;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraftforge.registries.IForgeRegistryModifiable;
+
+import java.util.Set;
+
+import static com.momo.fd.MoMoFramework.Log;
+import static com.momo.fd.MoMoFramework.LogWarning;
+
+@Mod.EventBusSubscriber(modid = Reference.MOD_ID)
+public class ModRecipes {
+
+	public static Set<ResourceLocation> recipes = Sets.newHashSet();
+
+	public static void Init() {
+		//Only smelting recipes
+		//GameRegistry.addSmelting(ModItems.XXXX, new ItemStack(ModItems.XXXX), 0.3f);
+		GameRegistry.addSmelting(Blocks.STONE, new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);
+
+	}
+
+
+	@SubscribeEvent
+	public static void registerRecipes(RegistryEvent.Register<IRecipe> evt) {
+		IForgeRegistry<IRecipe> r = evt.getRegistry();
+		IForgeRegistryModifiable<IRecipe> registry = (IForgeRegistryModifiable<IRecipe>) r;
+
+		MoMoFramework.Log("Removing Recipes");
+
+		//remove recipe
+		removeRecipes(registry);
+
+		//Example
+		//r.register(new Recipe().setRegistryName(new ResourceLocation(Reference.MOD_ID, "recipe")));
+	}
+
+	private static void removeRecipes(IForgeRegistryModifiable<IRecipe> registry){
+		removeRecipe(new ItemStack(Blocks.TRAPDOOR, 2));
+		removeRecipe(new ItemStack(Blocks.WOODEN_BUTTON, 1));
+		removeRecipe(new ItemStack(Blocks.NETHER_BRICK_FENCE, 3));
+		removeRecipe(new ItemStack(Blocks.STONE_SLAB, 6, 0));
+		removeRecipe(new ItemStack(Blocks.STONE_SLAB, 6, 5));
+
+		recipes.forEach(rl -> {
+			if(!rl.getResourceDomain().equals(MoMoFramework.MODID)) {
+				LogWarning("Removing: " + rl);
+				registry.remove(rl);
+			}
+		});
+	}
+
+	private static void removeRecipe(ItemStack resultItem){
+		CraftingManager.REGISTRY.forEach((recipe) -> {
+			if(ItemStack.areItemsEqual(recipe.getRecipeOutput(), resultItem)) {
+					recipes.add(recipe.getRegistryName());
+			}
+		});
+	}
+}

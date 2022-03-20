@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "fd:blocks/prismarine",
+    "top": "fd:blocks/prismarine",
+    "side": "fd:blocks/prismarine"
+  }
+}

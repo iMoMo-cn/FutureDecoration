@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:prismarine_brick_slab_half" },
+    "half=top,variant=default": { "model": "fd:prismarine_brick_slab_upper" }
+  }
+}

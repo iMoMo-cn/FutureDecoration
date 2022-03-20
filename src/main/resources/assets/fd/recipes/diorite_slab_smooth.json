@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone",
+      "data": 4
+    }
+  },
+  "result": {
+    "item": "fd:diorite_slab_smooth",
+    "count": 6
+  }
+}
