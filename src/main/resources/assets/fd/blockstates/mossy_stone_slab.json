@@ -1,6 +1,6 @@
 {
   "variants": {
-    "half=bottom,variant=default": { "model": "fd:mossy_stone_slab_half" },
-    "half=top,variant=default": { "model": "fd:mossy_stone_slab_upper" }
+    "half=bottom": { "model": "fd:mossy_stone_slab_half" },
+    "half=top": { "model": "fd:mossy_stone_slab_upper" }
   }
 }

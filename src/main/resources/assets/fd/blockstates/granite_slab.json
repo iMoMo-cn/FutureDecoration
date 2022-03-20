@@ -1,6 +1,6 @@
 {
   "variants": {
-    "half=bottom,variant=default": { "model": "fd:granite_slab_half" },
-    "half=top,variant=default": { "model": "fd:granite_slab_upper" }
+    "half=bottom": { "model": "fd:granite_slab_half" },
+    "half=top": { "model": "fd:granite_slab_upper" }
   }
 }
