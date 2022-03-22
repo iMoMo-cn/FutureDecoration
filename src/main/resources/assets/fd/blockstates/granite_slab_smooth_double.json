@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": { "model": "minecraft:granite_smooth"},
+    "half=bottom": { "model": "minecraft:granite_smooth" },
+    "half=top": { "model": "minecraft:granite_smooth" }
+  }
+}

@@ -20,6 +20,8 @@ public class Stair extends BlockStairs implements IHasModel {
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
+        useNeighborBrightness = true;
     }
 
     @Override

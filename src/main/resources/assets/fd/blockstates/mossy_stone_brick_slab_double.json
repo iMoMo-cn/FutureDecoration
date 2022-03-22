@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": { "model": "minecraft:stonebrick_mossy"},
+    "half=bottom": { "model": "minecraft:stonebrick_mossy" },
+    "half=top": { "model": "minecraft:stonebrick_mossy" }
+  }
+}

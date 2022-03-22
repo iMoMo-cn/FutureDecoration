@@ -32,26 +32,44 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class Slab extends BlockSlab implements IHasModel {
+public class Slab extends BlockSlab implements IHasModel, IItemProvider {
+    private boolean isDouble;
     public Block dropBlock;
+    private BlockSlab doubleSlab;
 
-    public Slab(String name, MapColor mapColor, Block block)
+    public Slab(String name, MapColor mapColor)
+    {
+        this(name, true, mapColor, null);
+    }
+
+    public Slab(String name, MapColor mapColor, BlockSlab doubleSlab)
+    {
+        this(name, false, mapColor, doubleSlab);
+    }
+
+    public Slab(String name, boolean isDouble, MapColor mapColor, BlockSlab doubleSlab)
     {
         super(Material.ROCK, mapColor);
         this.setResistance(10.0F);
         this.setHardness(2.0F);
         this.setSoundType(SoundType.STONE);
 
+        this.doubleSlab = doubleSlab;
+        this.isDouble = isDouble;
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
 
-        this.dropBlock = block;
-
         ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
+        ItemBlock itemBlock = this.createItemBlock();
 
         IBlockState iblockstate = this.blockState.getBaseState();
-        if (!this.isDouble()) { iblockstate = iblockstate.withProperty(HALF, EnumBlockHalf.BOTTOM); }
+        if (!this.isDouble())
+        {
+            this.dropBlock = this;
+            iblockstate = iblockstate.withProperty(HALF, EnumBlockHalf.BOTTOM);
+            ModItems.ITEMS.add(itemBlock.setRegistryName(name));
+        }
 
         this.setDefaultState(iblockstate);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
@@ -60,7 +78,12 @@ public class Slab extends BlockSlab implements IHasModel {
     }
 
     @Override
-    public void registerModels() { MoMoFramework.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory"); }
+    public ItemBlock createItemBlock() { return new ItemSlab(this, this, doubleSlab);}
+
+    @Override
+    public void registerModels() {
+        if(!this.isDouble()) MoMoFramework.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    }
 
     @Override
     protected BlockStateContainer createBlockState() { return new BlockStateContainer(this, HALF); }
@@ -76,7 +99,7 @@ public class Slab extends BlockSlab implements IHasModel {
     }
 
     @Override
-    public boolean isDouble() { return false; }
+    public boolean isDouble() { return isDouble; }
 
     @Override
     public Comparable<?> getTypeForItem(ItemStack stack)
@@ -92,12 +115,24 @@ public class Slab extends BlockSlab implements IHasModel {
         return !isDouble() ? getDefaultState().withProperty(HALF, EnumBlockHalf.values()[meta % EnumBlockHalf.values().length]) : getDefaultState();
     }
 
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+    {
+        return new ItemStack(dropBlock);
+    }
+
     @Override
     public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
     {
-        if(isDouble())
+        if(this.isDouble()){
             drops.add(new ItemStack(dropBlock, 2));
-        else
+        }
+        else {
             drops.add(new ItemStack(dropBlock, 1));
+        }
+    }
+
+    public Slab setDropped(Block dropBlockIn){
+        this.dropBlock = dropBlockIn;
+        return this;
     }
 }

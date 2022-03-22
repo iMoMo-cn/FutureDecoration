@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": { "model": "minecraft:red_nether_brick"},
+    "half=bottom": { "model": "minecraft:red_nether_brick" },
+    "half=top": { "model": "minecraft:red_nether_brick" }
+  }
+}

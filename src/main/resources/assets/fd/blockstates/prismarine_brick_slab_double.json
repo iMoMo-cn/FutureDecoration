@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": { "model": "minecraft:prismarine_bricks"},
+    "half=bottom": { "model": "minecraft:prismarine_bricks" },
+    "half=top": { "model": "minecraft:prismarine_bricks" }
+  }
+}
