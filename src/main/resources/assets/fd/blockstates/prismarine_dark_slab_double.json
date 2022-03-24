@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": { "model": "minecraft:prismarine_dark"},
-    "half=bottom": { "model": "minecraft:prismarine_dark" },
-    "half=top": { "model": "minecraft:prismarine_dark" }
+    "half=bottom,variant=default": { "model": "minecraft:prismarine_dark" },
+    "half=top,variant=default": { "model": "minecraft:prismarine_dark" }
   }
 }

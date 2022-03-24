@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": { "model": "minecraft:stone"},
-    "half=bottom": { "model": "minecraft:stone" },
-    "half=top": { "model": "minecraft:stone" }
+    "half=bottom,variant=default": { "model": "minecraft:stone" },
+    "half=top,variant=default": { "model": "minecraft:stone" }
   }
 }

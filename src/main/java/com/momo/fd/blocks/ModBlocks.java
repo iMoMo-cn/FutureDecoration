@@ -106,6 +106,12 @@ public class ModBlocks {
 	public static final Block PRISMARINE_DARK_STAIRS = new Stair("prismarine_dark_stairs", Blocks.PRISMARINE);
 	public static final Block PRISMARINE_BRICK_STAIRS = new Stair("prismarine_brick_stairs", Blocks.PRISMARINE);
 
+//	public static final Block ACACIA_PRESSURE_PLATE = new PressurePlate("acacia_pressure_plate", Material.WOOD);
+//	public static final Block BIRCH_PRESSURE_PLATE = new PressurePlate("birch_pressure_plate", Material.WOOD);
+//	public static final Block DRAK_ORK_PRESSURE_PLATE = new PressurePlate("dark_ork_pressure_plate", Material.WOOD);
+//	public static final Block JUNGLE_PRESSURE_PLATE = new PressurePlate("jungle_pressure_plate", Material.WOOD);
+//	public static final Block SPRUCE_PRESSURE_PLATE = new PressurePlate("spruce_pressure_plate", Material.WOOD);
+
     //TODO add Lamp and Chain
 
     //TODO add Colorful Flower Pot

@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": { "model": "minecraft:end_bricks"},
-    "half=bottom": { "model": "minecraft:end_bricks" },
-    "half=top": { "model": "minecraft:end_bricks" }
+    "half=bottom,variant=default": { "model": "minecraft:end_bricks" },
+    "half=top,variant=default": { "model": "minecraft:end_bricks" }
   }
 }

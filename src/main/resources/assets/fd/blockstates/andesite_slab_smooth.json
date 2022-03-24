@@ -1,6 +1,6 @@
 {
   "variants": {
-    "half=bottom": { "model": "fd:andesite_slab_smooth_half" },
-    "half=top": { "model": "fd:andesite_slab_smooth_upper" }
+    "half=bottom,variant=default": { "model": "fd:andesite_slab_smooth_half" },
+    "half=top,variant=default": { "model": "fd:andesite_slab_smooth_upper" }
   }
 }

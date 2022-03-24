@@ -1,6 +1,6 @@
 {
   "variants": {
-    "half=bottom": { "model": "fd:stone_slab_half" },
-    "half=top": { "model": "fd:stone_slab_upper" }
+    "half=bottom,variant=default": { "model": "fd:stone_slab_half" },
+    "half=top,variant=default": { "model": "fd:stone_slab_upper" }
   }
 }

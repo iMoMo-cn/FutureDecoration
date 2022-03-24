@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": { "model": "minecraft:diorite_smooth"},
-    "half=bottom": { "model": "minecraft:diorite_smooth" },
-    "half=top": { "model": "minecraft:diorite_smooth" }
+    "half=bottom,variant=default": { "model": "minecraft:diorite_smooth" },
+    "half=top,variant=default": { "model": "minecraft:diorite_smooth" }
   }
 }

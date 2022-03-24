@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": { "model": "minecraft:andesite"},
-    "half=bottom": { "model": "minecraft:andesite" },
-    "half=top": { "model": "minecraft:andesite" }
+    "half=bottom,variant=default": { "model": "minecraft:andesite"},
+    "half=top,variant=default": { "model": "minecraft:andesite"}
   }
 }

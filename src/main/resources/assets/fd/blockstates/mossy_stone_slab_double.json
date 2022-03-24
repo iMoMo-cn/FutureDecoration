@@ -1,7 +1,6 @@
 {
   "variants": {
-    "normal": { "model": "minecraft:mossy_cobblestone"},
-    "half=bottom": { "model": "minecraft:mossy_cobblestone" },
-    "half=top": { "model": "minecraft:mossy_cobblestone" }
+    "half=bottom,variant=default": { "model": "minecraft:mossy_cobblestone" },
+    "half=top,variant=default": { "model": "minecraft:mossy_cobblestone" }
   }
 }
