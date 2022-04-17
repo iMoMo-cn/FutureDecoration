@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "normal": { "model": "fd:birch_sign" },
+    "rotation=0": { "model": "fd:birch_sign" },
+    "rotation=1": { "model": "fd:birch_sign" },
+    "rotation=2": { "model": "fd:birch_sign" },
+    "rotation=3": { "model": "fd:birch_sign" },
+    "rotation=4": { "model": "fd:birch_sign" },
+    "rotation=5": { "model": "fd:birch_sign" },
+    "rotation=6": { "model": "fd:birch_sign" },
+    "rotation=7": { "model": "fd:birch_sign" },
+    "rotation=8": { "model": "fd:birch_sign" },
+    "rotation=9": { "model": "fd:birch_sign" },
+    "rotation=10": { "model": "fd:birch_sign" },
+    "rotation=11": { "model": "fd:birch_sign" },
+    "rotation=12": { "model": "fd:birch_sign" },
+    "rotation=13": { "model": "fd:birch_sign" },
+    "rotation=14": { "model": "fd:birch_sign" },
+    "rotation=15": { "model": "fd:birch_sign" }
+  }
+}

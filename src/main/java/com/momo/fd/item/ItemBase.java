@@ -24,8 +24,6 @@ import javax.annotation.Nonnull;
 import java.util.List;
 import java.util.UUID;
 
-import static com.momo.fd.util.IDLSkillNBT.GetGuaEnhance;
-
 public class ItemBase extends Item implements IHasModel {
 	private boolean overrideRarity = false;
 	private EnumRarity enumRarity = EnumRarity.COMMON;

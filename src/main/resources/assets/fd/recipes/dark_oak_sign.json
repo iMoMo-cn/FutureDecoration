@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    " s "
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:planks",
+        "data": 5
+      }
+    ],
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "fd:dark_oak_sign",
+    "count": 3
+  }
+}

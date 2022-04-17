@@ -1,7 +1,7 @@
 package com.momo.fd.blocks.builder;
 
 import com.momo.fd.blocks.BlockBase;
-import com.momo.fd.blocks.tileEntity.builder.TileEntityBuilderOne;
+import com.momo.fd.blocks.blockTile.builder.TileEntityBuilderOne;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

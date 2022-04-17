@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "normal": {
+            "model": "fd:gold_lantern"
+        },
+        "inventory": {
+            "model": "fd:item/gold_lantern"
+        },
+        "hanging=true": {
+            "model": "fd:hanging_gold_lantern"
+        },
+        "hanging=false": {
+            "model": "fd:gold_lantern"
+        }
+    }
+}

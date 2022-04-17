@@ -1,13 +1,9 @@
 package com.momo.fd.util;
 
-import com.momo.fd.item.misc.IGuaEnhance;
 import com.momo.fd.item.skills.ItemSkillBase;
 import com.momo.fd.util.NBTStrDef.IDLNBTDef;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -80,99 +76,6 @@ public class IDLSkillNBT {
 //    }
     //----------------------
     //Integer
-    public static void SetGuaEnhance(ItemStack stack, int guaIndex, int value)
-    {
-        NBTTagCompound ori = getNBT(stack);
-
-        NBTTagCompound subset = new NBTTagCompound();
-        subset.setInteger(GUA_ENHANCE_8 + guaIndex, value);
-
-        NBTTagCompound newTag = new NBTTagCompound();
-        newTag.setTag(GUA_ENHANCE, subset);
-
-        ori.merge(newTag);
-//        if (!StackHasKey(stack, GUA_ENHANCE))
-//        {
-//            getNBT(stack).setTag(GUA_ENHANCE, new NBTTagCompound());
-//        }else {
-//
-//        }
-//
-//        NBTTagCompound guaEnhanceNBT = getNBT(stack).getCompoundTag(GUA_ENHANCE);
-//
-//        guaEnhanceNBT.setInteger(GUA_ENHANCE_8 + guaIndex, value);
-    }
-
-    public static void AddGuaEnhance(ItemStack stack, int guaIndex, int value)
-    {
-        SetGuaEnhance(stack, guaIndex, value + GetGuaEnhance(stack, guaIndex));
-    }
-
-    public static String GetGuaEnhanceString(ItemStack stack, int guaIndex)
-    {
-        Item stackItem = stack.getItem();
-        if (stackItem instanceof IGuaEnhance)
-        {
-            IGuaEnhance guaEnhance = (IGuaEnhance) stackItem;
-            if (guaEnhance.acceptGuaIndex(guaIndex))
-            {
-                return String.valueOf(GetGuaEnhance(stack, guaIndex, 0));
-            }
-            else {
-                return I18n.format(GUA_N_A_DESC);
-            }
-        }
-        else {
-            return "";
-        }
-
-    }
-
-    public static int GetGuaEnhance(ItemStack stack, int guaIndex)
-    {
-        return GetGuaEnhance(stack, guaIndex, 0);
-    }
-
-    public static int GetGuaEnhance(ItemStack stack, int guaIndex, int defaultVal)
-    {
-        if (StackHasKey(stack, GUA_ENHANCE))
-        {
-            NBTTagCompound nbt = getNBT(stack).getCompoundTag(GUA_ENHANCE);
-            String str = String.valueOf(GUA_ENHANCE_8 + guaIndex);
-            if (nbt.hasKey(str))
-            {
-                return nbt.getInteger(str);
-            }
-        }
-
-        return defaultVal;
-    }
-
-    public static int GetGuaEnhanceTotal(ItemStack stack)
-    {
-        int result = 0;
-        if (StackHasKey(stack, GUA_ENHANCE))
-        {
-            NBTTagCompound nbt = getNBT(stack).getCompoundTag(GUA_ENHANCE);
-            for (String key: nbt.getKeySet()
-            ) {
-                result += nbt.getInteger(key);
-            }
-        }
-
-        return result;
-    }
-
-    public static int GetGuaEnhanceFree(ItemStack stack)
-    {
-        return GetInt(stack, GUA_FREE_SOCKET);
-    }
-
-    public static void SetGuaEnhanceFree(ItemStack stack, int val)
-    {
-        SetInt(stack, GUA_FREE_SOCKET, val);
-    }
-
     @SideOnly(Side.CLIENT)
     public static void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag,
                                        boolean shiftToShowDesc, boolean showGuaSocketDesc, boolean use_flavor, String mainDescOrFlavor) {
@@ -184,35 +87,8 @@ public class IDLSkillNBT {
             {
                 tooltip.add(mainDescOrFlavor);
             }
-
-            if (showGuaSocketDesc)
-            {
-                int guaTotal = IDLSkillNBT.GetGuaEnhanceTotal(stack);
-                tooltip.add(I18n.format(GUA_TOTAL_SOCKET_DESC, IDLSkillNBT.GetGuaEnhanceTotal(stack)));
-                if (guaTotal > 0)
-                {
-                    tooltip.add(I18n.format("idlframewok.gua_enhance_list.desc", GetGuaEnhanceString(stack, 0),
-                            GetGuaEnhanceString(stack, 1),
-                            GetGuaEnhanceString(stack, 2),
-                            GetGuaEnhanceString(stack, 3),
-                            GetGuaEnhanceString(stack, 4),
-                            GetGuaEnhanceString(stack, 5),
-                            GetGuaEnhanceString(stack, 6),
-                            GetGuaEnhanceString(stack, 7)));
-                }
-
-                int freeSockets = IDLSkillNBT.GetGuaEnhanceFree(stack);
-                if (freeSockets > 0)
-                {
-                    tooltip.add(TextFormatting.AQUA + I18n.format(IDLNBTDef.GUA_FREE_SOCKET_DESC, freeSockets));
-                }
-                else {
-                    tooltip.add(TextFormatting.ITALIC + (TextFormatting.WHITE + I18n.format(IDLNBTDef.GUA_NO_FREE_SOCKET_DESC)));
-                }
-            }
         }
         else {
-            tooltip.add(TextFormatting.AQUA +  I18n.format("idlframewok.shared.press_shift"));
             if (use_flavor)
             {
                 tooltip.add(TextFormatting.ITALIC +  mainDescOrFlavor);

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    " s "
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:planks",
+        "data": 0
+      }
+    ],
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:sign",
+    "count": 3
+  }
+}

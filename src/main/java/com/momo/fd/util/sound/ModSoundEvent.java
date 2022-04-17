@@ -1,6 +1,5 @@
 package com.momo.fd.util.sound;
 
-import com.momo.fd.util.ModSoundHandler;
 import com.momo.fd.util.Reference;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;

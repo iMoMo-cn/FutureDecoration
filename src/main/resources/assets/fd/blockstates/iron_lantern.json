@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "normal": {
+            "model": "fd:iron_lantern"
+        },
+        "inventory": {
+            "model": "fd:item/iron_lantern"
+        },
+        "hanging=true": {
+            "model": "fd:hanging_iron_lantern"
+        },
+        "hanging=false": {
+            "model": "fd:iron_lantern"
+        }
+    }
+}

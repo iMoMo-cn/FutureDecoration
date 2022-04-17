@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:gold_nugget"
+    },
+    "B": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "fd:gold_lantern",
+    "count": 1
+  }
+}

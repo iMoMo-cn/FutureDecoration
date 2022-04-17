@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "normal": { "model": "fd:jungle_sign" },
+    "rotation=0": { "model": "fd:jungle_sign" },
+    "rotation=1": { "model": "fd:jungle_sign" },
+    "rotation=2": { "model": "fd:jungle_sign" },
+    "rotation=3": { "model": "fd:jungle_sign" },
+    "rotation=4": { "model": "fd:jungle_sign" },
+    "rotation=5": { "model": "fd:jungle_sign" },
+    "rotation=6": { "model": "fd:jungle_sign" },
+    "rotation=7": { "model": "fd:jungle_sign" },
+    "rotation=8": { "model": "fd:jungle_sign" },
+    "rotation=9": { "model": "fd:jungle_sign" },
+    "rotation=10": { "model": "fd:jungle_sign" },
+    "rotation=11": { "model": "fd:jungle_sign" },
+    "rotation=12": { "model": "fd:jungle_sign" },
+    "rotation=13": { "model": "fd:jungle_sign" },
+    "rotation=14": { "model": "fd:jungle_sign" },
+    "rotation=15": { "model": "fd:jungle_sign" }
+  }
+}

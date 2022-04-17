@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": { "model": "fd:spruce_sign" },
+    "facing=north": { "model": "fd:spruce_sign" },
+    "facing=south": { "model": "fd:spruce_sign" },
+    "facing=east": { "model": "fd:spruce_sign" },
+    "facing=west": { "model": "fd:spruce_sign" }
+  }
+}

@@ -1,6 +1,6 @@
 package com.momo.fd.entity;
 
-import com.momo.fd.blocks.tileEntity.builder.builderAction.*;
+import com.momo.fd.blocks.blockTile.builder.builderAction.*;
 import com.momo.fd.util.CommonDef;
 import com.momo.fd.util.NBTStrDef.IDLNBTDef;
 import net.minecraft.block.state.IBlockState;

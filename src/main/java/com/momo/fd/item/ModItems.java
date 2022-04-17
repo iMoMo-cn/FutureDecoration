@@ -1,5 +1,7 @@
 package com.momo.fd.item;
 
+import com.momo.fd.blocks.ModBlocks;
+import com.momo.fd.item.tile.ModItemSign;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.*;
 
@@ -11,7 +13,26 @@ public class ModItems {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 
 	//public static final Item ITEM_NAME = new ItemBase("item_name").setCreativeTab(ModCreativeTab.CREATIVE_TAB);
+
 	public static final Item RED_NETHERBRICK = new ItemBase("red_netherbrick").setCreativeTab(CreativeTabs.MISC);
 
+	public static final Item ACACIA_SIGN = new ModItemSign("acacia_sign");
+	public static final Item BIRCH_SIGN = new ModItemSign("birch_sign");
+	public static final Item DARK_OAK_SIGN = new ModItemSign("dark_oak_sign");
+	public static final Item JUNGLE_SIGN = new ModItemSign("jungle_sign");
+	public static final Item SPRUCE_SIGN = new ModItemSign("spruce_sign");
 
+	public static void init()
+	{
+		((ModItemSign)ACACIA_SIGN).setWallSign(ModBlocks.ACACIA_SIGN_WALL);
+		((ModItemSign)ACACIA_SIGN).setStandingSign(ModBlocks.ACACIA_SIGN_STANDING);
+		((ModItemSign)BIRCH_SIGN).setWallSign(ModBlocks.BIRCH_SIGN_WALL);
+		((ModItemSign)BIRCH_SIGN).setStandingSign(ModBlocks.BIRCH_SIGN_STANDING);
+		((ModItemSign)DARK_OAK_SIGN).setWallSign(ModBlocks.DARK_OAK_SIGN_WALL);
+		((ModItemSign)DARK_OAK_SIGN).setStandingSign(ModBlocks.DARK_OAK_SIGN_STANDING);
+		((ModItemSign)JUNGLE_SIGN).setWallSign(ModBlocks.JUNGLE_SIGN_WALL);
+		((ModItemSign)JUNGLE_SIGN).setStandingSign(ModBlocks.JUNGLE_SIGN_STANDING);
+		((ModItemSign)SPRUCE_SIGN).setWallSign(ModBlocks.SPRUCE_SIGN_WALL);
+		((ModItemSign)SPRUCE_SIGN).setStandingSign(ModBlocks.SPRUCE_SIGN_STANDING);
+	}
 }

@@ -1,8 +1,13 @@
 package com.momo.fd.blocks;
 
 import com.momo.fd.blocks.blockBasic.*;
+import com.momo.fd.blocks.blockBasic.sign.StandingSign;
+import com.momo.fd.blocks.blockBasic.sign.WallSign;
 import com.momo.fd.blocks.blockInteractive.Button;
+import com.momo.fd.blocks.blockInteractive.PressurePlate;
 import com.momo.fd.blocks.blockInteractive.TrapDoor;
+import com.momo.fd.blocks.blockMisc.NewObsidian;
+import com.momo.fd.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.MapColor;
@@ -18,6 +23,7 @@ public class ModBlocks {
 
 	public static final Block CHARCOAL_BLOCK = new BurnableBlock("charcoal_block", 16000, Material.ROCK, MapColor.BLACK).setHardness(5.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	public static final Block SMOOTH_STONE = new BlockBase("smooth_stone", Material.ROCK).setHardness(1.5F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CRYING_OBSIDIAN = new NewObsidian("crying_obsidian", Material.ROCK, MapColor.OBSIDIAN).setLightLevel(0.666666667F);
 
 	public static final Block ACACIA_TRAPDOOR = new TrapDoor("acacia_trapdoor", Material.WOOD);
 	public static final Block BIRCH_TRAPDOOR = new TrapDoor("birch_trapdoor", Material.WOOD);
@@ -106,17 +112,50 @@ public class ModBlocks {
 	public static final Block PRISMARINE_DARK_STAIRS = new Stair("prismarine_dark_stairs", Blocks.PRISMARINE);
 	public static final Block PRISMARINE_BRICK_STAIRS = new Stair("prismarine_brick_stairs", Blocks.PRISMARINE);
 
-//	public static final Block ACACIA_PRESSURE_PLATE = new PressurePlate("acacia_pressure_plate", Material.WOOD);
-//	public static final Block BIRCH_PRESSURE_PLATE = new PressurePlate("birch_pressure_plate", Material.WOOD);
-//	public static final Block DRAK_ORK_PRESSURE_PLATE = new PressurePlate("dark_ork_pressure_plate", Material.WOOD);
-//	public static final Block JUNGLE_PRESSURE_PLATE = new PressurePlate("jungle_pressure_plate", Material.WOOD);
-//	public static final Block SPRUCE_PRESSURE_PLATE = new PressurePlate("spruce_pressure_plate", Material.WOOD);
+	public static final Block ACACIA_PRESSURE_PLATE = new PressurePlate("acacia_pressure_plate", Material.WOOD);
+	public static final Block BIRCH_PRESSURE_PLATE = new PressurePlate("birch_pressure_plate", Material.WOOD);
+	public static final Block DRAK_OAK_PRESSURE_PLATE = new PressurePlate("dark_oak_pressure_plate", Material.WOOD);
+	public static final Block JUNGLE_PRESSURE_PLATE = new PressurePlate("jungle_pressure_plate", Material.WOOD);
+	public static final Block SPRUCE_PRESSURE_PLATE = new PressurePlate("spruce_pressure_plate", Material.WOOD);
 
-    //TODO add Lamp and Chain
+	public static final Block ACACIA_SIGN_STANDING = new StandingSign("acacia_sign_standing");
+	public static final Block ACACIA_SIGN_WALL = new WallSign("acacia_sign_wall");
+	public static final Block BIRCH_SIGN_STANDING = new StandingSign("birch_sign_standing");
+	public static final Block BIRCH_SIGN_WALL = new WallSign("birch_sign_wall");
+	public static final Block DARK_OAK_SIGN_STANDING = new StandingSign("dark_oak_sign_standing");
+	public static final Block DARK_OAK_SIGN_WALL = new WallSign("dark_oak_sign_wall");
+	public static final Block JUNGLE_SIGN_STANDING = new StandingSign("jungle_sign_standing");
+	public static final Block JUNGLE_SIGN_WALL = new WallSign("jungle_sign_wall");
+	public static final Block SPRUCE_SIGN_STANDING = new StandingSign("spruce_sign_standing");
+	public static final Block SPRUCE_SIGN_WALL = new WallSign("spruce_sign_wall");
+
+	public static final Block IRON_LANTERN = new Lantern("iron_lantern");
+	public static final Block GOLD_LANTERN = new Lantern("gold_lantern");
+
+	public static final Block CLEAR_GLASS = new Glass("clear_glass");
+	public static final Block CLEAR_GLASS_BLACK = new Glass("clear_glass_black");
+	public static final Block CLEAR_GLASS_BLUE = new Glass("clear_glass_blue");
+	public static final Block CLEAR_GLASS_BROWN = new Glass("clear_glass_brown");
+	public static final Block CLEAR_GLASS_CYAN = new Glass("clear_glass_cyan");
+	public static final Block CLEAR_GLASS_GRAY = new Glass("clear_glass_gray");
+	public static final Block CLEAR_GLASS_GREEN = new Glass("clear_glass_green");
+	public static final Block CLEAR_GLASS_LIGHT_BLUE = new Glass("clear_glass_light_blue");
+	public static final Block CLEAR_GLASS_LIME = new Glass("clear_glass_lime");
+	public static final Block CLEAR_GLASS_MAGENTA = new Glass("clear_glass_magenta");
+	public static final Block CLEAR_GLASS_ORANGE = new Glass("clear_glass_orange");
+	public static final Block CLEAR_GLASS_PINK = new Glass("clear_glass_pink");
+	public static final Block CLEAR_GLASS_PURPLE = new Glass("clear_glass_purple");
+	public static final Block CLEAR_GLASS_RED = new Glass("clear_glass_red");
+	public static final Block CLEAR_GLASS_SILVER = new Glass("clear_glass_silver");
+	public static final Block CLEAR_GLASS_WHITE = new Glass("clear_glass_white");
+	public static final Block CLEAR_GLASS_YELLOW = new Glass("clear_glass_yellow");
+
+
+	//TODO add Chain
 
     //TODO add Colorful Flower Pot
 
-    //TODO add Colorful GrowStone
+    //TODO add Colorful GlowStone
 
     //TODO add different Wooden Chests and Barrels
 
@@ -124,20 +163,29 @@ public class ModBlocks {
 		((Slab)STONE_SLAB_DOUBLE).setDropped(ModBlocks.STONE_SLAB);
 		((Slab)MOSSY_STONE_SLAB_DOUBLE).setDropped(ModBlocks.MOSSY_STONE_SLAB);
 		((Slab)MOSSY_STONE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.MOSSY_STONE_BRICK_SLAB);
-
 		((Slab)ANDESITE_SLAB_DOUBLE).setDropped(ModBlocks.ANDESITE_SLAB);
 		((Slab)SMOOTH_ANDESITE_SLAB).setDropped(ModBlocks.SMOOTH_ANDESITE_SLAB);
 		((Slab)DIORITE_SLAB_DOUBLE).setDropped(ModBlocks.DIORITE_SLAB);
 		((Slab)SMOOTH_DIORITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_DIORITE_SLAB);
 		((Slab)GRANITE_SLAB_DOUBLE).setDropped(ModBlocks.GRANITE_SLAB);
 		((Slab)SMOOTH_GRANITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_GRANITE_SLAB);
-
 		((Slab)RED_NETHER_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.RED_NETHER_BRICK_SLAB);
 		((Slab)END_STONE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.END_STONE_BRICK_SLAB);
-
 		((Slab)PRISMARINE_SLAB_DOUBLE).setDropped(ModBlocks.PRISMARINE_SLAB);
 		((Slab)PRISMARINE_DRAK_SLAB_DOUBLE).setDropped(ModBlocks.PRISMARINE_DRAK_SLAB);
 		((Slab)PRISMARINE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.PRISMARINE_BRICK_SLAB);
+
+		((StandingSign)ACACIA_SIGN_STANDING).setItemSign(ModItems.ACACIA_SIGN);
+		((StandingSign)BIRCH_SIGN_STANDING).setItemSign(ModItems.BIRCH_SIGN);
+		((StandingSign)DARK_OAK_SIGN_STANDING).setItemSign(ModItems.DARK_OAK_SIGN);
+		((StandingSign)JUNGLE_SIGN_STANDING).setItemSign(ModItems.JUNGLE_SIGN);
+		((StandingSign)SPRUCE_SIGN_STANDING).setItemSign(ModItems.SPRUCE_SIGN);
+
+		((WallSign)ACACIA_SIGN_WALL).setItemSign(ModItems.ACACIA_SIGN);
+		((WallSign)BIRCH_SIGN_WALL).setItemSign(ModItems.BIRCH_SIGN);
+		((WallSign)DARK_OAK_SIGN_WALL).setItemSign(ModItems.DARK_OAK_SIGN);
+		((WallSign)JUNGLE_SIGN_WALL).setItemSign(ModItems.JUNGLE_SIGN);
+		((WallSign)SPRUCE_SIGN_WALL).setItemSign(ModItems.SPRUCE_SIGN);
 	}
 
 }

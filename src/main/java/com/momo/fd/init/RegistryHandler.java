@@ -9,7 +9,7 @@ import com.momo.fd.item.ModItems;
 import com.momo.fd.item.potions.ModPotionType;
 import com.momo.fd.potion.ModPotion;
 import com.momo.fd.util.IHasModel;
-import com.momo.fd.util.ModSoundHandler;
+import com.momo.fd.util.sound.ModSoundHandler;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
@@ -30,6 +30,7 @@ public class RegistryHandler {
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
 	{
+		ModItems.init();
 		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
 	}
 	
@@ -37,6 +38,7 @@ public class RegistryHandler {
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModBlocks.init();
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+		ModEntityInit.registerTiles();
 	}
 
 	@SubscribeEvent
@@ -57,12 +59,6 @@ public class RegistryHandler {
 	{
 		event.getRegistry().registerAll(ModPotionType.POTION_TYPES.toArray(new PotionType[0]));
 	}
-
-//	@SubscribeEvent
-//	public static void onProjectilesRegistry(RegistryEvent.Register<EntityEntry>event)
-//	{
-//		event.getRegistry().registerAll(ModEntityInit.THROWABLE.toArray(new EntityEntry[0]));
-//	}
 
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent

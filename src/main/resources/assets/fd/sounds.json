@@ -1,0 +1,80 @@
+{
+  "block.lantern.break": {
+    "sounds": [
+      "fd:block/lantern/break1",
+      "fd:block/lantern/break2",
+      "fd:block/lantern/break3",
+      "fd:block/lantern/break4",
+      "fd:block/lantern/break5",
+      "fd:block/lantern/break6"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.lantern.fall": {
+    "sounds": [
+      "fd:block/lantern/break1",
+      "fd:block/lantern/break2",
+      "fd:block/lantern/break3",
+      "fd:block/lantern/break4",
+      "fd:block/lantern/break5",
+      "fd:block/lantern/break6"
+    ]
+  },
+  "block.lantern.hit": {
+    "sounds": [
+      "fd:block/lantern/place1",
+      "fd:block/lantern/place2",
+      "fd:block/lantern/place3",
+      "fd:block/lantern/place4",
+      "fd:block/lantern/place5",
+      "fd:block/lantern/place6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.lantern.place": {
+    "sounds": [
+      {
+        "name": "fd:block/lantern/place1",
+        "volume": 1,
+        "pitch": 1.1
+      },
+      {
+        "name": "fd:block/lantern/place2",
+        "volume": 1,
+        "pitch": 1.1
+      },
+      {
+        "name": "fd:block/lantern/place3",
+        "volume": 1,
+        "pitch": 1.1
+      },
+      {
+        "name": "fd:block/lantern/place4",
+        "volume": 1,
+        "pitch": 1.1
+      },
+      {
+        "name": "fd:block/lantern/place5",
+        "volume": 1,
+        "pitch": 1.1
+      },
+      {
+        "name": "fd:block/lantern/place6",
+        "volume": 1,
+        "pitch": 1.1
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.lantern.step": {
+    "sounds": [
+      "fd:block/lantern/break1",
+      "fd:block/lantern/break2",
+      "fd:block/lantern/break3",
+      "fd:block/lantern/break4",
+      "fd:block/lantern/break5",
+      "fd:block/lantern/break6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  }
+ }

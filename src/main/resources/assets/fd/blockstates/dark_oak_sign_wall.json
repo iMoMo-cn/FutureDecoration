@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": { "model": "fd:dark_oak_sign" },
+    "facing=north": { "model": "fd:dark_oak_sign" },
+    "facing=south": { "model": "fd:dark_oak_sign" },
+    "facing=east": { "model": "fd:dark_oak_sign" },
+    "facing=west": { "model": "fd:dark_oak_sign" }
+  }
+}

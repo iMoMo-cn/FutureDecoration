@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "fd:dark_oak_pressure_plate_up" },
+    "powered=true": { "model": "fd:dark_oak_pressure_plate_down" }
+  }
+}

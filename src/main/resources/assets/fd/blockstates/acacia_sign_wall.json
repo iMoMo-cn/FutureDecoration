@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": { "model": "fd:acacia_sign" },
+    "facing=north": { "model": "fd:acacia_sign" },
+    "facing=south": { "model": "fd:acacia_sign" },
+    "facing=east": { "model": "fd:acacia_sign" },
+    "facing=west": { "model": "fd:acacia_sign" }
+  }
+}

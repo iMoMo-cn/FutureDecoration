@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": { "model": "fd:jungle_sign" },
+    "facing=north": { "model": "fd:jungle_sign" },
+    "facing=south": { "model": "fd:jungle_sign" },
+    "facing=east": { "model": "fd:jungle_sign" },
+    "facing=west": { "model": "fd:jungle_sign" }
+  }
+}

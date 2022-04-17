@@ -6,6 +6,7 @@ import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.util.Reference;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.IRecipe;
@@ -31,7 +32,7 @@ public class ModRecipes {
 		//Only smelting recipes
 		//GameRegistry.addSmelting(ModItems.XXXX, new ItemStack(ModItems.XXXX), 0.3f);
 		GameRegistry.addSmelting(Blocks.STONE, new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);
-
+		GameRegistry.addSmelting(Blocks.GLASS, new ItemStack(ModBlocks.CLEAR_GLASS), 0.3f);
 	}
 
 
@@ -40,21 +41,21 @@ public class ModRecipes {
 		IForgeRegistry<IRecipe> r = evt.getRegistry();
 		IForgeRegistryModifiable<IRecipe> registry = (IForgeRegistryModifiable<IRecipe>) r;
 
-		MoMoFramework.Log("Removing Recipes");
+		//Example
+		//r.register(new Recipe().setRegistryName(new ResourceLocation(Reference.MOD_ID, "recipe")));
 
 		//remove recipe
 		removeRecipes(registry);
 
-		//Example
-		//r.register(new Recipe().setRegistryName(new ResourceLocation(Reference.MOD_ID, "recipe")));
 	}
-
 	private static void removeRecipes(IForgeRegistryModifiable<IRecipe> registry){
 		removeRecipe(new ItemStack(Blocks.TRAPDOOR, 2));
 		removeRecipe(new ItemStack(Blocks.WOODEN_BUTTON, 1));
 		removeRecipe(new ItemStack(Blocks.NETHER_BRICK_FENCE, 3));
 		removeRecipe(new ItemStack(Blocks.STONE_SLAB, 6, 0));
 		removeRecipe(new ItemStack(Blocks.STONE_SLAB, 6, 5));
+		removeRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1));
+		removeRecipe(new ItemStack(Items.SIGN, 3));
 
 		recipes.forEach(rl -> {
 			if(!rl.getResourceDomain().equals(MoMoFramework.MODID)) {

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    " s "
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:planks",
+        "data": 1
+      }
+    ],
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "fd:spruce_sign",
+    "count": 3
+  }
+}

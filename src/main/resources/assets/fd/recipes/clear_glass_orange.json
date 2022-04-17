@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "fd:clear_glass"
+    },
+    "B": {
+      "item": "minecraft:dye",
+      "data": 14
+    }
+  },
+  "result": {
+    "item": "fd:clear_glass_orange",
+    "count": 8
+  }
+}
+

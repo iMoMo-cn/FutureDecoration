@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": { "model": "fd:birch_sign" },
+    "facing=north": { "model": "fd:birch_sign" },
+    "facing=south": { "model": "fd:birch_sign" },
+    "facing=east": { "model": "fd:birch_sign" },
+    "facing=west": { "model": "fd:birch_sign" }
+  }
+}

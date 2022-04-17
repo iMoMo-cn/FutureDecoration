@@ -17,9 +17,11 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+
 import org.apache.logging.log4j.Logger;
 
 //Added 'little' steps for making weapons, tools and armor. Enjoy casting and striking as a blacksmith.
+
 
 @Mod(modid = MoMoFramework.MODID, name = MoMoFramework.NAME, version = MoMoFramework.VERSION)//dependencies = "required-after:Forge@[14.23.5.2705,)"
 public class MoMoFramework {

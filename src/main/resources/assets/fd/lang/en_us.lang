@@ -68,6 +68,7 @@ tile.prismarine_dark_slab.name=Dark Prismarine Slab
 tile.prismarine_brick_slab.name=Prismarine Bricks Slab
 
 tile.charcoal_block.name=Block of Charcoal
+tile.crying_obsidian.name=Crying Obsidian
 
 tile.smooth_stone.name=Stone
 tile.smooth_stone_wall.name=Stone Wall
@@ -90,6 +91,39 @@ tile.end_stone_brick_stairs.name=End Stone Bricks Stairs
 tile.prismarine_stairs.name=Prismarine Stairs
 tile.prismarine_dark_stairs.name=Dark Prismarine Stairs
 tile.prismarine_brick_stairs.name=Prismarine Bricks Stairs
+
+tile.acacia_pressure_plate.name=Acacia Pressure Plate
+tile.birch_pressure_plate.name=Birch Pressure Plate
+tile.dark_oak_pressure_plate.name=Dark Oak Pressure Plate
+tile.jungle_pressure_plate.name=Jungle Pressure Plate
+tile.spruce_pressure_plate.name=Spruce Pressure Plate
+
+item.acacia_sign.name=Acacia Sign
+item.birch_sign.name=Birch Sign
+item.dark_oak_sign.name=Dark Oak Sign
+item.jungle_sign.name=Jungle Sign
+item.spruce_sign.name=Spruce Sign
+
+tile.clear_glass.name=Clear Glass
+tile.clear_glass_black.name=Clear Black Stained Glass
+tile.clear_glass_blue.name=Clear Blue Stained Glass
+tile.clear_glass_brown.name=Clear Brown Stained Glass
+tile.clear_glass_cyan.name=Clear Cyan Stained Glass
+tile.clear_glass_gray.name=Clear Gray Stained Glass
+tile.clear_glass_green.name=Clear Green Stained Glass
+tile.clear_glass_light_blue.name=Clear Ligtht Blue Stained Glass
+tile.clear_glass_lime.name=Clear Lime Stained Glass
+tile.clear_glass_magenta.name=Clear Magenta Stained Glass
+tile.clear_glass_orange.name=Clear Orange Stained Glass
+tile.clear_glass_pink.name=Clear Pink Stained Glass
+tile.clear_glass_purple.name=Clear Purple Stained Glass
+tile.clear_glass_red.name=Clear Red Stained Glass
+tile.clear_glass_silver.name=Clear Silver Stained Glass
+tile.clear_glass_white.name=Clear White Stained Glass
+tile.clear_glass_yellow.name=Clear Yellow Stained Glass
+
+tile.iron_lantern.name=Iron Lantern
+tile.gold_lantern.name=Golden Lantern
 
 
 
