@@ -3,7 +3,6 @@ package com.momo.fd;
 import com.momo.fd.gui.ModGuiElementLoader;
 import com.momo.fd.init.*;
 import com.momo.fd.item.potions.PotionTypeBase;
-import com.momo.fd.keys.KeyboardManager;
 import com.momo.fd.meta.MetaUtil;
 import com.momo.fd.network.NetworkHandler;
 import com.momo.fd.proxy.ProxyBase;
@@ -53,6 +52,7 @@ public class MoMoFramework {
 
         }
 
+        proxy.onPreInit(event);
         RegistryHandler.preInitRegistries(event);
 
     }
@@ -62,16 +62,14 @@ public class MoMoFramework {
 
         ModRecipes.Init();
 
-        RegisterTileEntity();
         RegistryHandler.initRegistries(event);
         PotionTypeBase.register();
 
         new ModGuiElementLoader();
 
-        if (!proxy.isServer()) {
-            KeyboardManager.init();
-        }
         NetworkHandler.init();
+
+        proxy.init(event);
 
         LogWarning("%s has finished its initializations", MODID);
     }
@@ -113,13 +111,6 @@ public class MoMoFramework {
         else {
             MoMoFramework.Log("[Idealland Framework] Made with Idealland Framework.");
         }
-    }
-
-    private static void RegisterTileEntity() {
-//        GameRegistry.registerTileEntity(TileEntityDeBoomOrb.class, new ResourceLocation(MODID, "deboom_orb_basic"));
-
-        //GameRegistry.registerTileEntity(TileEntityBuilderFarm.class, new ResourceLocation(MODID, "builder_farm_basic"));
-        //GameRegistry.registerTileEntity(TileEntityBuilderOne.class, new ResourceLocation(MODID, "builder.builder_one"));
     }
 
     public static void LogWarning(String str, Object... args) {

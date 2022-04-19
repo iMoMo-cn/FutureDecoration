@@ -111,3 +111,6 @@ tile.clear_glass_yellow.name=黄色透净玻璃
 
 tile.iron_lantern.name=铁灯笼
 tile.gold_lantern.name=金灯笼
+tile.gold_bar.name=金栏杆
+tile.gold_door.name=金门
+tile.gold_trapdoor.name=金活板门

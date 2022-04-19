@@ -131,6 +131,8 @@ public class ModBlocks {
 
 	public static final Block IRON_LANTERN = new Lantern("iron_lantern");
 	public static final Block GOLD_LANTERN = new Lantern("gold_lantern");
+//	public static final Block GOLD_BARS = new Bar("gold_bar", Material.IRON);
+//	public static final Block GOLD_TRAPDOOR = new TrapDoor("gold_trapdoor", Material.IRON);
 
 	public static final Block CLEAR_GLASS = new Glass("clear_glass");
 	public static final Block CLEAR_GLASS_BLACK = new Glass("clear_glass_black");
@@ -149,6 +151,24 @@ public class ModBlocks {
 	public static final Block CLEAR_GLASS_SILVER = new Glass("clear_glass_silver");
 	public static final Block CLEAR_GLASS_WHITE = new Glass("clear_glass_white");
 	public static final Block CLEAR_GLASS_YELLOW = new Glass("clear_glass_yellow");
+
+//    public static final Block CLEAR_PANE = new GlassPane("clear_pane");
+//    public static final Block CLEAR_PANE_BLACK = new GlassPane("clear_pane_black");
+//    public static final Block CLEAR_PANE_BLUE = new GlassPane("clear_pane_blue");
+//    public static final Block CLEAR_PANE_BROWN = new GlassPane("clear_pane_brown");
+//    public static final Block CLEAR_PANE_CYAN = new GlassPane("clear_pane_cyan");
+//    public static final Block CLEAR_PANE_GRAY = new GlassPane("clear_pane_gray");
+//    public static final Block CLEAR_PANE_GREEN = new GlassPane("clear_pane_green");
+//    public static final Block CLEAR_PANE_LIGHT_BLUE = new GlassPane("clear_pane_light_blue");
+//    public static final Block CLEAR_PANE_LIME = new GlassPane("clear_pane_lime");
+//    public static final Block CLEAR_PANE_MAGENTA = new GlassPane("clear_pane_magenta");
+//    public static final Block CLEAR_PANE_ORANGE = new GlassPane("clear_pane_orange");
+//    public static final Block CLEAR_PANE_PINK = new GlassPane("clear_pane_pink");
+//    public static final Block CLEAR_PANE_PURPLE = new GlassPane("clear_pane_purple");
+//    public static final Block CLEAR_PANE_RED = new GlassPane("clear_pane_red");
+//    public static final Block CLEAR_PANE_SILVER = new GlassPane("clear_pane_silver");
+//    public static final Block CLEAR_PANE_WHITE = new GlassPane("clear_pane_white");
+//    public static final Block CLEAR_PANE_YELLOW = new GlassPane("clear_pane_yellow");
 
 
 	//TODO add Chain

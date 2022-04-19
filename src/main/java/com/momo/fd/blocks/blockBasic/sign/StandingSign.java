@@ -39,9 +39,7 @@ public class StandingSign extends BlockStandingSign implements IHasModel {
     }
 
     @Override
-    public void registerModels() {
-        ModelLoader.setCustomStateMapper(this, new StateMap.Builder().ignore(ROTATION).build());
-    }
+    public void registerModels() { }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {

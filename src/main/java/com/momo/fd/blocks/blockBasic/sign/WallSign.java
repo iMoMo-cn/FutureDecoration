@@ -1,19 +1,16 @@
 package com.momo.fd.blocks.blockBasic.sign;
 
-import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockTile.tileSign.*;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.BlockWallSign;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.block.statemap.StateMap;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.client.model.ModelLoader;
 
 import java.util.Random;
 
@@ -40,9 +37,7 @@ public class WallSign extends BlockWallSign implements IHasModel {
     }
 
     @Override
-    public void registerModels() {
-        ModelLoader.setCustomStateMapper(this, new StateMap.Builder().ignore(FACING).build());
-    }
+    public void registerModels() { }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {

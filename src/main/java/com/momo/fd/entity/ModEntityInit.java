@@ -4,12 +4,12 @@ import com.momo.fd.blocks.blockTile.tileSign.*;
 import com.momo.fd.util.Reference;
 import com.momo.fd.MoMoFramework;
 import net.minecraft.entity.Entity;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.datafix.DataFixer;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+
+import static net.minecraftforge.fml.client.registry.ClientRegistry.registerTileEntity;
 
 @Mod.EventBusSubscriber
 public class ModEntityInit {
@@ -31,11 +31,11 @@ public class ModEntityInit {
 
     public static void registerTiles()
     {
-        ClientRegistry.registerTileEntity(TileEntitySignAcacia.class, "sign_acacia", new SignAcaciaRender());
-        ClientRegistry.registerTileEntity(TileEntitySignBirch.class, "sign_birch", new SignBirchRender());
-        ClientRegistry.registerTileEntity(TileEntitySignDarkOak.class,"sign_dark_oak", new SignDarkOakRender());
-        ClientRegistry.registerTileEntity(TileEntitySignJungle.class, "sign_jungle", new SignJungleRender());
-        ClientRegistry.registerTileEntity(TileEntitySignSpruce.class, "sign_spruce", new SignSpruceRender());
+        registerTileEntity(TileEntitySignAcacia.class, "sign_acacia", new SignAcaciaRender());
+        registerTileEntity(TileEntitySignBirch.class, "sign_birch", new SignBirchRender());
+        registerTileEntity(TileEntitySignDarkOak.class,"sign_dark_oak", new SignDarkOakRender());
+        registerTileEntity(TileEntitySignJungle.class, "sign_jungle", new SignJungleRender());
+        registerTileEntity(TileEntitySignSpruce.class, "sign_spruce", new SignSpruceRender());
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity)

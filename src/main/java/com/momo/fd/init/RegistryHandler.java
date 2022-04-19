@@ -38,7 +38,6 @@ public class RegistryHandler {
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModBlocks.init();
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
-		ModEntityInit.registerTiles();
 	}
 
 	@SubscribeEvent

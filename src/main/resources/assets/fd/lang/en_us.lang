@@ -124,6 +124,9 @@ tile.clear_glass_yellow.name=Clear Yellow Stained Glass
 
 tile.iron_lantern.name=Iron Lantern
 tile.gold_lantern.name=Golden Lantern
+tile.gold_bar.name=Golden Bar
+tile.gold_door.name=Golden Door
+tile.gold_trapdoor.name=Golden Trapdoor
 
 
 
