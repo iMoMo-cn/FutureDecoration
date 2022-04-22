@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "fd:clear_glass_lime"
+    }
+  },
+  "result": {
+    "item": "fd:clear_pane_lime",
+    "count": 16
+  }
+}

@@ -128,6 +128,24 @@ tile.gold_bars.name=Golden Bar
 tile.gold_door.name=Golden Door
 tile.gold_trapdoor.name=Golden Trapdoor
 
+tile.clear_pane=Clear Glass Pane
+tile.clear_pane_black.name=Clear Black Stained Glass Pane
+tile.clear_pane_blue.name=Clear Blue Stained Glass Pane
+tile.clear_pane_brown.name=Clear Brown Stained Glass Pane
+tile.clear_pane_cyan.name=Clear Cyan Stained Glass Pane
+tile.clear_pane_gray.name=Clear Gray Stained Glass Pane
+tile.clear_pane_green.name=Clear Green Stained Glass Pane
+tile.clear_pane_light_blue.name=Clear Ligtht Blue Stained Glass Pane
+tile.clear_pane_lime.name=Clear Lime Stained Glass Pane
+tile.clear_pane_magenta.name=Clear Magenta Stained Glass Pane
+tile.clear_pane_orange.name=Clear Orange Stained Glass Pane
+tile.clear_pane_pink.name=Clear Pink Stained Glass Pane
+tile.clear_pane_purple.name=Clear Purple Stained Glass Pane
+tile.clear_pane_red.name=Clear Red Stained Glass Pane
+tile.clear_pane_silver.name=Clear Silver Stained Glass Pane
+tile.clear_pane_white.name=Clear White Stained Glass Pane
+tile.clear_pane_yellow.name=Clear Yellow Stained Glass Pane
+
 
 
 #effect
