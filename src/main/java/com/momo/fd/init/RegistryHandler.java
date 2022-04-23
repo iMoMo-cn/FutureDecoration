@@ -91,6 +91,7 @@ public class RegistryHandler {
 		InitDimension.registerDimensions();
 
 		ModEntityInit.registerEntities();
+		ModEntityInit.registerTiles();
 	}
 
 	public static void postInitReg()

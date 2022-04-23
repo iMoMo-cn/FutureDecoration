@@ -22,7 +22,7 @@ public class ClientProxy extends ProxyBase {
 
 	@Override
 	public void onPreInit(FMLPreInitializationEvent event) {
-		ModEntityInit.registerTiles();
+		ModEntityInit.tileEntitySpecialRenderer();
 	}
 
 	@Override

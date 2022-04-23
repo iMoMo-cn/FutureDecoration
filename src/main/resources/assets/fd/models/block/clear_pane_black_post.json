@@ -1,0 +1,7 @@
+{
+  "parent": "block/pane_post",
+  "textures": {
+    "edge": "fd:blocks/clear_pane_black_top",
+    "pane": "fd:blocks/clear_glass_black"
+  }
+}

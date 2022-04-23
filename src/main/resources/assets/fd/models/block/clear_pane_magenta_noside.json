@@ -1,0 +1,7 @@
+{
+  "parent": "block/pane_noside",
+  "textures": {
+    "edge": "fd:blocks/clear_pane_magenta_top",
+    "pane": "fd:blocks/clear_glass_magenta"
+  }
+}

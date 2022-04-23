@@ -4,12 +4,14 @@ import com.momo.fd.blocks.blockTile.tileSign.*;
 import com.momo.fd.util.Reference;
 import com.momo.fd.MoMoFramework;
 import net.minecraft.entity.Entity;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.registries.GameData;
 
 
 public class ModEntityInit {
@@ -29,14 +31,29 @@ public class ModEntityInit {
         DataFixer datafixer = new DataFixer(1343);
     }
 
-    @SideOnly(Side.CLIENT)
     public static void registerTiles()
     {
-        ClientRegistry.registerTileEntity(TileEntitySignAcacia.class, "sign_acacia", new SignAcaciaRender());
-        ClientRegistry.registerTileEntity(TileEntitySignBirch.class, "sign_birch", new SignBirchRender());
-        ClientRegistry.registerTileEntity(TileEntitySignDarkOak.class,"sign_dark_oak", new SignDarkOakRender());
-        ClientRegistry.registerTileEntity(TileEntitySignJungle.class, "sign_jungle", new SignJungleRender());
-        ClientRegistry.registerTileEntity(TileEntitySignSpruce.class, "sign_spruce", new SignSpruceRender());
+        registerTile(TileEntitySignAcacia.class, "sign_acacia");
+        registerTile(TileEntitySignBirch.class, "sign_birch");
+        registerTile(TileEntitySignDarkOak.class,"sign_dark_oak");
+        registerTile(TileEntitySignJungle.class, "sign_jungle");
+        registerTile(TileEntitySignSpruce.class, "sign_spruce");
+    }
+
+    public static void registerTile(Class<? extends TileEntity> tileEntityClass, String key)
+    {
+        GameData.checkPrefix(new ResourceLocation(key).toString());
+        TileEntity.register(key, tileEntityClass);
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static void tileEntitySpecialRenderer()
+    {
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignAcacia.class, new SignAcaciaRender());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignBirch.class, new SignBirchRender());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignDarkOak.class, new SignDarkOakRender());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignJungle.class, new SignJungleRender());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignSpruce.class, new SignSpruceRender());
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity)

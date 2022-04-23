@@ -128,7 +128,7 @@ tile.gold_bars.name=Golden Bar
 tile.gold_door.name=Golden Door
 tile.gold_trapdoor.name=Golden Trapdoor
 
-tile.clear_pane=Clear Glass Pane
+tile.clear_pane.name=Clear Glass Pane
 tile.clear_pane_black.name=Clear Black Stained Glass Pane
 tile.clear_pane_blue.name=Clear Blue Stained Glass Pane
 tile.clear_pane_brown.name=Clear Brown Stained Glass Pane

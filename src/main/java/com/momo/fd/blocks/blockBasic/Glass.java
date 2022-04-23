@@ -42,7 +42,7 @@ public class Glass extends BlockGlass implements IHasModel {
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer() { return BlockRenderLayer.TRANSLUCENT; }
+    public BlockRenderLayer getBlockLayer() { return BlockRenderLayer.CUTOUT; }
 
     public int quantityDropped(Random random)
     {
