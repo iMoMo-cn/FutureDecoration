@@ -38,7 +38,7 @@ public class GlassPane extends BlockPane implements IHasModel {
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer() { return BlockRenderLayer.CUTOUT; }
+    public BlockRenderLayer getBlockLayer() { return BlockRenderLayer.TRANSLUCENT; }
 
     @SideOnly(Side.CLIENT)
     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
