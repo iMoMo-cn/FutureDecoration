@@ -4,6 +4,7 @@ import com.momo.fd.blocks.blockBasic.*;
 import com.momo.fd.blocks.blockBasic.sign.StandingSign;
 import com.momo.fd.blocks.blockBasic.sign.WallSign;
 import com.momo.fd.blocks.blockInteractive.Button;
+import com.momo.fd.blocks.blockInteractive.Door;
 import com.momo.fd.blocks.blockInteractive.PressurePlate;
 import com.momo.fd.blocks.blockInteractive.TrapDoor;
 import com.momo.fd.blocks.blockMisc.NewObsidian;
@@ -133,6 +134,10 @@ public class ModBlocks {
 	public static final Block GOLD_LANTERN = new Lantern("gold_lantern");
 	public static final Block GOLD_BARS = new Bar("gold_bars", Material.IRON);
 	public static final Block GOLD_TRAPDOOR = new TrapDoor("gold_trapdoor", Material.IRON);
+	public static final Block GOLD_DOOR = new Door("gold_door");
+
+	public static final Block IRON_CHAIN = new Chain("chain");
+	public static final Block GOLD_CHAIN = new Chain("chain_gold");
 
 	public static final Block CLEAR_GLASS = new Glass("clear_glass");
 	public static final Block CLEAR_GLASS_BLACK = new Glass("clear_glass_black");
@@ -170,9 +175,6 @@ public class ModBlocks {
     public static final Block CLEAR_PANE_WHITE = new GlassPane("clear_pane_white");
     public static final Block CLEAR_PANE_YELLOW = new GlassPane("clear_pane_yellow");
 
-
-	//TODO add Chain
-
     //TODO add Colorful Flower Pot
 
     //TODO add Colorful GlowStone
@@ -184,7 +186,7 @@ public class ModBlocks {
 		((Slab)MOSSY_STONE_SLAB_DOUBLE).setDropped(ModBlocks.MOSSY_STONE_SLAB);
 		((Slab)MOSSY_STONE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.MOSSY_STONE_BRICK_SLAB);
 		((Slab)ANDESITE_SLAB_DOUBLE).setDropped(ModBlocks.ANDESITE_SLAB);
-		((Slab)SMOOTH_ANDESITE_SLAB).setDropped(ModBlocks.SMOOTH_ANDESITE_SLAB);
+		((Slab)SMOOTH_ANDESITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_ANDESITE_SLAB);
 		((Slab)DIORITE_SLAB_DOUBLE).setDropped(ModBlocks.DIORITE_SLAB);
 		((Slab)SMOOTH_DIORITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_DIORITE_SLAB);
 		((Slab)GRANITE_SLAB_DOUBLE).setDropped(ModBlocks.GRANITE_SLAB);
@@ -195,17 +197,19 @@ public class ModBlocks {
 		((Slab)PRISMARINE_DRAK_SLAB_DOUBLE).setDropped(ModBlocks.PRISMARINE_DRAK_SLAB);
 		((Slab)PRISMARINE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.PRISMARINE_BRICK_SLAB);
 
-//		((StandingSign)ACACIA_SIGN_STANDING).setItemSign(ModItems.ACACIA_SIGN);
-//		((StandingSign)BIRCH_SIGN_STANDING).setItemSign(ModItems.BIRCH_SIGN);
-//		((StandingSign)DARK_OAK_SIGN_STANDING).setItemSign(ModItems.DARK_OAK_SIGN);
-//		((StandingSign)JUNGLE_SIGN_STANDING).setItemSign(ModItems.JUNGLE_SIGN);
-//		((StandingSign)SPRUCE_SIGN_STANDING).setItemSign(ModItems.SPRUCE_SIGN);
-//
-//		((WallSign)ACACIA_SIGN_WALL).setItemSign(ModItems.ACACIA_SIGN);
-//		((WallSign)BIRCH_SIGN_WALL).setItemSign(ModItems.BIRCH_SIGN);
-//		((WallSign)DARK_OAK_SIGN_WALL).setItemSign(ModItems.DARK_OAK_SIGN);
-//		((WallSign)JUNGLE_SIGN_WALL).setItemSign(ModItems.JUNGLE_SIGN);
-//		((WallSign)SPRUCE_SIGN_WALL).setItemSign(ModItems.SPRUCE_SIGN);
+		((StandingSign)ACACIA_SIGN_STANDING).setItemSign(ModItems.ACACIA_SIGN);
+		((StandingSign)BIRCH_SIGN_STANDING).setItemSign(ModItems.BIRCH_SIGN);
+		((StandingSign)DARK_OAK_SIGN_STANDING).setItemSign(ModItems.DARK_OAK_SIGN);
+		((StandingSign)JUNGLE_SIGN_STANDING).setItemSign(ModItems.JUNGLE_SIGN);
+		((StandingSign)SPRUCE_SIGN_STANDING).setItemSign(ModItems.SPRUCE_SIGN);
+
+		((WallSign)ACACIA_SIGN_WALL).setItemSign(ModItems.ACACIA_SIGN);
+		((WallSign)BIRCH_SIGN_WALL).setItemSign(ModItems.BIRCH_SIGN);
+		((WallSign)DARK_OAK_SIGN_WALL).setItemSign(ModItems.DARK_OAK_SIGN);
+		((WallSign)JUNGLE_SIGN_WALL).setItemSign(ModItems.JUNGLE_SIGN);
+		((WallSign)SPRUCE_SIGN_WALL).setItemSign(ModItems.SPRUCE_SIGN);
+
+		((Door)GOLD_DOOR).setItemDoor(ModItems.GOLD_DOOR);
 	}
 
 }

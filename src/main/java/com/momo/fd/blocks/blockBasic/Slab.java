@@ -88,6 +88,12 @@ public class Slab extends BlockSlab implements IHasModel, IItemProvider {
         if(!this.isDouble()) MoMoFramework.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 
+
+    public Slab setDropped(Block dropBlockIn){
+        this.dropBlock = dropBlockIn;
+        return this;
+    }
+
     @Override
     protected BlockStateContainer createBlockState() {
 //      return new BlockStateContainer(this, HALF);
@@ -140,10 +146,9 @@ public class Slab extends BlockSlab implements IHasModel, IItemProvider {
     }
 
 
-
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(dropBlock, 1, dropBlock.damageDropped(state));
+        return new ItemStack(dropBlock);
     }
 
     @Override
@@ -155,11 +160,6 @@ public class Slab extends BlockSlab implements IHasModel, IItemProvider {
         else {
             drops.add(new ItemStack(dropBlock, 1));
         }
-    }
-
-    public Slab setDropped(Block dropBlockIn){
-        this.dropBlock = dropBlockIn;
-        return this;
     }
 
     public static enum Variant implements IStringSerializable

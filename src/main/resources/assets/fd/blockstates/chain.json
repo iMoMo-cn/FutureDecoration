@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up": { "model": "fd:chain" },
+    "facing=down": { "model": "fd:chain" },
+    "facing=east": { "model": "fd:chain", "x": 90, "y": 90 },
+    "facing=west": { "model": "fd:chain", "x": 90, "y": 90 },
+    "facing=south": { "model": "fd:chain", "x": 90 },
+    "facing=north": { "model": "fd:chain", "x": 90 }
+  }
+}

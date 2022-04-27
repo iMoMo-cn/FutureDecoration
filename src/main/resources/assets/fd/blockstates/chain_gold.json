@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up": { "model": "fd:chain_gold" },
+    "facing=down": { "model": "fd:chain_gold" },
+    "facing=east": { "model": "fd:chain_gold", "x": 90, "y": 90  },
+    "facing=west": { "model": "fd:chain_gold", "x": 90, "y": 90  },
+    "facing=south": { "model": "fd:chain_gold", "x": 90},
+    "facing=north": { "model": "fd:chain_gold", "x": 90}
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "fd:block/chain",
+    "textures": {
+        "particle": "fd:blocks/chain_gold",
+        "all": "fd:blocks/chain_gold"
+    }
+}

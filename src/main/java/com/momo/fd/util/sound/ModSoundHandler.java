@@ -17,6 +17,12 @@ public class ModSoundHandler {
     public static SoundEvent BLOCK_LANTER_HIT = new ModSoundEvent("block.lantern.hit");
     public static SoundEvent BLOCK_LANTER_FALL = new ModSoundEvent("block.lantern.fall");
 
+    public static SoundEvent BLOCK_CHAIN_BREAK = new ModSoundEvent("block.chain.break");
+    public static SoundEvent BLOCK_CHAIN_STEP = new ModSoundEvent("block.chain.step");
+    public static SoundEvent BLOCK_CHAIN_PLACE = new ModSoundEvent("block.chain.place");
+    public static SoundEvent BLOCK_CHAIN_HIT = new ModSoundEvent("block.chain.hit");
+    public static SoundEvent BLOCK_CHAIN_FALL = new ModSoundEvent("block.chain.fall");
+
     public static void soundRegister()
     {
         MoMoFramework.Log("Registering %s sounds.", SOUNDS.size());

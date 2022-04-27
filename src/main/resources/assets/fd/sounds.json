@@ -76,5 +76,97 @@
       "fd:block/lantern/break6"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.chain.break": {
+    "sounds": [
+      {
+        "name": "fd:block/chain/break1",
+        "volume": 0.5
+      },
+      {
+        "name": "fd:block/chain/break2",
+        "volume": 0.5
+      },
+      {
+        "name": "fd:block/chain/break3",
+        "volume": 0.5
+      },
+      {
+        "name": "fd:block/chain/break4",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.chain.fall": {
+    "sounds": [
+      "fd:block/chain/step1",
+      "fd:block/chain/step2",
+      "fd:block/chain/step3",
+      "fd:block/chain/step4",
+      "fd:block/chain/step5",
+      "fd:block/chain/step6"
+    ]
+  },
+  "block.chain.hit": {
+    "sounds": [
+      {
+        "name": "fd:block/chain/step1",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/chain/step2",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/chain/step3",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/chain/step4",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/chain/step5",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/chain/step6",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.chain.place": {
+    "sounds": [
+      {
+        "name": "fd:block/chain/break1",
+        "volume": 0.5
+      },
+      {
+        "name": "fd:block/chain/break2",
+        "volume": 0.5
+      },
+      {
+        "name": "fd:block/chain/break3",
+        "volume": 0.5
+      },
+      {
+        "name": "fd:block/chain/break4",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.chain.step": {
+    "sounds": [
+      "fd:block/chain/step1",
+      "fd:block/chain/step2",
+      "fd:block/chain/step3",
+      "fd:block/chain/step4",
+      "fd:block/chain/step5",
+      "fd:block/chain/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
   }
  }

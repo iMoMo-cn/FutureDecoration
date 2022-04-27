@@ -1,6 +1,7 @@
 package com.momo.fd.item;
 
 import com.momo.fd.blocks.ModBlocks;
+import com.momo.fd.item.tile.ModItemDoor;
 import com.momo.fd.item.tile.ModItemSign;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.*;
@@ -21,6 +22,7 @@ public class ModItems {
 	public static final Item DARK_OAK_SIGN = new ModItemSign("dark_oak_sign");
 	public static final Item JUNGLE_SIGN = new ModItemSign("jungle_sign");
 	public static final Item SPRUCE_SIGN = new ModItemSign("spruce_sign");
+	public static final Item GOLD_DOOR = new ModItemDoor("gold_door");
 
 	public static void init()
 	{
@@ -34,5 +36,6 @@ public class ModItems {
 		((ModItemSign)JUNGLE_SIGN).setStandingSign(ModBlocks.JUNGLE_SIGN_STANDING);
 		((ModItemSign)SPRUCE_SIGN).setWallSign(ModBlocks.SPRUCE_SIGN_WALL);
 		((ModItemSign)SPRUCE_SIGN).setStandingSign(ModBlocks.SPRUCE_SIGN_STANDING);
+		((ModItemDoor)GOLD_DOOR).setDoor(ModBlocks.GOLD_DOOR);
 	}
 }
