@@ -23,6 +23,8 @@ public class ModSoundHandler {
     public static SoundEvent BLOCK_CHAIN_HIT = new ModSoundEvent("block.chain.hit");
     public static SoundEvent BLOCK_CHAIN_FALL = new ModSoundEvent("block.chain.fall");
 
+    public static SoundEvent STRIP_WOOD = new ModSoundEvent("item.axe.strip");
+
     public static void soundRegister()
     {
         MoMoFramework.Log("Registering %s sounds.", SOUNDS.size());

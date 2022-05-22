@@ -168,5 +168,46 @@
       "fd:block/chain/step6"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+   "item.axe.strip": {
+    "sounds": [
+      {
+        "name": "fd:item/axe/strip1",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip2",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip3",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip4",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip1",
+        "pitch": 0.85,
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip2",
+        "pitch": 0.85,
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip3",
+        "pitch": 0.85,
+        "volume": 0.9
+      },
+      {
+        "name": "fd:item/axe/strip4",
+        "pitch": 0.85,
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.item.axe.strip"
   }
  }

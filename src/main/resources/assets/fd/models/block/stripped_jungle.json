@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "fd:blocks/stripped_jungle_log_top",
+    "side": "fd:blocks/stripped_jungle_log"
+  }
+}

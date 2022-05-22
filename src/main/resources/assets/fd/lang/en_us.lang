@@ -148,6 +148,44 @@ tile.clear_pane_silver.name=Clear Silver Stained Glass Pane
 tile.clear_pane_white.name=Clear White Stained Glass Pane
 tile.clear_pane_yellow.name=Clear Yellow Stained Glass Pane
 
+tile.stripped_acacia.name=Stripped Acacia Log
+tile.stripped_birch.name=Stripped Birch Log
+tile.stripped_dark_oak.name=Stripped Dark Oak Log
+tile.stripped_jungle.name=Stripped Jungle Log
+tile.stripped_oak.name=Stripped Oak Log
+tile.stripped_spruce.name=Stripped Spruce Log
+
+tile.wood_acacia.name=Acacia Wood
+tile.wood_birch.name=Birch Wood
+tile.wood_dark_oak.name=Dark Oak Wood
+tile.wood_jungle.name=Jungle Wood
+tile.wood_oak.name=Oak Wood
+tile.wood_spruce.name=Spruce Wood
+
+tile.stripped_acacia_wood.name=Stripped Acacia Log
+tile.stripped_birch_wood.name=Stripped Birch Log
+tile.stripped_dark_oak_wood.name=Stripped Dark Oak Log
+tile.stripped_jungle_wood.name=Stripped Jungle Log
+tile.stripped_oak_wood.name=Stripped Oak Log
+tile.stripped_spruce_wood.name=Stripped Spruce Log
+
+tile.blackstone.name=Blackstone
+tile.polished_blackstone.name=Polished Blackstone
+tile.polished_blackstone_bricks.name=Polished Blackstone Bricks
+tile.cracked_blackstone_bricks.name=Cracked Polished Blackstone Bricks
+tile.chiseled_polished_blackstone.name=Chiesled Polished Blackstone
+
+tile.blackstone_stairs.name=Blackstone Stairs
+tile.polished_blackstone_stairs.name=Polished Blackstone Stairs
+tile.polished_blackstone_brick_stairs.name=Polished Blackstone Bricks Stairs
+
+tile.blackstone_wall.name=Blackstone Wall
+tile.polished_blackstone_wall.name=Polished Blackstone Wall
+tile.polished_blackstone_brick_wall.name=Polished Blackstone Bricks Wall
+
+tile.blackstone_slab.name=Blackstone Slab
+tile.polished_blackstone_slab.name=Polished Blackstone Slab
+tile.polished_blackstone_brick_slab.name=Polished Blackstone Bricks Slab
 
 
 #effect

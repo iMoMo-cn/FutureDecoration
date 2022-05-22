@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "fd:blocks/blackstone",
+    "top": "fd:blocks/blackstone",
+    "side": "fd:blocks/blackstone"
+  }
+}

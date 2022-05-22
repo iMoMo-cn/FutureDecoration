@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "fd:blocks/polished_blackstone_bricks",
+    "top": "fd:blocks/polished_blackstone_bricks",
+    "side": "fd:blocks/polished_blackstone_bricks"
+  }
+}

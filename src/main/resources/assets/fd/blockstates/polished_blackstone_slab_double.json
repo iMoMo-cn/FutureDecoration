@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:polished_blackstone"},
+    "half=top,variant=default": { "model": "fd:polished_blackstone"}
+  }
+}
