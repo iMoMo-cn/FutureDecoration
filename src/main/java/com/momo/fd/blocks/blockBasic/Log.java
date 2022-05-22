@@ -9,6 +9,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 
 public class Log extends BlockLog implements IHasModel {
 
@@ -19,7 +20,13 @@ public class Log extends BlockLog implements IHasModel {
         setRegistryName(name);
 
         ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModItems.ITEMS.add(new ItemBlock(this){
+            @Override
+            public int getItemBurnTime(ItemStack itemStack)
+            {
+                return 300;
+            }
+        }.setRegistryName(this.getRegistryName()));
 
         this.setDefaultState(this.blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
     }
