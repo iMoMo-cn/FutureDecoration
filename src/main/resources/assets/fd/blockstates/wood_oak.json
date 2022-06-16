@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y":  { "model": "fd:wood_oak" },
+    "axis=z":   { "model": "fd:wood_oak", "x": 90 },
+    "axis=x":   { "model": "fd:wood_oak", "x": 90, "y": 90 },
+    "axis=none": { "model": "fd:wood_oak" }
+  }
+}

@@ -31,6 +31,10 @@ public class ModBlocks {
 	public static final Block CHISELED_BLACKSTONE = new BlockBase("chiseled_polished_blackstone", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	public static final Block CRACKED_BLACKSTONE_BRICK = new BlockBase("cracked_blackstone_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	public static final Block CRYING_OBSIDIAN = new NewObsidian("crying_obsidian", Material.ROCK, MapColor.OBSIDIAN).setLightLevel(0.666666667F);
+	public static final Block CHISELED_NETHER_BRICK = new BlockBase("chiseled_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CRACKED_NETHER_BRICK = new BlockBase("cracked_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CHISELED_RED_NETHER_BRICK = new BlockBase("chiseled_red_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CRACKED_RED_NETHER_BRICK = new BlockBase("cracked_red_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 
 	public static final Block ACACIA_TRAPDOOR = new TrapDoor("acacia_trapdoor", Material.WOOD);
 	public static final Block BIRCH_TRAPDOOR = new TrapDoor("birch_trapdoor", Material.WOOD);
@@ -203,19 +207,19 @@ public class ModBlocks {
 	public static final Block STRIPPED_OAK = new Log("stripped_oak");
 	public static final Block STRIPPED_SPRUCE = new Log("stripped_spruce");
 
-//	public static final Block WOOD_ACACIA = new Log("wood_acacia");
-//	public static final Block WOOD_BIRCH = new Log("wood_birch");
-//	public static final Block WOOD_DARK_OAK = new Log("wood_dark_oak");
-//	public static final Block WOOD_JUNGLE = new Log("wood_jungle");
-//	public static final Block WOOD_OAK = new Log("wood_oak");
-//	public static final Block WOOD_SPRUCE = new Log("wood_spruce");
+	public static final Block WOOD_ACACIA = new Log("wood_acacia");
+	public static final Block WOOD_BIRCH = new Log("wood_birch");
+	public static final Block WOOD_DARK_OAK = new Log("wood_dark_oak");
+	public static final Block WOOD_JUNGLE = new Log("wood_jungle");
+	public static final Block WOOD_OAK = new Log("wood_oak");
+	public static final Block WOOD_SPRUCE = new Log("wood_spruce");
 
-//	public static final Block STRIPPED_ACACIA_WOOD = new Log("stripped_acacia_wood");
-//	public static final Block STRIPPED_BIRCH_WOOD = new Log("stripped_birch_wood");
-//	public static final Block STRIPPED_DARK_OAK_WOOD = new Log("stripped_dark_oak_wood");
-//	public static final Block STRIPPED_JUNGLE_WOOD = new Log("stripped_jungle_wood");
-//	public static final Block STRIPPED_OAK_WOOD = new Log("stripped_oak_wood");
-//	public static final Block STRIPPED_SPRUCE_WOOD = new Log("stripped_spruce_wood");
+	public static final Block STRIPPED_ACACIA_WOOD = new Log("stripped_acacia_wood");
+	public static final Block STRIPPED_BIRCH_WOOD = new Log("stripped_birch_wood");
+	public static final Block STRIPPED_DARK_OAK_WOOD = new Log("stripped_dark_oak_wood");
+	public static final Block STRIPPED_JUNGLE_WOOD = new Log("stripped_jungle_wood");
+	public static final Block STRIPPED_OAK_WOOD = new Log("stripped_oak_wood");
+	public static final Block STRIPPED_SPRUCE_WOOD = new Log("stripped_spruce_wood");
 
     //TODO add Colorful Flower Pot and GlowStone
 

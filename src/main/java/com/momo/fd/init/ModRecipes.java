@@ -34,6 +34,8 @@ public class ModRecipes {
 		GameRegistry.addSmelting(Blocks.STONE, new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);
 		GameRegistry.addSmelting(Blocks.GLASS, new ItemStack(ModBlocks.CLEAR_GLASS), 0.3f);
 		GameRegistry.addSmelting(ModBlocks.BLACKSTONE_BRICK, new ItemStack(ModBlocks.CRACKED_BLACKSTONE_BRICK), 0.3f);
+		GameRegistry.addSmelting(Blocks.NETHER_BRICK, new ItemStack(ModBlocks.CRACKED_NETHER_BRICK), 0.3f);
+		GameRegistry.addSmelting(Blocks.RED_NETHER_BRICK, new ItemStack(ModBlocks.CRACKED_RED_NETHER_BRICK), 0.3f);
 	}
 
 

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:log2",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "fd:wood_dark_oak",
+    "count": 3
+  }
+}

@@ -187,6 +187,10 @@ tile.blackstone_slab.name=Blackstone Slab
 tile.polished_blackstone_slab.name=Polished Blackstone Slab
 tile.polished_blackstone_brick_slab.name=Polished Blackstone Bricks Slab
 
+tile.chiseled_nether_bricks.name=Chiseled Nether Bricks
+tile.cracked_nether_bricks.name=Cracked Nether Bricks
+tile.chiseled_red_nether_bricks.name=Red Chiseled Nether Bricks
+tile.cracked_red_nether_bricks.name=Red Cracked Nether Bricks
 
 #effect
 #effect.effect_name=effect name

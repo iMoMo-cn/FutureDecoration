@@ -1,6 +1,7 @@
 package com.momo.fd.events;
 
 import com.momo.fd.blocks.ModBlocks;
+import com.momo.fd.blocks.blockBasic.Log;
 import com.momo.fd.util.Reference;
 import com.momo.fd.util.sound.ModSoundHandler;
 import net.minecraft.block.*;
@@ -80,6 +81,47 @@ public class WoodStrippedEvent {
                             toolDamage(player, tool);
                             world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
                             return;
+                    }
+                }
+                else if(block instanceof Log)
+                {
+                    BlockLog.EnumAxis blocklog$enumaxis = (BlockLog.EnumAxis)state.getValue(BlockLog.LOG_AXIS);
+
+                    if(block == ModBlocks.WOOD_ACACIA)
+                    {
+                        world.setBlockState(pos, ModBlocks.STRIPPED_ACACIA_WOOD.getDefaultState().withProperty(BlockLog.LOG_AXIS, blocklog$enumaxis));
+                        toolDamage(player, tool);
+                        world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    }
+                    if(block == ModBlocks.WOOD_BIRCH)
+                    {
+                        world.setBlockState(pos, ModBlocks.STRIPPED_BIRCH_WOOD.getDefaultState().withProperty(BlockLog.LOG_AXIS, blocklog$enumaxis));
+                        toolDamage(player, tool);
+                        world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    }
+                    if(block == ModBlocks.WOOD_DARK_OAK)
+                    {
+                        world.setBlockState(pos, ModBlocks.STRIPPED_DARK_OAK_WOOD.getDefaultState().withProperty(BlockLog.LOG_AXIS, blocklog$enumaxis));
+                        toolDamage(player, tool);
+                        world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    }
+                    if(block == ModBlocks.WOOD_JUNGLE)
+                    {
+                        world.setBlockState(pos, ModBlocks.STRIPPED_JUNGLE_WOOD.getDefaultState().withProperty(BlockLog.LOG_AXIS, blocklog$enumaxis));
+                        toolDamage(player, tool);
+                        world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    }
+                    if(block == ModBlocks.WOOD_OAK)
+                    {
+                        world.setBlockState(pos, ModBlocks.STRIPPED_OAK_WOOD.getDefaultState().withProperty(BlockLog.LOG_AXIS, blocklog$enumaxis));
+                        toolDamage(player, tool);
+                        world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    }
+                    if(block == ModBlocks.WOOD_SPRUCE)
+                    {
+                        world.setBlockState(pos, ModBlocks.STRIPPED_SPRUCE_WOOD.getDefaultState().withProperty(BlockLog.LOG_AXIS, blocklog$enumaxis));
+                        toolDamage(player, tool);
+                        world.playSound(player, pos, ModSoundHandler.STRIP_WOOD, SoundCategory.BLOCKS, 1.0F, 1.0F);
                     }
                 }
             }

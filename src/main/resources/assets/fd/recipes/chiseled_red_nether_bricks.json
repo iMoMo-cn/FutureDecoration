@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:red_nether_brick_slab",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fd:chiseled_red_nether_bricks",
+    "count": 1
+  }
+}
