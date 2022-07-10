@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     " A ",
     "ABA",
@@ -9,9 +9,7 @@
     "A": {
       "item": "minecraft:chorus_fruit"
     },
-    "B": {
-      "item": "minecraft:obsidian"
-    }
+    "B": { "type": "forge:ore_dict", "ore": "obsidian" }
   },
   "result": {
     "item": "fd:crying_obsidian",

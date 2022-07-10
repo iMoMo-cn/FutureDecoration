@@ -1,6 +1,5 @@
 package com.momo.fd;
 
-import com.momo.fd.gui.ModGuiElementLoader;
 import com.momo.fd.init.*;
 import com.momo.fd.item.potions.PotionTypeBase;
 import com.momo.fd.meta.MetaUtil;
@@ -60,15 +59,11 @@ public class MoMoFramework {
     @EventHandler
     public static void Init(FMLInitializationEvent event) {
 
-        ModRecipes.Init();
-
+        ModRecipes.init();
         RegistryHandler.initRegistries(event);
         PotionTypeBase.register();
-
-        new ModGuiElementLoader();
-
         NetworkHandler.init();
-
+        ModOreDict.init();
         proxy.init(event);
 
         LogWarning("%s has finished its initializations", MODID);

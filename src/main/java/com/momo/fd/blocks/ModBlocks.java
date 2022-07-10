@@ -4,10 +4,7 @@ import com.momo.fd.blocks.blockBasic.*;
 import com.momo.fd.blocks.blockBasic.decoration.*;
 import com.momo.fd.blocks.blockBasic.sign.StandingSign;
 import com.momo.fd.blocks.blockBasic.sign.WallSign;
-import com.momo.fd.blocks.blockInteractive.Button;
-import com.momo.fd.blocks.blockInteractive.Door;
-import com.momo.fd.blocks.blockInteractive.PressurePlate;
-import com.momo.fd.blocks.blockInteractive.TrapDoor;
+import com.momo.fd.blocks.blockInteractive.*;
 import com.momo.fd.blocks.blockMisc.NewObsidian;
 import com.momo.fd.item.ModItems;
 import net.minecraft.block.Block;
@@ -144,6 +141,8 @@ public class ModBlocks {
 	public static final Block JUNGLE_PRESSURE_PLATE = new PressurePlate("jungle_pressure_plate", Material.WOOD);
 	public static final Block SPRUCE_PRESSURE_PLATE = new PressurePlate("spruce_pressure_plate", Material.WOOD);
 
+	public static final Block BARREL = new Barrel("barrel");
+
 	public static final Block ACACIA_SIGN_STANDING = new StandingSign("acacia_sign_standing");
 	public static final Block ACACIA_SIGN_WALL = new WallSign("acacia_sign_wall");
 	public static final Block BIRCH_SIGN_STANDING = new StandingSign("birch_sign_standing");
@@ -222,8 +221,6 @@ public class ModBlocks {
 	public static final Block STRIPPED_SPRUCE_WOOD = new Log("stripped_spruce_wood");
 
     //TODO add Colorful Flower Pot and GlowStone
-
-    //TODO add different Wooden Chests and Barrels
 
 	public static void init(){
 		((Slab)STONE_SLAB_DOUBLE).setDropped(ModBlocks.STONE_SLAB);

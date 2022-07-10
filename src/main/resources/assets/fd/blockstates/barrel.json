@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up":    { "model": "fd:barrel"},
+    "facing=down":  { "model": "fd:barrel", "x": 180 },
+    "facing=east":  { "model": "fd:barrel", "x": 90, "y": 90 },
+    "facing=west":  { "model": "fd:barrel", "x": 90, "y": 270 },
+    "facing=south": { "model": "fd:barrel", "x": 90, "y": 180 },
+    "facing=north": { "model": "fd:barrel", "x": 90, "y": 0 }
+  }
+}

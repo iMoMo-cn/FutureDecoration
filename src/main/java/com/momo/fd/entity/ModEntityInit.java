@@ -1,5 +1,6 @@
 package com.momo.fd.entity;
 
+import com.momo.fd.blocks.blockTile.TileEntityBarrel;
 import com.momo.fd.blocks.blockTile.tileSign.*;
 import com.momo.fd.util.Reference;
 import com.momo.fd.MoMoFramework;
@@ -38,6 +39,7 @@ public class ModEntityInit {
         registerTile(TileEntitySignDarkOak.class,"sign_dark_oak");
         registerTile(TileEntitySignJungle.class, "sign_jungle");
         registerTile(TileEntitySignSpruce.class, "sign_spruce");
+        registerTile(TileEntityBarrel.class, "barrel");
     }
 
     public static void registerTile(Class<? extends TileEntity> tileEntityClass, String key)

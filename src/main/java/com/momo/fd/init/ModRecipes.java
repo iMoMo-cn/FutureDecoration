@@ -28,7 +28,7 @@ public class ModRecipes {
 
 	public static Set<ResourceLocation> recipes = Sets.newHashSet();
 
-	public static void Init() {
+	public static void init() {
 		//Only smelting recipes
 		//GameRegistry.addSmelting(ModItems.XXXX, new ItemStack(ModItems.XXXX), 0.3f);
 		GameRegistry.addSmelting(Blocks.STONE, new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);

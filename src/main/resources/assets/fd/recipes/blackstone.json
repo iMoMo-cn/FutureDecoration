@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "AAA",
     "ABA",
@@ -9,10 +9,7 @@
     "A": {
       "item": "minecraft:cobblestone"
     },
-    "B": {
-      "item": "minecraft:coal",
-      "data": 32767
-    }
+    "B": { "type": "forge:ore_dict", "ore": "coal" }
   },
   "result": {
     "item": "fd:blackstone",

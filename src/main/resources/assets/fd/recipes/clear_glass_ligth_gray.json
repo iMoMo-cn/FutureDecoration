@@ -1,0 +1,18 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "fd:clear_glass"
+    },
+    "B": { "type": "forge:ore_dict", "ore": "dyeLightGray" }
+  },
+  "result": {
+    "item": "fd:clear_glass_gray",
+    "count": 8
+  }
+}

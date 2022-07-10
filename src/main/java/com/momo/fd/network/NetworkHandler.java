@@ -9,7 +9,6 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
 
 public class NetworkHandler {
-    public static final ResourceLocation MSG_RESOURCE = new ResourceLocation(MoMoFramework.MODID, "msg");
 
     public static final SimpleNetworkWrapper channel = NetworkRegistry.INSTANCE.newSimpleChannel(MoMoFramework.MODID);
 
@@ -23,6 +22,11 @@ public class NetworkHandler {
 
         //S2C
         //PacketUtil.network.sendTo(new PacketRevenge(cap.isRevengeActive()), (EntityPlayerMP)e.player);
+    }
+
+    public static void register()
+    {
+        NetworkRegistry.INSTANCE.registerGuiHandler(MoMoFramework.MODID, new GuiHandler());
     }
 
     public static void SendToServer(IMessage packet)

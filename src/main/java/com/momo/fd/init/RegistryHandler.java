@@ -7,6 +7,7 @@ import com.momo.fd.entity.ModEntityInit;
 import com.momo.fd.item.ModItems;
 
 import com.momo.fd.item.potions.ModPotionType;
+import com.momo.fd.network.NetworkHandler;
 import com.momo.fd.potion.ModPotion;
 import com.momo.fd.util.IHasModel;
 import com.momo.fd.util.sound.ModSoundHandler;
@@ -92,6 +93,9 @@ public class RegistryHandler {
 
 		ModEntityInit.registerEntities();
 		ModEntityInit.registerTiles();
+
+		NetworkHandler.register();
+
 	}
 
 	public static void postInitReg()

@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "AAA",
     "ABA",
     "AAA"
   ],
   "key": {
-    "A": {
-      "item": "minecraft:iron_nugget"
-    },
-    "B": {
-      "item": "minecraft:torch"
-    }
+    "A": { "type": "forge:ore_dict", "ore": "nuggetIron" },
+    "B": { "type": "forge:ore_dict", "ore": "torch" }
   },
   "result": {
     "item": "fd:iron_lantern",

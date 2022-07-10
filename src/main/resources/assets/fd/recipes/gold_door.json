@@ -1,14 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "AA",
     "AA",
     "AA"
   ],
   "key": {
-    "A": {
-      "item": "minecraft:gold_ingot"
-    }
+    "A": { "type": "forge:ore_dict", "ore": "ingotGold" }
   },
   "result": {
     "item": "fd:gold_door",

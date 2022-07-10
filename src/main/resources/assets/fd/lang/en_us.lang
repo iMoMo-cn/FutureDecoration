@@ -192,6 +192,8 @@ tile.cracked_nether_bricks.name=Cracked Nether Bricks
 tile.chiseled_red_nether_bricks.name=Red Chiseled Nether Bricks
 tile.cracked_red_nether_bricks.name=Red Cracked Nether Bricks
 
+tile.barrel.name=Barrel
+
 #effect
 #effect.effect_name=effect name
 

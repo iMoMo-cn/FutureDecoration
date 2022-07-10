@@ -209,5 +209,29 @@
       }
     ],
     "subtitle": "subtitles.item.axe.strip"
+  },
+  "block.barrel.close": {
+    "sounds": [
+      {
+        "name": "fd:block/barrel/close",
+        "volume": 1
+      }
+    ],
+    "subtitle": "subtitles.block.barrel.close"
+  },
+  "block.barrel.open": {
+    "sounds": [
+      {
+        "name": "fd:block/barrel/open1",
+        "volume": 1,
+        "pitch": 1
+      },
+      {
+        "name": "fd:block/barrel/open2",
+        "volume": 1,
+        "pitch": 1
+      }
+    ],
+    "subtitle": "subtitles.block.barrel.open"
   }
  }

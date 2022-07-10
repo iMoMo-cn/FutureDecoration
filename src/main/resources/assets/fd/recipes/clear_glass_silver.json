@@ -1,6 +1,6 @@
 
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "AAA",
     "ABA",
@@ -10,10 +10,7 @@
     "A": {
       "item": "fd:clear_glass"
     },
-    "B": {
-      "item": "minecraft:dye",
-      "data": 7
-    }
+    "B": { "type": "forge:ore_dict", "ore": "dyeSilver" }
   },
   "result": {
     "item": "fd:clear_glass_silver",
