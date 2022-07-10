@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "fd:blocks/fletching_table_front",
+    "north": "fd:blocks/fletching_table_front",
+    "south": "fd:blocks/fletching_table_front",
+    "east": "fd:blocks/fletching_table_side",
+    "west": "fd:blocks/fletching_table_side",
+    "up": "fd:blocks/fletching_table_top",
+    "down": "minecraft:blocks/planks_birch"
+  }
+}

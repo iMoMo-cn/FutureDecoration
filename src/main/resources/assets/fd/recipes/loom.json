@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AA",
+    "BB"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "string" },
+    "B": { "type": "forge:ore_dict", "ore": "plankWood" }
+  },
+  "result": {
+    "item": "fd:loom",
+    "count": 1
+  }
+}
+

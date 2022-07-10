@@ -12,6 +12,7 @@ public class ModOreDict
         //Minecraft OreDic
         OreDictionary.registerOre("charcoal", new ItemStack(Items.COAL, 1, 1));
         OreDictionary.registerOre("coal", new ItemStack(Items.COAL, 1, 32767));
+        OreDictionary.registerOre("flint", Items.FLINT);
 
         //MOD OreDic
         OreDictionary.registerOre("blockCharcoal", ModBlocks.CHARCOAL_BLOCK);

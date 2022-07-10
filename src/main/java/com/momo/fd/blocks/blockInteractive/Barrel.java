@@ -18,11 +18,10 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.Container;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
@@ -41,10 +40,17 @@ public class Barrel extends BlockContainer implements IHasModel {
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
         this.setHardness(2.5F);
+        this.setResistance(2.5F);
         this.setSoundType(SoundType.WOOD);
 
         ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModItems.ITEMS.add(new ItemBlock(this){
+            @Override
+            public int getItemBurnTime(ItemStack itemStack)
+            {
+                return 300;
+            }
+        }.setRegistryName(this.getRegistryName()));
 
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.UP));
         this.setCreativeTab(CreativeTabs.DECORATIONS);

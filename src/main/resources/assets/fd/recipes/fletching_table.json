@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AA",
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "flint" },
+    "B": { "type": "forge:ore_dict", "ore": "plankWood" }
+  },
+  "result": {
+    "item": "fd:fletching_table",
+    "count": 1
+  }
+}
+

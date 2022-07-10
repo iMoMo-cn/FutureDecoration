@@ -193,6 +193,10 @@ tile.chiseled_red_nether_bricks.name=Red Chiseled Nether Bricks
 tile.cracked_red_nether_bricks.name=Red Cracked Nether Bricks
 
 tile.barrel.name=Barrel
+tile.fletching_table.name=Fletching Table
+tile.cartography_table.name=Cartography Table
+tile.smithing_table.name=Smithing Table
+tile.loom.name=Loom
 
 #effect
 #effect.effect_name=effect name

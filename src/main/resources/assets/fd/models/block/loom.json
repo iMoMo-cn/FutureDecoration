@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "fd:blocks/loom_front",
+    "north": "fd:blocks/loom_front",
+    "south": "fd:blocks/loom_front",
+    "east": "fd:blocks/loom_side",
+    "west": "fd:blocks/loom_side",
+    "up": "fd:blocks/loom_top",
+    "down": "fd:blocks/loom_bottom"
+  }
+}

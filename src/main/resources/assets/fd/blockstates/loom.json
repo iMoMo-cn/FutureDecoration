@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "facing=up":    { "model": "fd:loom"},
+      "facing=down":  { "model": "fd:loom"},
+      "facing=east":  { "model": "fd:loom", "y": 270 },
+      "facing=west":  { "model": "fd:loom", "y": 90 },
+      "facing=south": { "model": "fd:loom", "y": 0 },
+      "facing=north": { "model": "fd:loom", "y": 180 }
+    }
+}

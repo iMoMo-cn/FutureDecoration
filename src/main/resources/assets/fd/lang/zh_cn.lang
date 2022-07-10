@@ -180,3 +180,7 @@ tile.chiseled_red_nether_bricks.name=红色錾质地狱砖块
 tile.cracked_red_nether_bricks.name=红色裂纹地狱砖块
 
 tile.barrel.name=木桶
+tile.fletching_table.name=制箭台
+tile.cartography_table.name=制图台
+tile.smithing_table.name=锻造台
+tile.loom.name=织布机
