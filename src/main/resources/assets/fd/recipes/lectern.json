@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    " # ",
+    " A "
+  ],
+  "key": {
+    "#": { "item": "minecraft:bookshelf" },
+    "A": { "type": "forge:ore_dict", "ore": "slabWood" }
+  },
+  "result": {
+    "item": "fd:lectern",
+    "count": 1
+  }
+}

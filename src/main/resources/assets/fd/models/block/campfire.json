@@ -1,0 +1,7 @@
+{
+  "parent": "fd:block/template_campfire",
+  "textures": {
+    "fire": "fd:blocks/campfire_fire",
+    "lit_log": "fd:blocks/campfire_log_lit"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "variants":
+  {
+    "face=north,facing=up": {"model": "fd:grindstone"},
+    "face=north,facing=down": {"model": "fd:grindstone", "x" : 180},
+    "face=north,facing=north": {"model": "fd:grindstone", "x" : 90},
+    "face=north,facing=south": {"model": "fd:grindstone", "x" : 270},
+    "face=north,facing=west": {"model": "fd:grindstone", "y" : 90, "x" : 270},
+    "face=north,facing=east": {"model": "fd:grindstone", "y" : 90, "x" : 90},
+
+    "face=south,facing=up": {"model": "fd:grindstone"},
+    "face=south,facing=down": {"model": "fd:grindstone", "x" : 180},
+    "face=south,facing=north": {"model": "fd:grindstone", "x" : 90},
+    "face=south,facing=south": {"model": "fd:grindstone", "x" : 270},
+    "face=south,facing=west": {"model": "fd:grindstone", "y" : 90, "x" : 270},
+    "face=south,facing=east": {"model": "fd:grindstone", "y" : 90, "x" : 90},
+
+    "face=east,facing=up": {"model": "fd:grindstone", "y" : 90},
+    "face=east,facing=down": {"model": "fd:grindstone", "y" : 90, "x" : 180},
+    "face=east,facing=north": {"model": "fd:grindstone", "x" : 90},
+    "face=east,facing=south": {"model": "fd:grindstone", "x" : 270},
+    "face=east,facing=west": {"model": "fd:grindstone", "y" : 90, "x" : 270},
+    "face=east,facing=east": {"model": "fd:grindstone", "y" : 90, "x" : 90},
+
+    "face=west,facing=up": {"model": "fd:grindstone", "y" : 90},
+    "face=west,facing=down": {"model": "fd:grindstone", "y" : 90, "x" : 180},
+    "face=west,facing=north": {"model": "fd:grindstone", "x" : 90},
+    "face=west,facing=south": {"model": "fd:grindstone", "x" : 270},
+    "face=west,facing=west": {"model": "fd:grindstone", "y" : 90, "x" : 270},
+    "face=west,facing=east": {"model": "fd:grindstone", "y" : 90, "x" : 90}
+  }
+}

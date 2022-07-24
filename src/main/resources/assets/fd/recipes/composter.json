@@ -1,0 +1,15 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "A A",
+    "A A",
+    "AAA"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "slabWood" }
+  },
+  "result": {
+    "item": "fd:composter",
+    "count": 1
+  }
+}

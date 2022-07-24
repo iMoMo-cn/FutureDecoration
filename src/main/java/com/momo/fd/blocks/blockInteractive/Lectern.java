@@ -1,4 +1,4 @@
-package com.momo.fd.blocks.blockBasic;
+package com.momo.fd.blocks.blockInteractive;
 
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
@@ -6,62 +6,71 @@ import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.material.MapColor;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Rotation;
+import net.minecraft.util.*;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class DirectionalBlock extends Block implements IHasModel
-{
+public class Lectern extends Block implements IHasModel {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
-    public DirectionalBlock(String name, Material material, MapColor mapColor){
-        super(material, mapColor);
-        setUnlocalizedName(name);
-        setRegistryName(name);
+    public Lectern(String name)
+    {
+        super(Material.WOOD);
+
+        this.setRegistryName(name);
+        this.setUnlocalizedName(name);
+
+        this.setHardness(2.5F);
+        this.setResistance(2.5F);
+        this.setSoundType(SoundType.WOOD);
+        this.setCreativeTab(CreativeTabs.DECORATIONS);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-    }
-
-    public DirectionalBlock(String name,int burnTime, Material material, MapColor mapColor){
-        super(material, mapColor);
-        setUnlocalizedName(name);
-        setRegistryName(name);
-
-        ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this){
-            @Override
-            public int getItemBurnTime(ItemStack itemStack)
-            {
-                return burnTime;
-            }
-        }.setRegistryName(this.getRegistryName()));
 
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-    }
-
-    public DirectionalBlock(String name, Material material){
-        this(name, material, material.getMaterialMapColor());
     }
 
     @Override
     public void registerModels() {
         MoMoFramework.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
+    }
+
+    @Override
+    public boolean isFullBlock(IBlockState state)
+    {
+        return false;
+    }
+
+    @Override
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
+
+    public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
+    {
+        return true;
     }
 
     /**
@@ -110,4 +119,17 @@ public class DirectionalBlock extends Block implements IHasModel
     {
         return ((EnumFacing)state.getValue(FACING)).getIndex();
     }
+
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer()
+    {
+        return BlockRenderLayer.CUTOUT;
+    }
+
+
+    public EnumBlockRenderType getRenderType(IBlockState state)
+    {
+        return EnumBlockRenderType.MODEL;
+    }
+
 }

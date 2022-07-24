@@ -141,11 +141,16 @@ public class ModBlocks {
 	public static final Block JUNGLE_PRESSURE_PLATE = new PressurePlate("jungle_pressure_plate", Material.WOOD);
 	public static final Block SPRUCE_PRESSURE_PLATE = new PressurePlate("spruce_pressure_plate", Material.WOOD);
 
+	public static final Block GRINDSTONE = new Grindstone("grindstone");
 	public static final Block BARREL = new Barrel("barrel");
+	public static final Block COMPOSTER = new Composter("composter");
+	public static final Block CAMPFIRE = new Campfire("campfire");
+	public static final Block CAMPFIRE_OFF = new Campfire("campfire_off");
 	public static final Block FLETCHING_TABLE = new BurnableBlock("fletching_table", 300, Material.WOOD, MapColor.SAND).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block CARTOGRAPHY_TABLE = new BurnableBlock("cartography_table", 300, Material.WOOD, MapColor.BROWN).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block SMITHING_TABLE = new BurnableBlock("smithing_table", 300, Material.WOOD, MapColor.BLACK).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block LOOM = new DirectionalBlock("loom", 300, Material.WOOD, MapColor.WOOD).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
+	public static final Block LECTERN = new Lectern("lectern");
 
 	public static final Block ACACIA_SIGN_STANDING = new StandingSign("acacia_sign_standing");
 	public static final Block ACACIA_SIGN_WALL = new WallSign("acacia_sign_wall");

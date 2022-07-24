@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    "CCC"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "stickWood" },
+    "B": { "type": "forge:ore_dict", "ore": "coal" },
+    "C": { "type": "forge:ore_dict", "ore": "logWood" }
+  },
+  "result": {
+    "item": "fd:campfire",
+    "count": 1
+  }
+}
