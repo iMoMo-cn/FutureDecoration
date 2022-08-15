@@ -31,9 +31,19 @@ tile.red_nether_brick_fence.name=Red Nether Bricks Fence
 tile.stone_wall.name=Stone Wall
 tile.stone_brick_wall.name=Stone Brick Wall
 tile.mossy_stone_brick_wall.name=Mossy Stone Bricks Wall
-tile.sand_stone_wall.name=Sand Stone Wall
-tile.red_sand_stone_wall.name=Red Sand Stone Wall
+
+tile.smooth_sandstone.name=Smooth Sandstone
+tile.smooth_red_sandstone.name=Smooth Red Sandstone
+tile.smooth_sandstone_wall.name=Smooth Sandstone Wall
+tile.smooth_red_sandstone_wall.name=Smooth Red Sandstone Wall
+tile.cut_sandstone_wall.name=Cut Sandstone Wall
+tile.cut_red_sandstone_wall.name=Cut Red Sandstone Wall
+tile.sandstone_wall.name=Sandstone Wall
+tile.red_sandstone_wall.name=Red Sandstone Wall
+
 tile.brick_wall.name=Brick Wall
+
+tile.quartz_wall.name=Quartz Wall
 tile.nether_brick_wall.name=Nether Brick Wall
 tile.red_nether_brick_wall.name=Red Nether Bricks Wall
 tile.end_stone_brick_wall.name=End Stone Bricks Wall
@@ -59,6 +69,15 @@ tile.diorite_slab.name=Diorite Slab
 tile.diorite_slab_smooth.name=Smooth Diorite Slab
 tile.granite_slab.name=Granite Slab
 tile.granite_slab_smooth.name=Smooth Granite Slab
+tile.cut_sandstone_slab.name=Cut Sandstone Slab
+tile.cut_red_sandstone_slab.name=Cut Red Sandstone Slab
+tile.smooth_sandstone_slab.name=Smooth Sandstone Slab
+tile.smooth_red_sandstone_slab.name=Smooth Red Sandstone Slab
+
+tile.cut_sandstone_stairs.name=Cut Sandstone Stairs
+tile.cut_red_sandstone_stairs.name=Cut Red Sandstone Stairs
+tile.smooth_sandstone_stairs.name=Smooth Sandstone Stairs
+tile.smooth_red_sandstone_stairs.name=Smooth Red Sandstone Stairs
 
 tile.red_nether_brick_slab.name=Red Nether Bricks Slab
 tile.end_stone_brick_slab.name=End Stone Bricks Slab
@@ -68,7 +87,24 @@ tile.prismarine_dark_slab.name=Dark Prismarine Slab
 tile.prismarine_brick_slab.name=Prismarine Bricks Slab
 
 tile.charcoal_block.name=Block of Charcoal
+tile.quartz_bricks.name=Quartz Bricks
 tile.crying_obsidian.name=Crying Obsidian
+
+tile.andesite_bricks.name=Andesite Bricks
+tile.diorite_bricks.name=Diorite Bricks
+tile.granite_bricks.name=Granite Bricks
+
+tile.andesite_bricks_wall.name=Andesite Bricks Wall
+tile.diorite_bricks_wall.name=Diorite Bricks Wall
+tile.granite_bricks_wall.name=Granite Bricks Wall
+
+tile.andesite_bricks_stairs.name=Andesite Bricks Stairs
+tile.diorite_bricks_stairs.name=Diorite Bricks Stairs
+tile.granite_bricks_stairs.name=Granite Bricks Stairs
+
+tile.andesite_bricks_slab.name=Andesite Bricks Slab
+tile.diorite_bricks_slab.name=Diorite Bricks Slab
+tile.granite_bricks_slab.name=Granite Bricks Slab
 
 tile.smooth_stone.name=Stone
 tile.smooth_stone_wall.name=Stone Wall
@@ -202,6 +238,20 @@ tile.cartography_table.name=Cartography Table
 tile.smithing_table.name=Smithing Table
 tile.loom.name=Loom
 tile.lectern.name=Lectern
+
+item.dye_white.name=White Dye
+item.dye_blue.name=Blue Dye
+item.dye_black.name=Black Dye
+item.dye_brown.name=Brown Dye
+
+tile.lily_of_the_valley.name=Lily of the Valley
+tile.cornflower.name=CornFlower
+tile.rose.name=Rose
+tile.wither_rose.name=Wither Rose
+
+item.sweet_berries.name=Sweet Berries
+tile.sweet_berry_bush.name=Sweet Berries Bush
+
 
 #effect
 #effect.effect_name=effect name

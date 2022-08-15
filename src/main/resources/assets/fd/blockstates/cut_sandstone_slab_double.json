@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "minecraft:sandstone_smooth" },
+    "half=top,variant=default": { "model": "minecraft:sandstone_smooth" }
+  }
+}

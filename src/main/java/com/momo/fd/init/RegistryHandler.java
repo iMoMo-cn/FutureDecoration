@@ -5,12 +5,12 @@ import com.momo.fd.entity.renders.RenderHandler;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.entity.ModEntityInit;
 import com.momo.fd.item.ModItems;
-
 import com.momo.fd.item.potions.ModPotionType;
 import com.momo.fd.network.NetworkHandler;
 import com.momo.fd.potion.ModPotion;
 import com.momo.fd.util.IHasModel;
 import com.momo.fd.util.sound.ModSoundHandler;
+import com.momo.fd.worldgen.ModGenInit;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
@@ -85,11 +85,10 @@ public class RegistryHandler {
 
 	public static void preInitRegistries(FMLPreInitializationEvent event)
 	{
-		//GameRegistry.registerWorldGenerator(new ModWorldGenOld(), 100);
-		//GameRegistry.registerWorldGenerator(new ModWorldGenNew(), 120);
-
 		InitBiome.registerBiomes();
 		InitDimension.registerDimensions();
+
+        ModGenInit.registerGens();
 
 		ModEntityInit.registerEntities();
 		ModEntityInit.registerTiles();

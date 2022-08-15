@@ -1,5 +1,6 @@
 package com.momo.fd;
 
+import com.momo.fd.feature.ModFeatureHandler;
 import com.momo.fd.init.*;
 import com.momo.fd.item.potions.PotionTypeBase;
 import com.momo.fd.meta.MetaUtil;
@@ -64,6 +65,7 @@ public class MoMoFramework {
         PotionTypeBase.register();
         NetworkHandler.init();
         ModOreDict.init();
+        ModFeatureHandler.init();
         proxy.init(event);
 
         LogWarning("%s has finished its initializations", MODID);

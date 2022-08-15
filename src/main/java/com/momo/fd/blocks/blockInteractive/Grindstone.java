@@ -3,7 +3,6 @@ package com.momo.fd.blocks.blockInteractive;
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
-import com.momo.fd.util.EntityUtil;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.*;
 import net.minecraft.block.material.MapColor;

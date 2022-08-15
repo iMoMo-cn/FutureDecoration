@@ -233,5 +233,146 @@
       }
     ],
     "subtitle": "subtitles.block.barrel.open"
+  },
+    "block.sweet_berry_bush.break": {
+    "sounds": [
+      {
+        "name": "fd:block/sweet_berry_bush/break1",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/break2",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/break3",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/break4",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.sweet_berry_bush.place": {
+    "sounds": [
+      {
+        "name": "fd:block/sweet_berry_bush/place1",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/place2",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/place3",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/place4",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/place5",
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/sweet_berry_bush/place6",
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+    "item.sweet_berries.pick_from_bush": {
+    "sounds": [
+      "fd:item/sweet_berries/pick_from_bush1",
+      "fd:item/sweet_berries/pick_from_bush2"
+    ],
+    "subtitle": "subtitles.item.berries.pick"
+  },
+  "block.composter.fill": {
+    "sounds": [
+      {
+        "name": "fd:block/composter/fill1",
+        "volume": 0.3,
+        "pitch": 0.8
+      },
+      {
+        "name": "fd:block/composter/fill2",
+        "volume": 0.3,
+        "pitch": 0.8
+      },
+      {
+        "name": "fd:block/composter/fill3",
+        "volume": 0.3,
+        "pitch": 0.8
+      },
+      {
+        "name": "fd:block/composter/fill4",
+        "volume": 0.3,
+        "pitch": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.composter.fill"
+  },
+  "block.composter.fill_success": {
+    "sounds": [
+      {
+        "name": "fd:block/composter/fill_success1",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/fill_success2",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/fill_success3",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/fill_success4",
+        "volume": 1
+      }
+    ],
+    "subtitle": "subtitles.block.composter.fill"
+  },
+  "block.composter.empty": {
+    "sounds": [
+      {
+        "name": "fd:block/composter/empty1",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/empty2",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/empty3",
+        "volume": 1
+      }
+    ],
+    "subtitle": "subtitles.block.composter.empty"
+  },
+  "block.composter.ready": {
+    "sounds": [
+      {
+        "name": "fd:block/composter/ready1",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/ready2",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/ready3",
+        "volume": 1
+      },
+      {
+        "name": "fd:block/composter/ready4",
+        "volume": 1
+      }
+    ],
+    "subtitle": "subtitles.block.composter.ready"
   }
  }

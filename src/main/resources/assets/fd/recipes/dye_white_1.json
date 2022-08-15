@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fd:lily_of_the_valley"
+    }
+  ],
+  "result": {
+    "item": "fd:dye_white",
+    "count": 1
+  }
+}

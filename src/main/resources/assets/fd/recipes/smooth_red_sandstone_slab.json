@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:smooth_red_sandstone"
+    }
+  },
+  "result": {
+    "item": "fd:smooth_red_sandstone_slab",
+    "data": 0,
+    "count": 6
+  }
+}

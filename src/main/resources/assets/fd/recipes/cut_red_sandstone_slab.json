@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:red_sandstone",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "fd:cut_red_sandstone_slab",
+    "data": 0,
+    "count": 6
+  }
+}

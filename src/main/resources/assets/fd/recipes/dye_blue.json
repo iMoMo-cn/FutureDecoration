@@ -1,0 +1,10 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    { "type": "forge:ore_dict", "ore": "gemLapis" }
+  ],
+  "result": {
+    "item": "fd:dye_blue",
+    "count": 1
+  }
+}

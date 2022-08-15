@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:packed_ice"
+      "item": "minecraft:nether_wart_block"
     }
   ],
   "result": {
-    "item": "minecraft:ice",
+    "item": "minecraft:nether_wart",
     "count": 9
   }
 }

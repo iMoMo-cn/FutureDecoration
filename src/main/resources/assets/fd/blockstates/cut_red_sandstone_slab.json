@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:cut_red_sandstone_slab_half" },
+    "half=top,variant=default": { "model": "fd:cut_red_sandstone_slab_upper" }
+  }
+}

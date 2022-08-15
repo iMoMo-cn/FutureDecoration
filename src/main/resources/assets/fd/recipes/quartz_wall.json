@@ -1,0 +1,14 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": { "type": "forge:ore_dict", "ore": "blockQuartz" }
+  },
+  "result": {
+    "item": "fd:quartz_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "minecraft:blocks/red_sandstone_top",
+    "top": "minecraft:blocks/red_sandstone_top",
+    "side": "minecraft:blocks/red_sandstone_top"
+  }
+}

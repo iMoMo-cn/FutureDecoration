@@ -1,0 +1,8 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "fd:blocks/andesite_bricks",
+    "top": "fd:blocks/andesite_bricks",
+    "side": "fd:blocks/andesite_bricks"
+  }
+}

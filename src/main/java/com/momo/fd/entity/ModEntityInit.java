@@ -1,6 +1,7 @@
 package com.momo.fd.entity;
 
 import com.momo.fd.blocks.blockTile.TileEntityBarrel;
+import com.momo.fd.blocks.blockTile.TileEntityComposter;
 import com.momo.fd.blocks.blockTile.tileSign.*;
 import com.momo.fd.util.Reference;
 import com.momo.fd.MoMoFramework;
@@ -40,6 +41,7 @@ public class ModEntityInit {
         registerTile(TileEntitySignJungle.class, "sign_jungle");
         registerTile(TileEntitySignSpruce.class, "sign_spruce");
         registerTile(TileEntityBarrel.class, "barrel");
+        registerTile(TileEntityComposter.class, "composter");
     }
 
     public static void registerTile(Class<? extends TileEntity> tileEntityClass, String key)

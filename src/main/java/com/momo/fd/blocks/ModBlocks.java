@@ -4,6 +4,8 @@ import com.momo.fd.blocks.blockBasic.*;
 import com.momo.fd.blocks.blockBasic.decoration.*;
 import com.momo.fd.blocks.blockBasic.sign.StandingSign;
 import com.momo.fd.blocks.blockBasic.sign.WallSign;
+import com.momo.fd.blocks.blockBush.BerriesBush;
+import com.momo.fd.blocks.blockBush.Flower;
 import com.momo.fd.blocks.blockInteractive.*;
 import com.momo.fd.blocks.blockMisc.NewObsidian;
 import com.momo.fd.item.ModItems;
@@ -21,13 +23,23 @@ public class ModBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 
 	public static final Block CHARCOAL_BLOCK = new BurnableBlock("charcoal_block", 16000, Material.ROCK, MapColor.BLACK).setHardness(5.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
 	public static final Block SMOOTH_STONE = new BlockBase("smooth_stone", Material.ROCK).setHardness(1.5F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	public static final Block BLACKSTONE = new BlockBase("blackstone", Material.ROCK).setHardness(1.5F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	public static final Block POLISHED_BLACKSTONE = new BlockBase("polished_blackstone", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	public static final Block BLACKSTONE_BRICK = new BlockBase("polished_blackstone_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	public static final Block CHISELED_BLACKSTONE = new BlockBase("chiseled_polished_blackstone", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	public static final Block CRACKED_BLACKSTONE_BRICK = new BlockBase("cracked_blackstone_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	public static final Block CRYING_OBSIDIAN = new NewObsidian("crying_obsidian", Material.ROCK, MapColor.OBSIDIAN).setLightLevel(0.666666667F);
+	public static final Block ANDESITE_BRICKS = new BlockBase("andesite_bricks", Material.ROCK, MapColor.STONE).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block DIORITE_BRICKS = new BlockBase("diorite_bricks", Material.ROCK, MapColor.QUARTZ).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block GRANITE_BRICKS = new BlockBase("granite_bricks", Material.ROCK, MapColor.DIRT).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+    public static final Block SMOOTH_SANDSTONE = new BlockBase("smooth_sandstone", Material.ROCK, MapColor.SAND).setHardness(2.0F).setResistance(0.8F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+    public static final Block SMOOTH_RED_SANDSTONE = new BlockBase("smooth_red_sandstone", Material.ROCK, MapColor.ADOBE).setHardness(2.0F).setResistance(0.8F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+	public static final Block BLACKSTONE = new BlockBase("blackstone", Material.ROCK, MapColor.BLACK).setHardness(1.5F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block POLISHED_BLACKSTONE = new BlockBase("polished_blackstone", Material.ROCK, MapColor.BLACK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block BLACKSTONE_BRICK = new BlockBase("polished_blackstone_bricks", Material.ROCK, MapColor.BLACK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CHISELED_BLACKSTONE = new BlockBase("chiseled_polished_blackstone", Material.ROCK, MapColor.BLACK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CRACKED_BLACKSTONE_BRICK = new BlockBase("cracked_blackstone_bricks", Material.ROCK, MapColor.BLACK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+
+	public static final Block QUARTZ_BRICKS = new BlockBase("quartz_bricks", Material.ROCK, MapColor.QUARTZ).setHardness(0.8F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+    public static final Block CRYING_OBSIDIAN = new NewObsidian("crying_obsidian", Material.ROCK, MapColor.OBSIDIAN).setLightLevel(0.666666667F);
+
 	public static final Block CHISELED_NETHER_BRICK = new BlockBase("chiseled_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	public static final Block CRACKED_NETHER_BRICK = new BlockBase("cracked_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	public static final Block CHISELED_RED_NETHER_BRICK = new BlockBase("chiseled_red_nether_bricks", Material.ROCK).setHardness(2.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
@@ -46,20 +58,30 @@ public class ModBlocks {
 	public static final Block SPRUCE_BUTTON = new Button("spruce_button", true);
 
 	public static final Block STONE_WALL = new Wall("stone_wall", Blocks.STONE);
-	public static final Block STONE_BRICK_WALL = new Wall("stone_brick_wall", Blocks.BRICK_BLOCK);
-	public static final Block MOSSY_STONE_BRICK_WALL = new Wall("mossy_stone_brick_wall", Blocks.BRICK_BLOCK);
-	public static final Block SAND_STONE_WALL = new Wall("sand_stone_wall", Blocks.BRICK_BLOCK);
-	public static final Block RED_SAND_STONE_WALL = new Wall("red_sand_stone_wall", Blocks.BRICK_BLOCK);
+	public static final Block STONE_BRICK_WALL = new Wall("stone_brick_wall", Blocks.STONEBRICK);
+	public static final Block MOSSY_STONE_BRICK_WALL = new Wall("mossy_stone_brick_wall", Blocks.STONEBRICK);
+
+	public static final Block CUT_SANDSTONE_WALL = new Wall("cut_sandstone_wall", Blocks.SANDSTONE);
+	public static final Block CUT_RED_SANDSTONE_WALL = new Wall("cut_red_sandstone_wall", Blocks.SANDSTONE);
+	public static final Block SMOOTH_SANDSTONE_WALL = new Wall("smooth_sandstone_wall", Blocks.SANDSTONE);
+	public static final Block SMOOTH_RED_SANDSTONE_WALL = new Wall("smooth_red_sandstone_wall", Blocks.SANDSTONE);
+	public static final Block SANDSTONE_WALL = new Wall("sandstone_wall", Blocks.SANDSTONE);
+	public static final Block RED_SANDSTONE_WALL = new Wall("red_sandstone_wall", Blocks.RED_SANDSTONE);
+
 	public static final Block BIRCK_WALL = new Wall("brick_wall", Blocks.BRICK_BLOCK);
 
 	public static final Block ANDESITE_WALL = new Wall("andesite_wall", Blocks.STONEBRICK);
 	public static final Block SMOOTH_ANDESITE_WALL = new Wall("andesite_wall_smooth", Blocks.STONEBRICK);
-	public static final Block DIORITE_WALL = new Wall("diorite_wall", Blocks.STONEBRICK);
-	public static final Block SMOOTH_DIORITE_WALL = new Wall("diorite_wall_smooth", Blocks.STONEBRICK);
-	public static final Block GRANITE_WALL = new Wall("granite_wall", Blocks.STONEBRICK);
-	public static final Block SMOOTH_GRANITE_WALL = new Wall("granite_wall_smooth", Blocks.STONEBRICK);
+	public static final Block ANDESITE_BRICKS_WALL = new Wall("andesite_bricks_wall", Blocks.STONEBRICK);
+	public static final Block DIORITE_WALL = new Wall("diorite_wall", Blocks.QUARTZ_BLOCK);
+	public static final Block SMOOTH_DIORITE_WALL = new Wall("diorite_wall_smooth", Blocks.QUARTZ_BLOCK);
+	public static final Block DIORITE_BRICKS_WALL = new Wall("diorite_bricks_wall", Blocks.QUARTZ_BLOCK);
+	public static final Block GRANITE_WALL = new Wall("granite_wall", Blocks.RED_NETHER_BRICK);
+	public static final Block SMOOTH_GRANITE_WALL = new Wall("granite_wall_smooth", Blocks.RED_NETHER_BRICK);
+	public static final Block GRANITE_BRICKS_WALL = new Wall("granite_bricks_wall", Blocks.RED_NETHER_BRICK);
 
 	public static final Block SMOOTH_STONE_WALL = new Wall("smooth_stone_wall", Blocks.STONE_SLAB);
+	public static final Block QUARTZ_WALL = new Wall("quartz_wall", Blocks.QUARTZ_BLOCK);
 	public static final Block NETHER_BRICK_WALL = new Wall("nether_brick_wall", Blocks.NETHER_BRICK);
 	public static final Block RED_NETHER_BRICK_FENCE = new Fence("red_nether_brick_fence", Material.ROCK, MapColor.NETHERRACK);
     public static final Block RED_NETHER_BRICK_WALL = new Wall("red_nether_brick_wall", Blocks.RED_NETHER_BRICK);
@@ -84,14 +106,31 @@ public class ModBlocks {
 	public static final BlockSlab ANDESITE_SLAB = new Slab("andesite_slab", MapColor.STONE, ModBlocks.ANDESITE_SLAB_DOUBLE);
 	public static final BlockSlab SMOOTH_ANDESITE_SLAB_DOUBLE = new Slab("andesite_slab_smooth_double", MapColor.STONE);
 	public static final BlockSlab SMOOTH_ANDESITE_SLAB = new Slab("andesite_slab_smooth", MapColor.STONE, ModBlocks.SMOOTH_ANDESITE_SLAB_DOUBLE);
+	public static final BlockSlab ANDESITE_BRICKS_SLAB_DOUBLE = new Slab("andesite_bricks_slab_double", MapColor.STONE);
+	public static final BlockSlab ANDESITE_BRICKS_SLAB = new Slab("andesite_bricks_slab", MapColor.STONE, ModBlocks.ANDESITE_BRICKS_SLAB_DOUBLE);
+
 	public static final BlockSlab DIORITE_SLAB_DOUBLE = new Slab("diorite_slab_double", MapColor.QUARTZ);
 	public static final BlockSlab DIORITE_SLAB = new Slab("diorite_slab", MapColor.QUARTZ, ModBlocks.DIORITE_SLAB_DOUBLE);
 	public static final BlockSlab SMOOTH_DIORITE_SLAB_DOUBLE = new Slab("diorite_slab_smooth_double", MapColor.QUARTZ);
 	public static final BlockSlab SMOOTH_DIORITE_SLAB = new Slab("diorite_slab_smooth", MapColor.QUARTZ, ModBlocks.SMOOTH_DIORITE_SLAB_DOUBLE);
+	public static final BlockSlab DIORITE_BRICKS_SLAB_DOUBLE = new Slab("diorite_bricks_slab_double", MapColor.QUARTZ);
+	public static final BlockSlab DIORITE_BRICKS_SLAB = new Slab("diorite_bricks_slab", MapColor.QUARTZ, ModBlocks.DIORITE_BRICKS_SLAB_DOUBLE);
+
 	public static final BlockSlab GRANITE_SLAB_DOUBLE = new Slab("granite_slab_double", MapColor.DIRT);
 	public static final BlockSlab GRANITE_SLAB = new Slab("granite_slab", MapColor.DIRT, ModBlocks.GRANITE_SLAB_DOUBLE);
 	public static final BlockSlab SMOOTH_GRANITE_SLAB_DOUBLE = new Slab("granite_slab_smooth_double", MapColor.DIRT);
 	public static final BlockSlab SMOOTH_GRANITE_SLAB = new Slab("granite_slab_smooth", MapColor.DIRT, ModBlocks.SMOOTH_GRANITE_SLAB_DOUBLE);
+	public static final BlockSlab GRANITE_BRICKS_SLAB_DOUBLE = new Slab("granite_bricks_slab_double", MapColor.DIRT);
+	public static final BlockSlab GRANITE_BRICKS_SLAB = new Slab("granite_bricks_slab", MapColor.DIRT, ModBlocks.GRANITE_BRICKS_SLAB_DOUBLE);
+
+	public static final BlockSlab CUT_SANDSTONE_SLAB_DOUBLE = new Slab("cut_sandstone_slab_double", MapColor.SAND);
+	public static final BlockSlab CUT_SANDSTONE_SLAB = new Slab("cut_sandstone_slab", MapColor.SAND, ModBlocks.CUT_SANDSTONE_SLAB_DOUBLE);
+	public static final BlockSlab CUT_RED_SANDSTONE_SLAB_DOUBLE = new Slab("cut_red_sandstone_slab_double", MapColor.ADOBE);
+	public static final BlockSlab CUT_RED_SANDSTONE_SLAB = new Slab("cut_red_sandstone_slab", MapColor.ADOBE, ModBlocks.CUT_RED_SANDSTONE_SLAB_DOUBLE);
+	public static final BlockSlab SMOOTH_SANDSTONE_SLAB_DOUBLE = new Slab("smooth_sandstone_slab_double", MapColor.SAND);
+	public static final BlockSlab SMOOTH_SANDSTONE_SLAB = new Slab("smooth_sandstone_slab", MapColor.SAND, ModBlocks.SMOOTH_SANDSTONE_SLAB_DOUBLE);
+	public static final BlockSlab SMOOTH_RED_SANDSTONE_SLAB_DOUBLE = new Slab("smooth_red_sandstone_slab_double", MapColor.ADOBE);
+	public static final BlockSlab SMOOTH_RED_SANDSTONE_SLAB = new Slab("smooth_red_sandstone_slab", MapColor.ADOBE, ModBlocks.SMOOTH_RED_SANDSTONE_SLAB_DOUBLE);
 
 	public static final BlockSlab RED_NETHER_BRICK_SLAB_DOUBLE = new Slab("red_nether_brick_slab_double", MapColor.NETHERRACK);
 	public static final BlockSlab RED_NETHER_BRICK_SLAB = new Slab("red_nether_brick_slab", MapColor.NETHERRACK, ModBlocks.RED_NETHER_BRICK_SLAB_DOUBLE);
@@ -114,15 +153,23 @@ public class ModBlocks {
 
 	public static final Block STONE_STAIRS = new Stair("stone_stairs", Blocks.STONE);
 	public static final Block MOSSY_STONE_STAIRS = new Stair("mossy_stone_stairs", Blocks.MOSSY_COBBLESTONE);
-	public static final Block MOSSY_STONE_BRICK_STAIRS = new Stair("mossy_stone_brick_stairs", Blocks.MOSSY_COBBLESTONE);
+	public static final Block MOSSY_STONE_BRICK_STAIRS = new Stair("mossy_stone_brick_stairs", Blocks.STONEBRICK);
 	public static final Block SMOOTH_STONE_STAIRS = new Stair("smooth_stone_stairs", Blocks.STONE);
 
 	public static final Block ANDESITE_STAIRS = new Stair("andesite_stairs", Blocks.STONEBRICK);
 	public static final Block SMOOTH_ANDESITE_STAIRS = new Stair("smooth_andesite_stairs", Blocks.STONEBRICK);
+	public static final Block ANDESITE_BRICKS_STAIRS = new Stair("andesite_bricks_stairs", Blocks.STONEBRICK);
 	public static final Block DIORITE_STAIRS = new Stair("diorite_stairs", Blocks.QUARTZ_BLOCK);
 	public static final Block SMOOTH_DIORITE_STAIRS = new Stair("smooth_diorite_stairs", Blocks.QUARTZ_BLOCK);
+	public static final Block DIORITE_BRICKS_STAIRS = new Stair("diorite_bricks_stairs", Blocks.QUARTZ_BLOCK);
 	public static final Block GRANITE_STAIRS = new Stair("granite_stairs", Blocks.RED_NETHER_BRICK);
 	public static final Block SMOOTH_GRANITE_STAIRS = new Stair("smooth_granite_stairs", Blocks.RED_NETHER_BRICK);
+	public static final Block GRANITE_BRICKS_STAIRS = new Stair("granite_bricks_stairs", Blocks.RED_NETHER_BRICK);
+
+	public static final Block CUT_SANDSTONE_STAIRS = new Stair("cut_sandstone_stairs", Blocks.SANDSTONE);
+	public static final Block CUT_RED_SANDSTONE_STAIRS = new Stair("cut_red_sandstone_stairs", Blocks.RED_SANDSTONE);
+	public static final Block SMOOTH_SANDSTONE_STAIRS = new Stair("smooth_sandstone_stairs", Blocks.SANDSTONE);
+	public static final Block SMOOTH_RED_SANDSTONE_STAIRS = new Stair("smooth_red_sandstone_stairs", Blocks.RED_SANDSTONE);
 
 	public static final Block RED_NETHER_BRICK_STAIRS = new Stair("red_nether_brick_stairs", Blocks.RED_NETHER_BRICK);
 	public static final Block END_STONE_BRICK_STAIRS = new Stair("end_stone_brick_stairs", Blocks.END_BRICKS);
@@ -229,7 +276,11 @@ public class ModBlocks {
 	public static final Block STRIPPED_OAK_WOOD = new Log("stripped_oak_wood");
 	public static final Block STRIPPED_SPRUCE_WOOD = new Log("stripped_spruce_wood");
 
-    //TODO add Colorful Flower Pot and GlowStone
+	public static final Block LILY_OF_THE_VALLEY = new Flower("lily_of_the_valley");
+	public static final Block ROSE = new Flower("rose");
+	public static final Block CORNFLOWER = new Flower("cornflower");
+	public static final Block WITHER_ROSE = new Flower("wither_rose");
+	public static final Block BERRY_BUSH = new BerriesBush("sweet_berry_bush");
 
 	public static void init(){
 		((Slab)STONE_SLAB_DOUBLE).setDropped(ModBlocks.STONE_SLAB);
@@ -237,10 +288,13 @@ public class ModBlocks {
 		((Slab)MOSSY_STONE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.MOSSY_STONE_BRICK_SLAB);
 		((Slab)ANDESITE_SLAB_DOUBLE).setDropped(ModBlocks.ANDESITE_SLAB);
 		((Slab)SMOOTH_ANDESITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_ANDESITE_SLAB);
+		((Slab)ANDESITE_BRICKS_SLAB_DOUBLE).setDropped(ModBlocks.ANDESITE_BRICKS_SLAB);
 		((Slab)DIORITE_SLAB_DOUBLE).setDropped(ModBlocks.DIORITE_SLAB);
 		((Slab)SMOOTH_DIORITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_DIORITE_SLAB);
+		((Slab)DIORITE_BRICKS_SLAB_DOUBLE).setDropped(ModBlocks.DIORITE_BRICKS_SLAB);
 		((Slab)GRANITE_SLAB_DOUBLE).setDropped(ModBlocks.GRANITE_SLAB);
 		((Slab)SMOOTH_GRANITE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_GRANITE_SLAB);
+		((Slab)GRANITE_BRICKS_SLAB_DOUBLE).setDropped(ModBlocks.GRANITE_BRICKS_SLAB);
 		((Slab)RED_NETHER_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.RED_NETHER_BRICK_SLAB);
 		((Slab)END_STONE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.END_STONE_BRICK_SLAB);
 		((Slab)PRISMARINE_SLAB_DOUBLE).setDropped(ModBlocks.PRISMARINE_SLAB);
@@ -249,6 +303,10 @@ public class ModBlocks {
 		((Slab)BLACKSTONE_SLAB_DOUBLE).setDropped(ModBlocks.BLACKSTONE_SLAB);
 		((Slab)POLISHED_BLACKSTONE_SLAB_DOUBLE).setDropped(ModBlocks.POLISHED_BLACKSTONE_SLAB);
 		((Slab)BLACKSTONE_BRICK_SLAB_DOUBLE).setDropped(ModBlocks.BLACKSTONE_BRICK_SLAB);
+		((Slab)CUT_SANDSTONE_SLAB_DOUBLE).setDropped(ModBlocks.CUT_SANDSTONE_SLAB);
+		((Slab)CUT_RED_SANDSTONE_SLAB_DOUBLE).setDropped(ModBlocks.CUT_RED_SANDSTONE_SLAB);
+		((Slab)SMOOTH_SANDSTONE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_SANDSTONE_SLAB);
+		((Slab)SMOOTH_RED_SANDSTONE_SLAB_DOUBLE).setDropped(ModBlocks.SMOOTH_RED_SANDSTONE_SLAB);
 
 		((StandingSign)ACACIA_SIGN_STANDING).setItemSign(ModItems.ACACIA_SIGN);
 		((StandingSign)BIRCH_SIGN_STANDING).setItemSign(ModItems.BIRCH_SIGN);

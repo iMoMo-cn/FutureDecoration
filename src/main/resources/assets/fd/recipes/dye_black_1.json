@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fd:wither_rose"
+    }
+  ],
+  "result": {
+    "item": "fd:dye_blue",
+    "count": 1
+  }
+}

@@ -1,5 +1,29 @@
 {
-    "variants": {
-        "normal": { "model": "fd:composter" }
-    }
+    "multipart": [
+        {   "apply": { "model": "fd:composter" }},
+        {   "when": { "level": "1" },
+            "apply": { "model": "fd:composter_1" }
+        },
+        {   "when": { "level": "2" },
+            "apply": { "model": "fd:composter_2" }
+        },
+        {   "when": { "level": "3" },
+            "apply": { "model": "fd:composter_3" }
+        },
+        {   "when": { "level": "4" },
+            "apply": { "model": "fd:composter_4" }
+        },
+        {   "when": { "level": "5" },
+            "apply": { "model": "fd:composter_5" }
+        },
+        {   "when": { "level": "6" },
+            "apply": { "model": "fd:composter_6" }
+        },
+        {   "when": { "level": "7" },
+            "apply": { "model": "fd:composter_7" }
+        },
+        {   "when": { "level": "8" },
+            "apply": { "model": "fd:composter_8" }
+        }
+    ]
 }

@@ -28,6 +28,16 @@ public class ModSoundHandler {
 
     public static SoundEvent STRIP_WOOD = new ModSoundEvent("item.axe.strip");
 
+    public static SoundEvent BLOCK_BERRY_BREAK = new ModSoundEvent("block.sweet_berry_bush.break");
+    public static SoundEvent BLOCK_BERRY_PLACE = new ModSoundEvent("block.sweet_berry_bush.place");
+
+    public static SoundEvent PICK_BERRIES = new ModSoundEvent("item.sweet_berries.pick_from_bush");
+
+    public static SoundEvent BLOCK_COMPOSTER_EMPTY = new ModSoundEvent("block.composter.empty");
+    public static SoundEvent BLOCK_COMPOSTER_FILL = new ModSoundEvent("block.composter.fill");
+    public static SoundEvent BLOCK_COMPOSTER_FILL_SUCCESS = new ModSoundEvent("block.composter.fill_success");
+    public static SoundEvent BLOCK_COMPOSTER_REDAY = new ModSoundEvent("block.composter.ready");
+
     public static void soundRegister()
     {
         MoMoFramework.Log("Registering %s sounds.", SOUNDS.size());

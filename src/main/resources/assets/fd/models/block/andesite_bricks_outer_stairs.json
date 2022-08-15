@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "fd:blocks/andesite_bricks",
+    "top": "fd:blocks/andesite_bricks",
+    "side": "fd:blocks/andesite_bricks"
+  }
+}

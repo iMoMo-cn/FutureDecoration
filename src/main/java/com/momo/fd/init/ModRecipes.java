@@ -4,6 +4,7 @@ import com.google.common.collect.Sets;
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.util.Reference;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -31,11 +32,13 @@ public class ModRecipes {
 	public static void init() {
 		//Only smelting recipes
 		//GameRegistry.addSmelting(ModItems.XXXX, new ItemStack(ModItems.XXXX), 0.3f);
-		GameRegistry.addSmelting(Blocks.STONE, new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.STONE, 1, 0), new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);
 		GameRegistry.addSmelting(Blocks.GLASS, new ItemStack(ModBlocks.CLEAR_GLASS), 0.3f);
 		GameRegistry.addSmelting(ModBlocks.BLACKSTONE_BRICK, new ItemStack(ModBlocks.CRACKED_BLACKSTONE_BRICK), 0.3f);
 		GameRegistry.addSmelting(Blocks.NETHER_BRICK, new ItemStack(ModBlocks.CRACKED_NETHER_BRICK), 0.3f);
 		GameRegistry.addSmelting(Blocks.RED_NETHER_BRICK, new ItemStack(ModBlocks.CRACKED_RED_NETHER_BRICK), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.SANDSTONE, 1, 0), new ItemStack(ModBlocks.SMOOTH_SANDSTONE), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.RED_SANDSTONE, 1, 0), new ItemStack(ModBlocks.SMOOTH_RED_SANDSTONE), 0.3f);
 	}
 
 
@@ -59,6 +62,10 @@ public class ModRecipes {
 		removeRecipe(new ItemStack(Blocks.STONE_SLAB, 6, 5));
 		removeRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1));
 		removeRecipe(new ItemStack(Items.SIGN, 3));
+		removeRecipe(new ItemStack(Blocks.STONE_SLAB, 6, 1));
+		removeRecipe(new ItemStack(Blocks.STONE_SLAB2, 6, 0));
+		removeRecipe(new ItemStack(Blocks.SANDSTONE_STAIRS, 4));
+		removeRecipe(new ItemStack(Blocks.RED_SANDSTONE_STAIRS, 4));
 
 		recipes.forEach(rl -> {
 			if(!rl.getResourceDomain().equals(MoMoFramework.MODID)) {

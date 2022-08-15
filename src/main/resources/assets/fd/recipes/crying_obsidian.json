@@ -1,18 +1,18 @@
 {
   "type": "forge:ore_shaped",
   "pattern": [
-    " A ",
     "ABA",
-    " A "
+    "BAB",
+    "ABA"
   ],
   "key": {
     "A": {
-      "item": "minecraft:chorus_fruit"
+      "item": "minecraft:ghast_tear"
     },
     "B": { "type": "forge:ore_dict", "ore": "obsidian" }
   },
   "result": {
     "item": "fd:crying_obsidian",
-    "count": 1
+    "count": 4
   }
 }
