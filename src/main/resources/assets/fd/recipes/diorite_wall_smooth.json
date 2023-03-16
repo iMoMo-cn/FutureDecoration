@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:diorite_wall_smooth",
+    "item": "fd:stonebrick_wall",
+    "data": 5,
     "count": 6
   }
 }

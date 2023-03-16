@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:mossy_stone_brick_wall",
+    "item": "fd:stonebrick_wall",
+    "data": 2,
     "count": 6
   }
 }

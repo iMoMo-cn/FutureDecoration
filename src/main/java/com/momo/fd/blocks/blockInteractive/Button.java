@@ -5,7 +5,6 @@ import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.BlockButton;
-import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;

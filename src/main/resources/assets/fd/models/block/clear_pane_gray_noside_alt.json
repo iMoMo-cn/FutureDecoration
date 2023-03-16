@@ -1,6 +1,7 @@
 {
   "parent": "block/pane_noside_alt",
   "textures": {
+    "particle": "fd:blocks/clear_glass_gray",
     "edge": "fd:blocks/clear_pane_gray_top",
     "pane": "fd:blocks/clear_glass_gray"
   }

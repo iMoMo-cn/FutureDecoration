@@ -13,7 +13,8 @@
     ]
   },
   "result": {
-    "item": "fd:andesite_bricks",
+    "item": "fd:rock_block",
+    "data": 3,
     "count": 4
   }
 }

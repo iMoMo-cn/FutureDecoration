@@ -6,11 +6,13 @@
   ],
   "key": {
     "#": {
-      "item": "diorite_bricks"
+      "item": "fd:rock_block",
+      "data": 4
     }
   },
   "result": {
-    "item": "fd:diorite_bricks_wall",
+    "item": "fd:stonebrick_wall",
+    "data": 8,
     "count": 6
   }
 }

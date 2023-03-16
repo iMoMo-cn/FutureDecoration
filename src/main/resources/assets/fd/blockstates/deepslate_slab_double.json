@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:deepslate" },
+    "half=top,variant=default": { "model": "fd:deepslate" }
+  }
+}

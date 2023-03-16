@@ -1,6 +1,7 @@
 {
   "parent": "block/pane_post",
   "textures": {
+    "particle": "fd:blocks/clear_glass_lime",
     "edge": "fd:blocks/clear_pane_lime_top",
     "pane": "fd:blocks/clear_glass_lime"
   }

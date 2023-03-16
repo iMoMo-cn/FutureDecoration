@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:cut_sandstone_wall",
+    "item": "fd:sandstone_wall",
+    "data": 4,
     "count": 6
   }
 }

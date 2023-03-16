@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:deepslate_tiles" },
+    "half=top,variant=default": { "model": "fd:deepslate_tiles" }
+  }
+}

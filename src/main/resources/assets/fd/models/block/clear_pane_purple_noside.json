@@ -1,6 +1,7 @@
 {
   "parent": "block/pane_noside",
   "textures": {
+    "particle": "fd:blocks/clear_glass_purple",
     "edge": "fd:blocks/clear_pane_purple_top",
     "pane": "fd:blocks/clear_glass_purple"
   }

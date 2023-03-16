@@ -5,7 +5,8 @@
   ],
   "key": {
     "#": {
-      "item": "fd:smooth_red_sandstone"
+      "item": "fd:sandstone",
+      "data": 1
     }
   },
   "result": {

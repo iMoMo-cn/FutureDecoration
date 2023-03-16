@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:chiseled_nether_bricks",
+    "item": "fd:nether_block",
+    "data": 6,
     "count": 1
   }
 }

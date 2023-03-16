@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:blackstone" },
+    "variant=1": { "model": "fd:gilded_blackstone" },
+    "variant=2": { "model": "fd:polished_blackstone" },
+    "variant=3": { "model": "fd:polished_blackstone_bricks" },
+    "variant=4": { "model": "fd:cracked_polished_blackstone_bricks" },
+    "variant=5": { "model": "fd:chiseled_polished_blackstone" },
+    "variant=6": { "model": "fd:chiseled_nether_bricks" },
+    "variant=7": { "model": "fd:cracked_nether_bricks" },
+    "variant=8": { "model": "fd:chiseled_red_nether_bricks" },
+    "variant=9": { "model": "fd:cracked_red_nether_bricks" },
+    "variant=10": { "model": "fd:nether_gold_ore" },
+    "variant=11": { "model": "fd:quartz_bricks" },
+    "variant=12": { "model": "fd:blackstone" },
+    "variant=13": { "model": "fd:blackstone" },
+    "variant=14": { "model": "fd:blackstone" },
+    "variant=15": { "model": "fd:blackstone" }
+  }
+}

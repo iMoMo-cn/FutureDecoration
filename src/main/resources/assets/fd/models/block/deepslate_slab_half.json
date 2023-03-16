@@ -1,0 +1,8 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "fd:blocks/deepslate",
+    "top": "fd:blocks/deepslate",
+    "side": "fd:blocks/deepslate"
+  }
+}

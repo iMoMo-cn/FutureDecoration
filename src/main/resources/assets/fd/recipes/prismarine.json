@@ -1,18 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
-    "###",
-    "#X#",
-    "###"
+    "AAA",
+    "ABA",
+    "AAA"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cobblestone"
-    },
-    "X": {
-      "item": "minecraft:dye",
-      "data": 4
-    }
+    "A": { "type": "forge:ore_dict", "ore": "cobblestone" },
+    "B": { "type": "forge:ore_dict", "ore": "gemLapis" }
   },
   "result": {
     "item": "minecraft:prismarine",

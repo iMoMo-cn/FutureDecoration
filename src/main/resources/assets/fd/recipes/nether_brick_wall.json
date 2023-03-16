@@ -10,7 +10,8 @@
     }
   },
   "result": {
-    "item": "fd:nether_brick_wall",
+    "item": "fd:nether_wall",
+    "data": 3,
     "count": 6
   }
 }

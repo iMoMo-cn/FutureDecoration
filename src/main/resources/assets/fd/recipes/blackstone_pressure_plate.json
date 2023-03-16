@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "fd:nether_block",
+        "data": 2
+      }
+    ]
+  },
+  "result": {
+    "item": "fd:blackstone_pressure_plate",
+    "count": 1
+  }
+}

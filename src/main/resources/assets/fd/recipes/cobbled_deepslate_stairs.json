@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:deepslate_rock",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fd:cobbled_deepslate_stairs",
+    "count": 4
+  }
+}

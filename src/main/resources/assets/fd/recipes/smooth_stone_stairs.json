@@ -7,7 +7,8 @@
   ],
   "key": {
     "#": {
-      "item": "fd:smooth_stone"
+      "item": "fd:rock_block",
+      "data": 0
     }
   },
   "result": {

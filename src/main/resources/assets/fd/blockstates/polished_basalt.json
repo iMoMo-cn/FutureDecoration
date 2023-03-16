@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y":  { "model": "fd:polished_basalt" },
+    "axis=z":   { "model": "fd:polished_basalt", "x": 90 },
+    "axis=x":   { "model": "fd:polished_basalt", "x": 90, "y": 90 },
+    "axis=none": { "model": "fd:polished_basalt" }
+  }
+}

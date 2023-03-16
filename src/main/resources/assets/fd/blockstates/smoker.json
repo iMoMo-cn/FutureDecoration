@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "burning=false,facing=north": { "model": "fd:smoker" },
+        "burning=false,facing=south": { "model": "fd:smoker", "y": 180 },
+        "burning=false,facing=west":  { "model": "fd:smoker", "y": 270 },
+        "burning=false,facing=east":  { "model": "fd:smoker", "y": 90 },
+        "burning=true,facing=north": { "model": "fd:lit_smoker" },
+        "burning=true,facing=south": { "model": "fd:lit_smoker", "y": 180 },
+        "burning=true,facing=west":  { "model": "fd:lit_smoker", "y": 270 },
+        "burning=true,facing=east":  { "model": "fd:lit_smoker", "y": 90 }
+    }
+}

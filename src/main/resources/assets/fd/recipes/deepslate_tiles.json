@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": {
+      "item": "fd:deepslate_rock",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "fd:deepslate_rock",
+    "data": 3,
+    "count": 4
+  }
+}

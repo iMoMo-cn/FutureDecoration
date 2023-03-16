@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:deepslate_rock",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "fd:deepslate_bricks_slab",
+    "data": 0,
+    "count": 6
+  }
+}

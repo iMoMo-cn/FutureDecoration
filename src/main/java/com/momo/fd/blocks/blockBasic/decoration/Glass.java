@@ -1,7 +1,7 @@
 package com.momo.fd.blocks.blockBasic.decoration;
 
+
 import com.momo.fd.MoMoFramework;
-import com.momo.fd.blocks.BlockBase;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
@@ -21,7 +21,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class Glass extends BlockGlass implements IHasModel {
+public class Glass extends BlockGlass implements IHasModel
+{
+
     public Glass(String name) {
         super(Material.GRASS, false);
 
@@ -34,6 +36,7 @@ public class Glass extends BlockGlass implements IHasModel {
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
     }
 
     @Override
@@ -67,4 +70,6 @@ public class Glass extends BlockGlass implements IHasModel {
 
         return super.shouldSideBeRendered(blockState, blockAccess, pos, side);
     }
+
+
 }

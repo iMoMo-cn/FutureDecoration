@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:andesite_wall_smooth",
+    "item": "fd:stonebrick_wall",
+    "data": 4,
     "count": 6
   }
 }

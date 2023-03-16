@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:ice"
+      }
+    ],
+    "A": [
+      {
+        "item": "minecraft:lava_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "fd:basalt",
+    "count": 8
+  }
+}

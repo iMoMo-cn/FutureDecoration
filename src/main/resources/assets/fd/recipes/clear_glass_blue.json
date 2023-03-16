@@ -14,7 +14,8 @@
     }
   },
   "result": {
-    "item": "fd:clear_glass_blue",
+    "item": "fd:stained_clear_glass",
+    "data": 1,
     "count": 8
   }
 }

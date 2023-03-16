@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:chiseled_polished_blackstone",
+    "item": "fd:nether_block",
+    "data": 5,
     "count": 1
   }
 }

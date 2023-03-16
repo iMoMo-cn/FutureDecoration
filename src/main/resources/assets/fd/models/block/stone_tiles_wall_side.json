@@ -1,0 +1,6 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "fd:blocks/stone_tiles"
+  }
+}

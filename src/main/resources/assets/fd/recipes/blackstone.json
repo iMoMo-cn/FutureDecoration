@@ -7,12 +7,14 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:cobblestone"
+      "item": "minecraft:stone",
+      "data": 0
     },
     "B": { "type": "forge:ore_dict", "ore": "coal" }
   },
   "result": {
-    "item": "fd:blackstone",
+    "item": "fd:nether_block",
+    "data": 0,
     "count": 8
   }
 }

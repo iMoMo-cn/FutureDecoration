@@ -1,19 +1,95 @@
 {
   "multipart": [
-    {   "when": { "up": "true" },
+    {   "when": { "up": "true", "variant": "0" },
       "apply": { "model": "fd:sandstone_wall_post" }
     },
-    {   "when": { "north": "true" },
+    {   "when": { "north": "true", "variant": "0" },
       "apply": { "model": "fd:sandstone_wall_side", "uvlock": true }
     },
-    {   "when": { "east": "true" },
+    {   "when": { "east": "true", "variant": "0" },
       "apply": { "model": "fd:sandstone_wall_side", "y": 90, "uvlock": true }
     },
-    {   "when": { "south": "true" },
+    {   "when": { "south": "true", "variant": "0" },
       "apply": { "model": "fd:sandstone_wall_side", "y": 180, "uvlock": true }
     },
-    {   "when": { "west": "true" },
+    {   "when": { "west": "true", "variant": "0" },
       "apply": { "model": "fd:sandstone_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "1" },
+      "apply": { "model": "fd:red_sandstone_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "1" },
+      "apply": { "model": "fd:red_sandstone_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "1" },
+      "apply": { "model": "fd:red_sandstone_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "1" },
+      "apply": { "model": "fd:red_sandstone_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "1" },
+      "apply": { "model": "fd:red_sandstone_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "2" },
+      "apply": { "model": "fd:smooth_sandstone_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "2" },
+      "apply": { "model": "fd:smooth_sandstone_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "2" },
+      "apply": { "model": "fd:smooth_sandstone_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "2" },
+      "apply": { "model": "fd:smooth_sandstone_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "2" },
+      "apply": { "model": "fd:smooth_sandstone_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "3" },
+      "apply": { "model": "fd:smooth_red_sandstone_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "3" },
+      "apply": { "model": "fd:smooth_red_sandstone_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "3" },
+      "apply": { "model": "fd:smooth_red_sandstone_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "3" },
+      "apply": { "model": "fd:smooth_red_sandstone_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "3" },
+      "apply": { "model": "fd:smooth_red_sandstone_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "4" },
+      "apply": { "model": "fd:cut_sandstone_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "4" },
+      "apply": { "model": "fd:cut_sandstone_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "4" },
+      "apply": { "model": "fd:cut_sandstone_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "4" },
+      "apply": { "model": "fd:cut_sandstone_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "4" },
+      "apply": { "model": "fd:cut_sandstone_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "5" },
+      "apply": { "model": "fd:cut_red_sandstone_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "5" },
+      "apply": { "model": "fd:cut_red_sandstone_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "5" },
+      "apply": { "model": "fd:cut_red_sandstone_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "5" },
+      "apply": { "model": "fd:cut_red_sandstone_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "5" },
+      "apply": { "model": "fd:cut_red_sandstone_wall_side", "y": 270, "uvlock": true }
     }
+
   ]
 }

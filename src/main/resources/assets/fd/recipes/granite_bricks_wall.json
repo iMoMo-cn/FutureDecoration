@@ -6,11 +6,13 @@
   ],
   "key": {
     "#": {
-      "item": "granite_bricks"
+      "item": "fd:rock_block",
+      "data": 5
     }
   },
   "result": {
-    "item": "fd:granite_bricks_wall",
+    "item": "fd:stonebrick_wall",
+    "data": 9,
     "count": 6
   }
 }

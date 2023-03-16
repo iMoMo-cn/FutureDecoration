@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:granite_wall_smooth",
+    "item": "fd:stonebrick_wall",
+    "data": 6,
     "count": 6
   }
 }

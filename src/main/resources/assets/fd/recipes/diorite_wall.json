@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:diorite_wall",
+    "item": "fd:stone_wall",
+    "data": 2,
     "count": 6
   }
 }

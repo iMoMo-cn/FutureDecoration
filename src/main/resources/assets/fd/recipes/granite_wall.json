@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:granite_wall",
+    "item": "fd:stone_wall",
+    "data": 3,
     "count": 6
   }
 }

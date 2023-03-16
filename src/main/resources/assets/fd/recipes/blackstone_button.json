@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fd:nether_block",
+      "data": 2
+    }
+  ],
+  "result": {
+    "item": "fd:blackstone_button",
+    "count": 1
+  }
+}

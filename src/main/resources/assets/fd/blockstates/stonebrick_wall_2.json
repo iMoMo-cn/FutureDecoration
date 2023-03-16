@@ -1,0 +1,79 @@
+{
+  "multipart": [
+    {   "when": { "up": "true", "variant": "0" },
+      "apply": { "model": "fd:prismarine_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "0" },
+      "apply": { "model": "fd:prismarine_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "0" },
+      "apply": { "model": "fd:prismarine_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "0" },
+      "apply": { "model": "fd:prismarine_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "0" },
+      "apply": { "model": "fd:prismarine_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "1" },
+      "apply": { "model": "fd:prismarine_dark_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "1" },
+      "apply": { "model": "fd:prismarine_dark_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "1" },
+      "apply": { "model": "fd:prismarine_dark_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "1" },
+      "apply": { "model": "fd:prismarine_dark_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "1" },
+      "apply": { "model": "fd:prismarine_dark_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "2" },
+      "apply": { "model": "fd:prismarine_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "2" },
+      "apply": { "model": "fd:prismarine_brick_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "2" },
+      "apply": { "model": "fd:prismarine_brick_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "2" },
+      "apply": { "model": "fd:prismarine_brick_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "2" },
+      "apply": { "model": "fd:prismarine_brick_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "3" },
+      "apply": { "model": "fd:end_stone_brick_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "3" },
+      "apply": { "model": "fd:end_stone_brick_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "3" },
+      "apply": { "model": "fd:end_stone_brick_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "3" },
+      "apply": { "model": "fd:end_stone_brick_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "3" },
+      "apply": { "model": "fd:end_stone_brick_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "4" },
+      "apply": { "model": "fd:purpur_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "4" },
+      "apply": { "model": "fd:purpur_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "4" },
+      "apply": { "model": "fd:purpur_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "4" },
+      "apply": { "model": "fd:purpur_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "4" },
+      "apply": { "model": "fd:purpur_wall_side", "y": 270, "uvlock": true }
+    }
+  ]
+}

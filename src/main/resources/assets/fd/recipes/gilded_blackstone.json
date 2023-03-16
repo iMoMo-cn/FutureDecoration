@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict", "ore": "ingotGold" },
+    {
+      "item": "fd:nether_block",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "fd:nether_block",
+    "data": 1,
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:rock_block",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "fd:stone_tiles_slab",
+    "data": 0,
+    "count": 6
+  }
+}

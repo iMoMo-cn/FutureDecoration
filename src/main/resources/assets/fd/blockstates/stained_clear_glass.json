@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:clear_glass_black" },
+    "variant=1": { "model": "fd:clear_glass_blue" },
+    "variant=2": { "model": "fd:clear_glass_brown" },
+    "variant=3": { "model": "fd:clear_glass_cyan" },
+    "variant=4": { "model": "fd:clear_glass_gray" },
+    "variant=5": { "model": "fd:clear_glass_green" },
+    "variant=6": { "model": "fd:clear_glass_light_blue" },
+    "variant=7": { "model": "fd:clear_glass_lime" },
+    "variant=8": { "model": "fd:clear_glass_magenta" },
+    "variant=9": { "model": "fd:clear_glass_orange" },
+    "variant=10": { "model": "fd:clear_glass_pink" },
+    "variant=11": { "model": "fd:clear_glass_purple" },
+    "variant=12": { "model": "fd:clear_glass_red" },
+    "variant=13": { "model": "fd:clear_glass_silver" },
+    "variant=14": { "model": "fd:clear_glass_white" },
+    "variant=15": { "model": "fd:clear_glass_yellow" }
+  }
+}

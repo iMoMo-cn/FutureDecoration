@@ -12,7 +12,8 @@
     "B": { "type": "forge:ore_dict", "ore": "dyeGreen" }
   },
   "result": {
-    "item": "fd:clear_glass_green",
+    "item": "fd:stained_clear_glass",
+    "data": 5,
     "count": 8
   }
 }

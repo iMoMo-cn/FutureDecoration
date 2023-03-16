@@ -32,13 +32,19 @@ public class ModRecipes {
 	public static void init() {
 		//Only smelting recipes
 		//GameRegistry.addSmelting(ModItems.XXXX, new ItemStack(ModItems.XXXX), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(Blocks.STONE, 1, 0), new ItemStack(ModBlocks.SMOOTH_STONE), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.STONE, 1, 0), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 0), 0.3f);
 		GameRegistry.addSmelting(Blocks.GLASS, new ItemStack(ModBlocks.CLEAR_GLASS), 0.3f);
-		GameRegistry.addSmelting(ModBlocks.BLACKSTONE_BRICK, new ItemStack(ModBlocks.CRACKED_BLACKSTONE_BRICK), 0.3f);
-		GameRegistry.addSmelting(Blocks.NETHER_BRICK, new ItemStack(ModBlocks.CRACKED_NETHER_BRICK), 0.3f);
-		GameRegistry.addSmelting(Blocks.RED_NETHER_BRICK, new ItemStack(ModBlocks.CRACKED_RED_NETHER_BRICK), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(Blocks.SANDSTONE, 1, 0), new ItemStack(ModBlocks.SMOOTH_SANDSTONE), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(Blocks.RED_SANDSTONE, 1, 0), new ItemStack(ModBlocks.SMOOTH_RED_SANDSTONE), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_BLOCK, 1, 3), new ItemStack(ModBlocks.NETHER_BLOCK, 1, 4), 0.3f);
+		GameRegistry.addSmelting(Blocks.NETHER_BRICK, new ItemStack(ModBlocks.NETHER_BLOCK, 1, 7), 0.3f);
+		GameRegistry.addSmelting(Blocks.RED_NETHER_BRICK, new ItemStack(ModBlocks.NETHER_BLOCK, 1, 9), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.SANDSTONE, 1, 0), new ItemStack(ModBlocks.SANDSTONE, 1, 0), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.RED_SANDSTONE, 1, 0), new ItemStack(ModBlocks.SANDSTONE, 1, 1), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_BLOCK, 1, 10), new ItemStack(Items.GOLD_INGOT, 1), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ROCK_BLOCK, 1, 1), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 2), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 0), new ItemStack(ModBlocks.DEEPSLATE), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 2), new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 5), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 3), new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 6), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.BASALT), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 7), 0.3f);
 	}
 
 
@@ -66,6 +72,7 @@ public class ModRecipes {
 		removeRecipe(new ItemStack(Blocks.STONE_SLAB2, 6, 0));
 		removeRecipe(new ItemStack(Blocks.SANDSTONE_STAIRS, 4));
 		removeRecipe(new ItemStack(Blocks.RED_SANDSTONE_STAIRS, 4));
+		removeRecipe(new ItemStack(Blocks.STONE_BRICK_STAIRS, 4));
 
 		recipes.forEach(rl -> {
 			if(!rl.getResourceDomain().equals(MoMoFramework.MODID)) {

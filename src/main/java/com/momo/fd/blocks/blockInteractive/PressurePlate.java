@@ -11,10 +11,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
 public class PressurePlate extends BlockPressurePlate implements IHasModel {
-    private static Sensitivity sensitivity = BlockPressurePlate.Sensitivity.EVERYTHING;
 
-    public PressurePlate(String name, Material materialIn) {
-        super(materialIn, sensitivity);
+    public PressurePlate(String name, Material materialIn, BlockPressurePlate.Sensitivity sensitivityIn) {
+        super(materialIn, sensitivityIn);
 
         this.setRegistryName(name);
         this.setUnlocalizedName(name);

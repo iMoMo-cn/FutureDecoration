@@ -1,0 +1,19 @@
+{
+  "parent": "block/cube",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [ 0, 135, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.40, 0.40, 0.40 ]
+    }
+  },
+  "textures": {
+    "particle": "fd:blocks/smoker_front",
+    "down": "fd:blocks/smoker_bottom",
+    "up": "fd:blocks/smoker_top",
+    "north": "fd:blocks/smoker_front",
+    "east": "fd:blocks/smoker_side",
+    "south": "fd:blocks/smoker_side",
+    "west": "fd:blocks/smoker_side"
+  }
+}

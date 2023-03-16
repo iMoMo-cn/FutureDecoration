@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:deepslate_bricks" },
+    "half=top,variant=default": { "model": "fd:deepslate_bricks" }
+  }
+}

@@ -127,17 +127,6 @@ public class Barrel extends BlockContainer implements IHasModel {
         return true;
     }
 
-
-//    public boolean hasComparatorInputOverride(IBlockState state)
-//    {
-//        return true;
-//    }
-//
-//    public int getComparatorInputOverride(IBlockState blockState, World worldIn, BlockPos pos)
-//    {
-//        return Container.calcRedstoneFromInventory((IInventory)worldIn.getTileEntity(pos));
-//    }
-
     /**
      * Returns the blockstate with the given rotation from the passed blockstate. If inapplicable, returns the passed
      * blockstate.

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:smooth_sandstone" },
+    "variant=1": { "model": "fd:smooth_red_sandstone" },
+    "variant=2": { "model": "fd:smooth_red_sandstone" },
+    "variant=3": { "model": "fd:smooth_red_sandstone" },
+    "variant=4": { "model": "fd:smooth_red_sandstone" },
+    "variant=5": { "model": "fd:smooth_red_sandstone" },
+    "variant=6": { "model": "fd:smooth_red_sandstone" },
+    "variant=7": { "model": "fd:smooth_red_sandstone" },
+    "variant=8": { "model": "fd:smooth_red_sandstone" },
+    "variant=9": { "model": "fd:smooth_red_sandstone" },
+    "variant=10": { "model": "fd:smooth_red_sandstone" },
+    "variant=11": { "model": "fd:smooth_red_sandstone" },
+    "variant=12": { "model": "fd:smooth_red_sandstone" },
+    "variant=13": { "model": "fd:smooth_red_sandstone" },
+    "variant=14": { "model": "fd:smooth_red_sandstone" },
+    "variant=15": { "model": "fd:smooth_red_sandstone" }
+  }
+}

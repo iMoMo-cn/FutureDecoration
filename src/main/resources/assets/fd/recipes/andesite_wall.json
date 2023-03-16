@@ -11,7 +11,8 @@
     }
   },
   "result": {
-    "item": "fd:andesite_wall",
+    "item": "fd:stone_wall",
+    "data": 1,
     "count": 6
   }
 }

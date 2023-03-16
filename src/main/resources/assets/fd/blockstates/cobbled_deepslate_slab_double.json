@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:cobbled_deepslate" },
+    "half=top,variant=default": { "model": "fd:cobbled_deepslate" }
+  }
+}

@@ -7,6 +7,11 @@
 #item.item_name_meta.name=item name
 
 item.red_netherbrick.name=Red Nether Brick
+item.dye_white.name=White Dye
+item.dye_blue.name=Blue Dye
+item.dye_black.name=Black Dye
+item.dye_brown.name=Brown Dye
+item.sweet_berries.name=Sweet Berries
 
 #entity
 #entity.entity_name.name=block name
@@ -14,6 +19,202 @@ item.red_netherbrick.name=Red Nether Brick
 
 #block
 #tile.block_name.name=block name
+tile.charcoal_block.name=Block of Charcoal
+tile.crying_obsidian.name=Crying Obsidian
+
+tile.rock_block_0.name=Smooth Stone
+tile.rock_block_1.name=Stone Tiles
+tile.rock_block_2.name=Cracked Stone Tiles
+tile.rock_block_3.name=Andesite Bricks
+tile.rock_block_4.name=Diorite Bricks
+tile.rock_block_5.name=Granite Bricks
+tile.rock_block_6.name=Calcite
+tile.rock_block_7.name=Smooth Basalt
+
+tile.basalt.name=Basalt
+tile.polished_basalt.name=Polished Basalt
+
+tile.deepslate_rock_0.name=Cobbled Deepslate
+tile.deepslate_rock_1.name=Polished Deepslate
+tile.deepslate_rock_2.name=Deepslate Bricks
+tile.deepslate_rock_3.name=Deepslate Tiles
+tile.deepslate_rock_4.name=Chiseled Deepslate
+tile.deepslate_rock_5.name=Cracked Deepslate Bricks
+tile.deepslate_rock_6.name=Cracked Deepslate Tiles
+
+tile.deepslate.name=DeepSlate
+
+tile.sandstone_0.name=Smooth Sandstone
+tile.sandstone_1.name=Smooth Red Sandstone
+
+tile.nether_block_0.name=Blackstone
+tile.nether_block_1.name=Gilded Blackstone
+tile.nether_block_2.name=Polished Blackstone
+tile.nether_block_3.name=Polished Blackstone Bricks
+tile.nether_block_4.name=Cracked Polished Blackstone Bricks
+tile.nether_block_5.name=Chiesled Polished Blackstone
+tile.nether_block_6.name=Chiseled Nether Bricks
+tile.nether_block_7.name=Cracked Nether Bricks
+tile.nether_block_8.name=Red Chiseled Nether Bricks
+tile.nether_block_9.name=Red Cracked Nether Bricks
+tile.nether_block_10.name=Nether Gold Ore
+tile.nether_block_11.name=Quartz Bricks
+
+tile.clear_glass.name=Clear Glass
+tile.stained_clear_glass_0.name=Clear Black Stained Glass
+tile.stained_clear_glass_1.name=Clear Blue Stained Glass
+tile.stained_clear_glass_2.name=Clear Brown Stained Glass
+tile.stained_clear_glass_3.name=Clear Cyan Stained Glass
+tile.stained_clear_glass_4.name=Clear Gray Stained Glass
+tile.stained_clear_glass_5.name=Clear Green Stained Glass
+tile.stained_clear_glass_6.name=Clear Ligtht Blue Stained Glass
+tile.stained_clear_glass_7.name=Clear Lime Stained Glass
+tile.stained_clear_glass_8.name=Clear Magenta Stained Glass
+tile.stained_clear_glass_9.name=Clear Orange Stained Glass
+tile.stained_clear_glass_10.name=Clear Pink Stained Glass
+tile.stained_clear_glass_11.name=Clear Purple Stained Glass
+tile.stained_clear_glass_12.name=Clear Red Stained Glass
+tile.stained_clear_glass_13.name=Clear Silver Stained Glass
+tile.stained_clear_glass_14.name=Clear White Stained Glass
+tile.stained_clear_glass_15.name=Clear Yellow Stained Glass
+
+tile.clear_pane.name=Clear Glass Pane
+tile.stained_clear_pane_0.name=Clear Black Stained Glass Pane
+tile.stained_clear_pane_1.name=Clear Blue Stained Glass Pane
+tile.stained_clear_pane_2.name=Clear Brown Stained Glass Pane
+tile.stained_clear_pane_3.name=Clear Cyan Stained Glass Pane
+tile.stained_clear_pane_4.name=Clear Gray Stained Glass Pane
+tile.stained_clear_pane_5.name=Clear Green Stained Glass Pane
+tile.stained_clear_pane_6.name=Clear Ligtht Blue Stained Glass Pane
+tile.stained_clear_pane_7.name=Clear Lime Stained Glass Pane
+tile.stained_clear_pane_8.name=Clear Magenta Stained Glass Pane
+tile.stained_clear_pane_9.name=Clear Orange Stained Glass Pane
+tile.stained_clear_pane_10.name=Clear Pink Stained Glass Pane
+tile.stained_clear_pane_11.name=Clear Purple Stained Glass Pane
+tile.stained_clear_pane_12.name=Clear Red Stained Glass Pane
+tile.stained_clear_pane_13.name=Clear Silver Stained Glass Pane
+tile.stained_clear_pane_14.name=Clear White Stained Glass Pane
+tile.stained_clear_pane_15.name=Clear Yellow Stained Glass Pane
+
+tile.stone_wall_0.name=Stone Wall
+tile.stone_wall_1.name=Andesite Wall
+tile.stone_wall_2.name=Diorite Wall
+tile.stone_wall_3.name=Granite Wall
+tile.stone_wall_4.name=Deepslate Wall
+tile.stone_wall_5.name=Cobbled Deepslate Wall
+
+tile.stonebrick_wall_0.name=Smooth Stone Wall
+tile.stonebrick_wall_1.name=Stone Brick Wall
+tile.stonebrick_wall_2.name=Mossy Stone Bricks Wall
+tile.stonebrick_wall_3.name=Stone Tiles Wall
+tile.stonebrick_wall_4.name=Smooth Andesite Wall
+tile.stonebrick_wall_5.name=Smooth Diorite Wall
+tile.stonebrick_wall_6.name=Smooth Granite Wall
+tile.stonebrick_wall_7.name=Andesite Bricks Wall
+tile.stonebrick_wall_8.name=Diorite Bricks Wall
+tile.stonebrick_wall_9.name=Granite Bricks Wall
+tile.stonebrick_wall_10.name=Polished Deepslate Wall
+tile.stonebrick_wall_11.name=Deepslate Bricks Wall
+tile.stonebrick_wall_12.name=Deepslate Tiles Wall
+tile.stonebrick_wall_13.name=Brick Wall
+
+tile.sandstone_wall_0.name=Sandstone Wall
+tile.sandstone_wall_1.name=Red Sandstone Wall
+tile.sandstone_wall_2.name=Smooth Sandstone Wall
+tile.sandstone_wall_3.name=Smooth Red Sandstone Wall
+tile.sandstone_wall_4.name=Cut Sandstone Wall
+tile.sandstone_wall_5.name=Cut Red Sandstone Wall
+
+tile.stonebrick_wall_2_0.name=Prismarine Wall
+tile.stonebrick_wall_2_1.name=Dark Prismarine Wall
+tile.stonebrick_wall_2_2.name=Prismarine Bricks Wall
+tile.stonebrick_wall_2_3.name=End Stone Bricks Wall
+tile.stonebrick_wall_2_4.name=Purpur Blocks Wall
+
+tile.nether_wall_0.name=Blackstone Wall
+tile.nether_wall_1.name=Polished Blackstone Wall
+tile.nether_wall_2.name=Polished Blackstone Bricks Wall
+tile.nether_wall_3.name=Nether Brick Wall
+tile.nether_wall_4.name=Red Nether Bricks Wall
+tile.nether_wall_5.name=Quartz Wall
+
+tile.red_nether_brick_fence.name=Red Nether Bricks Fence
+
+tile.stone_stairs.name=Stone Stairs
+tile.stone_tiles_stairs.name=Stone Tiles Stairs
+tile.smooth_stone_stairs.name=Smooth Stone Stairs
+tile.mossy_stone_stairs.name=Mossy Stone Stairs
+tile.mossy_stone_brick_stairs.name=Mossy Stone Bricks Stairs
+
+tile.cobbled_deepslate_stairs.name=Cobbled Deepslate Stairs
+tile.deepslate_stairs.name=Deepslate Stairs
+tile.polished_deepslate_stairs.name=Polished Deepslate Stairs
+tile.deepslate_bricks_stairs.name=Deepslate Bricks Stairs
+tile.deepslate_tiles_stairs.name=Deepslate Tiles Stairs
+
+tile.andesite_stairs.name=Andesite Stairs
+tile.smooth_andesite_stairs.name=Smooth Andesite Stairs
+tile.andesite_bricks_stairs.name=Andesite Bricks Stairs
+tile.diorite_stairs.name=Diorite Stairs
+tile.smooth_diorite_stairs.name=Smooth Diorite Stairs
+tile.diorite_bricks_stairs.name=Diorite Bricks Stairs
+tile.granite_stairs.name=Granite Stairs
+tile.smooth_granite_stairs.name=Smooth Granite Stairs
+tile.granite_bricks_stairs.name=Granite Bricks Stairs
+
+tile.cut_sandstone_stairs.name=Cut Sandstone Stairs
+tile.cut_red_sandstone_stairs.name=Cut Red Sandstone Stairs
+tile.smooth_sandstone_stairs.name=Smooth Sandstone Stairs
+tile.smooth_red_sandstone_stairs.name=Smooth Red Sandstone Stairs
+
+tile.prismarine_stairs.name=Prismarine Stairs
+tile.prismarine_dark_stairs.name=Dark Prismarine Stairs
+tile.prismarine_brick_stairs.name=Prismarine Bricks Stairs
+
+tile.red_nether_brick_stairs.name=Red Nether Bricks Stairs
+tile.blackstone_stairs.name=Blackstone Stairs
+tile.polished_blackstone_stairs.name=Polished Blackstone Stairs
+tile.polished_blackstone_brick_stairs.name=Polished Blackstone Bricks Stairs
+
+tile.end_stone_brick_stairs.name=End Stone Bricks Stairs
+
+tile.stone_slab.name=Stone Slab
+tile.stone_tiles_slab.name=Stone Tiles Slab
+tile.mossy_stone_slab.name=Mossy Stone Slab
+tile.mossy_stone_brick_slab.name=Mossy Stone Bricks Slab
+
+tile.cobbled_deepslate_slab.name=Cobbled Deepslate Slab
+tile.deepslate_slab.name=Deepslate Slab
+tile.polished_deepslate_slab.name=Polished Deepslate Slab
+tile.deepslate_bricks_slab.name=Deepslate Bricks Slab
+tile.deepslate_tiles_slab.name=Deepslate Tiles Slab
+
+tile.andesite_slab.name=Andesite Slab
+tile.andesite_slab_smooth.name=Smooth Andesite Slab
+tile.andesite_bricks_slab.name=Andesite Bricks Slab
+tile.diorite_slab.name=Diorite Slab
+tile.diorite_slab_smooth.name=Smooth Diorite Slab
+tile.diorite_bricks_slab.name=Diorite Bricks Slab
+tile.granite_slab.name=Granite Slab
+tile.granite_slab_smooth.name=Smooth Granite Slab
+tile.granite_bricks_slab.name=Granite Bricks Slab
+
+tile.cut_sandstone_slab.name=Cut Sandstone Slab
+tile.cut_red_sandstone_slab.name=Cut Red Sandstone Slab
+tile.smooth_sandstone_slab.name=Smooth Sandstone Slab
+tile.smooth_red_sandstone_slab.name=Smooth Red Sandstone Slab
+
+tile.prismarine_slab.name=Prismarine Slab
+tile.prismarine_dark_slab.name=Dark Prismarine Slab
+tile.prismarine_brick_slab.name=Prismarine Bricks Slab
+
+tile.red_nether_brick_slab.name=Red Nether Bricks Slab
+tile.blackstone_slab.name=Blackstone Slab
+tile.polished_blackstone_slab.name=Polished Blackstone Slab
+tile.polished_blackstone_brick_slab.name=Polished Blackstone Bricks Slab
+
+tile.end_stone_brick_slab.name=End Stone Bricks Slab
+
 tile.acacia_trapdoor.name=Acacia Trapdoor
 tile.birch_trapdoor.name=Birch Trapdoor
 tile.dark_oak_trapdoor.name=Dark Trapdoor
@@ -25,138 +226,20 @@ tile.birch_button.name=Birch Button
 tile.dark_oak_button.name=Dark Button
 tile.jungle_button.name=Jungle Button
 tile.spruce_button.name=Spruce Button
-
-tile.red_nether_brick_fence.name=Red Nether Bricks Fence
-
-tile.stone_wall.name=Stone Wall
-tile.stone_brick_wall.name=Stone Brick Wall
-tile.mossy_stone_brick_wall.name=Mossy Stone Bricks Wall
-
-tile.smooth_sandstone.name=Smooth Sandstone
-tile.smooth_red_sandstone.name=Smooth Red Sandstone
-tile.smooth_sandstone_wall.name=Smooth Sandstone Wall
-tile.smooth_red_sandstone_wall.name=Smooth Red Sandstone Wall
-tile.cut_sandstone_wall.name=Cut Sandstone Wall
-tile.cut_red_sandstone_wall.name=Cut Red Sandstone Wall
-tile.sandstone_wall.name=Sandstone Wall
-tile.red_sandstone_wall.name=Red Sandstone Wall
-
-tile.brick_wall.name=Brick Wall
-
-tile.quartz_wall.name=Quartz Wall
-tile.nether_brick_wall.name=Nether Brick Wall
-tile.red_nether_brick_wall.name=Red Nether Bricks Wall
-tile.end_stone_brick_wall.name=End Stone Bricks Wall
-tile.purpur_wall.name=Purpur Blocks Wall
-
-tile.andesite_wall.name=Andesite Wall
-tile.andesite_wall_smooth.name=Smooth Andesite Wall
-tile.diorite_wall.name=Diorite Wall
-tile.diorite_wall_smooth.name=Smooth Diorite Wall
-tile.granite_wall.name=Granite Wall
-tile.granite_wall_smooth.name=Smooth Granite Wall
-
-tile.prismarine_wall.name=Prismarine Wall
-tile.prismarine_dark_wall.name=Dark Prismarine Wall
-tile.prismarine_brick_wall.name=Prismarine Bricks Wall
-
-tile.stone_slab.name=Stone Slab
-tile.mossy_stone_slab.name=Mossy Stone Slab
-tile.mossy_stone_brick_slab.name=Mossy Stone Bricks Slab
-tile.andesite_slab.name=Andesite Slab
-tile.andesite_slab_smooth.name=Smooth Andesite Slab
-tile.diorite_slab.name=Diorite Slab
-tile.diorite_slab_smooth.name=Smooth Diorite Slab
-tile.granite_slab.name=Granite Slab
-tile.granite_slab_smooth.name=Smooth Granite Slab
-tile.cut_sandstone_slab.name=Cut Sandstone Slab
-tile.cut_red_sandstone_slab.name=Cut Red Sandstone Slab
-tile.smooth_sandstone_slab.name=Smooth Sandstone Slab
-tile.smooth_red_sandstone_slab.name=Smooth Red Sandstone Slab
-
-tile.cut_sandstone_stairs.name=Cut Sandstone Stairs
-tile.cut_red_sandstone_stairs.name=Cut Red Sandstone Stairs
-tile.smooth_sandstone_stairs.name=Smooth Sandstone Stairs
-tile.smooth_red_sandstone_stairs.name=Smooth Red Sandstone Stairs
-
-tile.red_nether_brick_slab.name=Red Nether Bricks Slab
-tile.end_stone_brick_slab.name=End Stone Bricks Slab
-
-tile.prismarine_slab.name=Prismarine Slab
-tile.prismarine_dark_slab.name=Dark Prismarine Slab
-tile.prismarine_brick_slab.name=Prismarine Bricks Slab
-
-tile.charcoal_block.name=Block of Charcoal
-tile.quartz_bricks.name=Quartz Bricks
-tile.crying_obsidian.name=Crying Obsidian
-
-tile.andesite_bricks.name=Andesite Bricks
-tile.diorite_bricks.name=Diorite Bricks
-tile.granite_bricks.name=Granite Bricks
-
-tile.andesite_bricks_wall.name=Andesite Bricks Wall
-tile.diorite_bricks_wall.name=Diorite Bricks Wall
-tile.granite_bricks_wall.name=Granite Bricks Wall
-
-tile.andesite_bricks_stairs.name=Andesite Bricks Stairs
-tile.diorite_bricks_stairs.name=Diorite Bricks Stairs
-tile.granite_bricks_stairs.name=Granite Bricks Stairs
-
-tile.andesite_bricks_slab.name=Andesite Bricks Slab
-tile.diorite_bricks_slab.name=Diorite Bricks Slab
-tile.granite_bricks_slab.name=Granite Bricks Slab
-
-tile.smooth_stone.name=Stone
-tile.smooth_stone_wall.name=Stone Wall
-
-tile.stone_stairs.name=Stone Stairs
-tile.smooth_stone_stairs.name=Stone Stairs
-tile.mossy_stone_stairs.name=Mossy Stone Stairs
-tile.mossy_stone_brick_stairs.name=Mossy Stone Bricks Stairs
-
-tile.andesite_stairs.name=Andesite Stairs
-tile.smooth_andesite_stairs.name=Smooth Andesite Stairs
-tile.diorite_stairs.name=Diorite Stairs
-tile.smooth_diorite_stairs.name=Smooth Diorite Stairs
-tile.granite_stairs.name=Granite Stairs
-tile.smooth_granite_stairs.name=Smooth Granite Stairs
-
-tile.red_nether_brick_stairs.name=Red Nether Bricks Stairs
-tile.end_stone_brick_stairs.name=End Stone Bricks Stairs
-
-tile.prismarine_stairs.name=Prismarine Stairs
-tile.prismarine_dark_stairs.name=Dark Prismarine Stairs
-tile.prismarine_brick_stairs.name=Prismarine Bricks Stairs
+tile.blackstone_button.name=Polished Blackstone Button
 
 tile.acacia_pressure_plate.name=Acacia Pressure Plate
 tile.birch_pressure_plate.name=Birch Pressure Plate
 tile.dark_oak_pressure_plate.name=Dark Oak Pressure Plate
 tile.jungle_pressure_plate.name=Jungle Pressure Plate
 tile.spruce_pressure_plate.name=Spruce Pressure Plate
+tile.blackstone_pressure_plate.name=Polished Blackstone Pressure Plate
 
 item.acacia_sign.name=Acacia Sign
 item.birch_sign.name=Birch Sign
 item.dark_oak_sign.name=Dark Oak Sign
 item.jungle_sign.name=Jungle Sign
 item.spruce_sign.name=Spruce Sign
-
-tile.clear_glass.name=Clear Glass
-tile.clear_glass_black.name=Clear Black Stained Glass
-tile.clear_glass_blue.name=Clear Blue Stained Glass
-tile.clear_glass_brown.name=Clear Brown Stained Glass
-tile.clear_glass_cyan.name=Clear Cyan Stained Glass
-tile.clear_glass_gray.name=Clear Gray Stained Glass
-tile.clear_glass_green.name=Clear Green Stained Glass
-tile.clear_glass_light_blue.name=Clear Ligtht Blue Stained Glass
-tile.clear_glass_lime.name=Clear Lime Stained Glass
-tile.clear_glass_magenta.name=Clear Magenta Stained Glass
-tile.clear_glass_orange.name=Clear Orange Stained Glass
-tile.clear_glass_pink.name=Clear Pink Stained Glass
-tile.clear_glass_purple.name=Clear Purple Stained Glass
-tile.clear_glass_red.name=Clear Red Stained Glass
-tile.clear_glass_silver.name=Clear Silver Stained Glass
-tile.clear_glass_white.name=Clear White Stained Glass
-tile.clear_glass_yellow.name=Clear Yellow Stained Glass
 
 tile.iron_lantern.name=Iron Lantern
 tile.chain.name=Chain
@@ -165,24 +248,6 @@ tile.gold_bars.name=Golden Bar
 item.gold_door.name=Golden Door
 tile.gold_trapdoor.name=Golden Trapdoor
 tile.chain_gold.name=Golden Chain
-
-tile.clear_pane.name=Clear Glass Pane
-tile.clear_pane_black.name=Clear Black Stained Glass Pane
-tile.clear_pane_blue.name=Clear Blue Stained Glass Pane
-tile.clear_pane_brown.name=Clear Brown Stained Glass Pane
-tile.clear_pane_cyan.name=Clear Cyan Stained Glass Pane
-tile.clear_pane_gray.name=Clear Gray Stained Glass Pane
-tile.clear_pane_green.name=Clear Green Stained Glass Pane
-tile.clear_pane_light_blue.name=Clear Ligtht Blue Stained Glass Pane
-tile.clear_pane_lime.name=Clear Lime Stained Glass Pane
-tile.clear_pane_magenta.name=Clear Magenta Stained Glass Pane
-tile.clear_pane_orange.name=Clear Orange Stained Glass Pane
-tile.clear_pane_pink.name=Clear Pink Stained Glass Pane
-tile.clear_pane_purple.name=Clear Purple Stained Glass Pane
-tile.clear_pane_red.name=Clear Red Stained Glass Pane
-tile.clear_pane_silver.name=Clear Silver Stained Glass Pane
-tile.clear_pane_white.name=Clear White Stained Glass Pane
-tile.clear_pane_yellow.name=Clear Yellow Stained Glass Pane
 
 tile.stripped_acacia.name=Stripped Acacia Log
 tile.stripped_birch.name=Stripped Birch Log
@@ -205,29 +270,6 @@ tile.stripped_jungle_wood.name=Stripped Jungle Log
 tile.stripped_oak_wood.name=Stripped Oak Log
 tile.stripped_spruce_wood.name=Stripped Spruce Log
 
-tile.blackstone.name=Blackstone
-tile.polished_blackstone.name=Polished Blackstone
-tile.polished_blackstone_bricks.name=Polished Blackstone Bricks
-tile.cracked_blackstone_bricks.name=Cracked Polished Blackstone Bricks
-tile.chiseled_polished_blackstone.name=Chiesled Polished Blackstone
-
-tile.blackstone_stairs.name=Blackstone Stairs
-tile.polished_blackstone_stairs.name=Polished Blackstone Stairs
-tile.polished_blackstone_brick_stairs.name=Polished Blackstone Bricks Stairs
-
-tile.blackstone_wall.name=Blackstone Wall
-tile.polished_blackstone_wall.name=Polished Blackstone Wall
-tile.polished_blackstone_brick_wall.name=Polished Blackstone Bricks Wall
-
-tile.blackstone_slab.name=Blackstone Slab
-tile.polished_blackstone_slab.name=Polished Blackstone Slab
-tile.polished_blackstone_brick_slab.name=Polished Blackstone Bricks Slab
-
-tile.chiseled_nether_bricks.name=Chiseled Nether Bricks
-tile.cracked_nether_bricks.name=Cracked Nether Bricks
-tile.chiseled_red_nether_bricks.name=Red Chiseled Nether Bricks
-tile.cracked_red_nether_bricks.name=Red Cracked Nether Bricks
-
 tile.grindstone.name=Grindstone
 tile.barrel.name=Barrel
 tile.composter.name=Composter
@@ -238,18 +280,14 @@ tile.cartography_table.name=Cartography Table
 tile.smithing_table.name=Smithing Table
 tile.loom.name=Loom
 tile.lectern.name=Lectern
-
-item.dye_white.name=White Dye
-item.dye_blue.name=Blue Dye
-item.dye_black.name=Black Dye
-item.dye_brown.name=Brown Dye
+tile.smoker.name=Smoker
+tile.blast_furnace.name=Blast Furnace
 
 tile.lily_of_the_valley.name=Lily of the Valley
 tile.cornflower.name=CornFlower
 tile.rose.name=Rose
 tile.wither_rose.name=Wither Rose
 
-item.sweet_berries.name=Sweet Berries
 tile.sweet_berry_bush.name=Sweet Berries Bush
 
 

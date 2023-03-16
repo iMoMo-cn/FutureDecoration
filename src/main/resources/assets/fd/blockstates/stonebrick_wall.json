@@ -1,0 +1,214 @@
+{
+  "multipart": [
+    {   "when": { "up": "true", "variant": "0" },
+      "apply": { "model": "fd:smooth_stone_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "0" },
+      "apply": { "model": "fd:smooth_stone_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "0" },
+      "apply": { "model": "fd:smooth_stone_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "0" },
+      "apply": { "model": "fd:smooth_stone_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "0" },
+      "apply": { "model": "fd:smooth_stone_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "1" },
+      "apply": { "model": "fd:stone_brick_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "1" },
+      "apply": { "model": "fd:stone_brick_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "1" },
+      "apply": { "model": "fd:stone_brick_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "1" },
+      "apply": { "model": "fd:stone_brick_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "1" },
+      "apply": { "model": "fd:stone_brick_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "2" },
+      "apply": { "model": "fd:mossy_stone_brick_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "2" },
+      "apply": { "model": "fd:mossy_stone_brick_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "2" },
+      "apply": { "model": "fd:mossy_stone_brick_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "2" },
+      "apply": { "model": "fd:mossy_stone_brick_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "2" },
+      "apply": { "model": "fd:mossy_stone_brick_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "3" },
+      "apply": { "model": "fd:stone_tiles_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "3" },
+      "apply": { "model": "fd:stone_tiles_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "3" },
+      "apply": { "model": "fd:stone_tiles_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "3" },
+      "apply": { "model": "fd:stone_tiles_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "3" },
+      "apply": { "model": "fd:stone_tiles_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "4" },
+      "apply": { "model": "fd:andesite_wall_smooth_post" }
+    },
+    {   "when": { "north": "true", "variant": "4" },
+      "apply": { "model": "fd:andesite_wall_smooth_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "4" },
+      "apply": { "model": "fd:andesite_wall_smooth_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "4" },
+      "apply": { "model": "fd:andesite_wall_smooth_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "4" },
+      "apply": { "model": "fd:andesite_wall_smooth_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "5" },
+      "apply": { "model": "fd:diorite_wall_smooth_post" }
+    },
+    {   "when": { "north": "true", "variant": "5" },
+      "apply": { "model": "fd:diorite_wall_smooth_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "5" },
+      "apply": { "model": "fd:diorite_wall_smooth_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "5" },
+      "apply": { "model": "fd:diorite_wall_smooth_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "5" },
+      "apply": { "model": "fd:diorite_wall_smooth_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "6" },
+      "apply": { "model": "fd:granite_wall_smooth_post" }
+    },
+    {   "when": { "north": "true", "variant": "6" },
+      "apply": { "model": "fd:granite_wall_smooth_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "6" },
+      "apply": { "model": "fd:granite_wall_smooth_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "6" },
+      "apply": { "model": "fd:granite_wall_smooth_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "6" },
+      "apply": { "model": "fd:granite_wall_smooth_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "7" },
+      "apply": { "model": "fd:andesite_bricks_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "7" },
+      "apply": { "model": "fd:andesite_bricks_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "7" },
+      "apply": { "model": "fd:andesite_bricks_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "7" },
+      "apply": { "model": "fd:andesite_bricks_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "7" },
+      "apply": { "model": "fd:andesite_bricks_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "8" },
+      "apply": { "model": "fd:diorite_bricks_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "8" },
+      "apply": { "model": "fd:diorite_bricks_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "8" },
+      "apply": { "model": "fd:diorite_bricks_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "8" },
+      "apply": { "model": "fd:diorite_bricks_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "8" },
+      "apply": { "model": "fd:diorite_bricks_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "9" },
+      "apply": { "model": "fd:granite_bricks_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "9" },
+      "apply": { "model": "fd:granite_bricks_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "9" },
+      "apply": { "model": "fd:granite_bricks_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "9" },
+      "apply": { "model": "fd:granite_bricks_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "9" },
+      "apply": { "model": "fd:granite_bricks_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "10" },
+      "apply": { "model": "fd:polished_deepslate_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "10" },
+      "apply": { "model": "fd:polished_deepslate_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "10" },
+      "apply": { "model": "fd:polished_deepslate_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "10" },
+      "apply": { "model": "fd:polished_deepslate_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "10" },
+      "apply": { "model": "fd:polished_deepslate_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "11" },
+      "apply": { "model": "fd:deepslate_bricks_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "11" },
+      "apply": { "model": "fd:deepslate_bricks_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "11" },
+      "apply": { "model": "fd:deepslate_bricks_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "11" },
+      "apply": { "model": "fd:deepslate_bricks_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "11" },
+      "apply": { "model": "fd:deepslate_bricks_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "12" },
+      "apply": { "model": "fd:deepslate_tiles_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "12" },
+      "apply": { "model": "fd:deepslate_tiles_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "12" },
+      "apply": { "model": "fd:deepslate_tiles_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "12" },
+      "apply": { "model": "fd:deepslate_tiles_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "12" },
+      "apply": { "model": "fd:deepslate_tiles_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "13" },
+      "apply": { "model": "fd:brick_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "13" },
+      "apply": { "model": "fd:brick_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "13" },
+      "apply": { "model": "fd:brick_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "13" },
+      "apply": { "model": "fd:brick_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "13" },
+      "apply": { "model": "fd:brick_wall_side", "y": 270, "uvlock": true }
+    }
+  ]
+}

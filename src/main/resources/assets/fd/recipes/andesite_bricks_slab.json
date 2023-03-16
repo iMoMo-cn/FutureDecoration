@@ -5,7 +5,8 @@
   ],
   "key": {
     "#": {
-      "item": "fd:andesite_bricks"
+      "item": "fd:rock_block",
+      "data": 3
     }
   },
   "result": {

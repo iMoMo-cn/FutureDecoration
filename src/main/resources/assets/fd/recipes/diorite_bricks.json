@@ -13,7 +13,8 @@
     ]
   },
   "result": {
-    "item": "fd:diorite_bricks",
+    "item": "fd:rock_block",
+    "data": 4,
     "count": 4
   }
 }

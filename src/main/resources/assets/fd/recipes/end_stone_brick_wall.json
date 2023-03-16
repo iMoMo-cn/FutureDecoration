@@ -10,7 +10,8 @@
     }
   },
   "result": {
-    "item": "fd:end_stone_brick_wall",
+    "item": "fd:stonebrick_wall_2",
+    "data": 3,
     "count": 6
   }
 }

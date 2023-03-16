@@ -1,5 +1,6 @@
 package com.momo.fd.proxy;
 
+import com.momo.fd.blocks.blockVariant.ItemBlockVariants;
 import com.momo.fd.entity.ModEntityInit;
 import com.momo.fd.entity.tiles.ModTileEntityItemStackRenderer;
 import com.momo.fd.item.ItemVariantBase;
@@ -37,7 +38,7 @@ public class ClientProxy extends ProxyBase {
 
 	public void registerItemRenderer(Item item, int meta, String id)
 	{
-		if (item instanceof ItemVariantBase){
+		if (item instanceof ItemVariantBase || item instanceof ItemBlockVariants){
 			ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName() + "_" + meta, id));
 		}else {
 			ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));

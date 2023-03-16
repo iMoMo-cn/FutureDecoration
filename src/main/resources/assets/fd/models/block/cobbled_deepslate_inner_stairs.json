@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "fd:blocks/cobbled_deepslate",
+    "top": "fd:blocks/cobbled_deepslate",
+    "side": "fd:blocks/cobbled_deepslate"
+  }
+}

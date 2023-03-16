@@ -13,7 +13,8 @@
     "B": { "type": "forge:ore_dict", "ore": "dyeSilver" }
   },
   "result": {
-    "item": "fd:clear_glass_silver",
+    "item": "fd:stained_clear_glass",
+    "data": 13,
     "count": 8
   }
 }

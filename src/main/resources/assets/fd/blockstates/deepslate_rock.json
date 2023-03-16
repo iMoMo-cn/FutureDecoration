@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:cobbled_deepslate" },
+    "variant=1": { "model": "fd:polished_deepslate" },
+    "variant=2": { "model": "fd:deepslate_bricks" },
+    "variant=3": { "model": "fd:deepslate_tiles" },
+    "variant=4": { "model": "fd:chiseled_deepslate" },
+    "variant=5": { "model": "fd:cracked_deepslate_bricks" },
+    "variant=6": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=7": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=8": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=9": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=10": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=11": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=12": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=13": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=14": { "model": "fd:cracked_deepslate_tiles" },
+    "variant=15": { "model": "fd:cracked_deepslate_tiles" }
+  }
+}

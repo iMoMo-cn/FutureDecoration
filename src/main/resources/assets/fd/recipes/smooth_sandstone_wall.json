@@ -6,11 +6,13 @@
   ],
   "key": {
     "#": {
-      "item": "fd:smooth_sandstone"
+      "item": "fd:sandstone",
+      "data": 0
     }
   },
   "result": {
-    "item": "fd:smooth_sandstone_wall",
+    "item": "fd:sandstone_wall",
+    "data": 2,
     "count": 6
   }
 }

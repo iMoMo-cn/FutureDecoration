@@ -6,11 +6,13 @@
   ],
   "key": {
     "A": {
-      "item": "fd:clear_glass_silver"
+      "item": "fd:stained_clear_glass",
+      "data": 13
     }
   },
   "result": {
-    "item": "fd:clear_pane_silver",
+    "item": "fd:stained_clear_pane",
+    "data": 13,
     "count": 16
   }
 }

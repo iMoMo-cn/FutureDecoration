@@ -1,6 +1,7 @@
 {
   "parent": "block/pane_side",
   "textures": {
+    "particle": "fd:blocks/clear_glass_red",
     "edge": "fd:blocks/clear_pane_red_top",
     "pane": "fd:blocks/clear_glass_red"
   }

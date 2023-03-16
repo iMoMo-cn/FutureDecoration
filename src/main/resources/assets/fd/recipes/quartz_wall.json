@@ -8,7 +8,8 @@
     "#": { "type": "forge:ore_dict", "ore": "blockQuartz" }
   },
   "result": {
-    "item": "fd:quartz_wall",
+    "item": "fd:nether_wall",
+    "data": 5,
     "count": 6
   }
 }

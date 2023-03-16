@@ -6,11 +6,13 @@
   ],
   "key": {
     "A": {
-      "item": "fd:polished_blackstone"
+      "item": "fd:nether_block",
+      "data": 2
     }
   },
   "result": {
-    "item": "fd:polished_blackstone_bricks",
+    "item": "fd:nether_block",
+    "data": 3,
     "count": 4
   }
 }

@@ -2,7 +2,6 @@ package com.momo.fd.blocks.blockBasic.decoration;
 
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
-import com.momo.fd.blocks.blockBasic.IItemProvider;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.Block;
@@ -25,7 +24,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Slab extends BlockSlab implements IHasModel, IItemProvider {
+public class Slab extends BlockSlab implements IHasModel {
     private boolean isDouble;
     public Block dropBlock;
     private BlockSlab doubleSlab;
@@ -56,7 +55,7 @@ public class Slab extends BlockSlab implements IHasModel, IItemProvider {
 
         ModBlocks.BLOCKS.add(this);
 
-        ItemBlock itemBlock = this.createItemBlock();
+        ItemBlock itemBlock = new ItemSlab(this, this, doubleSlab);
 
         IBlockState iblockstate = this.blockState.getBaseState();
         if (!this.isDouble())
@@ -73,9 +72,6 @@ public class Slab extends BlockSlab implements IHasModel, IItemProvider {
     }
 
     @Override
-    public ItemBlock createItemBlock() { return new ItemSlab(this, this, doubleSlab);}
-
-    @Override
     public void registerModels() {
         if(!this.isDouble()) MoMoFramework.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
@@ -88,7 +84,6 @@ public class Slab extends BlockSlab implements IHasModel, IItemProvider {
 
     @Override
     protected BlockStateContainer createBlockState() {
-//      return new BlockStateContainer(this, HALF);
         return this.isDouble() ? new BlockStateContainer(this, new IProperty[] {VARIANT}) : new BlockStateContainer(this, new IProperty[] {HALF, VARIANT});
     }
 

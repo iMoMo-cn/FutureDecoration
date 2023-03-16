@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:deepslate"
+    }
+  },
+  "result": {
+    "item": "fd:stone_wall",
+    "data": 4,
+    "count": 6
+  }
+}
