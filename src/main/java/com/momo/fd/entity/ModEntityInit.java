@@ -37,15 +37,15 @@ public class ModEntityInit {
 
     public static void registerTiles()
     {
-        registerTile(TileEntitySignAcacia.class, "sign_acacia");
-        registerTile(TileEntitySignBirch.class, "sign_birch");
-        registerTile(TileEntitySignDarkOak.class,"sign_dark_oak");
-        registerTile(TileEntitySignJungle.class, "sign_jungle");
-        registerTile(TileEntitySignSpruce.class, "sign_spruce");
-        registerTile(TileEntityBarrel.class, "barrel");
-        registerTile(TileEntityComposter.class, "composter");
-        registerTile(TileEntitySmoker.class,  "smoker");
-        registerTile(TileEntityBlastFurnace.class,  "blast_furnace");
+        registerTile(TileEntitySignAcacia.class, "fd:sign_acacia");
+        registerTile(TileEntitySignBirch.class, "fd:sign_birch");
+        registerTile(TileEntitySignDarkOak.class,"fd:sign_dark_oak");
+        registerTile(TileEntitySignJungle.class, "fd:sign_jungle");
+        registerTile(TileEntitySignSpruce.class, "fd:sign_spruce");
+        registerTile(TileEntityBarrel.class, "fd:barrel");
+        registerTile(TileEntityComposter.class, "fd:composter");
+        registerTile(TileEntitySmoker.class,  "fd:smoker");
+        registerTile(TileEntityBlastFurnace.class,  "fd:blast_furnace");
     }
 
     public static void registerTile(Class<? extends TileEntity> tileEntityClass, String key)

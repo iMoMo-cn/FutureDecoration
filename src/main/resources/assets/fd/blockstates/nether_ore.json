@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:nether_gold_ore" },
+    "variant=1": { "model": "fd:nether_iron_ore" },
+    "variant=2": { "model": "fd:nether_iron_ore" },
+    "variant=3": { "model": "fd:nether_iron_ore" },
+    "variant=4": { "model": "fd:nether_iron_ore" },
+    "variant=5": { "model": "fd:nether_iron_ore" },
+    "variant=6": { "model": "fd:nether_iron_ore" },
+    "variant=7": { "model": "fd:nether_iron_ore" },
+    "variant=8": { "model": "fd:nether_iron_ore" },
+    "variant=9": { "model": "fd:nether_iron_ore" },
+    "variant=10": { "model": "fd:nether_iron_ore" },
+    "variant=11": { "model": "fd:nether_iron_ore" },
+    "variant=12": { "model": "fd:nether_iron_ore" },
+    "variant=13": { "model": "fd:nether_iron_ore" },
+    "variant=14": { "model": "fd:nether_iron_ore" },
+    "variant=15": { "model": "fd:nether_iron_ore" }
+  }
+}

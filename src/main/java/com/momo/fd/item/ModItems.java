@@ -18,6 +18,9 @@ public class ModItems {
 	//public static final Item ITEM_NAME = new ItemBase("item_name").setCreativeTab(ModCreativeTab.CREATIVE_TAB);
 
 	public static final Item RED_NETHERBRICK = new ItemBase("red_netherbrick").setCreativeTab(CreativeTabs.MISC);
+	public static final Item COPPER_INGOT = new ItemBase("copper_ingot").setCreativeTab(CreativeTabs.MISC);
+	public static final Item RAW_ORE = new ItemVariantBase("raw_ore", 3).setCreativeTab(CreativeTabs.MISC);
+
 	public static final Item BERRIES = new Berries("sweet_berries", 2, 0.0F, false);
 
 	public static final Item ACACIA_SIGN = new ModItemSign("acacia_sign");

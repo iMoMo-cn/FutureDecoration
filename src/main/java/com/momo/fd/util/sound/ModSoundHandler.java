@@ -38,6 +38,18 @@ public class ModSoundHandler {
     public static SoundEvent BLOCK_COMPOSTER_FILL_SUCCESS = new ModSoundEvent("block.composter.fill_success");
     public static SoundEvent BLOCK_COMPOSTER_REDAY = new ModSoundEvent("block.composter.ready");
 
+    public static SoundEvent BLOCK_DEEPSLATE_BREAK = new ModSoundEvent("block.deepslate.break");
+    public static SoundEvent BLOCK_DEEPSLATE_STEP = new ModSoundEvent("block.deepslate.step");
+    public static SoundEvent BLOCK_DEEPSLATE_PLACE = new ModSoundEvent("block.deepslate.place");
+    public static SoundEvent BLOCK_DEEPSLATE_HIT = new ModSoundEvent("block.deepslate.hit");
+    public static SoundEvent BLOCK_DEEPSLATE_FALL = new ModSoundEvent("block.deepslate.fall");
+
+    public static SoundEvent BLOCK_DEEPSLATE_BRICKS_BREAK = new ModSoundEvent("block.deepslate_bricks.break");
+    public static SoundEvent BLOCK_DEEPSLATE_BRICKS_STEP = new ModSoundEvent("block.deepslate_bricks.step");
+    public static SoundEvent BLOCK_DEEPSLATE_BRICKS_PLACE = new ModSoundEvent("block.deepslate_bricks.place");
+    public static SoundEvent BLOCK_DEEPSLATE_BRICKS_HIT = new ModSoundEvent("block.deepslate_bricks.hit");
+    public static SoundEvent BLOCK_DEEPSLATE_BRICKS_FALL = new ModSoundEvent("block.deepslate_bricks.fall");
+
     public static void soundRegister()
     {
         MoMoFramework.Log("Registering %s sounds.", SOUNDS.size());

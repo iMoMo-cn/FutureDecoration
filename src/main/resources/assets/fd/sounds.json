@@ -374,5 +374,108 @@
       }
     ],
     "subtitle": "subtitles.block.composter.ready"
+  },
+  "block.deepslate.break": {
+    "sounds": [
+      "fd:block/deepslate/break1",
+      "fd:block/deepslate/break2",
+      "fd:block/deepslate/break3",
+      "fd:block/deepslate/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.deepslate.fall": {
+    "sounds": [
+      "fd:block/deepslate/step1",
+      "fd:block/deepslate/step2",
+      "fd:block/deepslate/step3",
+      "fd:block/deepslate/step4",
+      "fd:block/deepslate/step5",
+      "fd:block/deepslate/step6"
+    ]
+  },
+  "block.deepslate.hit": {
+    "sounds": [
+      "fd:block/deepslate/step1",
+      "fd:block/deepslate/step2",
+      "fd:block/deepslate/step3",
+      "fd:block/deepslate/step4",
+      "fd:block/deepslate/step5",
+      "fd:block/deepslate/step6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.deepslate.place": {
+    "sounds": [
+      "fd:block/deepslate/place1",
+      "fd:block/deepslate/place2",
+      "fd:block/deepslate/place3",
+      "fd:block/deepslate/place4",
+      "fd:block/deepslate/place5",
+      "fd:block/deepslate/place6"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.deepslate.step": {
+    "sounds": [
+      "fd:block/deepslate/step1",
+      "fd:block/deepslate/step2",
+      "fd:block/deepslate/step3",
+      "fd:block/deepslate/step4",
+      "fd:block/deepslate/step5",
+      "fd:block/deepslate/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.deepslate_bricks.break": {
+    "sounds": [
+      "fd:block/deepslate_bricks/place1",
+      "fd:block/deepslate_bricks/place2",
+      "fd:block/deepslate_bricks/place3",
+      "fd:block/deepslate_bricks/place4",
+      "fd:block/deepslate_bricks/place5",
+      "fd:block/deepslate_bricks/place6"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.deepslate_bricks.fall": {
+    "sounds": [
+      "fd:block/deepslate_bricks/step1",
+      "fd:block/deepslate_bricks/step2",
+      "fd:block/deepslate_bricks/step3",
+      "fd:block/deepslate_bricks/step4",
+      "fd:block/deepslate_bricks/step5"
+    ]
+  },
+  "block.deepslate_bricks.hit": {
+    "sounds": [
+      "fd:block/deepslate_bricks/step1",
+      "fd:block/deepslate_bricks/step2",
+      "fd:block/deepslate_bricks/step3",
+      "fd:block/deepslate_bricks/step4",
+      "fd:block/deepslate_bricks/step5"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.deepslate_bricks.place": {
+    "sounds": [
+      "fd:block/deepslate_bricks/place1",
+      "fd:block/deepslate_bricks/place2",
+      "fd:block/deepslate_bricks/place3",
+      "fd:block/deepslate_bricks/place4",
+      "fd:block/deepslate_bricks/place5",
+      "fd:block/deepslate_bricks/place6"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.deepslate_bricks.step": {
+    "sounds": [
+      "fd:block/deepslate_bricks/step1",
+      "fd:block/deepslate_bricks/step2",
+      "fd:block/deepslate_bricks/step3",
+      "fd:block/deepslate_bricks/step4",
+      "fd:block/deepslate_bricks/step5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
   }
  }

@@ -10,7 +10,7 @@ import com.momo.fd.network.NetworkHandler;
 import com.momo.fd.potion.ModPotion;
 import com.momo.fd.util.IHasModel;
 import com.momo.fd.util.sound.ModSoundHandler;
-import com.momo.fd.worldgen.ModGenInit;
+import com.momo.fd.world.gen.ModGenInit;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;

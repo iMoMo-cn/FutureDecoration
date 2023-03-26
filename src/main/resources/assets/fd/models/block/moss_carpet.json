@@ -1,0 +1,7 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "particle": "fd:blocks/moss_block",
+    "wool": "fd:blocks/moss_block"
+  }
+}

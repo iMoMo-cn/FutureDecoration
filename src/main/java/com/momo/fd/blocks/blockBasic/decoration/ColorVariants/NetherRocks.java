@@ -22,7 +22,7 @@ public class NetherRocks extends BlockVariantBase {
         if (state.getValue(VARIANT).getMeta() == 7)  return MapColor.NETHERRACK;
         if (state.getValue(VARIANT).getMeta() == 8)  return MapColor.NETHERRACK;
         if (state.getValue(VARIANT).getMeta() == 9)  return MapColor.NETHERRACK;
-        if (state.getValue(VARIANT).getMeta() == 10)  return MapColor.NETHERRACK;
+        if (state.getValue(VARIANT).getMeta() == 10)  return MapColor.QUARTZ;
         if (state.getValue(VARIANT).getMeta() == 11)  return MapColor.QUARTZ;
         return MapColor.BLACK_STAINED_HARDENED_CLAY;
     }

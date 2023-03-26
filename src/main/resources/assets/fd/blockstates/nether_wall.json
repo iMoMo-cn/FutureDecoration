@@ -89,6 +89,36 @@
     },
     {   "when": { "west": "true", "variant": "5" },
       "apply": { "model": "fd:quartz_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "6" },
+      "apply": { "model": "fd:smooth_quartz_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "6" },
+      "apply": { "model": "fd:smooth_quartz_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "6" },
+      "apply": { "model": "fd:smooth_quartz_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "6" },
+      "apply": { "model": "fd:smooth_quartz_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "6" },
+      "apply": { "model": "fd:smooth_quartz_wall_side", "y": 270, "uvlock": true }
+    },
+    {   "when": { "up": "true", "variant": "7" },
+      "apply": { "model": "fd:quartz_bricks_wall_post" }
+    },
+    {   "when": { "north": "true", "variant": "7" },
+      "apply": { "model": "fd:quartz_bricks_wall_side", "uvlock": true }
+    },
+    {   "when": { "east": "true", "variant": "7" },
+      "apply": { "model": "fd:quartz_bricks_wall_side", "y": 90, "uvlock": true }
+    },
+    {   "when": { "south": "true", "variant": "7" },
+      "apply": { "model": "fd:quartz_bricks_wall_side", "y": 180, "uvlock": true }
+    },
+    {   "when": { "west": "true", "variant": "7" },
+      "apply": { "model": "fd:quartz_bricks_wall_side", "y": 270, "uvlock": true }
     }
   ]
 }

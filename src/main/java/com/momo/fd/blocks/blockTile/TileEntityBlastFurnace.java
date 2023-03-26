@@ -2,6 +2,7 @@ package com.momo.fd.blocks.blockTile;
 
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockInteractive.BlastFurnace;
+import com.momo.fd.item.ModItems;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -258,7 +259,9 @@ public class TileEntityBlastFurnace extends TileEntity implements ITickable {
 
         if(item == Item.getItemFromBlock(Blocks.IRON_ORE) || item == Item.getItemFromBlock(Blocks.GOLD_ORE) || item == Item.getItemFromBlock(Blocks.COAL_ORE)
                 || item == Item.getItemFromBlock(Blocks.DIAMOND_ORE) || item == Item.getItemFromBlock(Blocks.EMERALD_ORE) || item == Item.getItemFromBlock(Blocks.LAPIS_ORE)
-                || item == Item.getItemFromBlock(Blocks.REDSTONE_ORE) || item == Item.getItemFromBlock(Blocks.QUARTZ_ORE) || item == Item.getItemFromBlock(Blocks.LIT_REDSTONE_ORE))
+                || item == Item.getItemFromBlock(Blocks.REDSTONE_ORE) || item == Item.getItemFromBlock(Blocks.QUARTZ_ORE) || item == Item.getItemFromBlock(ModBlocks.DEEPSLATE_REDSTONE_ORE)
+                || item == ModItems.RAW_ORE || item == Item.getItemFromBlock(ModBlocks.COPPER_ORE) || item == Item.getItemFromBlock(ModBlocks.ORE)
+                || item == Item.getItemFromBlock(ModBlocks.NETHER_ORE))
         {
             return true;
         }

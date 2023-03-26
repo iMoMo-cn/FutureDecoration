@@ -3,6 +3,7 @@ package com.momo.fd.init;
 import com.google.common.collect.Sets;
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
+import com.momo.fd.item.ModItems;
 import com.momo.fd.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -31,20 +32,41 @@ public class ModRecipes {
 
 	public static void init() {
 		//Only smelting recipes
-		//GameRegistry.addSmelting(ModItems.XXXX, new ItemStack(ModItems.XXXX), 0.3f);
+
+		//smooth block
 		GameRegistry.addSmelting(new ItemStack(Blocks.STONE, 1, 0), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 0), 0.3f);
-		GameRegistry.addSmelting(Blocks.GLASS, new ItemStack(ModBlocks.CLEAR_GLASS), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.SANDSTONE, 1, 0), new ItemStack(ModBlocks.SANDSTONE, 1, 0), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.RED_SANDSTONE, 1, 0), new ItemStack(ModBlocks.SANDSTONE, 1, 1), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(Blocks.QUARTZ_BLOCK), new ItemStack(ModBlocks.NETHER_BLOCK, 1, 10), 0.3f);
+
+		//cracked block
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_BLOCK, 1, 3), new ItemStack(ModBlocks.NETHER_BLOCK, 1, 4), 0.3f);
 		GameRegistry.addSmelting(Blocks.NETHER_BRICK, new ItemStack(ModBlocks.NETHER_BLOCK, 1, 7), 0.3f);
 		GameRegistry.addSmelting(Blocks.RED_NETHER_BRICK, new ItemStack(ModBlocks.NETHER_BLOCK, 1, 9), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(Blocks.SANDSTONE, 1, 0), new ItemStack(ModBlocks.SANDSTONE, 1, 0), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(Blocks.RED_SANDSTONE, 1, 0), new ItemStack(ModBlocks.SANDSTONE, 1, 1), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_BLOCK, 1, 10), new ItemStack(Items.GOLD_INGOT, 1), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(ModBlocks.ROCK_BLOCK, 1, 1), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 2), 0.3f);
-		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 0), new ItemStack(ModBlocks.DEEPSLATE), 0.3f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 2), new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 5), 0.3f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 3), new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 6), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ROCK_BLOCK, 1, 1), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 2), 0.3f);
+
+		//misc
+		GameRegistry.addSmelting(Blocks.GLASS, new ItemStack(ModBlocks.CLEAR_GLASS), 0.3f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 0), new ItemStack(ModBlocks.DEEPSLATE), 0.3f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.BASALT), new ItemStack(ModBlocks.ROCK_BLOCK, 1, 7), 0.3f);
+
+		//ore
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_ORE, 1, 0), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_ORE, 1, 1), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.COPPER_ORE), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 0), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 1), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 2), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 0), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 1), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 2), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 3), new ItemStack(Items.COAL, 1), 0.1f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 4), new ItemStack(Items.DYE, 1, 4), 0.2f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 5), new ItemStack(Items.DIAMOND, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 6), new ItemStack(Items.EMERALD, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_REDSTONE_ORE), new ItemStack(Items.REDSTONE, 1), 0.2f);
 	}
 
 

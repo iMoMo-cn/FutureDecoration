@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "cobblestone" },
+    "B": { "type": "forge:ore_dict", "ore": "dyeBlack"}
+  },
+  "result": {
+    "item": "fd:deepslate_rock",
+    "data": 0,
+    "count": 8
+  }
+}

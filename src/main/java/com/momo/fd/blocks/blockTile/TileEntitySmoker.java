@@ -256,7 +256,8 @@ public class TileEntitySmoker extends TileEntity implements ITickable {
     {
         Item item = this.inventory.getStackInSlot(0).getItem();
 
-        if(item == Items.POTATO || item == Items.CHICKEN || item == Items.BEEF || item == Items.MUTTON || item == Items.PORKCHOP || item == Items.FISH || item == Items.RABBIT)
+        if(item == Items.POTATO || item == Items.CHICKEN || item == Items.BEEF || item == Items.MUTTON
+                || item == Items.PORKCHOP || item == Items.FISH || item == Items.RABBIT)
         {
             return true;
         }

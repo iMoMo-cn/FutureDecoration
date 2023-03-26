@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:nether_block",
+      "data": 11
+    }
+  },
+  "result": {
+    "item": "fd:quartz_bricks_slab",
+    "data": 0,
+    "count": 6
+  }
+}

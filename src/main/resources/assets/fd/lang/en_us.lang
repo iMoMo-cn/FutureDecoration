@@ -12,6 +12,10 @@ item.dye_blue.name=Blue Dye
 item.dye_black.name=Black Dye
 item.dye_brown.name=Brown Dye
 item.sweet_berries.name=Sweet Berries
+item.copper_ingot.name=Copper Ingot
+item.raw_ore_0.name=Raw Iron
+item.raw_ore_1.name=Raw Gold
+item.raw_ore_2.name=Raw Copper
 
 #entity
 #entity.entity_name.name=block name
@@ -57,8 +61,20 @@ tile.nether_block_6.name=Chiseled Nether Bricks
 tile.nether_block_7.name=Cracked Nether Bricks
 tile.nether_block_8.name=Red Chiseled Nether Bricks
 tile.nether_block_9.name=Red Cracked Nether Bricks
-tile.nether_block_10.name=Nether Gold Ore
+tile.nether_block_10.name=Smooth Quartz
 tile.nether_block_11.name=Quartz Bricks
+
+tile.copper_ore.name=Copper Ore
+tile.ore_0.name=Deepslate Iron Ore
+tile.ore_1.name=Deepslate Gold Ore
+tile.ore_2.name=Deepslate Copper Ore
+tile.ore_3.name=Deepslate Coal Ore
+tile.ore_4.name=Deepslate Lapis Ore
+tile.ore_5.name=Deepslate Diamond Ore
+tile.ore_6.name=Deepslate Emerald Ore
+tile.deepslate_redstone_ore.name=Deepslate Redstone Ore
+tile.nether_ore_0.name=Nether Gold Ore
+tile.nether_ore_1.name=Nether Iron Ore
 
 tile.clear_glass.name=Clear Glass
 tile.stained_clear_glass_0.name=Clear Black Stained Glass
@@ -137,6 +153,8 @@ tile.nether_wall_2.name=Polished Blackstone Bricks Wall
 tile.nether_wall_3.name=Nether Brick Wall
 tile.nether_wall_4.name=Red Nether Bricks Wall
 tile.nether_wall_5.name=Quartz Wall
+tile.nether_wall_6.name=Smooth Quartz Wall
+tile.nether_wall_7.name=Quartz Bricks Wall
 
 tile.red_nether_brick_fence.name=Red Nether Bricks Fence
 
@@ -175,6 +193,8 @@ tile.red_nether_brick_stairs.name=Red Nether Bricks Stairs
 tile.blackstone_stairs.name=Blackstone Stairs
 tile.polished_blackstone_stairs.name=Polished Blackstone Stairs
 tile.polished_blackstone_brick_stairs.name=Polished Blackstone Bricks Stairs
+tile.smooth_quartz_stairs.name=Smooth Quartz Stairs
+tile.quartz_bricks_stairs.name=Quartz Bricks Stairs
 
 tile.end_stone_brick_stairs.name=End Stone Bricks Stairs
 
@@ -212,6 +232,8 @@ tile.red_nether_brick_slab.name=Red Nether Bricks Slab
 tile.blackstone_slab.name=Blackstone Slab
 tile.polished_blackstone_slab.name=Polished Blackstone Slab
 tile.polished_blackstone_brick_slab.name=Polished Blackstone Bricks Slab
+tile.smooth_quartz_slab.name=Smooth Quartz Slab
+tile.quartz_bricks_slab.name=Quartz Bricks Slab
 
 tile.end_stone_brick_slab.name=End Stone Bricks Slab
 
@@ -282,6 +304,10 @@ tile.loom.name=Loom
 tile.lectern.name=Lectern
 tile.smoker.name=Smoker
 tile.blast_furnace.name=Blast Furnace
+
+tile.carpet_0.name=Leather Carpet
+tile.carpet_1.name=Rabbit Hide Carpet
+tile.carpet_2.name=Moss Carpet
 
 tile.lily_of_the_valley.name=Lily of the Valley
 tile.cornflower.name=CornFlower

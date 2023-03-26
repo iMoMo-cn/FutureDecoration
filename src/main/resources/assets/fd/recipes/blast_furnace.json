@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "#A#",
+    "XXX"
+  ],
+  "key": {
+    "A": { "item": "minecraft:furnace"},
+    "#": { "type": "forge:ore_dict", "ore": "ingotIron" },
+    "X": { "item": "fd:rock_block", "data": 0 }
+  },
+  "result": {
+    "item": "fd:smoker",
+    "count": 1
+  }
+}

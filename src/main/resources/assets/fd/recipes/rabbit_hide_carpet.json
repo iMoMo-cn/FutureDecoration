@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "result": {
+    "item": "fd:carpet",
+    "data": 1,
+    "count": 1
+  }
+}

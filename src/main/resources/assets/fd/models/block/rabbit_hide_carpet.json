@@ -1,0 +1,7 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "particle": "fd:blocks/rabbit_hide_carpet",
+    "wool": "fd:blocks/rabbit_hide_carpet"
+  }
+}

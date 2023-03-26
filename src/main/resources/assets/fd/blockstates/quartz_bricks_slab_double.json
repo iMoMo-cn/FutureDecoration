@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "fd:quartz_bricks" },
+    "half=top,variant=default": { "model": "fd:quartz_bricks" }
+  }
+}

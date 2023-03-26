@@ -10,7 +10,7 @@
     "variant=7": { "model": "fd:cracked_nether_bricks" },
     "variant=8": { "model": "fd:chiseled_red_nether_bricks" },
     "variant=9": { "model": "fd:cracked_red_nether_bricks" },
-    "variant=10": { "model": "fd:nether_gold_ore" },
+    "variant=10": { "model": "fd:smooth_quartz" },
     "variant=11": { "model": "fd:quartz_bricks" },
     "variant=12": { "model": "fd:blackstone" },
     "variant=13": { "model": "fd:blackstone" },

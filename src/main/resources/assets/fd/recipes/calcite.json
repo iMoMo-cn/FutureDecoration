@@ -6,7 +6,7 @@
     "AAA"
   ],
   "key": {
-    "A": { "type": "forge:ore_dict", "ore": "cobblestone" },
+    "A": { "type": "forge:ore_dict", "ore": "stone" },
     "B": { "type": "forge:ore_dict", "ore": "gemQuartz" }
   },
   "result": {

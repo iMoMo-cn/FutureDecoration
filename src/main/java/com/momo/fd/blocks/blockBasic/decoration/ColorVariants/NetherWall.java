@@ -20,6 +20,8 @@ public class NetherWall extends WallVariant
         if (state.getValue(VARIANT).getMeta() == 3)  return MapColor.NETHERRACK;
         if (state.getValue(VARIANT).getMeta() == 4)  return MapColor.NETHERRACK;
         if (state.getValue(VARIANT).getMeta() == 5)  return MapColor.QUARTZ;
+        if (state.getValue(VARIANT).getMeta() == 6)  return MapColor.QUARTZ;
+        if (state.getValue(VARIANT).getMeta() == 7)  return MapColor.QUARTZ;
         return MapColor.BLACK_STAINED_HARDENED_CLAY;
     }
 }

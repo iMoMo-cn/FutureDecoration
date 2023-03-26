@@ -1,5 +1,9 @@
 
 item.red_netherbrick.name=红色地狱砖
+item.copper_ingot.name=铜锭
+item.raw_ore_0.name=粗铁
+item.raw_ore_1.name=粗金
+item.raw_ore_2.name=粗铜
 item.dye_white.name=白色染料
 item.dye_blue.name=蓝色染料
 item.dye_black.name=黑色染料
@@ -44,8 +48,20 @@ tile.nether_block_6.name=錾质地狱砖块
 tile.nether_block_7.name=裂纹地狱砖块
 tile.nether_block_8.name=红色錾质地狱砖块
 tile.nether_block_9.name=红色裂纹地狱砖块
-tile.nether_block_10.name=地狱金矿石
+tile.nether_block_10.name=平滑石英块
 tile.nether_block_11.name=石英砖
+
+tile.copper_ore.name=铜矿石
+tile.ore_0.name=深层铁矿石
+tile.ore_1.name=深层金矿石
+tile.ore_2.name=深层铜矿石
+tile.ore_3.name=深层煤矿石
+tile.ore_4.name=深层青金石矿石
+tile.ore_5.name=深层钻石矿石
+tile.ore_6.name=深层绿宝石矿石
+tile.deepslate_redstone_ore.name=深层红石矿石
+tile.nether_ore_0.name=地狱金矿石
+tile.nether_ore_1.name=地狱铁矿石
 
 tile.clear_glass.name=透净玻璃
 tile.stained_clear_glass_0.name=黑色透净玻璃
@@ -58,7 +74,7 @@ tile.stained_clear_glass_6.name=淡蓝色透净玻璃
 tile.stained_clear_glass_7.name=黄绿色透净玻璃
 tile.stained_clear_glass_8.name=品红色透净玻璃
 tile.stained_clear_glass_9.name=橙色透净玻璃
-tile.stained_clear_glass_10.name=粉红色透净玻璃
+tile.stained_clear_glass_10.name=粉色透净玻璃
 tile.stained_clear_glass_11.name=紫色透净玻璃
 tile.stained_clear_glass_12.name=红色透净玻璃
 tile.stained_clear_glass_13.name=淡灰色透净玻璃
@@ -76,7 +92,7 @@ tile.stained_clear_pane_6.name=淡蓝色透净玻璃板
 tile.stained_clear_pane_7.name=黄绿色透净玻璃板
 tile.stained_clear_pane_8.name=品红色透净玻璃板
 tile.stained_clear_pane_9.name=橙色透净玻璃板
-tile.stained_clear_pane_10.name=粉红色透净玻璃板
+tile.stained_clear_pane_10.name=粉色透净玻璃板
 tile.stained_clear_pane_11.name=紫色透净玻璃板
 tile.stained_clear_pane_12.name=红色透净玻璃板
 tile.stained_clear_pane_13.name=淡灰色透净玻璃板
@@ -124,6 +140,8 @@ tile.nether_wall_2.name=磨制黑石砖墙
 tile.nether_wall_3.name=地狱砖墙
 tile.nether_wall_4.name=红色地狱砖墙
 tile.nether_wall_5.name=石英墙
+tile.nether_wall_6.name=平滑石英墙
+tile.nether_wall_7.name=石英砖墙
 
 tile.red_nether_brick_fence.name=红色地狱砖栅栏
 
@@ -162,6 +180,8 @@ tile.red_nether_brick_stairs.name=红色地狱砖楼梯
 tile.blackstone_stairs.name=黑石楼梯
 tile.polished_blackstone_stairs.name=磨制黑石楼梯
 tile.polished_blackstone_brick_stairs.name=磨制黑石砖楼梯
+tile.smooth_quartz_stairs.name=平滑石英楼梯
+tile.quartz_bricks_stairs.name=石英砖楼梯
 
 tile.end_stone_brick_stairs.name=末地石砖楼梯
 
@@ -199,6 +219,8 @@ tile.red_nether_brick_slab.name=红色地狱砖台阶
 tile.blackstone_slab.name=黑石台阶
 tile.polished_blackstone_slab.name=磨制黑石台阶
 tile.polished_blackstone_brick_slab.name=磨制黑石砖台阶
+tile.smooth_quartz_slab.name=平滑石英台阶
+tile.quartz_bricks_slab.name=石英砖台阶
 
 tile.end_stone_brick_slab.name=末地石砖台阶
 
@@ -269,6 +291,10 @@ tile.loom.name=织布机
 tile.lectern.name=讲台
 tile.smoker.name=烟熏炉
 tile.blast_furnace.name=高炉
+
+tile.carpet_0.name=皮革地毯
+tile.carpet_1.name=兔子皮地毯
+tile.carpet_2.name=苔藓地毯
 
 tile.lily_of_the_valley.name=铃兰
 tile.cornflower.name=矢车菊

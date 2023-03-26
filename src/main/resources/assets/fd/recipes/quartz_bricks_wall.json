@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:nether_block",
+      "data": 11
+    }
+  },
+  "result": {
+    "item": "fd:nether_wall",
+    "data": 7,
+    "count": 6
+  }
+}
