@@ -88,7 +88,10 @@ public class RegistryHandler {
 		InitBiome.registerBiomes();
 		InitDimension.registerDimensions();
 
-        ModGenInit.registerGens();
+		if (ModConfig.GENERAL_CONF.USE_WORLD_GEN)
+		{
+			ModGenInit.registerGens();
+		}
 
 		ModEntityInit.registerEntities();
 		ModEntityInit.registerTiles();

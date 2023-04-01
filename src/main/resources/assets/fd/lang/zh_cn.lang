@@ -300,5 +300,8 @@ tile.lily_of_the_valley.name=铃兰
 tile.cornflower.name=矢车菊
 tile.rose.name=玫瑰
 tile.wither_rose.name=凋零玫瑰
-
 tile.sweet_berry_bush.name=甜浆果丛
+
+configgui.idlframewok.category.Menu0.GeneralConf.use_world_gen=引入额外世界生成
+configgui.idlframewok.category.Menu0.GeneralConf.create_deep_slate=生成深板岩
+

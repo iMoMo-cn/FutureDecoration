@@ -26,12 +26,20 @@ public class ModConfig {
 
     @Config.LangKey("configgui.idlframewok.category.Menu0.GeneralConf")
     @Config.Comment("MoMoFramework general config.")
-    public static final GeneralConf GeneralConf = new GeneralConf();
+    public static final GeneralConf GENERAL_CONF = new GeneralConf();
 
     public static class GeneralConf {
 //        @Config.LangKey("idlframewok.conf.general.welcome")
 //        @Config.Comment("The text shown when a player logs in. Can be a key or a string.")
 //        public String WELCOME_MSG = "idlframewok.msg.welcome";
+        //this one disables it from the registry part, has better performance.
+        @Config.LangKey("configgui.idlframewok.category.Menu0.GeneralConf.use_world_gen")
+        @Config.RequiresMcRestart
+        public boolean USE_WORLD_GEN = true;
+
+        //this one disables it on the go, which is more flexible, but has a small overhead.
+        @Config.LangKey("configgui.idlframewok.category.Menu0.GeneralConf.create_deep_slate")
+        public boolean CREATE_DEEP_SLATE = true;
     }
 
     @Config.LangKey("configgui.idlframewok.category.Menu0.DebugConf")

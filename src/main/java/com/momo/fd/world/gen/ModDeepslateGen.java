@@ -3,6 +3,7 @@ package com.momo.fd.world.gen;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.EnumVariants;
+import com.momo.fd.init.ModConfig;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -16,6 +17,11 @@ import java.util.Random;
 public class ModDeepslateGen implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+        if (!ModConfig.GENERAL_CONF.CREATE_DEEP_SLATE)
+        {
+            return;
+        }
+
         int x = chunkX * 16;
         int z = chunkZ * 16;
 
