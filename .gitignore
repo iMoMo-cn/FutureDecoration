@@ -1,0 +1,29 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+runServer
+Idealland.iws___jb_tmp___
+src/main/resources/assets/idealland/advancements/seal_used.json
+DynamicGen.lua
+lua.exe
+Others/文本.json
+Others/表情.json

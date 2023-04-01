@@ -316,6 +316,9 @@ tile.wither_rose.name=Wither Rose
 
 tile.sweet_berry_bush.name=Sweet Berries Bush
 
+#config
+configgui.idlframewok.category.Menu0.GeneralConf.use_world_gen=World Generation
+configgui.idlframewok.category.Menu0.GeneralConf.create_deep_slate=Create Deepslate
 
 #effect
 #effect.effect_name=effect name
