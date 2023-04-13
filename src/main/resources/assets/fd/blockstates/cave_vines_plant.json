@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "berries=false": {"model": "fd:cave_vines_plant"},
+    "berries=true": {"model": "fd:cave_vines_plant_lit"}
+  }
+}

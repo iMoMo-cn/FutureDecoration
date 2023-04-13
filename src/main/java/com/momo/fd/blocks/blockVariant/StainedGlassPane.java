@@ -2,9 +2,7 @@ package com.momo.fd.blocks.blockVariant;
 
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
-import com.momo.fd.blocks.blockVariant.EnumVariants;
-import com.momo.fd.blocks.blockVariant.IMetaName;
-import com.momo.fd.blocks.blockVariant.ItemBlockVariants;
+import com.momo.fd.item.itemVariant.ItemBlockVariants;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.Block;
@@ -19,7 +17,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;

@@ -1,0 +1,7 @@
+{
+    "parent": "block/carpet",
+    "textures": {
+        "particle": "blocks/wool_colored_silver",
+        "wool": "fd:blocks/carpet_silver"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fd:raw_ore_block",
+      "data": 2
+    }
+  ],
+  "result": {
+    "item": "fd:raw_ore",
+    "data": 2,
+    "count": 9
+  }
+}

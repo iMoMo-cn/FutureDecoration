@@ -1,6 +1,7 @@
-package com.momo.fd.item;
+package com.momo.fd.item.itemVariant;
 
 import com.momo.fd.MoMoFramework;
+import com.momo.fd.item.ItemBase;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "fd:amethyst_block"
+    },
+    "X": {
+      "item": "fd:amethyst_cluster"
+    }
+  },
+  "result": {
+    "item": "fd:amethyst_budding",
+    "count": 1
+  }
+}

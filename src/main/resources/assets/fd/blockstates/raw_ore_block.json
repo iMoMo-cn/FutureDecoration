@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:raw_iron_block" },
+    "variant=1": { "model": "fd:raw_gold_block" },
+    "variant=2": { "model": "fd:raw_copper_block" },
+    "variant=3": { "model": "fd:raw_iron_block" },
+    "variant=4": { "model": "fd:raw_iron_block" },
+    "variant=5": { "model": "fd:raw_iron_block" },
+    "variant=6": { "model": "fd:raw_iron_block" },
+    "variant=7": { "model": "fd:raw_iron_block" },
+    "variant=8": { "model": "fd:raw_iron_block" },
+    "variant=9": { "model": "fd:raw_iron_block" },
+    "variant=10": { "model": "fd:raw_iron_block" },
+    "variant=11": { "model": "fd:raw_iron_block" },
+    "variant=12": { "model": "fd:raw_iron_block" },
+    "variant=13": { "model": "fd:raw_iron_block" },
+    "variant=14": { "model": "fd:raw_iron_block" },
+    "variant=15": { "model": "fd:raw_iron_block" }
+  }
+}

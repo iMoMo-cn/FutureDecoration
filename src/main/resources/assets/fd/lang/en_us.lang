@@ -6,16 +6,19 @@
 #item.item_name.name=item name
 #item.item_name_meta.name=item name
 
-item.red_netherbrick.name=Red Nether Brick
 item.dye_white.name=White Dye
 item.dye_blue.name=Blue Dye
 item.dye_black.name=Black Dye
 item.dye_brown.name=Brown Dye
 item.sweet_berries.name=Sweet Berries
+item.glow_berries.name=Glow Berries
+item.red_netherbrick.name=Red Nether Brick
 item.copper_ingot.name=Copper Ingot
 item.raw_ore_0.name=Raw Iron
 item.raw_ore_1.name=Raw Gold
 item.raw_ore_2.name=Raw Copper
+item.crystal_shard_0.name=Amethyst Shard
+item.crystal_shard_1.name=Citrine Shard
 
 #entity
 #entity.entity_name.name=block name
@@ -34,6 +37,7 @@ tile.rock_block_4.name=Diorite Bricks
 tile.rock_block_5.name=Granite Bricks
 tile.rock_block_6.name=Calcite
 tile.rock_block_7.name=Smooth Basalt
+tile.rock_block_8.name=Tuff
 
 tile.basalt.name=Basalt
 tile.polished_basalt.name=Polished Basalt
@@ -76,6 +80,14 @@ tile.deepslate_redstone_ore.name=Deepslate Redstone Ore
 tile.nether_ore_0.name=Nether Gold Ore
 tile.nether_ore_1.name=Nether Iron Ore
 
+tile.raw_ore_block_0.name=Block of Raw Iron
+tile.raw_ore_block_1.name=Block of Raw Gold
+tile.raw_ore_block_2.name=Block of Raw Copper
+
+tile.copper_block.name=Copper Block
+
+tile.pumpkin.name=Pumpkin
+
 tile.clear_glass.name=Clear Glass
 tile.stained_clear_glass_0.name=Clear Black Stained Glass
 tile.stained_clear_glass_1.name=Clear Blue Stained Glass
@@ -83,14 +95,14 @@ tile.stained_clear_glass_2.name=Clear Brown Stained Glass
 tile.stained_clear_glass_3.name=Clear Cyan Stained Glass
 tile.stained_clear_glass_4.name=Clear Gray Stained Glass
 tile.stained_clear_glass_5.name=Clear Green Stained Glass
-tile.stained_clear_glass_6.name=Clear Ligtht Blue Stained Glass
+tile.stained_clear_glass_6.name=Clear Light Blue Stained Glass
 tile.stained_clear_glass_7.name=Clear Lime Stained Glass
 tile.stained_clear_glass_8.name=Clear Magenta Stained Glass
 tile.stained_clear_glass_9.name=Clear Orange Stained Glass
 tile.stained_clear_glass_10.name=Clear Pink Stained Glass
 tile.stained_clear_glass_11.name=Clear Purple Stained Glass
 tile.stained_clear_glass_12.name=Clear Red Stained Glass
-tile.stained_clear_glass_13.name=Clear Silver Stained Glass
+tile.stained_clear_glass_13.name=Clear Light Gray Stained Glass
 tile.stained_clear_glass_14.name=Clear White Stained Glass
 tile.stained_clear_glass_15.name=Clear Yellow Stained Glass
 
@@ -101,16 +113,23 @@ tile.stained_clear_pane_2.name=Clear Brown Stained Glass Pane
 tile.stained_clear_pane_3.name=Clear Cyan Stained Glass Pane
 tile.stained_clear_pane_4.name=Clear Gray Stained Glass Pane
 tile.stained_clear_pane_5.name=Clear Green Stained Glass Pane
-tile.stained_clear_pane_6.name=Clear Ligtht Blue Stained Glass Pane
+tile.stained_clear_pane_6.name=Clear Light Blue Stained Glass Pane
 tile.stained_clear_pane_7.name=Clear Lime Stained Glass Pane
 tile.stained_clear_pane_8.name=Clear Magenta Stained Glass Pane
 tile.stained_clear_pane_9.name=Clear Orange Stained Glass Pane
 tile.stained_clear_pane_10.name=Clear Pink Stained Glass Pane
 tile.stained_clear_pane_11.name=Clear Purple Stained Glass Pane
 tile.stained_clear_pane_12.name=Clear Red Stained Glass Pane
-tile.stained_clear_pane_13.name=Clear Silver Stained Glass Pane
+tile.stained_clear_pane_13.name=Clear Light Gray Stained Glass Pane
 tile.stained_clear_pane_14.name=Clear White Stained Glass Pane
 tile.stained_clear_pane_15.name=Clear Yellow Stained Glass Pane
+
+tile.amethyst_block.name=Block of Amethyst
+tile.amethyst_budding.name=Budding Amethyst
+tile.amethyst_small_bud.name=Small Amethyst Bud
+tile.amethyst_medium_bud.name=Medium Amethyst Bud
+tile.amethyst_large_bud.name=Large Amethyst Bud
+tile.amethyst_cluster.name=Amethyst Clusters
 
 tile.stone_wall_0.name=Stone Wall
 tile.stone_wall_1.name=Andesite Wall
@@ -309,12 +328,44 @@ tile.carpet_0.name=Leather Carpet
 tile.carpet_1.name=Rabbit Hide Carpet
 tile.carpet_2.name=Moss Carpet
 
+tile.tight_carpet_0.name=Black Tight Carpet
+tile.tight_carpet_1.name=Blue Tight Carpet
+tile.tight_carpet_2.name=Brown Tight Carpet
+tile.tight_carpet_3.name=Cyan Tight Carpet
+tile.tight_carpet_4.name=Gray Tight Carpet
+tile.tight_carpet_5.name=Green Tight Carpet
+tile.tight_carpet_6.name=Light Blue Tight Carpet
+tile.tight_carpet_7.name=Lime Tight Carpet
+tile.tight_carpet_8.name=Magenta Tight Carpet
+tile.tight_carpet_9.name=Orange Tight Carpet
+tile.tight_carpet_10.name=Pink Tight Carpet
+tile.tight_carpet_11.name=Purple Tight Carpet
+tile.tight_carpet_12.name=Red Tight Carpet
+tile.tight_carpet_13.name=Light Gray Tight Carpet
+tile.tight_carpet_14.name=White Tight Carpet
+tile.tight_carpet_15.name=Yellow Tight Carpet
+
 tile.lily_of_the_valley.name=Lily of the Valley
 tile.cornflower.name=CornFlower
 tile.rose.name=Rose
 tile.wither_rose.name=Wither Rose
 
+tile.cave_vines_plant.name=Cave Vines
+tile.cave_vines.name=Cave Vines
+
 tile.sweet_berry_bush.name=Sweet Berries Bush
+tile.pumpkin_stem.name=Pumpkin Stem
+
+subtitles.block.barrel.close=Barrel closes
+subtitles.block.barrel.open=Barrel opens
+subtitles.block.composter.empty=Composter emptied
+subtitles.block.composter.fill=Composter filled
+subtitles.block.composter.ready=Composter composts
+subtitles.block.pumpkin.carve=Shears carve
+subtitles.block.amethyst_block.chime=Amethyst chimes
+
+subtitles.item.axe.strip=Axe scrapes
+subtitles.item.berries.pick=Berries pop
 
 
 #effect
@@ -334,4 +385,6 @@ tile.sweet_berry_bush.name=Sweet Berries Bush
 #advancements.modid.sub_name.title=sub name
 #advancements.modid.sub_name.description=sub description
 
-
+#subtitle
+#subtitles.block.blockbase.do=Blockbase Do
+#subtitles.item.itembase.do=ItemBase Do

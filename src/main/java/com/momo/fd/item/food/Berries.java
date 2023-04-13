@@ -4,7 +4,6 @@ import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
-import com.momo.fd.util.sound.ModSoundEvent;
 import com.momo.fd.util.sound.ModSoundHandler;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
@@ -45,9 +44,18 @@ public class Berries extends ItemFood implements IHasModel, net.minecraftforge.c
         if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, itemstack) && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up()))
         {
             worldIn.setBlockState(pos.up(), ModBlocks.BERRY_BUSH.getDefaultState(), 11);
-            itemstack.shrink(1);
-            worldIn.playSound(player, pos, ModSoundHandler.BLOCK_BERRY_PLACE, SoundCategory.BLOCKS, 1.0F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
-            return EnumActionResult.SUCCESS;
+
+            if(!player.capabilities.isCreativeMode)
+            {
+                itemstack.shrink(1);
+            }
+
+            if(worldIn.isRemote)
+            {
+                worldIn.playSound(player, pos, ModSoundHandler.BLOCK_BERRY_PLACE, SoundCategory.BLOCKS, 1.0F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
+            }
+
+           return EnumActionResult.SUCCESS;
         }
         else
         {

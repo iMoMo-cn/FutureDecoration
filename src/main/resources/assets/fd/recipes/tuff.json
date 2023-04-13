@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "cobblestone"},
+    "B": { "type": "forge:ore_dict", "ore": "dyeWhite" }
+  },
+  "result": {
+    "item": "fd:rock_block",
+    "data": 8,
+    "count": 8
+  }
+}

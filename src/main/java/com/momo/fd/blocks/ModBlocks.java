@@ -3,18 +3,17 @@ package com.momo.fd.blocks;
 import com.momo.fd.blocks.blockBasic.*;
 import com.momo.fd.blocks.blockBasic.decoration.*;
 import com.momo.fd.blocks.blockBasic.decoration.ColorVariants.*;
+import com.momo.fd.blocks.blockBasic.directional.HorizontalBlock;
 import com.momo.fd.blocks.blockBasic.ore.LitOre;
 import com.momo.fd.blocks.blockBasic.ore.NetherOre;
 import com.momo.fd.blocks.blockBasic.ore.Ore;
 import com.momo.fd.blocks.blockBasic.sign.StandingSign;
 import com.momo.fd.blocks.blockBasic.sign.WallSign;
-import com.momo.fd.blocks.blockBush.BerriesBush;
-import com.momo.fd.blocks.blockBush.Flower;
+import com.momo.fd.blocks.blockBush.*;
 import com.momo.fd.blocks.blockInteractive.*;
-import com.momo.fd.blocks.blockMisc.DeepSlate;
-import com.momo.fd.blocks.blockMisc.DeepSlateBricks;
-import com.momo.fd.blocks.blockMisc.NewObsidian;
-import com.momo.fd.blocks.blockBasic.PillarBlock;
+import com.momo.fd.blocks.blockMisc.*;
+import com.momo.fd.blocks.blockBasic.directional.PillarBlock;
+import com.momo.fd.blocks.blockMisc.Amethyst.*;
 import com.momo.fd.blocks.blockVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.StainedGlass;
 import com.momo.fd.blocks.blockVariant.StainedGlassPane;
@@ -56,9 +55,12 @@ public class ModBlocks {
     public static final Block STRIPPED_OAK_WOOD = new Log("stripped_oak_wood");
     public static final Block STRIPPED_SPRUCE_WOOD = new Log("stripped_spruce_wood");
 
+    public static final Block PUMPKIN = new Pumpkin();
+    public static final Block PUMPKIN_STEM = new PumpkinStem();
+
 	public static final Block CHARCOAL_BLOCK = new BurnableBlock("charcoal_block", 16000, Material.ROCK, MapColor.BLACK).setHardness(5.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 
-	public static final Block ROCK_BLOCK = new Rocks(8);
+	public static final Block ROCK_BLOCK = new Rocks(9);
 	public static final Block BASALT = new PillarBlock("basalt", Material.ROCK, MapColor.GRAY);
 	public static final Block POLISHED_BASALT = new PillarBlock("polished_basalt", Material.ROCK, MapColor.GRAY);
 	public static final Block DEEPSLATE = new DeepSlate();
@@ -71,14 +73,22 @@ public class ModBlocks {
 	public static final Block DEEPSLATE_REDSTONE_ORE = new LitOre("deepslate_redstone_ore", false);
 	public static final Block LIT_DEEPSLATE_REDSTONE_ORE = new LitOre("lit_deepslate_redstone_ore", true).setLightLevel(0.625F);
 	public static final Block NETHER_ORE = new NetherOre(2);
-
+	public static final Block RAW_ORE = new BlockRawOre();
 
 	public static final Block CRYING_OBSIDIAN = new NewObsidian("crying_obsidian", Material.ROCK, MapColor.OBSIDIAN).setLightLevel(0.666666667F);
+	public static final Block COPPER_BLOCK = new BlockBase("copper_block", Material.IRON, MapColor.ORANGE_STAINED_HARDENED_CLAY).setHardness(5.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 
 	public static final Block CLEAR_GLASS = new Glass("clear_glass");
 	public static final Block STAINED_CLEAR_GLASS = new StainedGlass("stained_clear_glass", 16);
 	public static final Block CLEAR_PANE = new GlassPane("clear_pane");
 	public static final Block STAINED_CLEAR_GLASS_PANE = new StainedGlassPane("stained_clear_pane", 16);
+
+	public static final Block AMETHYST_BLOCK = new AmethystBlock("amethyst_block");
+	public static final Block AMETHYST_BUDDING = new AmethystBudding("amethyst_budding");
+	public static final Block AMETHYST_SMALL_BUD = new AmethystBud("amethyst_small_bud", MapColor.PURPLE);
+	public static final Block AMETHYST_MEDIUM_BUD = new AmethystBudMedium("amethyst_medium_bud", MapColor.PURPLE);
+	public static final Block AMETHYST_LARGE_BUD = new AmethystBudLarge("amethyst_large_bud", MapColor.PURPLE);
+	public static final Block AMETHYST_CLUSTERS = new AmethystCluster("amethyst_cluster", MapColor.PURPLE);
 
     public static final Block RED_NETHER_BRICK_FENCE = new Fence("red_nether_brick_fence", Material.ROCK, MapColor.NETHERRACK);
 
@@ -230,6 +240,9 @@ public class ModBlocks {
     public static final Block WITHER_ROSE = new Flower("wither_rose");
     public static final Block BERRY_BUSH = new BerriesBush("sweet_berry_bush");
 
+    public static final Block CAVE_VINE_PLANT = new CaveVinePlant("cave_vines_plant");
+	public static final Block CAVE_VINE = new CaveVine("cave_vines");
+
 	public static final Block GRINDSTONE = new Grindstone("grindstone");
 	public static final Block BARREL = new Barrel("barrel");
 	public static final Block COMPOSTER = new Composter("composter");
@@ -238,7 +251,7 @@ public class ModBlocks {
 	public static final Block FLETCHING_TABLE = new BurnableBlock("fletching_table", 300, Material.WOOD, MapColor.SAND).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block CARTOGRAPHY_TABLE = new BurnableBlock("cartography_table", 300, Material.WOOD, MapColor.BROWN).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block SMITHING_TABLE = new BurnableBlock("smithing_table", 300, Material.WOOD, MapColor.BLACK).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
-	public static final Block LOOM = new DirectionalBlock("loom", 300, Material.WOOD, MapColor.WOOD).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
+	public static final Block LOOM = new HorizontalBlock("loom", 300, Material.WOOD, MapColor.WOOD).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block LECTERN = new Lectern("lectern");
 	public static final Block SMOKER = new Smoker("smoker");
 	public static final Block BLAST_FURNACE = new BlastFurnace("blast_furnace");
@@ -252,6 +265,7 @@ public class ModBlocks {
 	public static final Block GOLD_DOOR = new Door("gold_door");
 
 	public static final Block CARPET = new Carpet(2);
+	public static final Block TIGHT_CARPET = new TightCarpet("tight_carpet", 16);
 
 	public static final Block STONE_WALL = new StoneWall(6);
 	public static final Block STONEBRICK_WALL = new StoneBrickWall( 14);

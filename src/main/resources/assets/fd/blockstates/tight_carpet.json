@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:carpet_black" },
+    "variant=1": { "model": "fd:carpet_blue" },
+    "variant=2": { "model": "fd:carpet_brown" },
+    "variant=3": { "model": "fd:carpet_cyan" },
+    "variant=4": { "model": "fd:carpet_gray" },
+    "variant=5": { "model": "fd:carpet_green" },
+    "variant=6": { "model": "fd:carpet_light_blue" },
+    "variant=7": { "model": "fd:carpet_lime" },
+    "variant=8": { "model": "fd:carpet_magenta" },
+    "variant=9": { "model": "fd:carpet_orange" },
+    "variant=10": { "model": "fd:carpet_pink" },
+    "variant=11": { "model": "fd:carpet_purple" },
+    "variant=12": { "model": "fd:carpet_red" },
+    "variant=13": { "model": "fd:carpet_silver" },
+    "variant=14": { "model": "fd:carpet_white" },
+    "variant=15": { "model": "fd:carpet_yellow" }
+  }
+}

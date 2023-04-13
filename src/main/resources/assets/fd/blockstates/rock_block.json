@@ -8,7 +8,7 @@
     "variant=5": { "model": "fd:granite_bricks" },
     "variant=6": { "model": "fd:calcite" },
     "variant=7": { "model": "fd:smooth_basalt" },
-    "variant=8": { "model": "fd:smooth_stone" },
+    "variant=8": { "model": "fd:tuff" },
     "variant=9": { "model": "fd:smooth_stone" },
     "variant=10": { "model": "fd:smooth_stone" },
     "variant=11": { "model": "fd:smooth_stone" },

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:carpet",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "fd:tight_carpet",
+    "data": 9,
+    "count": 1
+  }
+}

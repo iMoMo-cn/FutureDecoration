@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0,berries=false": {"model": "fd:cave_vines"},
+    "age=0,berries=true": {"model": "fd:cave_vines_lit"},
+    "age=1,berries=false": {"model": "fd:cave_vines"},
+    "age=1,berries=true": {"model": "fd:cave_vines_lit"}
+  }
+}

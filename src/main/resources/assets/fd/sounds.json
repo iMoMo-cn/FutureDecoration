@@ -477,5 +477,240 @@
       "fd:block/deepslate_bricks/step5"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.pumpkin.carve": {
+    "sounds": [
+      "fd:block/pumpkin/carve1",
+      "fd:block/pumpkin/carve2"
+    ],
+    "subtitle": "subtitles.block.pumpkin.carve"
+  },
+    "block.cave_vines.break": {
+    "sounds": [
+      "fd:block/cave_vines/break1",
+      "fd:block/cave_vines/break2",
+      "fd:block/cave_vines/break3",
+      "fd:block/cave_vines/break4",
+      "fd:block/cave_vines/break5"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.cave_vines.fall": {
+    "sounds": [
+      "fd:block/vine/climb1",
+      "fd:block/vine/climb2",
+      "fd:block/vine/climb3",
+      "fd:block/vine/climb4",
+      "fd:block/vine/climb5"
+    ]
+  },
+  "block.cave_vines.hit": {
+    "sounds": [
+      "fd:block/vine/climb1",
+      "fd:block/vine/climb2",
+      "fd:block/vine/climb3",
+      "fd:block/vine/climb4",
+      "fd:block/vine/climb5"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.cave_vines.place": {
+    "sounds": [
+      "fd:block/cave_vines/break1",
+      "fd:block/cave_vines/break2",
+      "fd:block/cave_vines/break3",
+      "fd:block/cave_vines/break4",
+      "fd:block/cave_vines/break5"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.cave_vines.step": {
+    "sounds": [
+      "fd:block/vine/climb1",
+      "fd:block/vine/climb2",
+      "fd:block/vine/climb3",
+      "fd:block/vine/climb4",
+      "fd:block/vine/climb5"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.amethyst_block.break": {
+    "sounds": [
+      "fd:block/amethyst/break1",
+      "fd:block/amethyst/break2",
+      "fd:block/amethyst/break3",
+      "fd:block/amethyst/break4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.amethyst_block.chime": {
+    "sounds": [
+      {
+        "name": "fd:block/amethyst/shimmer",
+        "volume": 0.4
+      }
+    ],
+    "subtitle": "subtitles.block.amethyst_block.chime"
+  },
+  "block.amethyst_block.fall": {
+    "sounds": [
+      "fd:block/amethyst/step1",
+      "fd:block/amethyst/step2",
+      "fd:block/amethyst/step3",
+      "fd:block/amethyst/step4",
+      "fd:block/amethyst/step5",
+      "fd:block/amethyst/step6",
+      "fd:block/amethyst/step7",
+      "fd:block/amethyst/step8",
+      "fd:block/amethyst/step9",
+      "fd:block/amethyst/step10",
+      "fd:block/amethyst/step11",
+      "fd:block/amethyst/step12",
+      "fd:block/amethyst/step14"
+    ]
+  },
+  "block.amethyst_block.hit": {
+    "sounds": [
+      "fd:block/amethyst/step1",
+      "fd:block/amethyst/step2",
+      "fd:block/amethyst/step3",
+      "fd:block/amethyst/step4",
+      "fd:block/amethyst/step5",
+      "fd:block/amethyst/step6",
+      "fd:block/amethyst/step7",
+      "fd:block/amethyst/step8",
+      "fd:block/amethyst/step9",
+      "fd:block/amethyst/step10",
+      "fd:block/amethyst/step11",
+      "fd:block/amethyst/step12"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.amethyst_block.place": {
+    "sounds": [
+      "fd:block/amethyst/place1",
+      "fd:block/amethyst/place2",
+      "fd:block/amethyst/place3",
+      "fd:block/amethyst/place4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.amethyst_block.step": {
+    "sounds": [
+      "fd:block/amethyst/step1",
+      "fd:block/amethyst/step2",
+      "fd:block/amethyst/step3",
+      "fd:block/amethyst/step4",
+      "fd:block/amethyst/step5",
+      "fd:block/amethyst/step6",
+      "fd:block/amethyst/step7",
+      "fd:block/amethyst/step8",
+      "fd:block/amethyst/step9",
+      "fd:block/amethyst/step10",
+      "fd:block/amethyst/step11",
+      "fd:block/amethyst/step12",
+      "fd:block/amethyst/step13",
+      "fd:block/amethyst/step14"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.amethyst_cluster.break": {
+    "sounds": [
+      {
+        "name": "fd:block/amethyst_cluster/break1",
+        "pitch": 0.8,
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/amethyst_cluster/break2",
+        "pitch": 0.8,
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/amethyst_cluster/break3",
+        "pitch": 0.8,
+        "volume": 0.8
+      },
+      {
+        "name": "fd:block/amethyst_cluster/break4",
+        "pitch": 0.8,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.amethyst_cluster.fall": {
+    "sounds": [
+      "fd:block/amethyst/step1",
+      "fd:block/amethyst/step2",
+      "fd:block/amethyst/step3",
+      "fd:block/amethyst/step4",
+      "fd:block/amethyst/step5",
+      "fd:block/amethyst/step6",
+      "fd:block/amethyst/step7",
+      "fd:block/amethyst/step8",
+      "fd:block/amethyst/step9",
+      "fd:block/amethyst/step10",
+      "fd:block/amethyst/step11",
+      "fd:block/amethyst/step12",
+      "fd:block/amethyst/step14"
+    ]
+  },
+  "block.amethyst_cluster.hit": {
+    "sounds": [
+      "fd:block/amethyst/step1",
+      "fd:block/amethyst/step2",
+      "fd:block/amethyst/step3",
+      "fd:block/amethyst/step4",
+      "fd:block/amethyst/step5",
+      "fd:block/amethyst/step6",
+      "fd:block/amethyst/step7",
+      "fd:block/amethyst/step8",
+      "fd:block/amethyst/step9",
+      "fd:block/amethyst/step10",
+      "fd:block/amethyst/step11",
+      "fd:block/amethyst/step12"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.amethyst_cluster.place": {
+    "sounds": [
+      {
+        "name": "fd:block/amethyst_cluster/place1",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:block/amethyst_cluster/place2",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:block/amethyst_cluster/place3",
+        "volume": 0.9
+      },
+      {
+        "name": "fd:block/amethyst_cluster/place4",
+        "volume": 0.9
+      }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.amethyst_cluster.step": {
+    "sounds": [
+      "fd:block/amethyst/step1",
+      "fd:block/amethyst/step2",
+      "fd:block/amethyst/step3",
+      "fd:block/amethyst/step4",
+      "fd:block/amethyst/step5",
+      "fd:block/amethyst/step6",
+      "fd:block/amethyst/step7",
+      "fd:block/amethyst/step8",
+      "fd:block/amethyst/step9",
+      "fd:block/amethyst/step10",
+      "fd:block/amethyst/step11",
+      "fd:block/amethyst/step12",
+      "fd:block/amethyst/step13",
+      "fd:block/amethyst/step14"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
   }
  }

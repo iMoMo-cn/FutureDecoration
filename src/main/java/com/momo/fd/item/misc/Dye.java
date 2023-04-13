@@ -48,7 +48,10 @@ public class Dye extends Item implements IHasModel {
             if (!entitysheep.getSheared() && entitysheep.getFleeceColor() != enumdyecolor)
             {
                 entitysheep.setFleeceColor(enumdyecolor);
-                stack.shrink(1);
+                if (!playerIn.capabilities.isCreativeMode)
+                {
+                    stack.shrink(1);
+                }
             }
 
             return true;

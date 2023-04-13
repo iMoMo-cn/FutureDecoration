@@ -18,6 +18,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -82,8 +83,10 @@ public class BerriesBush extends BlockCrops implements IHasModel{
         Random rand = new Random();
         boolean flag1 = playerIn.getHeldItemOffhand().getItem() == (new ItemStack(Items.DYE, 1, 0)).getItem();
         boolean flag2 = playerIn.getHeldItemMainhand().getItem() == (new ItemStack(Items.DYE, 1, 0)).getItem();
+        boolean flag3 = playerIn.getHeldItemOffhand().getItem() instanceof ItemBlock;
+        boolean flag4 = playerIn.getHeldItemOffhand().getItem() instanceof ItemBlock;
 
-        boolean flag = flag1 || flag2;
+        boolean flag = flag1 || flag2 || flag3 || flag4;
 
         if(age > 2)
         {
@@ -100,7 +103,6 @@ public class BerriesBush extends BlockCrops implements IHasModel{
 
             if (worldIn.isRemote)
             {
-                playerIn.swingArm(hand);
                 worldIn.playSound(playerIn, pos, ModSoundHandler.PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
             }
         }

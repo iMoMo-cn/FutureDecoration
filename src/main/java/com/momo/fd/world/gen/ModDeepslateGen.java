@@ -40,7 +40,7 @@ public class ModDeepslateGen implements IWorldGenerator {
         {
             for (int y = 0; y < height; y++) {
 
-                BlockPos newPos = new BlockPos(x + 16, y, z + 16);
+                BlockPos newPos = new BlockPos(x + 7, y, z + 7);
 
                 Block block = world.getBlockState(newPos).getBlock();
 

@@ -1,14 +1,18 @@
 
-item.red_netherbrick.name=红色地狱砖
-item.copper_ingot.name=铜锭
-item.raw_ore_0.name=粗铁
-item.raw_ore_1.name=粗金
-item.raw_ore_2.name=粗铜
+
 item.dye_white.name=白色染料
 item.dye_blue.name=蓝色染料
 item.dye_black.name=黑色染料
 item.dye_brown.name=棕色染料
 item.sweet_berries.name=甜浆果
+item.glow_berries.name=发光浆果
+item.red_netherbrick.name=红色地狱砖
+item.copper_ingot.name=铜锭
+item.raw_ore_0.name=粗铁
+item.raw_ore_1.name=粗金
+item.raw_ore_2.name=粗铜
+item.crystal_shard_0.name=紫水晶碎片
+item.crystal_shard_1.name=黄水晶碎片
 
 tile.charcoal_block.name=木炭块
 tile.crying_obsidian.name=哭泣的黑曜石
@@ -21,6 +25,7 @@ tile.rock_block_4.name=闪长岩砖
 tile.rock_block_5.name=花岗岩砖
 tile.rock_block_6.name=方解石
 tile.rock_block_7.name=平滑玄武岩
+tile.rock_block_8.name=凝灰岩
 
 tile.basalt.name=玄武岩
 tile.polished_basalt.name=磨制玄武岩
@@ -63,6 +68,14 @@ tile.deepslate_redstone_ore.name=深层红石矿石
 tile.nether_ore_0.name=地狱金矿石
 tile.nether_ore_1.name=地狱铁矿石
 
+tile.raw_ore_block_0.name=粗铁块
+tile.raw_ore_block_1.name=粗金块
+tile.raw_ore_block_2.name=粗铜块
+
+tile.copper_block.name=铜块
+
+tile.pumpkin.name=南瓜
+
 tile.clear_glass.name=透净玻璃
 tile.stained_clear_glass_0.name=黑色透净玻璃
 tile.stained_clear_glass_1.name=蓝色透净玻璃
@@ -98,6 +111,13 @@ tile.stained_clear_pane_12.name=红色透净玻璃板
 tile.stained_clear_pane_13.name=淡灰色透净玻璃板
 tile.stained_clear_pane_14.name=白色透净玻璃板
 tile.stained_clear_pane_15.name=黄色透净玻璃板
+
+tile.amethyst_block.name=紫水晶块
+tile.amethyst_budding.name=紫水晶母岩
+tile.amethyst_small_bud.name=小型紫晶芽
+tile.amethyst_medium_bud.name=中型紫晶芽
+tile.amethyst_large_bud.name=大型紫晶芽
+tile.amethyst_cluster.name=紫水晶簇
 
 tile.stone_wall_0.name=石墙
 tile.stone_wall_1.name=安山岩墙
@@ -296,9 +316,41 @@ tile.carpet_0.name=皮革地毯
 tile.carpet_1.name=兔子皮地毯
 tile.carpet_2.name=苔藓地毯
 
+tile.tight_carpet_0.name=黑色牢固地毯
+tile.tight_carpet_1.name=蓝色牢固地毯
+tile.tight_carpet_2.name=棕色牢固地毯
+tile.tight_carpet_3.name=青色牢固地毯
+tile.tight_carpet_4.name=灰色牢固地毯
+tile.tight_carpet_5.name=绿色牢固地毯
+tile.tight_carpet_6.name=淡蓝色牢固地毯
+tile.tight_carpet_7.name=黄绿色牢固地毯
+tile.tight_carpet_8.name=品红色牢固地毯
+tile.tight_carpet_9.name=橙色牢固地毯
+tile.tight_carpet_10.name=粉色牢固地毯
+tile.tight_carpet_11.name=紫色牢固地毯
+tile.tight_carpet_12.name=红色牢固地毯
+tile.tight_carpet_13.name=淡灰色牢固地毯
+tile.tight_carpet_14.name=白色牢固地毯
+tile.tight_carpet_15.name=黄色牢固地毯
+
 tile.lily_of_the_valley.name=铃兰
 tile.cornflower.name=矢车菊
 tile.rose.name=玫瑰
 tile.wither_rose.name=凋零玫瑰
 
+tile.cave_vines_plant.name=洞穴藤蔓
+tile.cave_vines.name=洞穴藤蔓
+
 tile.sweet_berry_bush.name=甜浆果丛
+tile.pumpkin_stem.name=南瓜梗
+
+subtitles.block.barrel.close=木桶:关闭
+subtitles.block.barrel.open=木桶:打开
+subtitles.block.composter.empty=堆肥桶:清空
+subtitles.block.composter.fill=堆肥桶:填充
+subtitles.block.composter.ready=堆肥桶:堆肥
+subtitles.block.pumpkin.carve=剪刀:雕刻
+subtitles.block.amethyst_block.chime=紫水晶:敲击
+
+subtitles.item.axe.strip=斧:刮削
+subtitles.item.berries.pick=浆果:弹出

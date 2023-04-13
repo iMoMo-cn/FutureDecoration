@@ -56,9 +56,6 @@ public class ModRecipes {
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_ORE, 1, 0), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.NETHER_ORE, 1, 1), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.COPPER_ORE), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
-		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 0), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
-		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 1), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
-		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 2), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 0), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 1), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 2), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
@@ -67,6 +64,14 @@ public class ModRecipes {
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 5), new ItemStack(Items.DIAMOND, 1), 1.0f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.ORE, 1, 6), new ItemStack(Items.EMERALD, 1), 1.0f);
 		GameRegistry.addSmelting(new ItemStack(ModBlocks.DEEPSLATE_REDSTONE_ORE), new ItemStack(Items.REDSTONE, 1), 0.2f);
+
+	    //raw ore
+		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 0), new ItemStack(Items.IRON_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 1), new ItemStack(Items.GOLD_INGOT, 1), 1.0f);
+		GameRegistry.addSmelting(new ItemStack(ModItems.RAW_ORE, 1, 2), new ItemStack(ModItems.COPPER_INGOT, 1), 0.7f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.RAW_ORE, 1, 0), new ItemStack(Blocks.IRON_BLOCK, 1), 7.0f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.RAW_ORE, 1, 1), new ItemStack(Blocks.GOLD_BLOCK, 1), 10.0f);
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.RAW_ORE, 1, 2), new ItemStack(ModBlocks.COPPER_BLOCK, 1), 7.0f);
 	}
 
 
@@ -95,6 +100,7 @@ public class ModRecipes {
 		removeRecipe(new ItemStack(Blocks.SANDSTONE_STAIRS, 4));
 		removeRecipe(new ItemStack(Blocks.RED_SANDSTONE_STAIRS, 4));
 		removeRecipe(new ItemStack(Blocks.STONE_BRICK_STAIRS, 4));
+		removeRecipe(new ItemStack(Items.PUMPKIN_SEEDS, 4));
 
 		recipes.forEach(rl -> {
 			if(!rl.getResourceDomain().equals(MoMoFramework.MODID)) {

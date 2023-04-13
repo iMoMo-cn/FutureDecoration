@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "fd:raw_ore",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "fd:raw_ore_block",
+    "data": 0,
+    "count": 1
+  }
+}

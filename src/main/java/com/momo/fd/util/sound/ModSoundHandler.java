@@ -50,6 +50,29 @@ public class ModSoundHandler {
     public static SoundEvent BLOCK_DEEPSLATE_BRICKS_HIT = new ModSoundEvent("block.deepslate_bricks.hit");
     public static SoundEvent BLOCK_DEEPSLATE_BRICKS_FALL = new ModSoundEvent("block.deepslate_bricks.fall");
 
+    public static SoundEvent BLOCK_CAVE_VINES_BREAK = new ModSoundEvent("block.cave_vines.break");
+    public static SoundEvent BLOCK_CAVE_VINES_STEP = new ModSoundEvent("block.cave_vines.step");
+    public static SoundEvent BLOCK_CAVE_VINES_PLACE = new ModSoundEvent("block.cave_vines.place");
+    public static SoundEvent BLOCK_CAVE_VINES_HIT = new ModSoundEvent("block.cave_vines.hit");
+    public static SoundEvent BLOCK_CAVE_VINES_FALL = new ModSoundEvent("block.cave_vines.fall");
+
+    public static SoundEvent BLOCK_PUMPKIN_CARVE = new ModSoundEvent("block.pumpkin.carve");
+
+    public static SoundEvent BLOCK_AMETHYST_CHIME = new ModSoundEvent("block.amethyst_block.chime");
+
+    public static SoundEvent BLOCK_AMETHYST_BREAK = new ModSoundEvent("block.amethyst_block.break");
+    public static SoundEvent BLOCK_AMETHYST_STEP = new ModSoundEvent("block.amethyst_block.step");
+    public static SoundEvent BLOCK_AMETHYST_PLACE = new ModSoundEvent("block.amethyst_block.place");
+    public static SoundEvent BLOCK_AMETHYST_HIT = new ModSoundEvent("block.amethyst_block.hit");
+    public static SoundEvent BLOCK_AMETHYST_FALL = new ModSoundEvent("block.amethyst_block.fall");
+
+    public static SoundEvent BLOCK_AMETHYST_CLUSTER_BREAK = new ModSoundEvent("block.amethyst_cluster.break");
+    public static SoundEvent BLOCK_AMETHYST_CLUSTER_STEP = new ModSoundEvent("block.amethyst_cluster.step");
+    public static SoundEvent BLOCK_AMETHYST_CLUSTER_PLACE = new ModSoundEvent("block.amethyst_cluster.place");
+    public static SoundEvent BLOCK_AMETHYST_CLUSTER_HIT = new ModSoundEvent("block.amethyst_cluster.hit");
+    public static SoundEvent BLOCK_AMETHYST_CLUSTER_FALL = new ModSoundEvent("block.amethyst_cluster.fall");
+
+
     public static void soundRegister()
     {
         MoMoFramework.Log("Registering %s sounds.", SOUNDS.size());

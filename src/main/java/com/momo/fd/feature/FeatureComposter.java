@@ -38,7 +38,8 @@ public class FeatureComposter {
                 "minecraft:melon",
                 "minecraft:reeds",
                 "minecraft:double_plant[2]",
-                "minecraft:vine"
+                "minecraft:vine",
+                "fd:glow_berries"
         };
         for (String item : items) inputs.put(item, 0.5f);
 
@@ -68,7 +69,8 @@ public class FeatureComposter {
                 "fd:cornflower",
                 "fd:lily_of_the_valley",
                 "fd:rose",
-                "fd:wither_rose"
+                "fd:wither_rose",
+                "fd:pumpkin"
         };
         for (String item : items) inputs.put(item, 0.65f);
 

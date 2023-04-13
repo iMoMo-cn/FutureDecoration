@@ -261,7 +261,7 @@ public class TileEntityBlastFurnace extends TileEntity implements ITickable {
                 || item == Item.getItemFromBlock(Blocks.DIAMOND_ORE) || item == Item.getItemFromBlock(Blocks.EMERALD_ORE) || item == Item.getItemFromBlock(Blocks.LAPIS_ORE)
                 || item == Item.getItemFromBlock(Blocks.REDSTONE_ORE) || item == Item.getItemFromBlock(Blocks.QUARTZ_ORE) || item == Item.getItemFromBlock(ModBlocks.DEEPSLATE_REDSTONE_ORE)
                 || item == ModItems.RAW_ORE || item == Item.getItemFromBlock(ModBlocks.COPPER_ORE) || item == Item.getItemFromBlock(ModBlocks.ORE)
-                || item == Item.getItemFromBlock(ModBlocks.NETHER_ORE))
+                || item == Item.getItemFromBlock(ModBlocks.NETHER_ORE) || item == Item.getItemFromBlock(ModBlocks.RAW_ORE))
         {
             return true;
         }

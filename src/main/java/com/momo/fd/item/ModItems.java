@@ -2,6 +2,8 @@ package com.momo.fd.item;
 
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.food.Berries;
+import com.momo.fd.item.food.GlowBerries;
+import com.momo.fd.item.itemVariant.ItemVariantBase;
 import com.momo.fd.item.misc.Dye;
 import com.momo.fd.item.tile.ModItemDoor;
 import com.momo.fd.item.tile.ModItemSign;
@@ -20,8 +22,10 @@ public class ModItems {
 	public static final Item RED_NETHERBRICK = new ItemBase("red_netherbrick").setCreativeTab(CreativeTabs.MISC);
 	public static final Item COPPER_INGOT = new ItemBase("copper_ingot").setCreativeTab(CreativeTabs.MISC);
 	public static final Item RAW_ORE = new ItemVariantBase("raw_ore", 3).setCreativeTab(CreativeTabs.MISC);
+	public static final Item CRYSTAL_SHARD = new ItemBase("crystal_shard_0").setCreativeTab(CreativeTabs.MISC);
 
 	public static final Item BERRIES = new Berries("sweet_berries", 2, 0.0F, false);
+	public static final Item GLOW_BERRIES = new GlowBerries("glow_berries", 4, 0.4F, false);
 
 	public static final Item ACACIA_SIGN = new ModItemSign("acacia_sign");
 	public static final Item BIRCH_SIGN = new ModItemSign("birch_sign");

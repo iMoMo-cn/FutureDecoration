@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fd:blocks/amethyst_cluster"
+  }
+}

@@ -1,9 +1,9 @@
 package com.momo.fd.proxy;
 
-import com.momo.fd.blocks.blockVariant.ItemBlockVariants;
+import com.momo.fd.item.itemVariant.ItemBlockVariants;
 import com.momo.fd.entity.ModEntityInit;
 import com.momo.fd.entity.tiles.ModTileEntityItemStackRenderer;
-import com.momo.fd.item.ItemVariantBase;
+import com.momo.fd.item.itemVariant.ItemVariantBase;
 import com.momo.fd.item.shield.ItemShieldBase;
 import com.momo.fd.keys.KeyboardManager;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
