@@ -50,6 +50,12 @@ public class AmethystCluster extends DirectionalBlock {
         return shardMeta;
     }
 
+    @Deprecated // Forge: Use more sensitive version below: getPickBlock
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
+    {
+        return new ItemStack(Item.getItemFromBlock(this), 1);
+    }
+
     public int quantityDropped(Random random) { return 2 + random.nextInt(3); }
 
     public int quantityDroppedWithBonus(int fortune, Random random)
