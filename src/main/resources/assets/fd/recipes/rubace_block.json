@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:crystal_shard",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "fd:rubace_block",
+    "count": 1
+  }
+}

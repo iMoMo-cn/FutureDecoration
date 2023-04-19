@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "fd:prasiolite_block"
+    },
+    "X": {
+      "item": "fd:prasiolite_cluster"
+    }
+  },
+  "result": {
+    "item": "fd:prasiolite_budding",
+    "count": 1
+  }
+}

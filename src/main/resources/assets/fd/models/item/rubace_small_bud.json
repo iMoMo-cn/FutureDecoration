@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fd:blocks/rubace_small_bud"
+  }
+}

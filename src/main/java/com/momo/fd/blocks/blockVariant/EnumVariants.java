@@ -10,7 +10,7 @@ public enum EnumVariants implements IStringSerializable {
     Block4(4, "4"),
     Block5(5, "5"),
     Block6(6, "6"),
-    Block(7, "7"),
+    Block7(7, "7"),
     Block8(8, "8"),
     Block9(9, "9"),
     Block10(10, "10"),

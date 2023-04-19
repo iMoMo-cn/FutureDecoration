@@ -6,7 +6,8 @@
   ],
   "key": {
     "#": {
-      "item": "fd:crystal_shard_0"
+      "item": "fd:crystal_shard",
+      "data": 0
     }
   },
   "result": {

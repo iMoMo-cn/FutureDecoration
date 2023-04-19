@@ -1,6 +1,6 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "fd:blocks/large_amethyst_bud"
+    "cross": "fd:blocks/amethyst_large_bud"
   }
 }

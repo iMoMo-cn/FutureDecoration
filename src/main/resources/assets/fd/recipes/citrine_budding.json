@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "fd:citrine_block"
+    },
+    "X": {
+      "item": "fd:citrine_cluster"
+    }
+  },
+  "result": {
+    "item": "fd:citrine_budding",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "fd:rubace_block"
+    },
+    "X": {
+      "item": "fd:rubace_cluster"
+    }
+  },
+  "result": {
+    "item": "fd:rubace_budding",
+    "count": 1
+  }
+}

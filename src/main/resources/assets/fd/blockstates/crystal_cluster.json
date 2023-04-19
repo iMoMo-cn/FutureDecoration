@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up":  { "model": "fd:crystal_cluster" },
+    "facing=down":   { "model": "fd:crystal_cluster", "x": 180 },
+    "facing=east":   { "model": "fd:crystal_cluster", "x": 90, "y": 90 },
+    "facing=west": { "model": "fd:crystal_cluster", "x": 90, "y": 270 },
+    "facing=south": { "model": "fd:crystal_cluster", "x": 90, "y": 180 },
+    "facing=north": { "model": "fd:crystal_cluster", "x": 90 }
+  }
+}

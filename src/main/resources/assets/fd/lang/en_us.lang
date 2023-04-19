@@ -19,6 +19,9 @@ item.raw_ore_1.name=Raw Gold
 item.raw_ore_2.name=Raw Copper
 item.crystal_shard_0.name=Amethyst Shard
 item.crystal_shard_1.name=Citrine Shard
+item.crystal_shard_2.name=Rubace Shard
+item.crystal_shard_3.name=Prasiolite Shard
+item.crystal_shard_4.name=Crystal Shard
 
 #entity
 #entity.entity_name.name=block name
@@ -125,11 +128,40 @@ tile.stained_clear_pane_14.name=Clear White Stained Glass Pane
 tile.stained_clear_pane_15.name=Clear Yellow Stained Glass Pane
 
 tile.amethyst_block.name=Block of Amethyst
+tile.citrine_block.name=Block of Citrine
+tile.rubace_block.name=Block of Rubace
+tile.prasiolite_block.name=Block of Prasiolite
+tile.crystal_block.name=Block of Crystal
+
 tile.amethyst_budding.name=Budding Amethyst
+tile.citrine_budding.name=Budding Citrine
+tile.rubace_budding.name=Budding Rubace
+tile.prasiolite_budding.name=Budding Prasiolite
+tile.crystal_budding.name=Budding Crystal
+
 tile.amethyst_small_bud.name=Small Amethyst Bud
+tile.citrine_small_bud.name=Small Citrine Bud
+tile.rubace_small_bud.name=Small Rubace Bud
+tile.prasiolite_small_bud.name=Small Prasiolite Bud
+tile.crystal_small_bud.name=Small Crystal Bud
+
 tile.amethyst_medium_bud.name=Medium Amethyst Bud
+tile.citrine_medium_bud.name=Medium Citrine Bud
+tile.rubace_medium_bud.name=Medium Rubace Bud
+tile.prasiolite_medium_bud.name=Medium Prasiolite Bud
+tile.crystal_medium_bud.name=Medium Crystal Bud
+
 tile.amethyst_large_bud.name=Large Amethyst Bud
+tile.citrine_large_bud.name=Large Citrine Bud
+tile.rubace_large_bud.name=Large Rubace Bud
+tile.prasiolite_large_bud.name=Large Prasiolite Bud
+tile.crystal_large_bud.name=Large Crystal Bud
+
 tile.amethyst_cluster.name=Amethyst Clusters
+tile.citrine_cluster.name=Citrine Clusters
+tile.rubace_cluster.name=Rubace Clusters
+tile.prasiolite_cluster.name=Prasiolite Clusters
+tile.crystal_cluster.name=Crystal Clusters
 
 tile.stone_wall_0.name=Stone Wall
 tile.stone_wall_1.name=Andesite Wall

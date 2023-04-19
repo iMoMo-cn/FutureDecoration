@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fd:blocks/prasiolite_small_bud"
+  }
+}

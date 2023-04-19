@@ -4,7 +4,10 @@ import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.EnumVariants;
 import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
+import net.minecraft.block.state.pattern.BlockMaterialMatcher;
+import net.minecraft.block.state.pattern.BlockStateMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -23,18 +26,17 @@ import java.util.Random;
 
 public class ModWorldGenNew implements IWorldGenerator {
 
-	//Please register this in preInitRegistries
-	public ChunkGeneratorSettings chunkProviderSettings;
-
 	private WorldGenerator
 			copper_ore,
-			nether_gold_ore,
-			nether_iron_ore;
+			nether_gold_ore, nether_iron_ore,
+			tuff;
+
 
 	public ModWorldGenNew() {
 		copper_ore = new WorldGenMinable(ModBlocks.COPPER_ORE.getDefaultState(), 10, BlockMatcher.forBlock(Blocks.STONE));
 		nether_gold_ore = new WorldGenMinable(ModBlocks.NETHER_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block0), 10, BlockMatcher.forBlock(Blocks.NETHERRACK));
 		nether_iron_ore = new WorldGenMinable(ModBlocks.NETHER_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block1), 10, BlockMatcher.forBlock(Blocks.NETHERRACK));
+		tuff = new WorldGenMinable(ModBlocks.ROCK_BLOCK.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block8), 20, BlockMatcher.forBlock(Blocks.STONE));
 	}
 
 	@Override
@@ -51,6 +53,7 @@ public class ModWorldGenNew implements IWorldGenerator {
 				//MoMoFramework.Log("world gen running");
 
 				runGenOre(copper_ore, world, random, chunkX, chunkZ, 13, 1, 63);
+				//runGenOre(tuff, world, random, chunkX, chunkZ, 3, 1, 25);
 
 				break;
 			case 1:
@@ -61,7 +64,6 @@ public class ModWorldGenNew implements IWorldGenerator {
 
 	//Utility
 
-	//NetherOre
 	void runGenOre(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chances, int minHeight, int maxHeight)
 	{
 		if (minHeight > maxHeight || minHeight < 0 || maxHeight > 256)

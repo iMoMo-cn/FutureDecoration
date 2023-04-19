@@ -13,7 +13,7 @@ import com.momo.fd.blocks.blockBush.*;
 import com.momo.fd.blocks.blockInteractive.*;
 import com.momo.fd.blocks.blockMisc.*;
 import com.momo.fd.blocks.blockBasic.directional.PillarBlock;
-import com.momo.fd.blocks.blockMisc.Amethyst.*;
+import com.momo.fd.blocks.blockMisc.Crystal.Amethyst.*;
 import com.momo.fd.blocks.blockVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.StainedGlass;
 import com.momo.fd.blocks.blockVariant.StainedGlassPane;
@@ -83,14 +83,43 @@ public class ModBlocks {
 	public static final Block CLEAR_PANE = new GlassPane("clear_pane");
 	public static final Block STAINED_CLEAR_GLASS_PANE = new StainedGlassPane("stained_clear_pane", 16);
 
-	public static final Block AMETHYST_BLOCK = new AmethystBlock("amethyst_block");
-	public static final Block AMETHYST_BUDDING = new AmethystBudding("amethyst_budding");
-	public static final Block AMETHYST_SMALL_BUD = new AmethystBud("amethyst_small_bud", MapColor.PURPLE);
-	public static final Block AMETHYST_MEDIUM_BUD = new AmethystBudMedium("amethyst_medium_bud", MapColor.PURPLE);
-	public static final Block AMETHYST_LARGE_BUD = new AmethystBudLarge("amethyst_large_bud", MapColor.PURPLE);
-	public static final Block AMETHYST_CLUSTERS = new AmethystCluster("amethyst_cluster", MapColor.PURPLE);
+	public static final Block AMETHYST_BLOCK = new AmethystBlock("amethyst_block", MapColor.PURPLE);
+	public static final Block CITRINE_BLOCK = new AmethystBlock("citrine_block", MapColor.YELLOW);
+	public static final Block RUBACE_BLOCK = new AmethystBlock("rubace_block", MapColor.RED);
+	public static final Block PRASIOLITE_BLOCK = new AmethystBlock("prasiolite_block", MapColor.GREEN);
+	public static final Block CRYSTAL_BLOCK = new AmethystBlock("crystal_block", MapColor.SNOW);
 
-    public static final Block RED_NETHER_BRICK_FENCE = new Fence("red_nether_brick_fence", Material.ROCK, MapColor.NETHERRACK);
+	public static final Block AMETHYST_SMALL_BUD = new AmethystBud("amethyst_small_bud", MapColor.PURPLE);
+	public static final Block CITRINE_SMALL_BUD = new AmethystBud("citrine_small_bud", MapColor.YELLOW);
+	public static final Block RUBACE_SMALL_BUD = new AmethystBud("rubace_small_bud", MapColor.RED);
+	public static final Block PRASIOLITE_SMALL_BUD = new AmethystBud("prasiolite_small_bud", MapColor.GREEN);
+	public static final Block CRYSTAL_SMALL_BUD = new AmethystBud("crystal_small_bud", MapColor.SNOW);
+
+	public static final Block AMETHYST_MEDIUM_BUD = new AmethystBudMedium("amethyst_medium_bud", MapColor.PURPLE);
+	public static final Block CITRINE_MEDIUM_BUD = new AmethystBudMedium("citrine_medium_bud", MapColor.YELLOW);
+	public static final Block RUBACE_MEDIUM_BUD = new AmethystBudMedium("rubace_medium_bud", MapColor.RED);
+	public static final Block PRASIOLITE_MEDIUM_BUD = new AmethystBudMedium("prasiolite_medium_bud", MapColor.GREEN);
+	public static final Block CRYSTAL_MEDIUM_BUD = new AmethystBudMedium("crystal_medium_bud", MapColor.SNOW);
+
+	public static final Block AMETHYST_LARGE_BUD = new AmethystBudLarge("amethyst_large_bud", MapColor.PURPLE);
+	public static final Block CITRINE_LARGE_BUD = new AmethystBudLarge("citrine_large_bud", MapColor.YELLOW);
+	public static final Block RUBACE_LARGE_BUD = new AmethystBudLarge("rubace_large_bud", MapColor.RED);
+	public static final Block PRASIOLITE_LARGE_BUD = new AmethystBudLarge("prasiolite_large_bud", MapColor.GREEN);
+	public static final Block CRYSTAL_LARGE_BUD = new AmethystBudLarge("crystal_large_bud", MapColor.SNOW);
+
+	public static final Block AMETHYST_CLUSTERS = new AmethystCluster("amethyst_cluster", MapColor.PURPLE, 0);
+	public static final Block CITRINE_CLUSTERS = new AmethystCluster("citrine_cluster", MapColor.YELLOW, 1);
+	public static final Block RUBACE_CLUSTERS = new AmethystCluster("rubace_cluster", MapColor.RED, 2);
+	public static final Block PRASIOLITE_CLUSTERS = new AmethystCluster("prasiolite_cluster", MapColor.GREEN, 3);
+	public static final Block CRYSTAL_CLUSTERS = new AmethystCluster("crystal_cluster", MapColor.SNOW, 4);
+
+	public static final Block AMETHYST_BUDDING = new AmethystBudding("amethyst_budding", MapColor.PURPLE, ModBlocks.AMETHYST_BLOCK, ModBlocks.AMETHYST_SMALL_BUD, ModBlocks.AMETHYST_MEDIUM_BUD, ModBlocks.AMETHYST_LARGE_BUD, ModBlocks.AMETHYST_CLUSTERS);
+	public static final Block CITRINE_BUDDING = new AmethystBudding("citrine_budding", MapColor.YELLOW, ModBlocks.CITRINE_BLOCK, ModBlocks.CITRINE_SMALL_BUD, ModBlocks.CITRINE_MEDIUM_BUD, ModBlocks.CITRINE_LARGE_BUD, ModBlocks.CITRINE_CLUSTERS);
+	public static final Block RUBACE_BUDDING = new AmethystBudding("rubace_budding", MapColor.RED, ModBlocks.RUBACE_BLOCK, ModBlocks.RUBACE_SMALL_BUD, ModBlocks.RUBACE_MEDIUM_BUD, ModBlocks.RUBACE_LARGE_BUD, ModBlocks.RUBACE_CLUSTERS);
+	public static final Block PRASIOLITE_BUDDING = new AmethystBudding("prasiolite_budding", MapColor.GREEN, ModBlocks.PRASIOLITE_BLOCK, ModBlocks.PRASIOLITE_SMALL_BUD, ModBlocks.PRASIOLITE_MEDIUM_BUD, ModBlocks.PRASIOLITE_LARGE_BUD, ModBlocks.PRASIOLITE_CLUSTERS);
+	public static final Block CRYSTAL_BUDDING = new AmethystBudding("crystal_budding", MapColor.SNOW, ModBlocks.CRYSTAL_BLOCK, ModBlocks.CRYSTAL_SMALL_BUD, ModBlocks.CRYSTAL_MEDIUM_BUD, ModBlocks.CRYSTAL_LARGE_BUD, ModBlocks.CRYSTAL_CLUSTERS);
+
+	public static final Block RED_NETHER_BRICK_FENCE = new Fence("red_nether_brick_fence", Material.ROCK, MapColor.NETHERRACK);
 
 	public static final Block STONE_STAIRS = new Stair("stone_stairs", Blocks.STONE, MapColor.STONE);
 	public static final Block MOSSY_STONE_STAIRS = new Stair("mossy_stone_stairs", Blocks.MOSSY_COBBLESTONE, MapColor.STONE);

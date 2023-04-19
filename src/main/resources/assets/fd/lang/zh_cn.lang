@@ -13,6 +13,9 @@ item.raw_ore_1.name=粗金
 item.raw_ore_2.name=粗铜
 item.crystal_shard_0.name=紫水晶碎片
 item.crystal_shard_1.name=黄水晶碎片
+item.crystal_shard_2.name=红水晶碎片
+item.crystal_shard_3.name=绿水晶碎片
+item.crystal_shard_4.name=白水晶碎片
 
 tile.charcoal_block.name=木炭块
 tile.crying_obsidian.name=哭泣的黑曜石
@@ -113,11 +116,40 @@ tile.stained_clear_pane_14.name=白色透净玻璃板
 tile.stained_clear_pane_15.name=黄色透净玻璃板
 
 tile.amethyst_block.name=紫水晶块
+tile.citrine_block.name=黄水晶块
+tile.rubace_block.name=红水晶块
+tile.prasiolite_block.name=绿水晶块
+tile.crystal_block.name=白水晶块
+
 tile.amethyst_budding.name=紫水晶母岩
+tile.citrine_budding.name=黄水晶母岩
+tile.rubace_budding.name=红水晶母岩
+tile.prasiolite_budding.name=绿水晶母岩
+tile.crystal_budding.name=白水晶母岩
+
 tile.amethyst_small_bud.name=小型紫晶芽
+tile.citrine_small_bud.name=小型黄晶芽
+tile.rubace_small_bud.name=小型红晶芽
+tile.prasiolite_small_bud.name=小型绿晶芽
+tile.crystal_small_bud.name=小型白晶芽
+
 tile.amethyst_medium_bud.name=中型紫晶芽
+tile.citrine_medium_bud.name=中型黄晶芽
+tile.rubace_medium_bud.name=中型红晶芽
+tile.prasiolite_medium_bud.name=中型绿晶芽
+tile.crystal_medium_bud.name=中型白晶芽
+
 tile.amethyst_large_bud.name=大型紫晶芽
+tile.citrine_large_bud.name=大型黄晶芽
+tile.rubace_large_bud.name=大型红晶芽
+tile.prasiolite_large_bud.name=大型绿晶芽
+tile.crystal_large_bud.name=大型白晶芽
+
 tile.amethyst_cluster.name=紫水晶簇
+tile.citrine_cluster.name=黄水晶簇
+tile.rubace_cluster.name=红水晶簇
+tile.prasiolite_cluster.name=绿水晶簇
+tile.crystal_cluster.name=白水晶簇
 
 tile.stone_wall_0.name=石墙
 tile.stone_wall_1.name=安山岩墙

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:crystal_shard",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "fd:prasiolite_block",
+    "count": 1
+  }
+}

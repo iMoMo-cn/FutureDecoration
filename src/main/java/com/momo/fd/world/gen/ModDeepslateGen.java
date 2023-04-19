@@ -4,6 +4,7 @@ import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.EnumVariants;
 import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -32,6 +33,8 @@ public class ModDeepslateGen implements IWorldGenerator {
                 generateDeepslate(world, height, x1, z1);
             }
         }
+
+        //generateRawOre(world, random, x, z);
     }
 
     private boolean generateDeepslate(World world, int height, int x, int z) {
@@ -40,7 +43,7 @@ public class ModDeepslateGen implements IWorldGenerator {
         {
             for (int y = 0; y < height; y++) {
 
-                BlockPos newPos = new BlockPos(x + 7, y, z + 7);
+                BlockPos newPos = new BlockPos(x + 16, y, z + 16);
 
                 Block block = world.getBlockState(newPos).getBlock();
 
@@ -75,6 +78,41 @@ public class ModDeepslateGen implements IWorldGenerator {
         else if(block == Blocks.EMERALD_ORE){ world.setBlockState(pos, ModBlocks.ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block6), 2|16); }
         else if(block == Blocks.REDSTONE_ORE){ world.setBlockState(pos, ModBlocks.DEEPSLATE_REDSTONE_ORE.getDefaultState(), 2|16); }
 
+        return true;
+    }
+
+
+
+    private boolean generateRawOre(World world, Random r, int x, int z)
+    {
+        IBlockState state = ModBlocks.RAW_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block0);
+
+        switch (r.nextInt(3))
+        {
+            case 0: break;
+            case 1: state = ModBlocks.RAW_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block1); break;
+            case 2: state = ModBlocks.RAW_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block2); break;
+        }
+
+        for(int i = 0; i < 16; i++)
+        {
+            for(int j = 0; j < 16; j++)
+            {
+                for (int y = 0; y <= 20; y++)
+                {
+                    int x1 = x + i;
+                    int z1 = z + j;
+
+                    BlockPos pos = new BlockPos(x1, y, z1);
+                    boolean flag = world.getBlockState(pos) == ModBlocks.ROCK_BLOCK.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block8);
+
+                    if(new Random().nextFloat() < 0.1 && flag)
+                    {
+                        world.setBlockState(pos, state, 2|16);
+                    }
+                }
+            }
+        }
         return true;
     }
 }

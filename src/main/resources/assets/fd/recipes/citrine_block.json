@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "fd:crystal_shard",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "fd:citrine_block",
+    "count": 1
+  }
+}
