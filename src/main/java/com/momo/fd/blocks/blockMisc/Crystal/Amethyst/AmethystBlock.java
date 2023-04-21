@@ -21,6 +21,9 @@ public class AmethystBlock extends BlockBase {
     public AmethystBlock(String name, MapColor color) {
         super(name, Material.ROCK, color);
 
+        setHardness(1.0F);
+        setResistance(5.0F);
+
         setSoundType(AMETHYST);
         setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
     }
