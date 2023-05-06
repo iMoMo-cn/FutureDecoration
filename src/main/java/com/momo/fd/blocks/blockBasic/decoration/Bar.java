@@ -9,20 +9,26 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 
 public class Bar extends BlockPane implements IHasModel {
-    public Bar(String name, Material materialIn) {
+    public Bar(String name, Material materialIn, SoundType soundTypeIn) {
         super(materialIn, true);
 
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        setHardness(5.0F);
-        setResistance(10.0F);
-        setSoundType(SoundType.METAL);
+        setSoundType(soundTypeIn);
 
         ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModItems.ITEMS.add(new ItemBlock(this){
+                    @Override
+                    public int getItemBurnTime(ItemStack itemStack)
+                    {
+                        return materialIn == Material.WOOD? 70:-1;
+                    }
+                }.setRegistryName(this.getRegistryName())
+        );
     }
 
     @Override

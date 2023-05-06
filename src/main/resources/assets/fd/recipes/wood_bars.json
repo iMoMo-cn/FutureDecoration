@@ -1,0 +1,14 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": { "type": "forge:ore_dict", "ore": "stickWood" }
+  },
+  "result": {
+    "item": "fd:wood_bars",
+    "count": 8
+  }
+}

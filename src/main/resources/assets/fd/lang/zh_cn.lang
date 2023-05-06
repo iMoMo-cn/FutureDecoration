@@ -5,6 +5,7 @@ item.dye_blue.name=蓝色染料
 item.dye_black.name=黑色染料
 item.dye_brown.name=棕色染料
 item.sweet_berries.name=甜浆果
+item.sour_berries.name=酸浆果
 item.glow_berries.name=发光浆果
 item.red_netherbrick.name=红色地狱砖
 item.copper_ingot.name=铜锭
@@ -114,6 +115,8 @@ tile.stained_clear_pane_12.name=红色透净玻璃板
 tile.stained_clear_pane_13.name=淡灰色透净玻璃板
 tile.stained_clear_pane_14.name=白色透净玻璃板
 tile.stained_clear_pane_15.name=黄色透净玻璃板
+
+tile.tinted_glass.name=遮光玻璃
 
 tile.amethyst_block.name=紫水晶块
 tile.citrine_block.name=黄水晶块
@@ -302,13 +305,23 @@ item.dark_oak_sign.name=深色橡木告示牌
 item.jungle_sign.name=丛林告示牌
 item.spruce_sign.name=云杉木告示牌
 
-tile.iron_lantern.name=铁灯笼
+
 tile.chain.name=锁链
-tile.gold_lantern.name=金灯笼
-tile.gold_bars.name=金栏杆
-item.gold_door.name=金门
-tile.gold_trapdoor.name=金活板门
 tile.chain_gold.name=金锁链
+tile.vine_rope.name=藤蔓绳
+
+tile.iron_lantern.name=铁灯笼
+tile.gold_lantern.name=金灯笼
+tile.wood_lantern.name=木灯笼
+
+tile.gold_bars.name=金栏杆
+tile.wood_bars.name=木栏杆
+
+item.gold_door.name=金门
+item.glass_door.name=玻璃门
+
+tile.gold_trapdoor.name=金活板门
+tile.glass_trapdoor.name=玻璃活板门
 
 tile.stripped_acacia.name=去皮金合欢木原木
 tile.stripped_birch.name=去皮白桦木原木

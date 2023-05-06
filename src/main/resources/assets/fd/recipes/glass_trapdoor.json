@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "fd:clear_glass"
+      }
+    ]
+  },
+  "result": {
+    "item": "fd:glass_trapdoor",
+    "count": 1
+  }
+}

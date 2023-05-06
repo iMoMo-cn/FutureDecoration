@@ -7,8 +7,7 @@ import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import com.momo.fd.util.sound.ModSoundEvent;
 import com.momo.fd.util.sound.ModSoundHandler;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockFaceShape;
@@ -16,6 +15,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
@@ -38,9 +38,9 @@ public class Lantern extends Block implements IHasModel {
 
     public static final SoundType LANTERN = new SoundType(1.0F, 1.0F, ModSoundHandler.BLOCK_LANTER_BREAK, ModSoundHandler.BLOCK_LANTER_STEP, ModSoundHandler.BLOCK_LANTER_PLACE, ModSoundHandler.BLOCK_LANTER_HIT, ModSoundHandler.BLOCK_LANTER_FALL);
 
-    public Lantern(String name)
+    public Lantern(String name, Material material)
     {
-        super(Material.IRON);
+        super(material);
 
         setUnlocalizedName(name);
         setRegistryName(name);
@@ -48,7 +48,15 @@ public class Lantern extends Block implements IHasModel {
         setHardness(2.0F);
         setResistance(4.0F);
         setLightLevel(1.0F);
-        setSoundType(LANTERN);
+
+        if(material == Material.WOOD)
+        {
+            setSoundType(SoundType.WOOD);
+        }
+        else {
+            setSoundType(LANTERN);
+        }
+
         setCreativeTab(CreativeTabs.DECORATIONS);
 
         ModBlocks.BLOCKS.add(this);
@@ -95,11 +103,58 @@ public class Lantern extends Block implements IHasModel {
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         boolean hanging = worldIn.getBlockState(pos).getValue(HANGING);
-        if (hanging && worldIn.isAirBlock(pos.up()) || !hanging && worldIn.isAirBlock(pos.down()))
+        if (hanging && canPlaceBlock(worldIn, pos, EnumFacing.UP) || !hanging && canPlaceBlock(worldIn, pos, EnumFacing.DOWN))
         {
             state.getBlock().dropBlockAsItem(worldIn, pos, state, 1);
             worldIn.setBlockToAir(pos);
         }
+    }
+
+    protected static boolean canPlaceBlock(World worldIn, BlockPos pos, EnumFacing direction)
+    {
+        BlockPos blockpos = pos.offset(direction.getOpposite());
+        IBlockState iblockstate = worldIn.getBlockState(blockpos);
+        boolean flag = iblockstate.getBlockFaceShape(worldIn, blockpos, direction) == BlockFaceShape.SOLID;
+
+        Block block = iblockstate.getBlock();
+
+        if(block instanceof Chain)
+        {
+            EnumFacing facing = iblockstate.getValue(Chain.FACING);
+            if(facing == EnumFacing.UP || facing == EnumFacing.DOWN)
+            {
+                flag = true;
+            }
+        }
+
+        if(block instanceof Bar || block == Blocks.IRON_BARS || block instanceof BlockWall || block instanceof BlockFence)
+        {
+            flag = true;
+        }
+
+       return !isExceptBlockForAttachWithPiston(block) && flag;
+    }
+
+    public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
+    {
+        for (EnumFacing enumfacing : EnumFacing.values())
+        {
+            if(enumfacing == EnumFacing.UP || enumfacing == EnumFacing.DOWN)
+            {
+                return canPlaceBlock(worldIn, pos, enumfacing);
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean canPlaceBlockOnSide(World world, BlockPos pos, EnumFacing side)
+    {
+        if(side.equals(EnumFacing.DOWN) || side.equals(EnumFacing.UP))
+        {
+            return canPlaceBlock(world, pos, side);
+        }else
+            return false;
     }
 
     @Override
@@ -126,12 +181,6 @@ public class Lantern extends Block implements IHasModel {
     {
         if (facing.equals(EnumFacing.DOWN)) { return this.getDefaultState().withProperty(HANGING, true); }
         return this.getDefaultState().withProperty(HANGING, false);
-    }
-
-    @Override
-    public boolean canPlaceBlockOnSide(World world, BlockPos pos, EnumFacing side)
-    {
-        return side.equals(EnumFacing.DOWN) || side.equals(EnumFacing.UP);
     }
 
     @Override

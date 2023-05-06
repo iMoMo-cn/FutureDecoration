@@ -1,0 +1,20 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "type": "forge:ore_dict", "ore": "shardCrystal"
+    },
+    "B": {
+      "type": "forge:ore_dict", "ore": "blockGlass"
+    }
+  },
+  "result": {
+    "item": "fd:tinted_glass",
+    "count": 1
+  }
+}

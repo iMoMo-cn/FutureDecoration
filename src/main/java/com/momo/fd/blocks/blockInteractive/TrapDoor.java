@@ -5,18 +5,22 @@ import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.BlockTrapDoor;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
+import java.util.Random;
+
 public class TrapDoor extends BlockTrapDoor implements IHasModel {
 
-    public TrapDoor(String name, Material materialIn) {
+    public TrapDoor(String name, Material materialIn, SoundType soundTypeIn) {
         super(materialIn);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setHardness(3.0F);
+
+        setSoundType(soundTypeIn);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this){

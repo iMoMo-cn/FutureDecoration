@@ -3,6 +3,7 @@ package com.momo.fd.item;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.food.Berries;
 import com.momo.fd.item.food.GlowBerries;
+import com.momo.fd.item.food.SavannaBerries;
 import com.momo.fd.item.itemVariant.ItemVariantBase;
 import com.momo.fd.item.misc.Dye;
 import com.momo.fd.item.tile.ModItemDoor;
@@ -24,7 +25,8 @@ public class ModItems {
 	public static final Item RAW_ORE = new ItemVariantBase("raw_ore", 3).setCreativeTab(CreativeTabs.MISC);
 	public static final Item CRYSTAL_SHARD = new ItemVariantBase("crystal_shard", 5).setCreativeTab(CreativeTabs.MISC);
 
-	public static final Item BERRIES = new Berries("sweet_berries", 2, 0.0F, false);
+	public static final Item SWEET_BERRIES = new Berries("sweet_berries", 2, 0.0F, false);
+	public static final Item SOUR_BERRIES = new SavannaBerries("sour_berries", 2, 0.0F, false);
 	public static final Item GLOW_BERRIES = new GlowBerries("glow_berries", 4, 0.4F, false);
 
 	public static final Item ACACIA_SIGN = new ModItemSign("acacia_sign");
@@ -32,7 +34,9 @@ public class ModItems {
 	public static final Item DARK_OAK_SIGN = new ModItemSign("dark_oak_sign");
 	public static final Item JUNGLE_SIGN = new ModItemSign("jungle_sign");
 	public static final Item SPRUCE_SIGN = new ModItemSign("spruce_sign");
+
 	public static final Item GOLD_DOOR = new ModItemDoor("gold_door");
+	public static final Item GLASS_DOOR = new ModItemDoor("glass_door");
 
 	public static final Item DYE_WHITE = new Dye("dye_white", EnumDyeColor.WHITE);
 	public static final Item DYE_BLACK = new Dye("dye_black", EnumDyeColor.BLACK);
@@ -52,5 +56,6 @@ public class ModItems {
 		((ModItemSign)SPRUCE_SIGN).setWallSign(ModBlocks.SPRUCE_SIGN_WALL);
 		((ModItemSign)SPRUCE_SIGN).setStandingSign(ModBlocks.SPRUCE_SIGN_STANDING);
 		((ModItemDoor)GOLD_DOOR).setDoor(ModBlocks.GOLD_DOOR);
+		((ModItemDoor)GLASS_DOOR).setDoor(ModBlocks.GLASS_DOOR);
 	}
 }
