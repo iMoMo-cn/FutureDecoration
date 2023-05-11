@@ -1,0 +1,7 @@
+{
+  "parent": "block/ladder",
+  "textures": {
+    "particle": "fd:blocks/iron_ladder",
+    "texture": "fd:blocks/iron_ladder"
+  }
+}

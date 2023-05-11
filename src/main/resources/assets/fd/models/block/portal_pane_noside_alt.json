@@ -1,0 +1,8 @@
+{
+  "parent": "block/pane_noside_alt",
+  "textures": {
+    "particle": "fd:blocks/portal_pane",
+    "edge": "fd:blocks/portal_pane",
+    "pane": "fd:blocks/portal_pane"
+  }
+}

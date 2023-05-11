@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "fd:wood_oak"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:planks",
+    "data": 0,
+    "count": 4
+  }
+}
