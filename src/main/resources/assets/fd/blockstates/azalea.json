@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "variant=0": { "model": "fd:azalea" },
+    "variant=1": { "model": "fd:flowering_azalea" },
+    "variant=2": { "model": "fd:azalea" },
+    "variant=3": { "model": "fd:azalea" },
+    "variant=4": { "model": "fd:azalea" },
+    "variant=5": { "model": "fd:azalea" },
+    "variant=6": { "model": "fd:azalea" },
+    "variant=7": { "model": "fd:azalea" },
+    "variant=8": { "model": "fd:azalea" },
+    "variant=9": { "model": "fd:azalea" },
+    "variant=10": { "model": "fd:azalea" },
+    "variant=11": { "model": "fd:azalea" },
+    "variant=12": { "model": "fd:azalea" },
+    "variant=13": { "model": "fd:azalea" },
+    "variant=14": { "model": "fd:azalea" },
+    "variant=15": { "model": "fd:azalea" }
+  }
+}

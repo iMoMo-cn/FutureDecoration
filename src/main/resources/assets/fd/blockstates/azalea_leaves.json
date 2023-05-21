@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "check_decay=false,decayable=false": { "model": "fd:azalea_leaves" },
+    "check_decay=true,decayable=false": { "model": "fd:azalea_leaves" },
+    "check_decay=false,decayable=true": { "model": "fd:azalea_leaves" },
+    "check_decay=true,decayable=true": { "model": "fd:azalea_leaves" }
+  }
+}

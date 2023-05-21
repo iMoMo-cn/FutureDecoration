@@ -1,8 +1,8 @@
 package com.momo.fd.world.gen;
 
 import com.momo.fd.blocks.ModBlocks;
-import com.momo.fd.blocks.blockVariant.BlockVariantBase;
-import com.momo.fd.blocks.blockVariant.EnumVariants;
+import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
+import com.momo.fd.blocks.blockVariant.baseVariant.EnumVariants;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
