@@ -84,6 +84,7 @@ public class ModBlocks {
 	public static final Block STAINED_CLEAR_GLASS_PANE = new StainedGlassPane("stained_clear_pane", 16);
 
 	public static final Block TINTED_CLASS = new TintedGlass("tinted_glass");
+	public static final Block PORTAL_PANE = new PortalPane("portal_pane");
 
 	public static final Block AMETHYST_BLOCK = new AmethystBlock("amethyst_block", MapColor.PURPLE);
 	public static final Block CITRINE_BLOCK = new AmethystBlock("citrine_block", MapColor.YELLOW);
@@ -297,6 +298,9 @@ public class ModBlocks {
 	public static final Block IRON_LANTERN = new Lantern("iron_lantern", Material.IRON);
 	public static final Block GOLD_LANTERN = new Lantern("gold_lantern", Material.IRON);
 	public static final Block WOOD_LANTERN = new Lantern("wood_lantern", Material.WOOD);
+
+	public static final Block IRON_LADDER = new Ladder("iron_ladder", Material.IRON);
+	public static final Block GOLD_LADDER = new Ladder("gold_ladder", Material.IRON);
 
 	public static final Block GOLD_BARS = new Bar("gold_bars", Material.IRON, SoundType.METAL).setHardness(5.0F).setResistance(10.0F);
 	public static final Block WOOD_BARS = new Bar("wood_bars", Material.WOOD, SoundType.WOOD).setHardness(2.0F).setResistance(5.0F);
