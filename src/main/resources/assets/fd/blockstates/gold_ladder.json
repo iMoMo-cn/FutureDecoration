@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "fd:gold_ladder" },
-    "facing=east":  { "model": "fd:gold_ladder", "y": 90 },
-    "facing=south": { "model": "fd:gold_ladder", "y": 180 },
-    "facing=west":  { "model": "fd:gold_ladder", "y": 270 }
-  }
-}

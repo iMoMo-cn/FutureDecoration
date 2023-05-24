@@ -22,25 +22,6 @@ public class ModOreDict
         OreDictionary.registerOre("dyeBlue", ModItems.DYE_BLUE);
         OreDictionary.registerOre("dyeBlack", ModItems.DYE_BLACK);
 
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_ACACIA);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_ACACIA_WOOD);
-        OreDictionary.registerOre("logWood", ModBlocks.WOOD_ACACIA);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_BIRCH);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_BIRCH_WOOD);
-        OreDictionary.registerOre("logWood", ModBlocks.WOOD_BIRCH);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_DARK_OAK);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_DARK_OAK_WOOD);
-        OreDictionary.registerOre("logWood", ModBlocks.WOOD_DARK_OAK);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_JUNGLE);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_JUNGLE_WOOD);
-        OreDictionary.registerOre("logWood", ModBlocks.WOOD_JUNGLE);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_OAK);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_OAK_WOOD);
-        OreDictionary.registerOre("logWood", ModBlocks.WOOD_OAK);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_SPRUCE);
-        OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_SPRUCE_WOOD);
-        OreDictionary.registerOre("logWood", ModBlocks.WOOD_SPRUCE);
-
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.ACACIA_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.BIRCH_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.DRAK_OAK_BUTTON);

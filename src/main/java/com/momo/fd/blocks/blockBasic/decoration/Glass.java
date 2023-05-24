@@ -23,6 +23,7 @@ import java.util.Random;
 
 public class Glass extends BlockGlass implements IHasModel
 {
+
     public Glass(String name) {
         super(Material.GLASS, false);
 

@@ -129,7 +129,8 @@ tile.stained_clear_pane_14.name=Clear White Stained Glass Pane
 tile.stained_clear_pane_15.name=Clear Yellow Stained Glass Pane
 
 tile.tinted_glass.name=Tinted Glass
-tile.portal_pane.name=Portal Glass Pane
+
+tile.
 
 tile.amethyst_block.name=Block of Amethyst
 tile.citrine_block.name=Block of Citrine
@@ -318,6 +319,7 @@ item.dark_oak_sign.name=Dark Oak Sign
 item.jungle_sign.name=Jungle Sign
 item.spruce_sign.name=Spruce Sign
 
+
 tile.chain.name=Chain
 tile.chain_gold.name=Golden Chain
 tile.vine_rope.name=Vine Rope
@@ -325,9 +327,6 @@ tile.vine_rope.name=Vine Rope
 tile.iron_lantern.name=Iron Lantern
 tile.gold_lantern.name=Golden Lantern
 tile.wood_lantern.name=Wooden Lantern
-
-tile.iron_ladder.name=Iron Chain Ladder
-tile.gold_ladder.name=Golden Chain Ladder
 
 tile.gold_bars.name=Golden Bar
 tile.wood_bars.name=Wooden Bar

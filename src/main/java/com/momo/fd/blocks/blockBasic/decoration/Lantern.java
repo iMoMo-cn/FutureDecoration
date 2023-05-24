@@ -58,7 +58,6 @@ public class Lantern extends Block implements IHasModel {
         }
 
         setCreativeTab(CreativeTabs.DECORATIONS);
-        this.setTickRandomly(true);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -97,14 +96,14 @@ public class Lantern extends Block implements IHasModel {
     @Override
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
     {
-        EnumFacing direction = EnumFacing.UP;
+        worldIn.scheduleUpdate(pos, this, 5);
+    }
 
-        if(worldIn.getBlockState(pos).getValue(HANGING))
-        {
-            direction = EnumFacing.DOWN;
-        }
-
-        if (!canPlaceBlock(worldIn, pos, direction))
+    @Override
+    public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
+    {
+        boolean hanging = worldIn.getBlockState(pos).getValue(HANGING);
+        if (hanging && canPlaceBlock(worldIn, pos, EnumFacing.UP) || !hanging && canPlaceBlock(worldIn, pos, EnumFacing.DOWN))
         {
             state.getBlock().dropBlockAsItem(worldIn, pos, state, 1);
             worldIn.setBlockToAir(pos);
@@ -133,7 +132,7 @@ public class Lantern extends Block implements IHasModel {
             flag = true;
         }
 
-       return flag;
+       return !isExceptBlockForAttachWithPiston(block) && flag;
     }
 
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos)

@@ -1,7 +1,0 @@
-{
-  "parent": "block/ladder",
-  "textures": {
-    "particle": "fd:blocks/gold_ladder",
-    "texture": "fd:blocks/gold_ladder"
-  }
-}
