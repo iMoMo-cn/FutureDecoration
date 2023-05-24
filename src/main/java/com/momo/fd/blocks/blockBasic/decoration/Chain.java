@@ -39,22 +39,15 @@ public class Chain extends Block implements IHasModel {
 
     public static final SoundType CHAIN = new SoundType(1.0F, 1.0F, ModSoundHandler.BLOCK_CHAIN_BREAK, ModSoundHandler.BLOCK_CHAIN_STEP, ModSoundHandler.BLOCK_CHAIN_PLACE, ModSoundHandler.BLOCK_CHAIN_HIT, ModSoundHandler.BLOCK_CHAIN_FALL);
 
-    public Chain(String name, Material material){
-        super(material);
+    public Chain(String name){
+        super(Material.IRON);
 
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        if(material == Material.PLANTS)
-        {
-            setSoundType(SoundType.PLANT);
-            setHardness(0.3F);
-        }else {
-            setSoundType(CHAIN);
-            setHardness(5.0F);
-            setResistance(4.0F);
-        }
-
+        setSoundType(CHAIN);
+        setHardness(5.0F);
+        setResistance(4.0F);
         setCreativeTab(CreativeTabs.DECORATIONS);
 
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.UP));

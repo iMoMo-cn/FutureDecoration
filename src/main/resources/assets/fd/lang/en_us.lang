@@ -11,7 +11,6 @@ item.dye_blue.name=Blue Dye
 item.dye_black.name=Black Dye
 item.dye_brown.name=Brown Dye
 item.sweet_berries.name=Sweet Berries
-item.sour_berries.name=Sour Berries
 item.glow_berries.name=Glow Berries
 item.red_netherbrick.name=Red Nether Brick
 item.copper_ingot.name=Copper Ingot
@@ -128,9 +127,12 @@ tile.stained_clear_pane_13.name=Clear Light Gray Stained Glass Pane
 tile.stained_clear_pane_14.name=Clear White Stained Glass Pane
 tile.stained_clear_pane_15.name=Clear Yellow Stained Glass Pane
 
+<<<<<<< HEAD
 tile.tinted_glass.name=Tinted Glass
 tile.portal_pane.name=Portal Glass Pane
 
+=======
+>>>>>>> parent of fc0dc3f (1)
 tile.amethyst_block.name=Block of Amethyst
 tile.citrine_block.name=Block of Citrine
 tile.rubace_block.name=Block of Rubace
@@ -327,25 +329,28 @@ item.dark_oak_sign.name=Dark Oak Sign
 item.jungle_sign.name=Jungle Sign
 item.spruce_sign.name=Spruce Sign
 
+<<<<<<< HEAD
 tile.chain.name=Chain
 tile.chain_gold.name=Golden Chain
 tile.vine_rope.name=Vine Rope
 
+=======
+>>>>>>> parent of fc0dc3f (1)
 tile.iron_lantern.name=Iron Lantern
+tile.chain.name=Chain
 tile.gold_lantern.name=Golden Lantern
+<<<<<<< HEAD
 tile.wood_lantern.name=Wooden Lantern
 
 tile.iron_ladder.name=Iron Chain Ladder
 tile.gold_ladder.name=Golden Chain Ladder
 
+=======
+>>>>>>> parent of fc0dc3f (1)
 tile.gold_bars.name=Golden Bar
-tile.wood_bars.name=Wooden Bar
-
 item.gold_door.name=Golden Door
-item.glass_door.name=Glass Door
-
 tile.gold_trapdoor.name=Golden Trapdoor
-tile.glass_trapdoor.name=Glass TrapDoor
+tile.chain_gold.name=Golden Chain
 
 tile.stripped_acacia.name=Stripped Acacia Log
 tile.stripped_birch.name=Stripped Birch Log

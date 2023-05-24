@@ -5,7 +5,6 @@ import com.momo.fd.blocks.blockBush.berries.BerriesBush;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Biomes;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -49,18 +48,20 @@ public class ModPlantGen implements IWorldGenerator {
             generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 10, 5, 0.25F);
         }
 
-        if(biome == Biomes.TAIGA || biome == Biomes.TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA || biome == Biomes.REDWOOD_TAIGA
-                || biome == Biomes.REDWOOD_TAIGA_HILLS || biome == Biomes.MUTATED_REDWOOD_TAIGA || biome == Biomes.COLD_TAIGA
-                || biome == Biomes.COLD_TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA_COLD)
+        if(biome == Biomes.TAIGA || biome == Biomes.TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA)
         {
-            generateBerryBush((BerriesBush)ModBlocks.BERRY_BUSH, world, blockPos, random, 0.2F);
+            generateBerryBush(world, blockPos, random, 0.35F);
         }
 
-        if(biome == Biomes.SAVANNA || biome == Biomes.SAVANNA_PLATEAU || biome == Biomes.MUTATED_SAVANNA || biome == Biomes.MUTATED_SAVANNA_ROCK)
+        if(biome == Biomes.REDWOOD_TAIGA || biome == Biomes.REDWOOD_TAIGA_HILLS || biome == Biomes.MUTATED_REDWOOD_TAIGA)
         {
-            generateBerryBush((BerriesBush)ModBlocks.SAVANNA_BERRY_BUSH, world, blockPos, random, 0.2F);
+            generateBerryBush(world, blockPos, random, 0.35F);
         }
 
+        if(biome == Biomes.COLD_TAIGA || biome == Biomes.COLD_TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA_COLD)
+        {
+            generateBerryBush(world, blockPos, random, 0.125F);
+        }
     }
 
     private boolean generatePlant(Block block, World world, BlockPos pos, Random random, int extra){
@@ -86,11 +87,9 @@ public class ModPlantGen implements IWorldGenerator {
                 int posY = (pos.getY());
                 int posZ = (pos.getZ() + random.nextInt(16));
 
-                BlockPos newPos = new BlockPos(posX, posY, posZ);
+                final BlockPos newPos = new BlockPos(posX, posY, posZ);
 
-                Boolean flag = world.getBlockState(newPos).getBlock() == Blocks.WATER;
-
-                if (block.canPlaceBlockAt(world, newPos) && !flag) {
+                if (block.canPlaceBlockAt(world, newPos)) {
                     world.setBlockState(newPos, block.getDefaultState(), 2);
                 }
             }
@@ -98,7 +97,7 @@ public class ModPlantGen implements IWorldGenerator {
         return true;
     }
 
-    private boolean generateBerryBush(BerriesBush berryBush, World world, BlockPos pos, Random random, float chance)
+    private boolean generateBerryBush(World world, BlockPos pos, Random random, float chance)
     {
         if(random.nextFloat() < chance)
         {
@@ -106,23 +105,19 @@ public class ModPlantGen implements IWorldGenerator {
             int posY = (pos.getY());
             int posZ = (pos.getZ() + random.nextInt(16));
 
-            BlockPos newPos = new BlockPos(posX, posY, posZ);
+            final BlockPos newPos = new BlockPos(posX, posY, posZ);
+            final BerriesBush block = (BerriesBush)ModBlocks.BERRY_BUSH;
+            final IBlockState newBlockState = block.getDefaultState().withProperty(block.getProperty(), Integer.valueOf(3));
 
-            IBlockState newBlockState = berryBush.getDefaultState().withProperty(berryBush.getProperty(), Integer.valueOf(3));
-
-            Boolean flag = world.getBlockState(newPos).getBlock() == Blocks.WATER;
-
-            if (berryBush.canPlaceBlockAt(world, newPos) && !flag) { world.setBlockState(newPos, newBlockState, 2);}
+            if (block.canPlaceBlockAt(world, newPos)) { world.setBlockState(newPos, newBlockState, 2);}
 
             for(int i = 0; i < 4; i++)
             {
                 for(int y = -1; y < 2; y++)
                 {
-                    BlockPos newPos1 = new BlockPos(posX + random.nextInt(5) + 1, posY + y, posZ + random.nextInt(5) + 1);
+                    final BlockPos newPos1 = new BlockPos(posX + random.nextInt(5) + 1, posY + y, posZ + random.nextInt(5) + 1);
 
-                    flag = world.getBlockState(newPos1).getBlock() == Blocks.WATER;
-
-                    if (berryBush.canPlaceBlockAt(world, newPos1) && !flag) { world.setBlockState(newPos1, newBlockState, 2); }
+                    if (block.canPlaceBlockAt(world, newPos1)) { world.setBlockState(newPos1, newBlockState, 2); }
                 }
             }
         }

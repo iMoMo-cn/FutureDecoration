@@ -21,6 +21,7 @@ public class ModOreDict
         OreDictionary.registerOre("dyeBrown", ModItems.DYE_BROWN);
         OreDictionary.registerOre("dyeBlue", ModItems.DYE_BLUE);
         OreDictionary.registerOre("dyeBlack", ModItems.DYE_BLACK);
+<<<<<<< HEAD
 
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_ACACIA);
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_ACACIA_WOOD);
@@ -41,42 +42,25 @@ public class ModOreDict
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_SPRUCE_WOOD);
         OreDictionary.registerOre("logWood", ModBlocks.WOOD_SPRUCE);
 
+=======
+>>>>>>> parent of fc0dc3f (1)
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.ACACIA_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.BIRCH_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.DRAK_OAK_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.JUNGLE_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.SPRUCE_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.BLACKSTONE_BUTTON);
-
         OreDictionary.registerOre("minecraft:wooden_buttons", ModBlocks.ACACIA_BUTTON);
         OreDictionary.registerOre("minecraft:wooden_buttons", ModBlocks.BIRCH_BUTTON);
         OreDictionary.registerOre("minecraft:wooden_buttons", ModBlocks.DRAK_OAK_BUTTON);
         OreDictionary.registerOre("minecraft:wooden_buttons", ModBlocks.JUNGLE_BUTTON);
         OreDictionary.registerOre("minecraft:wooden_buttons", ModBlocks.SPRUCE_BUTTON);
-
         OreDictionary.registerOre("minecraft:wooden_pressure_plates", ModBlocks.ACACIA_PRESSURE_PLATE);
         OreDictionary.registerOre("minecraft:wooden_pressure_plates", ModBlocks.BIRCH_PRESSURE_PLATE);
         OreDictionary.registerOre("minecraft:wooden_pressure_plates", ModBlocks.DRAK_OAK_PRESSURE_PLATE);
         OreDictionary.registerOre("minecraft:wooden_pressure_plates", ModBlocks.JUNGLE_PRESSURE_PLATE);
         OreDictionary.registerOre("minecraft:wooden_pressure_plates", ModBlocks.SPRUCE_PRESSURE_PLATE);
-
-        OreDictionary.registerOre("blockGlass", ModBlocks.CLEAR_GLASS);
-        OreDictionary.registerOre("paneGlass", ModBlocks.CLEAR_PANE);
-
-        for(int i = 0 ; i < 16; i++)
-        {
-            OreDictionary.registerOre("blockGlass", new ItemStack(ModBlocks.STAINED_CLEAR_GLASS, 1, i));
-            OreDictionary.registerOre("paneGlass", new ItemStack(ModBlocks.STAINED_CLEAR_GLASS_PANE, 1, i));
-        }
-
-        for(int i = 0 ; i < 5; i++)
-        {
-            OreDictionary.registerOre("shardCrystal", new ItemStack(ModItems.CRYSTAL_SHARD, 1, i));
-        }
-
         OreDictionary.registerOre("cobblestone", new ItemStack(ModBlocks.DEEPSLATE_ROCK, 1, 0));
         OreDictionary.registerOre("cobblestone", new ItemStack(ModBlocks.NETHER_BLOCK, 1, 0));
-
-        OreDictionary.registerOre("ingotCopper", ModItems.COPPER_INGOT);
     }
 }

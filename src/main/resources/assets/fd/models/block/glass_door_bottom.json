@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_bottom",
-  "textures": {
-    "bottom": "fd:blocks/door_glass_lower",
-    "top": "fd:blocks/door_glass_upper"
-  }
-}

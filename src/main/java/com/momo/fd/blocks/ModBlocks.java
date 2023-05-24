@@ -116,9 +116,12 @@ public class ModBlocks {
 	public static final Block CLEAR_PANE = new GlassPane("clear_pane");
 	public static final Block STAINED_CLEAR_GLASS_PANE = new StainedGlassPane("stained_clear_pane", 16);
 
+<<<<<<< HEAD
 	public static final Block TINTED_CLASS = new TintedGlass("tinted_glass");
 	public static final Block PORTAL_PANE = new PortalPane("portal_pane");
 
+=======
+>>>>>>> parent of fc0dc3f (1)
 	public static final Block AMETHYST_BLOCK = new AmethystBlock("amethyst_block", MapColor.PURPLE);
 	public static final Block CITRINE_BLOCK = new AmethystBlock("citrine_block", MapColor.YELLOW);
 	public static final Block RUBACE_BLOCK = new AmethystBlock("rubace_block", MapColor.RED);
@@ -268,13 +271,11 @@ public class ModBlocks {
 	public static final BlockSlab END_STONE_BRICK_SLAB_DOUBLE = new Slab("end_stone_brick_slab_double", MapColor.SAND);
 	public static final BlockSlab END_STONE_BRICK_SLAB = new Slab("end_stone_brick_slab", MapColor.SAND, ModBlocks.END_STONE_BRICK_SLAB_DOUBLE);
 
-	public static final Block ACACIA_TRAPDOOR = new TrapDoor("acacia_trapdoor", Material.WOOD, SoundType.WOOD).setHardness(3.0F);
-	public static final Block BIRCH_TRAPDOOR = new TrapDoor("birch_trapdoor", Material.WOOD, SoundType.WOOD).setHardness(3.0F);
-	public static final Block DARK_OAK_TRAPDOOR = new TrapDoor("dark_oak_trapdoor", Material.WOOD, SoundType.WOOD).setHardness(3.0F);
-	public static final Block JUNGLE_TRAPDOOR = new TrapDoor("jungle_trapdoor", Material.WOOD, SoundType.WOOD).setHardness(3.0F);
-	public static final Block SPRUCE_TRAPDOOR = new TrapDoor("spruce_trapdoor", Material.WOOD, SoundType.WOOD).setHardness(3.0F);
-	public static final Block GOLD_TRAPDOOR = new TrapDoor("gold_trapdoor", Material.IRON, SoundType.METAL).setHardness(5.0F);
-	public static final Block GLASS_TRAPDOOR = new TrapDoor("glass_trapdoor", Material.GLASS, SoundType.GLASS).setHardness(1.0F);
+	public static final Block ACACIA_TRAPDOOR = new TrapDoor("acacia_trapdoor", Material.WOOD);
+	public static final Block BIRCH_TRAPDOOR = new TrapDoor("birch_trapdoor", Material.WOOD);
+	public static final Block DARK_OAK_TRAPDOOR = new TrapDoor("dark_oak_trapdoor", Material.WOOD);
+	public static final Block JUNGLE_TRAPDOOR = new TrapDoor("jungle_trapdoor", Material.WOOD);
+	public static final Block SPRUCE_TRAPDOOR = new TrapDoor("spruce_trapdoor", Material.WOOD);
 
 	public static final Block ACACIA_PRESSURE_PLATE = new PressurePlate("acacia_pressure_plate", Material.WOOD, BlockPressurePlate.Sensitivity.EVERYTHING);
 	public static final Block BIRCH_PRESSURE_PLATE = new PressurePlate("birch_pressure_plate", Material.WOOD, BlockPressurePlate.Sensitivity.EVERYTHING);
@@ -301,6 +302,18 @@ public class ModBlocks {
 	public static final Block SPRUCE_SIGN_STANDING = new StandingSign("spruce_sign_standing");
 	public static final Block SPRUCE_SIGN_WALL = new WallSign("spruce_sign_wall");
 
+<<<<<<< HEAD
+=======
+    public static final Block LILY_OF_THE_VALLEY = new Flower("lily_of_the_valley");
+    public static final Block ROSE = new Flower("rose");
+    public static final Block CORNFLOWER = new Flower("cornflower");
+    public static final Block WITHER_ROSE = new Flower("wither_rose");
+    public static final Block BERRY_BUSH = new BerriesBush("sweet_berry_bush");
+
+    public static final Block CAVE_VINE_PLANT = new CaveVinePlant("cave_vines_plant");
+	public static final Block CAVE_VINE = new CaveVine("cave_vines");
+
+>>>>>>> parent of fc0dc3f (1)
 	public static final Block GRINDSTONE = new Grindstone("grindstone");
 	public static final Block BARREL = new Barrel("barrel");
 	public static final Block COMPOSTER = new Composter("composter");
@@ -314,6 +327,7 @@ public class ModBlocks {
 	public static final Block SMOKER = new Smoker("smoker");
 	public static final Block BLAST_FURNACE = new BlastFurnace("blast_furnace");
 
+<<<<<<< HEAD
 	public static final Block IRON_CHAIN = new Chain("chain", Material.IRON);
 	public static final Block GOLD_CHAIN = new Chain("chain_gold", Material.IRON);
 	public static final Block VINE_ROPE = new Chain("vine_rope", Material.PLANTS);
@@ -330,6 +344,15 @@ public class ModBlocks {
 
 	public static final Block GOLD_DOOR = new Door("gold_door", Material.IRON, SoundType.METAL).setHardness(5.0F);
 	public static final Block GLASS_DOOR = new Door("glass_door", Material.GLASS, SoundType.GLASS).setHardness(1.0F);
+=======
+	public static final Block IRON_CHAIN = new Chain("chain");
+	public static final Block GOLD_CHAIN = new Chain("chain_gold");
+	public static final Block IRON_LANTERN = new Lantern("iron_lantern");
+	public static final Block GOLD_LANTERN = new Lantern("gold_lantern");
+	public static final Block GOLD_BARS = new Bar("gold_bars", Material.IRON);
+	public static final Block GOLD_TRAPDOOR = new TrapDoor("gold_trapdoor", Material.IRON);
+	public static final Block GOLD_DOOR = new Door("gold_door");
+>>>>>>> parent of fc0dc3f (1)
 
 	public static final Block MOSS_CARPET = new MossCarpet(3);
 	public static final Block CARPET = new Carpet("carpet", Material.CARPET, MapColor.CLOTH, 2);
@@ -394,7 +417,6 @@ public class ModBlocks {
 		((WallSign)SPRUCE_SIGN_WALL).setItemSign(ModItems.SPRUCE_SIGN);
 
 		((Door)GOLD_DOOR).setItemDoor(ModItems.GOLD_DOOR);
-		((Door)GLASS_DOOR).setItemDoor(ModItems.GLASS_DOOR);
 	}
 
 }
