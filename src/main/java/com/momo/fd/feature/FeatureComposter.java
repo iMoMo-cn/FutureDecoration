@@ -29,14 +29,7 @@ public class FeatureComposter {
                 "minecraft:pumpkin_seeds",
                 "minecraft:sapling",
                 "minecraft:wheat_seeds",
-                "fd:sweet_berries",
-                "fd:soul_berries",
-                "fd:moss_carpet[0]",
-                "fd:moss_carpet[1]",
-                "fd:moss_carpet[2]",
-                "fd:azalea_leaves",
-                "fd:flowering_azalea_leaves",
-                "fd:hanging_roots"
+                "fd:sweet_berries"
         };
         for (String item : items) inputs.put(item, 0.3f);
 
@@ -77,9 +70,7 @@ public class FeatureComposter {
                 "fd:lily_of_the_valley",
                 "fd:rose",
                 "fd:wither_rose",
-                "fd:pumpkin",
-                "fd:moss_block",
-                "fd:azalea[0]"
+                "fd:pumpkin"
         };
         for (String item : items) inputs.put(item, 0.65f);
 
@@ -90,13 +81,12 @@ public class FeatureComposter {
                 "minecraft:hay_block",
                 "minecraft:red_mushroom_block",
                 "minecraft:brown_mushroom_block",
-                "fd:azalea[1]"
         };
         for (String item : items) inputs.put(item, 0.85f);
 
         items = new String[] {
                 "minecraft:cake",
-                "minecraft:pumpkin_pie"
+                "minecraft:pumpkin_pie",
         };
         for (String item : items) inputs.put(item, 1.0f);
     }

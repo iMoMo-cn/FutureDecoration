@@ -1,16 +1,20 @@
 package com.momo.fd.world.gen;
 
 import com.momo.fd.blocks.ModBlocks;
-import com.momo.fd.blocks.blockBush.berries.BerriesBush;
+import com.momo.fd.blocks.blockBush.BerriesBush;
 import net.minecraft.block.Block;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeTaiga;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
+import net.minecraftforge.client.event.EntityViewRenderEvent;
+import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;

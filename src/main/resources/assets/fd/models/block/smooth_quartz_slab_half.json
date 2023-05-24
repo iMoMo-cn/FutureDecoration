@@ -1,8 +1,8 @@
 {
   "parent": "block/half_slab",
   "textures": {
-    "bottom": "fd:blocks/smooth_quartz",
-    "top": "fd:blocks/smooth_quartz",
-    "side": "fd:blocks/smooth_quartz"
+    "bottom": "blocks/quartz_block_bottom",
+    "top": "blocks/quartz_block_bottom",
+    "side": "blocks/quartz_block_bottom"
   }
 }

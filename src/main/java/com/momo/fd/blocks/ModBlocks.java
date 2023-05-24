@@ -2,14 +2,7 @@ package com.momo.fd.blocks;
 
 import com.momo.fd.blocks.blockBasic.*;
 import com.momo.fd.blocks.blockBasic.decoration.*;
-import com.momo.fd.blocks.blockBasic.leaves.AzaleaLeaves;
-import com.momo.fd.blocks.blockBasic.leaves.FloweringAzaleaLeaves;
-import com.momo.fd.blocks.blockBush.dripLeaf.BigDripleaf;
-import com.momo.fd.blocks.blockBush.dripLeaf.DripleafStem;
-import com.momo.fd.blocks.blockBush.dripLeaf.SmallDripleaf;
-import com.momo.fd.blocks.blockVariant.*;
-import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
-import com.momo.fd.blocks.blockVariant.rockVariant.*;
+import com.momo.fd.blocks.blockBasic.decoration.ColorVariants.*;
 import com.momo.fd.blocks.blockBasic.directional.HorizontalBlock;
 import com.momo.fd.blocks.blockBasic.ore.LitOre;
 import com.momo.fd.blocks.blockBasic.ore.NetherOre;
@@ -17,18 +10,14 @@ import com.momo.fd.blocks.blockBasic.ore.Ore;
 import com.momo.fd.blocks.blockBasic.sign.StandingSign;
 import com.momo.fd.blocks.blockBasic.sign.WallSign;
 import com.momo.fd.blocks.blockBush.*;
-import com.momo.fd.blocks.blockBush.berries.BerriesBush;
-import com.momo.fd.blocks.blockBush.berries.SavannaBerriBush;
-import com.momo.fd.blocks.blockBush.caveVine.CaveVine;
-import com.momo.fd.blocks.blockBush.caveVine.CaveVinePlant;
 import com.momo.fd.blocks.blockInteractive.*;
 import com.momo.fd.blocks.blockMisc.*;
 import com.momo.fd.blocks.blockBasic.directional.PillarBlock;
-import com.momo.fd.blocks.blockMisc.carpet.TightCarpet;
-import com.momo.fd.blocks.blockMisc.crystal.Amethyst.*;
-import com.momo.fd.blocks.blockMisc.MossBlock;
-import com.momo.fd.blocks.blockMisc.carpet.MossCarpet;
-import com.momo.fd.blocks.blockVariant.wallVariant.*;
+import com.momo.fd.blocks.blockMisc.Crystal.Amethyst.*;
+import com.momo.fd.blocks.blockVariant.BlockVariantBase;
+import com.momo.fd.blocks.blockVariant.StainedGlass;
+import com.momo.fd.blocks.blockVariant.StainedGlassPane;
+import com.momo.fd.blocks.blockVariant.WallVariant;
 import com.momo.fd.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPressurePlate;
@@ -69,29 +58,7 @@ public class ModBlocks {
     public static final Block PUMPKIN = new Pumpkin();
     public static final Block PUMPKIN_STEM = new PumpkinStem();
 
-	public static final Block MOSS_BLOCK = new MossBlock();
-	public static final Block AZALEA = new Azalea();
-	public static final Block AZALEA_LEAVES = new AzaleaLeaves();
-	public static final Block FLOWERING_AZALEA_LEAVES = new FloweringAzaleaLeaves();
-
-//	public static final Block SMALL_DRIPLEAF = new SmallDripleaf();
-//	public static final Block DRIPLEAF_STEM = new DripleafStem();
-//	public static final Block BIG_DRIPLEAF = new BigDripleaf();
-
-	public static final Block ROOTED_DIRT = new RootedDirt();
-	public static final Block HANGING_ROOTS = new HangingRoots();
-
-	public static final Block LILY_OF_THE_VALLEY = new Flower("lily_of_the_valley");
-	public static final Block ROSE = new Flower("rose");
-	public static final Block CORNFLOWER = new Flower("cornflower");
-	public static final Block WITHER_ROSE = new Flower("wither_rose");
-	public static final Block BERRY_BUSH = new BerriesBush("sweet_berry_bush");
-	public static final Block SAVANNA_BERRY_BUSH = new SavannaBerriBush("sour_berry_bush");
-
-	public static final Block CAVE_VINE_PLANT = new CaveVinePlant("cave_vines_plant");
-	public static final Block CAVE_VINE = new CaveVine("cave_vines");
-
-	public static final Block CHARCOAL_BLOCK = new BlockBase("charcoal_block", Material.ROCK, MapColor.BLACK, 16000).setHardness(5.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	public static final Block CHARCOAL_BLOCK = new BurnableBlock("charcoal_block", 16000, Material.ROCK, MapColor.BLACK).setHardness(5.0F).setResistance(10.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 
 	public static final Block ROCK_BLOCK = new Rocks(9);
 	public static final Block BASALT = new PillarBlock("basalt", Material.ROCK, MapColor.GRAY);
@@ -301,14 +268,24 @@ public class ModBlocks {
 	public static final Block SPRUCE_SIGN_STANDING = new StandingSign("spruce_sign_standing");
 	public static final Block SPRUCE_SIGN_WALL = new WallSign("spruce_sign_wall");
 
+    public static final Block LILY_OF_THE_VALLEY = new Flower("lily_of_the_valley");
+    public static final Block ROSE = new Flower("rose");
+    public static final Block CORNFLOWER = new Flower("cornflower");
+    public static final Block WITHER_ROSE = new Flower("wither_rose");
+    public static final Block BERRY_BUSH = new BerriesBush("sweet_berry_bush");
+	public static final Block SAVANNA_BERRY_BUSH = new SavannaBerriBush("sour_berry_bush");
+
+    public static final Block CAVE_VINE_PLANT = new CaveVinePlant("cave_vines_plant");
+	public static final Block CAVE_VINE = new CaveVine("cave_vines");
+
 	public static final Block GRINDSTONE = new Grindstone("grindstone");
 	public static final Block BARREL = new Barrel("barrel");
 	public static final Block COMPOSTER = new Composter("composter");
 	public static final Block CAMPFIRE = new Campfire("campfire").setLightLevel(0.8F);
 	public static final Block CAMPFIRE_OFF = new Campfire("campfire_off");
-	public static final Block FLETCHING_TABLE = new BlockBase("fletching_table", Material.WOOD, MapColor.SAND, 300).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
-	public static final Block CARTOGRAPHY_TABLE = new BlockBase("cartography_table", Material.WOOD, MapColor.BROWN, 300).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
-	public static final Block SMITHING_TABLE = new BlockBase("smithing_table", Material.WOOD, MapColor.BLACK, 300).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
+	public static final Block FLETCHING_TABLE = new BurnableBlock("fletching_table", 300, Material.WOOD, MapColor.SAND).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
+	public static final Block CARTOGRAPHY_TABLE = new BurnableBlock("cartography_table", 300, Material.WOOD, MapColor.BROWN).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
+	public static final Block SMITHING_TABLE = new BurnableBlock("smithing_table", 300, Material.WOOD, MapColor.BLACK).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block LOOM = new HorizontalBlock("loom", 300, Material.WOOD, MapColor.WOOD).setHardness(2.5F).setResistance(2.5F).setCreativeTab(CreativeTabs.DECORATIONS);
 	public static final Block LECTERN = new Lectern("lectern");
 	public static final Block SMOKER = new Smoker("smoker");
@@ -331,8 +308,7 @@ public class ModBlocks {
 	public static final Block GOLD_DOOR = new Door("gold_door", Material.IRON, SoundType.METAL).setHardness(5.0F);
 	public static final Block GLASS_DOOR = new Door("glass_door", Material.GLASS, SoundType.GLASS).setHardness(1.0F);
 
-	public static final Block MOSS_CARPET = new MossCarpet(3);
-	public static final Block CARPET = new Carpet("carpet", Material.CARPET, MapColor.CLOTH, 2);
+	public static final Block CARPET = new Carpet(2);
 	public static final Block TIGHT_CARPET = new TightCarpet("tight_carpet", 16);
 
 	public static final Block STONE_WALL = new StoneWall(6);

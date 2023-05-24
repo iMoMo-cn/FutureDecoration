@@ -2,13 +2,15 @@ package com.momo.fd.item.food;
 
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
-import com.momo.fd.blocks.blockBush.caveVine.CaveVine;
-import com.momo.fd.blocks.blockBush.caveVine.CaveVinePlant;
+import com.momo.fd.blocks.blockBush.CaveVine;
+import com.momo.fd.blocks.blockBush.CaveVinePlant;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import com.momo.fd.util.sound.ModSoundHandler;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;

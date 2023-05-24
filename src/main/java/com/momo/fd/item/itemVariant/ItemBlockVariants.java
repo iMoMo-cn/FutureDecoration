@@ -1,7 +1,7 @@
 package com.momo.fd.item.itemVariant;
 
 import com.momo.fd.MoMoFramework;
-import com.momo.fd.blocks.blockVariant.baseVariant.IMetaName;
+import com.momo.fd.blocks.blockVariant.IMetaName;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;

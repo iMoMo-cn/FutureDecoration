@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "half=lower": {"model": "fd:small_dripleaf_bottom"},
-    "half=upper": {"model": "fd:small_dripleaf_top"}
-  }
-}

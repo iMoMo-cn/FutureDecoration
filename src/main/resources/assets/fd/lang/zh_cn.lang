@@ -155,15 +155,6 @@ tile.rubace_cluster.name=红水晶簇
 tile.prasiolite_cluster.name=绿水晶簇
 tile.crystal_cluster.name=白水晶簇
 
-tile.rooted_dirt.name=缠根泥土
-tile.hanging_roots.name=垂根
-
-tile.moss_block.name=苔藓块
-tile.azalea_0.name=杜鹃花丛
-tile.azalea_1.name=盛开的杜鹃花丛
-tile.azalea_leaves.name=杜鹃树叶
-tile.flowering_azalea_leaves.name=盛开的杜鹃树叶
-
 tile.stone_wall_0.name=石墙
 tile.stone_wall_1.name=安山岩墙
 tile.stone_wall_2.name=闪长岩墙
@@ -372,10 +363,7 @@ tile.blast_furnace.name=高炉
 
 tile.carpet_0.name=皮革地毯
 tile.carpet_1.name=兔子皮地毯
-
-tile.moss_carpet_0.name=苔藓地毯
-tile.moss_carpet_1.name=树叶地毯
-tile.moss_carpet_2.name=杜鹃花地毯
+tile.carpet_2.name=苔藓地毯
 
 tile.tight_carpet_0.name=黑色牢固地毯
 tile.tight_carpet_1.name=蓝色牢固地毯
@@ -401,9 +389,6 @@ tile.wither_rose.name=凋零玫瑰
 
 tile.cave_vines_plant.name=洞穴藤蔓
 tile.cave_vines.name=洞穴藤蔓
-
-tile.small_dripleaf.name=小型垂滴叶
-tile.big_dripleaf.name=大型垂滴叶
 
 tile.sweet_berry_bush.name=甜浆果丛
 tile.pumpkin_stem.name=南瓜梗

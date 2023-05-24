@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "fd:blocks/big_dripleaf_stem"
-  }
-}

@@ -72,41 +72,6 @@ public class ModSoundHandler {
     public static SoundEvent BLOCK_AMETHYST_CLUSTER_HIT = new ModSoundEvent("block.amethyst_cluster.hit");
     public static SoundEvent BLOCK_AMETHYST_CLUSTER_FALL = new ModSoundEvent("block.amethyst_cluster.fall");
 
-    public static SoundEvent BLOCK_MOSS_BREAK = new ModSoundEvent("block.moss.break");
-    public static SoundEvent BLOCK_MOSS_STEP = new ModSoundEvent("block.moss.step");
-    public static SoundEvent BLOCK_MOSS_PLACE = new ModSoundEvent("block.moss.place");
-    public static SoundEvent BLOCK_MOSS_HIT = new ModSoundEvent("block.moss.hit");
-    public static SoundEvent BLOCK_MOSS_FALL = new ModSoundEvent("block.moss.fall");
-
-    public static SoundEvent BLOCK_AZALEA_BREAK = new ModSoundEvent("block.azalea.break");
-    public static SoundEvent BLOCK_AZALEA_STEP = new ModSoundEvent("block.azalea.step");
-    public static SoundEvent BLOCK_AZALEA_PLACE = new ModSoundEvent("block.azalea.place");
-    public static SoundEvent BLOCK_AZALEA_HIT = new ModSoundEvent("block.azalea.hit");
-    public static SoundEvent BLOCK_AZALEA_FALL = new ModSoundEvent("block.azalea.fall");
-
-    public static SoundEvent BLOCK_AZALEA_LEAVES_BREAK = new ModSoundEvent("block.azalea_leaves.break");
-    public static SoundEvent BLOCK_AZALEA_LEAVES_STEP = new ModSoundEvent("block.azalea_leaves.step");
-    public static SoundEvent BLOCK_AZALEA_LEAVES_PLACE = new ModSoundEvent("block.azalea_leaves.place");
-    public static SoundEvent BLOCK_AZALEA_LEAVES_HIT = new ModSoundEvent("block.azalea_leaves.hit");
-    public static SoundEvent BLOCK_AZALEA_LEAVES_FALL = new ModSoundEvent("block.azalea_leaves.fall");
-
-    public static SoundEvent BLOCK_HANGING_ROOTS_BREAK = new ModSoundEvent("block.hanging_roots.break");
-    public static SoundEvent BLOCK_HANGING_ROOTS_STEP = new ModSoundEvent("block.hanging_roots.step");
-    public static SoundEvent BLOCK_HANGING_ROOTS_PLACE = new ModSoundEvent("block.hanging_roots.place");
-    public static SoundEvent BLOCK_HANGING_ROOTS_HIT = new ModSoundEvent("block.hanging_roots.hit");
-    public static SoundEvent BLOCK_HANGING_ROOTS_FALL = new ModSoundEvent("block.hanging_roots.fall");
-
-    public static SoundEvent BLOCK_ROOTED_DIRT_BREAK = new ModSoundEvent("block.rooted_dirt.break");
-    public static SoundEvent BLOCK_ROOTED_DIRT_STEP = new ModSoundEvent("block.rooted_dirt.step");
-    public static SoundEvent BLOCK_ROOTED_DIRT_PLACE = new ModSoundEvent("block.rooted_dirt.place");
-    public static SoundEvent BLOCK_ROOTED_DIRT_HIT = new ModSoundEvent("block.rooted_dirt.hit");
-    public static SoundEvent BLOCK_ROOTED_DIRT_FALL = new ModSoundEvent("block.rooted_dirt.fall");
-
-    public static SoundEvent BLOCK_BIG_DRIPLEAF_BREAK = new ModSoundEvent("block.big_dripleaf.break");
-    public static SoundEvent BLOCK_BIG_DRIPLEAF_STEP = new ModSoundEvent("block.big_dripleaf.step");
-    public static SoundEvent BLOCK_BIG_DRIPLEAF_PLACE = new ModSoundEvent("block.big_dripleaf.place");
-    public static SoundEvent BLOCK_BIG_DRIPLEAF_HIT = new ModSoundEvent("block.big_dripleaf.hit");
-    public static SoundEvent BLOCK_BIG_DRIPLEAF_FALL = new ModSoundEvent("block.big_dripleaf.fall");
 
     public static void soundRegister()
     {

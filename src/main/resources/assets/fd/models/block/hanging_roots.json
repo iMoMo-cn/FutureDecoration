@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "fd:blocks/hanging_roots"
-  }
-}

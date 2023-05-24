@@ -167,15 +167,6 @@ tile.rubace_cluster.name=Rubace Clusters
 tile.prasiolite_cluster.name=Prasiolite Clusters
 tile.crystal_cluster.name=Crystal Clusters
 
-tile.rooted_dirt.name=Rooted Dirt
-tile.hanging_roots.name=Hanging Roots
-
-tile.moss_block.name=Moss Block
-tile.azalea_0.name=Azalea
-tile.azalea_1.name=Flowering Azalea
-tile.azalea_leaves.name=Azalea Leaves
-tile.flowering_azalea_leaves.name=Flowering Azalea Leaves
-
 tile.stone_wall_0.name=Stone Wall
 tile.stone_wall_1.name=Andesite Wall
 tile.stone_wall_2.name=Diorite Wall
@@ -383,10 +374,7 @@ tile.blast_furnace.name=Blast Furnace
 
 tile.carpet_0.name=Leather Carpet
 tile.carpet_1.name=Rabbit Hide Carpet
-
-tile.moss_carpet_0.name=Moss Carpet
-tile.moss_carpet_1.name=Leaves Carpet
-tile.moss_carpet_2.name=Azalea Carpet
+tile.carpet_2.name=Moss Carpet
 
 tile.tight_carpet_0.name=Black Tight Carpet
 tile.tight_carpet_1.name=Blue Tight Carpet
@@ -412,9 +400,6 @@ tile.wither_rose.name=Wither Rose
 
 tile.cave_vines_plant.name=Cave Vines
 tile.cave_vines.name=Cave Vines
-
-tile.small_dripleaf.name=Small Dripleaf
-tile.big_dripleaf.name=Big Dripleaf
 
 tile.sweet_berry_bush.name=Sweet Berries Bush
 tile.pumpkin_stem.name=Pumpkin Stem
