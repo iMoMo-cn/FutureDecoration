@@ -24,7 +24,7 @@ import java.util.Random;
 public class Glass extends BlockGlass implements IHasModel
 {
     public Glass(String name) {
-        super(Material.GRASS, false);
+        super(Material.GLASS, false);
 
         setUnlocalizedName(name);
         setRegistryName(name);

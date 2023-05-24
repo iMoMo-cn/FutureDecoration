@@ -3,6 +3,7 @@ package com.momo.fd.blocks.blockInteractive;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.util.IHasModel;
 import net.minecraft.block.BlockDoor;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -19,16 +20,23 @@ public class Door extends BlockDoor implements IHasModel {
 
     private Item itemDoor;
 
-    public Door(String name)
+    public Door(String name, Material material, SoundType soundType)
     {
-        super(Material.IRON);
+        super(material);
         this.setRegistryName(name);
         this.setUnlocalizedName(name);
+
+        setSoundType(soundType);
 
         ModBlocks.BLOCKS.add(this);
     }
 
     public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
+        if(state.getBlock() == ModBlocks.GLASS_DOOR)
+        {
+            return Material.GLASS.getMaterialMapColor();
+        }
+
         return state.getBlock() == ModBlocks.GOLD_DOOR ? MapColor.GOLD : super.getMapColor(state, worldIn, pos);
     }
 

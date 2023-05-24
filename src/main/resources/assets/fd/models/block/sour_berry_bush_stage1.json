@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "fd:blocks/sour_berry_bush_stage1"
+  }
+}

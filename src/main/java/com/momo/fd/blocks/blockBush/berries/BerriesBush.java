@@ -62,7 +62,7 @@ public class BerriesBush extends BlockCrops implements IHasModel{
 
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(ModItems.BERRIES);
+        return new ItemStack(ModItems.SWEET_BERRIES);
     }
 
     @Override
@@ -97,7 +97,7 @@ public class BerriesBush extends BlockCrops implements IHasModel{
         {
             if (!worldIn.isRemote)
             {
-                worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.BERRIES, rand.nextInt(2) + age - 1)));
+                worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ModItems.SWEET_BERRIES, rand.nextInt(2) + age - 1)));
                 worldIn.setBlockState(pos, ModBlocks.BERRY_BUSH.getDefaultState().withProperty(BERRIES_AGE, 1));
             }
 
@@ -126,12 +126,12 @@ public class BerriesBush extends BlockCrops implements IHasModel{
 
     protected Item getSeed()
     {
-        return ModItems.BERRIES;
+        return ModItems.SWEET_BERRIES;
     }
 
     protected Item getCrop()
     {
-        return ModItems.BERRIES;
+        return ModItems.SWEET_BERRIES;
     }
 
 
@@ -172,7 +172,7 @@ public class BerriesBush extends BlockCrops implements IHasModel{
      */
     public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {
-        if(worldIn.getBlockState(pos).getBlock() == ModBlocks.BERRY_BUSH)
+        if(worldIn.getBlockState(pos).getBlock() instanceof BerriesBush)
         {
             if(entityIn instanceof EntityLivingBase && worldIn.isRemote)
             {

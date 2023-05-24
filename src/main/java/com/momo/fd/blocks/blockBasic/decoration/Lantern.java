@@ -7,8 +7,7 @@ import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
 import com.momo.fd.util.sound.ModSoundEvent;
 import com.momo.fd.util.sound.ModSoundHandler;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockFaceShape;
@@ -16,6 +15,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.BlockRenderLayer;
@@ -38,9 +38,9 @@ public class Lantern extends Block implements IHasModel {
 
     public static final SoundType LANTERN = new SoundType(1.0F, 1.0F, ModSoundHandler.BLOCK_LANTER_BREAK, ModSoundHandler.BLOCK_LANTER_STEP, ModSoundHandler.BLOCK_LANTER_PLACE, ModSoundHandler.BLOCK_LANTER_HIT, ModSoundHandler.BLOCK_LANTER_FALL);
 
-    public Lantern(String name)
+    public Lantern(String name, Material material)
     {
-        super(Material.IRON);
+        super(material);
 
         setUnlocalizedName(name);
         setRegistryName(name);
@@ -48,7 +48,15 @@ public class Lantern extends Block implements IHasModel {
         setHardness(2.0F);
         setResistance(4.0F);
         setLightLevel(1.0F);
-        setSoundType(LANTERN);
+
+        if(material == Material.WOOD)
+        {
+            setSoundType(SoundType.WOOD);
+        }
+        else {
+            setSoundType(LANTERN);
+        }
+
         setCreativeTab(CreativeTabs.DECORATIONS);
         this.setTickRandomly(true);
 
@@ -91,27 +99,18 @@ public class Lantern extends Block implements IHasModel {
     {
         EnumFacing direction = EnumFacing.UP;
 
-<<<<<<< HEAD
         if(worldIn.getBlockState(pos).getValue(HANGING))
         {
             direction = EnumFacing.DOWN;
         }
 
         if (!canPlaceBlock(worldIn, pos, direction))
-=======
-    @Override
-    public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
-    {
-        boolean hanging = worldIn.getBlockState(pos).getValue(HANGING);
-        if (hanging && worldIn.isAirBlock(pos.up()) || !hanging && worldIn.isAirBlock(pos.down()))
->>>>>>> parent of fc0dc3f (1)
         {
             state.getBlock().dropBlockAsItem(worldIn, pos, state, 1);
             worldIn.setBlockToAir(pos);
         }
     }
 
-<<<<<<< HEAD
     protected static boolean canPlaceBlock(World worldIn, BlockPos pos, EnumFacing direction)
     {
         BlockPos blockpos = pos.offset(direction.getOpposite());
@@ -159,8 +158,6 @@ public class Lantern extends Block implements IHasModel {
             return false;
     }
 
-=======
->>>>>>> parent of fc0dc3f (1)
     @Override
     public int getMetaFromState(IBlockState state)
     {
@@ -185,12 +182,6 @@ public class Lantern extends Block implements IHasModel {
     {
         if (facing.equals(EnumFacing.DOWN)) { return this.getDefaultState().withProperty(HANGING, true); }
         return this.getDefaultState().withProperty(HANGING, false);
-    }
-
-    @Override
-    public boolean canPlaceBlockOnSide(World world, BlockPos pos, EnumFacing side)
-    {
-        return side.equals(EnumFacing.DOWN) || side.equals(EnumFacing.UP);
     }
 
     @Override
