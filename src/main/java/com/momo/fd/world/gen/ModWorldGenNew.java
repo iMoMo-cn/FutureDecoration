@@ -29,16 +29,14 @@ public class ModWorldGenNew implements IWorldGenerator {
 	private WorldGenerator
 			copper_ore,
 			nether_gold_ore, nether_iron_ore,
-			raw_iron, raw_gold, raw_copper;
+			tuff;
 
 
 	public ModWorldGenNew() {
 		copper_ore = new WorldGenMinable(ModBlocks.COPPER_ORE.getDefaultState(), 10, BlockMatcher.forBlock(Blocks.STONE));
 		nether_gold_ore = new WorldGenMinable(ModBlocks.NETHER_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block0), 10, BlockMatcher.forBlock(Blocks.NETHERRACK));
 		nether_iron_ore = new WorldGenMinable(ModBlocks.NETHER_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block1), 10, BlockMatcher.forBlock(Blocks.NETHERRACK));
-		raw_iron = new WorldGenMinable(ModBlocks.RAW_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block0), 20, BlockMatcher.forBlock(Blocks.STONE));
-		raw_gold = new WorldGenMinable(ModBlocks.RAW_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block1), 20, BlockMatcher.forBlock(Blocks.STONE));
-		raw_copper = new WorldGenMinable(ModBlocks.RAW_ORE.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block2), 20, BlockMatcher.forBlock(Blocks.STONE));
+		tuff = new WorldGenMinable(ModBlocks.ROCK_BLOCK.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block8), 20, BlockMatcher.forBlock(Blocks.STONE));
 	}
 
 	@Override
@@ -55,13 +53,7 @@ public class ModWorldGenNew implements IWorldGenerator {
 				//MoMoFramework.Log("world gen running");
 
 				runGenOre(copper_ore, world, random, chunkX, chunkZ, 13, 1, 63);
-
-				switch (random.nextInt(3))
-				{
-					case 0: runGenOre(raw_iron, world, random, chunkX, chunkZ, 0.5F, 3, 1, 25); break;
-					case 1: runGenOre(raw_gold, world, random, chunkX, chunkZ, 0.5F, 3, 1, 25); break;
-					case 2: runGenOre(raw_copper, world, random, chunkX, chunkZ, 0.5F, 3, 1, 25); break;
-				}
+				//runGenOre(tuff, world, random, chunkX, chunkZ, 3, 1, 25);
 
 				break;
 			case 1:
@@ -72,30 +64,22 @@ public class ModWorldGenNew implements IWorldGenerator {
 
 	//Utility
 
-	void runGenOre(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, float chance, int times, int minHeight, int maxHeight)
+	void runGenOre(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int chances, int minHeight, int maxHeight)
 	{
-		if(rand.nextFloat() <  chance)
+		if (minHeight > maxHeight || minHeight < 0 || maxHeight > 256)
 		{
-			if (minHeight > maxHeight || minHeight < 0 || maxHeight > 256)
-			{
-				throw  new IllegalArgumentException("NetherOre gen out of bounds");
-			}
-
-			int heightDiff = maxHeight - minHeight + 1;
-
-			for (int i = 0; i < times; i++) {
-				int x = chunkX * 16 + rand.nextInt(16);
-				int y = minHeight + rand.nextInt(heightDiff);
-				int z = chunkZ * 16 + rand.nextInt(16);
-
-				gen.generate(world, rand, new BlockPos(x,y,z));
-			}
+			throw  new IllegalArgumentException("NetherOre gen out of bounds");
 		}
-	}
 
-	void runGenOre(WorldGenerator gen, World world, Random rand, int chunkX, int chunkZ, int times, int minHeight, int maxHeight)
-	{
-		runGenOre(gen, world, rand, chunkX, chunkZ, 1.0F, times, minHeight, maxHeight);
+		int heightDiff = maxHeight - minHeight + 1;
+
+		for (int i = 0; i < chances; i++) {
+			int x = chunkX * 16 + rand.nextInt(16);
+			int y = minHeight + rand.nextInt(heightDiff);
+			int z = chunkZ * 16 + rand.nextInt(16);
+
+			gen.generate(world, rand, new BlockPos(x,y,z));
+		}
 	}
 
 	//Trees
