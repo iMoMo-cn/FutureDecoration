@@ -1,4 +1,4 @@
-package com.momo.fd.blocks.blockMisc.crystal.Amethyst;
+package com.momo.fd.blocks.blockMisc.crystal;
 
 import com.momo.fd.blocks.BlockBase;
 import com.momo.fd.util.sound.ModSoundHandler;
@@ -42,8 +42,4 @@ public class AmethystBlock extends BlockBase {
     {
         return false;
     }
-
-
-
-
 }

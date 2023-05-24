@@ -146,24 +146,6 @@ public class EntityUtil {
         return (creature instanceof EntityModUnit && ((EntityModUnit) creature).is_mechanic);
     }
 
-    public static boolean isAOA3Creature(EntityLivingBase creature)
-    {
-        if (!MetaUtil.isLoaded_AOA3)
-        {
-            return false;
-        }
-        return getModName(creature).equals(CommonDef.MOD_NAME_AOA3);
-    }
-
-    public static boolean isGOGCreature(EntityLivingBase creature)
-    {
-        if (!MetaUtil.isLoaded_GOG)
-        {
-            return false;
-        }
-        return getModName(creature).equals(CommonDef.MOD_NAME_AOA3);
-    }
-
     public static <T extends Entity> List<T> getEntitiesWithinAABB(World world, Class <? extends T > clazz, AxisAlignedBB aabb, @Nullable Predicate <? super T > filter)
     {
         return world.getEntitiesWithinAABB(clazz, aabb, filter);

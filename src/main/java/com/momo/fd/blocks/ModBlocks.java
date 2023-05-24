@@ -7,6 +7,7 @@ import com.momo.fd.blocks.blockBasic.leaves.FloweringAzaleaLeaves;
 import com.momo.fd.blocks.blockBush.dripLeaf.BigDripleaf;
 import com.momo.fd.blocks.blockBush.dripLeaf.DripleafStem;
 import com.momo.fd.blocks.blockBush.dripLeaf.SmallDripleaf;
+import com.momo.fd.blocks.blockMisc.crystal.*;
 import com.momo.fd.blocks.blockVariant.*;
 import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.rockVariant.*;
@@ -25,7 +26,6 @@ import com.momo.fd.blocks.blockInteractive.*;
 import com.momo.fd.blocks.blockMisc.*;
 import com.momo.fd.blocks.blockBasic.directional.PillarBlock;
 import com.momo.fd.blocks.blockMisc.carpet.TightCarpet;
-import com.momo.fd.blocks.blockMisc.crystal.Amethyst.*;
 import com.momo.fd.blocks.blockMisc.MossBlock;
 import com.momo.fd.blocks.blockMisc.carpet.MossCarpet;
 import com.momo.fd.blocks.blockVariant.wallVariant.*;
@@ -74,9 +74,9 @@ public class ModBlocks {
 	public static final Block AZALEA_LEAVES = new AzaleaLeaves();
 	public static final Block FLOWERING_AZALEA_LEAVES = new FloweringAzaleaLeaves();
 
-//	public static final Block SMALL_DRIPLEAF = new SmallDripleaf();
-//	public static final Block DRIPLEAF_STEM = new DripleafStem();
-//	public static final Block BIG_DRIPLEAF = new BigDripleaf();
+	public static final Block SMALL_DRIPLEAF = new SmallDripleaf();
+	public static final Block DRIPLEAF_STEM = new DripleafStem();
+	public static final Block BIG_DRIPLEAF = new BigDripleaf();
 
 	public static final Block ROOTED_DIRT = new RootedDirt();
 	public static final Block HANGING_ROOTS = new HangingRoots();

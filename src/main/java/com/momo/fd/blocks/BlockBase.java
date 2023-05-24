@@ -38,7 +38,13 @@ public class BlockBase extends Block implements IHasModel
 	}
 
 	public BlockBase(String name, Material material, MapColor mapColor){
-		this(name, material, mapColor, -1);
+		super(material, mapColor);
+
+		setUnlocalizedName(name);
+		setRegistryName(name);
+
+		ModBlocks.BLOCKS.add(this);
+		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 
 	public BlockBase(String name, Material material){
