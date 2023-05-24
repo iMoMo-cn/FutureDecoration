@@ -1,4 +1,4 @@
-package com.momo.fd.blocks.blockMisc.crystal.Amethyst;
+package com.momo.fd.blocks.blockMisc.crystal;
 
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.state.IBlockState;

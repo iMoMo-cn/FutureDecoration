@@ -1,4 +1,4 @@
-package com.momo.fd.blocks.blockMisc.crystal.Amethyst;
+package com.momo.fd.blocks.blockMisc.crystal;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-import static com.momo.fd.blocks.blockMisc.crystal.Amethyst.AmethystCluster.FACING;
+import static com.momo.fd.blocks.blockMisc.crystal.AmethystCluster.FACING;
 
 public class AmethystBudding extends AmethystBlock {
     private Block block, smallBud, mediumBud, largeBud, cluster;

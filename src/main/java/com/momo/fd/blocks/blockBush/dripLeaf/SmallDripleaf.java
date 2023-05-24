@@ -18,7 +18,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.Mirror;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -29,7 +32,8 @@ import java.util.Random;
 
 public class SmallDripleaf extends BlockBush implements IGrowable, IShearable, IHasModel {
 
-    public static final PropertyEnum<BlockDoublePlant.EnumBlockHalf> HALF = PropertyEnum.<BlockDoublePlant.EnumBlockHalf>create("half", BlockDoublePlant.EnumBlockHalf.class);
+    public static final PropertyEnum<BlockDoublePlant.EnumBlockHalf> HALF = BlockDoublePlant.HALF;
+    public static final PropertyEnum<EnumFacing> FACING = BlockHorizontal.FACING;
 
     public SmallDripleaf()
     {
@@ -40,13 +44,12 @@ public class SmallDripleaf extends BlockBush implements IGrowable, IShearable, I
         setUnlocalizedName("small_dripleaf");
         setRegistryName("small_dripleaf");
 
-        setSoundType(DripleafStem.DRIPLEAF);
+        setSoundType(BigDripleaf.DRIPLEAF);
 
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
-        setDefaultState(this.blockState.getBaseState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER));
-
+        this.setDefaultState(this.blockState.getBaseState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER).withProperty(FACING, EnumFacing.SOUTH));
     }
 
     @Override
@@ -56,10 +59,10 @@ public class SmallDripleaf extends BlockBush implements IGrowable, IShearable, I
 
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
     {
-        return worldIn.getBlockState(pos.down()).getBlock() == ModBlocks.MOSS_BLOCK && worldIn.isAirBlock(pos.up());
+        return super.canPlaceBlockAt(worldIn, pos) && worldIn.isAirBlock(pos.up());
     }
 
-    public boolean isReplaceable(IBlockAccess worldIn, BlockPos pos) { return worldIn.getBlockState(pos).getBlock() != this; }
+    public boolean isReplaceable(IBlockAccess worldIn, BlockPos pos) { return false; }
 
     protected void checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
     {
@@ -95,21 +98,22 @@ public class SmallDripleaf extends BlockBush implements IGrowable, IShearable, I
         else
         {
             IBlockState iblockstate = worldIn.getBlockState(pos.up());
-            return iblockstate.getBlock() == this && worldIn.getBlockState(pos.down()).getBlock() == ModBlocks.MOSS_BLOCK;
+            return iblockstate.getBlock() == this && super.canBlockStay(worldIn, pos, iblockstate);
         }
     }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) { return Items.AIR; }
 
-    public void placeAt(World worldIn, BlockPos lowerPos, int flags)
+    public void placeAt(World worldIn, BlockPos lowerPos, EnumFacing facing, int flags)
     {
-        worldIn.setBlockState(lowerPos, this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER), flags);
-        worldIn.setBlockState(lowerPos.up(), this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.UPPER), flags);
+        worldIn.setBlockState(lowerPos, this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER).withProperty(FACING, facing), flags);
+        worldIn.setBlockState(lowerPos.up(), this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.UPPER).withProperty(FACING, facing), flags);
     }
 
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {
-        worldIn.setBlockState(pos.up(), this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.UPPER), 2);
+        EnumFacing facing = state.getValue(FACING);
+        worldIn.setBlockState(pos.up(), this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.UPPER).withProperty(FACING, facing), 2);
     }
 
     public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player)
@@ -160,11 +164,15 @@ public class SmallDripleaf extends BlockBush implements IGrowable, IShearable, I
 
     public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
     {
-        int i = rand.nextInt(5), heigh = 0;
+        EnumFacing facing = state.getValue(FACING);
 
-        for(int j = state.getValue(HALF) == BlockDoublePlant.EnumBlockHalf.LOWER ? 1 : 0; j <= 5; j++)
+        int i = rand.nextInt(4) + 1, heigh = 0;
+
+        for(int j = 0; j <= 5; j++)
         {
-            if(worldIn.getBlockState(pos.up(1 + j)).getBlock() == Blocks.AIR)
+            Block up = worldIn.getBlockState(pos.up(j)).getBlock();
+
+            if(up == Blocks.AIR || up == ModBlocks.SMALL_DRIPLEAF)
             {
                 heigh ++;
             }
@@ -172,33 +180,50 @@ public class SmallDripleaf extends BlockBush implements IGrowable, IShearable, I
 
         if(i > heigh) i = heigh;
 
+        int dec = state.getValue(HALF) == BlockDoublePlant.EnumBlockHalf.UPPER ? 1 : 0;
+
         for(int k = 0; k <= i - 1; k++)
         {
-//            worldIn.setBlockState(pos.up(k), ModBlocks.DRIPLEAF_STEM.getDefaultState(), 2);
+            worldIn.setBlockState(pos.up(k - dec), ModBlocks.DRIPLEAF_STEM.getDefaultState().withProperty(FACING, facing), 2);
         }
+        worldIn.setBlockState(pos.up(i - dec), ModBlocks.BIG_DRIPLEAF.getDefaultState().withProperty(FACING, facing), 3);
+    }
 
-//        worldIn.setBlockState(pos.up(i), ModBlocks.BIG_DRIPLEAF.getDefaultState(), 3);
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
+    {
+        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing());
+    }
+
+    public IBlockState withRotation(IBlockState state, Rotation rot)
+    {
+        return state.withProperty(FACING, rot.rotate((EnumFacing)state.getValue(FACING)));
+    }
+
+    public IBlockState withMirror(IBlockState state, Mirror mirrorIn)
+    {
+        return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
     }
 
     public IBlockState getStateFromMeta(int meta)
     {
-        if(meta == 1)
+        if(meta > 3)
         {
-            return this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER);
+            return this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.UPPER).withProperty(FACING, EnumFacing.getHorizontal(meta));
         }
         else {
-            return this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.UPPER);
+            return this.getDefaultState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER).withProperty(FACING, EnumFacing.getHorizontal(meta));
         }
     }
 
     public int getMetaFromState(IBlockState state)
     {
-        return state.getValue(HALF) == BlockDoublePlant.EnumBlockHalf.UPPER ? 0 : 1;
+        int i = state.getValue(HALF) == BlockDoublePlant.EnumBlockHalf.LOWER ? 0 : 4;
+        return state.getValue(FACING).getHorizontalIndex() + i;
     }
 
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, new IProperty[] {HALF});
+        return new BlockStateContainer(this, new IProperty[] {HALF, FACING});
     }
 
     @Override
