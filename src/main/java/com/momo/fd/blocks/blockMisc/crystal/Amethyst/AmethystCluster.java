@@ -1,4 +1,4 @@
-package com.momo.fd.blocks.blockMisc.crystal;
+package com.momo.fd.blocks.blockMisc.crystal.Amethyst;
 
 import com.momo.fd.blocks.blockBasic.directional.DirectionalBlock;
 import com.momo.fd.item.ModItems;

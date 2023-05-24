@@ -90,6 +90,8 @@ public class RegistryHandler {
 		InitBiome.registerBiomes();
 		InitDimension.registerDimensions();
 
+        ModGenInit.registerGens();
+
 		ModEntityInit.registerEntities();
 		ModEntityInit.registerTiles();
 
@@ -97,10 +99,9 @@ public class RegistryHandler {
 
 	}
 
-	public static void postInitRegistries()
+	public static void postInitReg()
 	{
 		//WorldType TYPE_ONE = new WorldTypeOne();
-		ModGenInit.registerGens();
 	}
 
 	public static void initRegistries(FMLInitializationEvent event)
