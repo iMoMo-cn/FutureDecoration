@@ -41,7 +41,7 @@ public class ModAmethystGen implements IWorldGenerator {
             return;
         }
 
-        if(world.provider.getDimension() == 0 && height > 30 && random.nextFloat() < 0.1F)
+        if(world.provider.getDimension() == 0 && height > 30 && random.nextFloat() < 0.04167F)
         {
             Random posRandom = new Random();
             BlockPos pos = new BlockPos(x + 16, posRandom.nextInt(13) + 5, z + 16);

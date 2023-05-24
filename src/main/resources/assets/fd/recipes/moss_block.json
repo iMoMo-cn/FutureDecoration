@@ -1,0 +1,15 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": { "type": "forge:ore_dict", "ore": "vine" }
+  },
+  "result": {
+    "item": "fd:vine_rope",
+    "count": 3
+  }
+}
+

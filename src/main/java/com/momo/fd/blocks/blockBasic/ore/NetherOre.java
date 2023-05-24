@@ -1,6 +1,6 @@
 package com.momo.fd.blocks.blockBasic.ore;
 
-import com.momo.fd.blocks.blockVariant.BlockVariantBase;
+import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

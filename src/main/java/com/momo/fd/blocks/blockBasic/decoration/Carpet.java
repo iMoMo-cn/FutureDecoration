@@ -1,6 +1,6 @@
 package com.momo.fd.blocks.blockBasic.decoration;
 
-import com.momo.fd.blocks.blockVariant.BlockVariantBase;
+import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -19,8 +19,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class Carpet extends BlockVariantBase {
    protected static final AxisAlignedBB CARPET_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0625D, 1.0D);
 
-    public Carpet(int maxUsedVariants) {
-        super("carpet", Material.CARPET, MapColor.CLOTH, maxUsedVariants);
+    public Carpet(String name, Material material, MapColor mapColor, int maxUsedVariants) {
+        super(name, material, mapColor, maxUsedVariants);
         setHardness(0.1F);
         setTickRandomly(true);
         setCreativeTab(CreativeTabs.DECORATIONS);
@@ -77,7 +77,6 @@ public class Carpet extends BlockVariantBase {
 
     private boolean canBlockStay(World worldIn, BlockPos pos)
     {
-
         return !worldIn.isAirBlock(pos.down());
     }
 

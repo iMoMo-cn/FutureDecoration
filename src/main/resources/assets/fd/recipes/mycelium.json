@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#",
+    "#X"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      }
+    ],
+    "X":
+    {
+      "item": "minecraft:dirt",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "minecraft:mycelium",
+    "count": 2
+  }
+}

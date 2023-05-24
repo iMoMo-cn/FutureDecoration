@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stonebrick",
+      "data": 0
+    },
+    {
+      "item": "fd:moss_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stonebrick",
+    "data": 1
+  }
+}

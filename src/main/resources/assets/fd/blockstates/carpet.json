@@ -2,7 +2,7 @@
   "variants": {
     "variant=0": { "model": "fd:leather_carpet" },
     "variant=1": { "model": "fd:rabbit_hide_carpet" },
-    "variant=2": { "model": "fd:moss_carpet" },
+    "variant=2": { "model": "fd:leather_carpet" },
     "variant=3": { "model": "fd:leather_carpet" },
     "variant=4": { "model": "fd:leather_carpet" },
     "variant=5": { "model": "fd:leather_carpet" },

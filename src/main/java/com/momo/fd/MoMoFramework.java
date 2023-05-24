@@ -66,6 +66,7 @@ public class MoMoFramework {
         NetworkHandler.init();
         ModOreDict.init();
         ModFeatureHandler.init();
+        ModFireInfo.init();
         proxy.init(event);
 
         LogWarning("%s has finished its initializations", MODID);

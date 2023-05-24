@@ -1,0 +1,7 @@
+{
+  "parent": "fd:block/template_azalea",
+  "textures": {
+    "top": "fd:blocks/azalea_top",
+    "side": "fd:blocks/azalea_side"
+  }
+}

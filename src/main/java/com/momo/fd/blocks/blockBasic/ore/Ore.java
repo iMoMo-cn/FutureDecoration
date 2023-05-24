@@ -1,6 +1,6 @@
 package com.momo.fd.blocks.blockBasic.ore;
 
-import com.momo.fd.blocks.blockVariant.BlockVariantBase;
+import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.sound.ModSoundHandler;
 import net.minecraft.block.SoundType;

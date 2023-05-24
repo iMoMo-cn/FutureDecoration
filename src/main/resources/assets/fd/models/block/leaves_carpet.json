@@ -1,0 +1,7 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "particle": "fd:blocks/azalea_leaves",
+    "wool": "fd:blocks/azalea_leaves"
+  }
+}

@@ -2,6 +2,8 @@ package com.momo.fd.blocks.blockVariant;
 
 import com.momo.fd.MoMoFramework;
 import com.momo.fd.blocks.ModBlocks;
+import com.momo.fd.blocks.blockVariant.baseVariant.EnumVariants;
+import com.momo.fd.blocks.blockVariant.baseVariant.IMetaName;
 import com.momo.fd.item.itemVariant.ItemBlockVariants;
 import com.momo.fd.item.ModItems;
 import com.momo.fd.util.IHasModel;
