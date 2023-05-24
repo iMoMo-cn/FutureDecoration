@@ -81,18 +81,10 @@ public class MoMoFramework {
         }
 
         MetaUtil.isIDLLoaded = Loader.isModLoaded("idealland");
-        MetaUtil.isIRRLoaded = Loader.isModLoaded("itemrender");
-        MetaUtil.isLoaded_TiC = Loader.isModLoaded("tconstruct");
-        MetaUtil.isLoaded_Slashblade = Loader.isModLoaded("flammpfeil.slashblade");
-        MetaUtil.isLoaded_Botania = Loader.isModLoaded("botania");
-        MetaUtil.isLoaded_DWeapon = Loader.isModLoaded("dweapon");
-        MetaUtil.isLoaded_AOA3 = Loader.isModLoaded(CommonDef.MOD_NAME_AOA3);
-        MetaUtil.isLoaded_GC = Loader.isModLoaded("galacticraftcore");
-        MetaUtil.isLoaded_GOG = Loader.isModLoaded(CommonDef.MOD_NAME_GOG);
 
         TrashTalking();
 
-        RegistryHandler.postInitReg();
+        RegistryHandler.postInitRegistries();
     }
 
     @EventHandler

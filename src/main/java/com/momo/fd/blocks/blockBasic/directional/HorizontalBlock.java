@@ -34,7 +34,7 @@ public class HorizontalBlock extends Block implements IHasModel
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
     }
 
     public HorizontalBlock(String name, int burnTime, Material material, MapColor mapColor){
@@ -51,7 +51,7 @@ public class HorizontalBlock extends Block implements IHasModel
             }
         }.setRegistryName(this.getRegistryName()));
 
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.SOUTH));
     }
 
     public HorizontalBlock(String name, Material material){
@@ -101,12 +101,12 @@ public class HorizontalBlock extends Block implements IHasModel
     public IBlockState getStateFromMeta(int meta)
     {
         IBlockState iblockstate = this.getDefaultState();
-        iblockstate = iblockstate.withProperty(FACING, EnumFacing.getFront(meta));
+        iblockstate = iblockstate.withProperty(FACING, EnumFacing.getHorizontal(meta));
         return iblockstate;
     }
 
     public int getMetaFromState(IBlockState state)
     {
-        return ((EnumFacing)state.getValue(FACING)).getIndex();
+        return ((EnumFacing)state.getValue(FACING)).getHorizontalIndex();
     }
 }

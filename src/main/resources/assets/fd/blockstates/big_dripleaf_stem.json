@@ -1,5 +1,19 @@
 {
   "variants": {
-    "normal": { "model": "fd:big_dripleaf_stem" }
+    "facing=west": {
+      "model": "fd:big_dripleaf_stem",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fd:big_dripleaf_stem"
+    },
+    "facing=north": {
+      "model": "fd:big_dripleaf_stem",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "fd:big_dripleaf_stem",
+      "y": 270
+    }
   }
 }
