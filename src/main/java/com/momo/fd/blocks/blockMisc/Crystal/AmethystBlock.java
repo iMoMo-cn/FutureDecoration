@@ -1,4 +1,4 @@
-package com.momo.fd.blocks.blockMisc.crystal;
+package com.momo.fd.blocks.blockMisc.Crystal;
 
 import com.momo.fd.blocks.BlockBase;
 import com.momo.fd.util.sound.ModSoundHandler;

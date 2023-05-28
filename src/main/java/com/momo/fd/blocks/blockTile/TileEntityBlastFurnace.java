@@ -127,9 +127,9 @@ public class TileEntityBlastFurnace extends TileEntity implements ITickable {
     }
 
     @SideOnly(Side.CLIENT)
-    public static boolean isBurning(TileEntityBlastFurnace tileSmoker)
+    public static boolean isBurning(TileEntityBlastFurnace tileBlastFurnace)
     {
-        return tileSmoker.getField(0) > 0;
+        return tileBlastFurnace.getField(0) > 0;
     }
 
     public void update()

@@ -7,7 +7,7 @@ import com.momo.fd.blocks.blockBasic.leaves.FloweringAzaleaLeaves;
 import com.momo.fd.blocks.blockBush.dripLeaf.BigDripleaf;
 import com.momo.fd.blocks.blockBush.dripLeaf.DripleafStem;
 import com.momo.fd.blocks.blockBush.dripLeaf.SmallDripleaf;
-import com.momo.fd.blocks.blockMisc.crystal.*;
+import com.momo.fd.blocks.blockMisc.Crystal.*;
 import com.momo.fd.blocks.blockVariant.*;
 import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.rockVariant.*;

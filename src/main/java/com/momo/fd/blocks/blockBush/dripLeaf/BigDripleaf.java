@@ -13,6 +13,8 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.passive.EntityOcelot;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -21,6 +23,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 import java.util.Random;
@@ -30,9 +34,13 @@ public class BigDripleaf extends BlockBush implements IHasModel, IGrowable {
     public static final SoundType DRIPLEAF = new SoundType(1.0F, 1.0F, ModSoundHandler.BLOCK_BIG_DRIPLEAF_BREAK, ModSoundHandler.BLOCK_BIG_DRIPLEAF_STEP, ModSoundHandler.BLOCK_BIG_DRIPLEAF_PLACE, ModSoundHandler.BLOCK_BIG_DRIPLEAF_HIT, ModSoundHandler.BLOCK_BIG_DRIPLEAF_FALL);
 
     protected static final AxisAlignedBB HALF_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
+    protected static final AxisAlignedBB DRIP_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.9375D, 1.0D);
 
     public static final PropertyEnum<EnumFacing> FACING = BlockHorizontal.FACING;
     public static final PropertyEnum<BigDripleaf.EnumTilt> TILT = PropertyEnum.<BigDripleaf.EnumTilt>create("tilt", BigDripleaf.EnumTilt.class);
+
+    public int tiltLevel;
+    public boolean playSound;
 
     public BigDripleaf() {
         super(Material.VINE);
@@ -48,6 +56,8 @@ public class BigDripleaf extends BlockBush implements IHasModel, IGrowable {
 
         setSoundType(BigDripleaf.DRIPLEAF);
 
+        this.tiltLevel = 0;
+        this.playSound = false;
         this.setTickRandomly(true);
 
         ModBlocks.BLOCKS.add(this);
@@ -71,37 +81,87 @@ public class BigDripleaf extends BlockBush implements IHasModel, IGrowable {
         else if(tilt == EnumTilt.PARTIAL)
             return HALF_AABB;
 
-        return FULL_BLOCK_AABB;
+        return DRIP_AABB;
     }
 
     public void randomTick(World worldIn, BlockPos pos, IBlockState state, Random random)
     {
+
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
+    {
+        if(playSound)
+        {
+            worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(), ModSoundHandler.BLOCK_BIG_DRIPLEAF_BREAK, SoundCategory.BLOCKS, 0.8F, 0.8F, true);
+            playSound = false;
+        }
     }
 
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
-//        EnumTilt tilt = state.getValue(TILT);
-//
-//        worldIn.playSound(pos.getX(), pos.getY(), pos.getZ(), ModSoundHandler.BLOCK_BIG_DRIPLEAF_HIT, SoundCategory.BLOCKS, 0.8F, 0.8F, false);
+        if(tiltLevel == 3)
+        {
+            worldIn.setBlockState(pos, state.withProperty(TILT, EnumTilt.NONE));
+        }
+
+        if(tiltLevel == 1)
+        {
+            worldIn.setBlockState(pos, state.withProperty(TILT, EnumTilt.PARTIAL));
+            playSound = true;
+            checkReset(worldIn, pos);
+        }
+
+        if(tiltLevel == 2)
+        {
+            worldIn.setBlockState(pos, state.withProperty(TILT, EnumTilt.FULL));
+            playSound = true;
+            tiltLevel = 3;
+            worldIn.scheduleUpdate(pos, this, 100);
+        }
     }
 
-    public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn)
+    public void checkReset(World worldIn, BlockPos pos)
     {
-//        if(worldIn.getBlockState(pos).getValue(TILT) != EnumTilt.UNSTABLE)
-//        {
-//
-//        }
-        super.onEntityWalk(worldIn, pos, entityIn);
+        AxisAlignedBB AABB = new AxisAlignedBB((double)pos.getX(), (double)(pos.getY() + 1), (double)pos.getZ(), (double)(pos.getX() + 1), (double)(pos.getY() + 2), (double)(pos.getZ() + 1));
+
+        if (!worldIn.isRemote)
+        {
+            if(worldIn.getEntitiesWithinAABBExcludingEntity((Entity)null ,AABB).isEmpty() && worldIn.getBlockState(pos).getValue(TILT) == EnumTilt.PARTIAL)
+            {
+                tiltLevel = 3;
+                worldIn.scheduleUpdate(pos, this, 100);
+            }
+        }
     }
 
     public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn)
     {
-        if(!worldIn.isRemote)
+        EnumTilt tilt = state.getValue(TILT);
+
+        AxisAlignedBB AABB = new AxisAlignedBB((double)pos.getX(), (double)(pos.getY() + 1), (double)pos.getZ(), (double)(pos.getX() + 1), (double)(pos.getY() + 2), (double)(pos.getZ() + 1));
+
+        if (!worldIn.isRemote)
         {
-            worldIn.setBlockState(pos, state.withProperty(TILT, EnumTilt.FULL), 3);
+            if(!worldIn.getEntitiesWithinAABBExcludingEntity((Entity)null ,AABB).isEmpty() && tilt != EnumTilt.UNSTABLE)
+            {
+                if(tilt == EnumTilt.NONE)
+                {
+                    tiltLevel = 1;
+                    worldIn.scheduleUpdate(pos, this, 20);
+                }
+
+                if(tilt == EnumTilt.PARTIAL)
+                {
+                    tiltLevel = 2;
+                    worldIn.scheduleUpdate(pos, this, 20);
+                }
+            }
         }
-        MoMoFramework.Log("1");
+
     }
+
 
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
     {
@@ -117,10 +177,7 @@ public class BigDripleaf extends BlockBush implements IHasModel, IGrowable {
                 {
                     worldIn.setBlockState(pos, state.withProperty(TILT, EnumTilt.UNSTABLE), 2);
                 }
-            }
-            else
-            {
-                if(flag3)
+                if(!flag1)
                 {
                     worldIn.setBlockState(pos, state.withProperty(TILT, EnumTilt.NONE), 2);
                 }

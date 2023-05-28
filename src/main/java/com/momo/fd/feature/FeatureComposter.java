@@ -36,7 +36,8 @@ public class FeatureComposter {
                 "fd:moss_carpet[2]",
                 "fd:azalea_leaves",
                 "fd:flowering_azalea_leaves",
-                "fd:hanging_roots"
+                "fd:hanging_roots",
+                "fd:small_dripleaf"
         };
         for (String item : items) inputs.put(item, 0.3f);
 
@@ -79,7 +80,8 @@ public class FeatureComposter {
                 "fd:wither_rose",
                 "fd:pumpkin",
                 "fd:moss_block",
-                "fd:azalea[0]"
+                "fd:azalea[0]",
+                "fd:big_dripleaf"
         };
         for (String item : items) inputs.put(item, 0.65f);
 
