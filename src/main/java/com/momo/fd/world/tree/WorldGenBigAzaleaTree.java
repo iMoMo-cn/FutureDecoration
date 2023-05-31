@@ -347,7 +347,7 @@ public class WorldGenBigAzaleaTree extends WorldGenAbstractTree {
     boolean isDirt(BlockPos blockPos)
     {
         Block block = world.getBlockState(blockPos).getBlock();
-        return block == Blocks.DIRT || block == Blocks.GRASS || block == ModBlocks.ROOTED_DIRT;
+        return block == Blocks.DIRT || block == Blocks.GRASS || block == ModBlocks.ROOTED_DIRT || block == ModBlocks.MOSS_BLOCK;
     }
 
     /**

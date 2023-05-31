@@ -95,8 +95,6 @@ public class CaveVinePlant extends BlockBush implements IHasModel , IGrowable {
                 {
                     entity.motionY += 0.03;
                 }
-
-                worldIn.playSound((EntityPlayer)entity, pos,ModSoundHandler.BLOCK_CAVE_VINES_STEP, SoundCategory.BLOCKS, 1.0F, entity.getEntityWorld().rand.nextFloat() * 0.1F + 0.9F);
             }
         }
 

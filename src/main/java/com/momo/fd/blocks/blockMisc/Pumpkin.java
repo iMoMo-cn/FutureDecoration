@@ -27,6 +27,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import static net.minecraft.block.BlockHorizontal.FACING;
 
+@Mod.EventBusSubscriber(modid = Reference.MOD_ID)
 public class Pumpkin extends BlockBase {
     public Pumpkin() {
         super("pumpkin", Material.GOURD, MapColor.ADOBE);

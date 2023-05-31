@@ -4,6 +4,7 @@ import com.momo.fd.blocks.BlockBase;
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockBasic.decoration.Carpet;
 import com.momo.fd.blocks.blockBush.Azalea;
+import com.momo.fd.blocks.blockBush.dripLeaf.SmallDripleaf;
 import com.momo.fd.blocks.blockMisc.carpet.TightCarpet;
 import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.baseVariant.EnumVariants;
@@ -131,6 +132,7 @@ public class MossBlock extends BlockBase implements IGrowable {
         if(canPlantMoss(world, newPos))
         {
             IBlockState stateAzalea = ModBlocks.AZALEA.getDefaultState();
+            IBlockState stateSamllDripleaf = ModBlocks.SMALL_DRIPLEAF.getDefaultState();
             IBlockState stateCarpet = ModBlocks.MOSS_CARPET.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block0);
             IBlockState stateGrass = Blocks.TALLGRASS.getDefaultState().withProperty(BlockTallGrass.TYPE, BlockTallGrass.EnumType.GRASS);
             float chance = random.nextFloat();
@@ -154,6 +156,11 @@ public class MossBlock extends BlockBase implements IGrowable {
             if(chance <= 0.0625 && Blocks.TALLGRASS.canBlockStay(world, newPos, stateGrass) && !flag2)
             {
                 Blocks.DOUBLE_PLANT.placeAt(world, newPos, BlockDoublePlant.EnumPlantType.GRASS, 3);
+                return;
+            }
+            if(chance <= 0.0715 && Blocks.TALLGRASS.canBlockStay(world, newPos, stateGrass) && !flag2)
+            {
+                ((SmallDripleaf)ModBlocks.SMALL_DRIPLEAF).placeAt(world, newPos, EnumFacing.getHorizontal(random.nextInt(4)), 3);
                 return;
             }
             if(chance <= 0.15625 && world.isAirBlock(newPos) && !flag1 && !flag2)
