@@ -53,14 +53,15 @@ public class ModPlantGen implements IWorldGenerator {
                 || biome == Biomes.REDWOOD_TAIGA_HILLS || biome == Biomes.MUTATED_REDWOOD_TAIGA || biome == Biomes.COLD_TAIGA
                 || biome == Biomes.COLD_TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA_COLD)
         {
-            generateBerryBush((BerriesBush)ModBlocks.BERRY_BUSH, world, blockPos, random, 0.2F);
+            generateBerryBush((BerriesBush)ModBlocks.BERRY_BUSH, world, blockPos, random, 0.15F);
         }
 
         if(biome == Biomes.SAVANNA || biome == Biomes.SAVANNA_PLATEAU || biome == Biomes.MUTATED_SAVANNA || biome == Biomes.MUTATED_SAVANNA_ROCK)
         {
-            generateBerryBush((BerriesBush)ModBlocks.SAVANNA_BERRY_BUSH, world, blockPos, random, 0.2F);
+            generateBerryBush((BerriesBush)ModBlocks.SAVANNA_BERRY_BUSH, world, blockPos, random, 0.15F);
         }
 
+        generatePumpkin(world, chunkX * 16, chunkZ * 16);
     }
 
     private boolean generatePlant(Block block, World world, BlockPos pos, Random random, int extra){
@@ -123,6 +124,34 @@ public class ModPlantGen implements IWorldGenerator {
                     flag = world.getBlockState(newPos1).getBlock() == Blocks.WATER;
 
                     if (berryBush.canPlaceBlockAt(world, newPos1) && !flag) { world.setBlockState(newPos1, newBlockState, 2); }
+                }
+            }
+        }
+        return true;
+    }
+
+    private boolean generatePumpkin(World world, int x, int z)
+    {
+        for(int i = 0; i < 16; i++)
+        {
+            for(int j = 0; j < 16; j++)
+            {
+                int x1 = x + i;
+                int z1 = z + j;
+
+                BlockPos topPos = world.getHeight(new BlockPos(x1, 0, z1));
+                int height = topPos.getY();
+
+                for (int y = 0; y < 30; y++)
+                {
+                    BlockPos newPos = new BlockPos(x1 + 16, height - y + 15, z1 + 16);
+
+                    Block block = world.getBlockState(newPos).getBlock();
+
+                    if(block == Blocks.PUMPKIN)
+                    {
+                        world.setBlockState(newPos, ModBlocks.PUMPKIN.getDefaultState(), 2);
+                    }
                 }
             }
         }

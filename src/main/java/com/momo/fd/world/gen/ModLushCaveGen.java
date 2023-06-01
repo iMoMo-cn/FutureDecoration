@@ -47,9 +47,8 @@ public class ModLushCaveGen implements IWorldGenerator {
             return;
         }
 
-        //&& random.nextFloat() < 0.08F
 
-        if(biomeFlag && height > 35 )
+        if(biomeFlag && height > 35 && random.nextFloat() < 0.08F)
         {
             //add lush cave
             BlockPos cavePos = new BlockPos(x + 16, height - 20, z + 16);

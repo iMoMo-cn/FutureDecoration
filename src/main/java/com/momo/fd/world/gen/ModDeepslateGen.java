@@ -37,8 +37,8 @@ public class ModDeepslateGen implements IWorldGenerator {
         generateTuff(world, random, x, z);
     }
 
-    private boolean generateDeepslate(World world, int height, int x, int z) {
-
+    private boolean generateDeepslate(World world, int height, int x, int z)
+    {
         if(height >= 5)
         {
             for (int y = 0; y < height; y++) {
