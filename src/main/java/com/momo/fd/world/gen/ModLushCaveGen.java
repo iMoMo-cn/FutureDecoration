@@ -8,7 +8,6 @@ import com.momo.fd.world.tree.WorldGenBigAzaleaTree;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Biomes;
-import net.minecraft.init.Blocks;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
@@ -48,7 +47,7 @@ public class ModLushCaveGen implements IWorldGenerator {
         }
 
 
-        if(biomeFlag && height > 35 && random.nextFloat() < 0.08F)
+        if(biomeFlag && height > 35 && random.nextFloat() < 0.0315F)
         {
             //add lush cave
             BlockPos cavePos = new BlockPos(x + 16, height - 20, z + 16);
@@ -56,17 +55,9 @@ public class ModLushCaveGen implements IWorldGenerator {
 
             //add azalea tree
             BlockPos treePos = new BlockPos(x + 19 + random.nextInt(5), height, z + 19 + random.nextInt(5));
-
             WorldGenerator worldgenerator = new WorldGenBigAzaleaTree(true);
 
-            IBlockState iblockstate = Blocks.AIR.getDefaultState();
-
-            world.setBlockState(treePos, iblockstate, 4);
-
-            if (!worldgenerator.generate(world, random, treePos))
-            {
-                world.setBlockState(treePos, iblockstate, 4);
-            }
+            worldgenerator.generate(world, random, treePos);
 
             //add moss decoration
             BlockPos mossPos = new BlockPos(x + 22, height - 19, z + 22);
@@ -78,7 +69,7 @@ public class ModLushCaveGen implements IWorldGenerator {
                     BlockPos newPos = mossPos.add(i, 0, j);
                     IBlockState mossState = world.getBlockState(mossPos);
                     Block mossBlock = mossState.getBlock();
-                    if(mossBlock == ModBlocks.MOSS_BLOCK)
+                    if(mossBlock == ModBlocks.MOSS_BLOCK && random.nextFloat() < 0.7)
                     {
                         ((MossBlock)mossBlock).grow(world, random, newPos, mossState);
                     }
