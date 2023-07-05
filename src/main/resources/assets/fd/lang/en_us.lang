@@ -10,14 +10,19 @@ item.dye_white.name=White Dye
 item.dye_blue.name=Blue Dye
 item.dye_black.name=Black Dye
 item.dye_brown.name=Brown Dye
+
 item.sweet_berries.name=Sweet Berries
 item.sour_berries.name=Sour Berries
 item.glow_berries.name=Glow Berries
+
+item.cocoa_cake.name=Chocolate Cake
+
 item.red_netherbrick.name=Red Nether Brick
 item.copper_ingot.name=Copper Ingot
 item.raw_ore_0.name=Raw Iron
 item.raw_ore_1.name=Raw Gold
 item.raw_ore_2.name=Raw Copper
+
 item.crystal_shard_0.name=Amethyst Shard
 item.crystal_shard_1.name=Citrine Shard
 item.crystal_shard_2.name=Rubace Shard
@@ -32,6 +37,7 @@ item.crystal_shard_4.name=Crystal Shard
 #tile.block_name.name=block name
 tile.charcoal_block.name=Block of Charcoal
 tile.crying_obsidian.name=Crying Obsidian
+tile.gritted_dirt.name=Gritted Dirt
 
 tile.rock_block_0.name=Smooth Stone
 tile.rock_block_1.name=Stone Tiles
@@ -416,8 +422,11 @@ tile.cave_vines.name=Cave Vines
 tile.small_dripleaf.name=Small Dripleaf
 tile.big_dripleaf.name=Big Dripleaf
 
+tile.cocoa_cake.name=Chocolate Cake
 tile.sweet_berry_bush.name=Sweet Berries Bush
+tile.sour_berry_bush.name=Sour Berries Bush
 tile.pumpkin_stem.name=Pumpkin Stem
+tile.lotus.name=Lotus
 
 subtitles.block.barrel.close=Barrel closes
 subtitles.block.barrel.open=Barrel opens

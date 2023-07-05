@@ -1,17 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
+  "type": "forge:ore_shapeless",
+  "ingredients":
+  [
     {
-      "item": "fd:pumpkin"
+      "type": "forge:ore_dict",
+      "ore": "pumpkin"
     },
     {
-      "item": "minecraft:sugar"
+      "type": "forge:ore_dict",
+      "ore": "egg"
     },
-    {
-      "item": "minecraft:egg"
-    }
+    { "item": "minecraft:sugar" }
   ],
   "result": {
-    "item": "minecraft:pumpkin_pie"
+    "item": "minecraft:pumpkin_pie",
+    "count": 1
   }
 }

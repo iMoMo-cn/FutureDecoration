@@ -2,6 +2,7 @@ package com.momo.fd.init;
 
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.ModItems;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -14,6 +15,7 @@ public class ModOreDict
         OreDictionary.registerOre("charcoal", new ItemStack(Items.COAL, 1, 1));
         OreDictionary.registerOre("coal", new ItemStack(Items.COAL, 1, 32767));
         OreDictionary.registerOre("flint", Items.FLINT);
+        OreDictionary.registerOre("pumpkin", Blocks.PUMPKIN);
 
         //MOD OreDic
         OreDictionary.registerOre("blockCharcoal", ModBlocks.CHARCOAL_BLOCK);
@@ -21,6 +23,11 @@ public class ModOreDict
         OreDictionary.registerOre("dyeBrown", ModItems.DYE_BROWN);
         OreDictionary.registerOre("dyeBlue", ModItems.DYE_BLUE);
         OreDictionary.registerOre("dyeBlack", ModItems.DYE_BLACK);
+
+        OreDictionary.registerOre("pumpkin", ModBlocks.PUMPKIN);
+        OreDictionary.registerOre("listAllberry", ModItems.GLOW_BERRIES);
+        OreDictionary.registerOre("listAllberry", ModItems.SWEET_BERRIES);
+        OreDictionary.registerOre("listAllberry", ModItems.SOUR_BERRIES);
 
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_ACACIA);
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_ACACIA_WOOD);
@@ -40,6 +47,9 @@ public class ModOreDict
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_SPRUCE);
         OreDictionary.registerOre("logWood", ModBlocks.STRIPPED_SPRUCE_WOOD);
         OreDictionary.registerOre("logWood", ModBlocks.WOOD_SPRUCE);
+
+        OreDictionary.registerOre("treeLeaves", ModBlocks.WOOD_SPRUCE);
+        OreDictionary.registerOre("treeLeaves", ModBlocks.WOOD_SPRUCE);
 
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.ACACIA_BUTTON);
         OreDictionary.registerOre("minecraft:buttons", ModBlocks.BIRCH_BUTTON);
@@ -62,6 +72,8 @@ public class ModOreDict
 
         OreDictionary.registerOre("blockGlass", ModBlocks.CLEAR_GLASS);
         OreDictionary.registerOre("paneGlass", ModBlocks.CLEAR_PANE);
+        OreDictionary.registerOre("blockGlass", ModBlocks.TINTED_CLASS);
+        OreDictionary.registerOre("paneGlass", ModBlocks.PORTAL_PANE);
 
         for(int i = 0 ; i < 16; i++)
         {
@@ -78,5 +90,14 @@ public class ModOreDict
         OreDictionary.registerOre("cobblestone", new ItemStack(ModBlocks.NETHER_BLOCK, 1, 0));
 
         OreDictionary.registerOre("ingotCopper", ModItems.COPPER_INGOT);
+        OreDictionary.registerOre("oreCopper", ModBlocks.COPPER_ORE);
+        OreDictionary.registerOre("oreIron", new ItemStack(ModBlocks.ORE, 1, 0));
+        OreDictionary.registerOre("oreGold", new ItemStack(ModBlocks.ORE, 1, 1));
+        OreDictionary.registerOre("oreCopper", new ItemStack(ModBlocks.ORE, 1, 2));
+        OreDictionary.registerOre("oreCoal", new ItemStack(ModBlocks.ORE, 1, 3));
+        OreDictionary.registerOre("oreLapis", new ItemStack(ModBlocks.ORE, 1, 4));
+        OreDictionary.registerOre("oreDiamond", new ItemStack(ModBlocks.ORE, 1, 5));
+        OreDictionary.registerOre("oreEmerald", new ItemStack(ModBlocks.ORE, 1, 6));
+        OreDictionary.registerOre("oreRedstone", ModBlocks.DEEPSLATE_REDSTONE_ORE);
     }
 }

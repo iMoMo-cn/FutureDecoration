@@ -1,0 +1,18 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DDD"
+  ],
+  "key": {
+    "A": { "item": "minecraft:dye", "data": 3 },
+    "B": { "item": "minecraft:sugar" },
+    "C": { "type": "forge:ore_dict", "ore": "egg" },
+    "D": { "type": "forge:ore_dict", "ore": "cropWheat" }
+  },
+  "result": {
+    "item": "fd:cocoa_cake",
+    "count": 1
+  }
+}

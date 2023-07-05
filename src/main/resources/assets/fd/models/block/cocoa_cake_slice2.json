@@ -1,0 +1,22 @@
+{
+  "textures": {
+    "particle": "fd:blocks/cocoa_cake_side",
+    "bottom": "fd:blocks/cocoa_cake_bottom",
+    "top": "fd:blocks/cocoa_cake_top",
+    "side": "fd:blocks/cocoa_cake_side",
+    "inside": "fd:blocks/cocoa_cake_inner"
+  },
+  "elements": [
+    {   "from": [ 5, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#inside" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

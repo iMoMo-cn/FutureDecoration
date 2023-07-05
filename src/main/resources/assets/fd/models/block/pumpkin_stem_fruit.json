@@ -1,7 +1,7 @@
 {
   "parent": "block/stem_fruit",
   "textures": {
-    "stem": "fd:blocks/pumpkin_fruit_disconnected",
-    "upperstem": "fd:blocks/pumpkin_stem_connected"
+    "stem": "blocks/pumpkin_stem_disconnected",
+    "upperstem": "blocks/pumpkin_stem_connected"
   }
 }

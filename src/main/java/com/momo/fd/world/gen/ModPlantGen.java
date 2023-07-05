@@ -8,6 +8,7 @@ import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
@@ -18,50 +19,53 @@ import java.util.Random;
 public class ModPlantGen implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-        int x = chunkX * 16 + random.nextInt(8);
-        int z = chunkZ * 16 + random.nextInt(8);
-
-        final BlockPos blockPos = world.getHeight(new BlockPos(x, 0, z));
-        final BlockPos chunkPos = new BlockPos(x, 0, z);
-        final Biome biome = world.getChunkFromBlockCoords(chunkPos).getBiome(chunkPos, world.getBiomeProvider());
-
-        if(biome == Biomes.MUTATED_FOREST)
+        if(world.getWorldType() != WorldType.FLAT && world.getWorldType() != WorldType.DEBUG_ALL_BLOCK_STATES)
         {
-            generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 50);
-            generatePlant(ModBlocks.ROSE, world, blockPos, random, 50);
-            generatePlant(ModBlocks.CORNFLOWER, world, blockPos, random, 50);
-        }
+            int x = chunkX * 16 + random.nextInt(8);
+            int z = chunkZ * 16 + random.nextInt(8);
 
-        if(biome == Biomes.MUTATED_PLAINS || biome == Biomes.PLAINS)
-        {
-            generatePlant(ModBlocks.CORNFLOWER, world, blockPos, random, 5, 3, 0.112F);
-        }
+            final BlockPos blockPos = world.getHeight(new BlockPos(x, 0, z));
+            final BlockPos chunkPos = new BlockPos(x, 0, z);
+            final Biome biome = world.getChunkFromBlockCoords(chunkPos).getBiome(chunkPos, world.getBiomeProvider());
 
-        if(biome == Biomes.FOREST || biome == Biomes.BIRCH_FOREST|| biome == Biomes.MUTATED_BIRCH_FOREST || biome == Biomes.BIRCH_FOREST_HILLS || biome == Biomes.MUTATED_BIRCH_FOREST_HILLS)
-        {
-            generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 10, 5, 0.25F);
-            generatePlant(ModBlocks.ROSE, world, blockPos, random, 10, 5, 0.12F);
-        }
+            if(biome == Biomes.MUTATED_FOREST)
+            {
+                generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 50);
+                generatePlant(ModBlocks.ROSE, world, blockPos, random, 50);
+                generatePlant(ModBlocks.CORNFLOWER, world, blockPos, random, 50);
+            }
 
-        if(biome == Biomes.ROOFED_FOREST || biome == Biomes.MUTATED_ROOFED_FOREST)
-        {
-            generatePlant(ModBlocks.ROSE, world, blockPos, random, 10, 5, 0.12F);
-            generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 10, 5, 0.25F);
-        }
+            if(biome == Biomes.MUTATED_PLAINS || biome == Biomes.PLAINS)
+            {
+                generatePlant(ModBlocks.CORNFLOWER, world, blockPos, random, 5, 3, 0.112F);
+            }
 
-        if(biome == Biomes.TAIGA || biome == Biomes.TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA || biome == Biomes.REDWOOD_TAIGA
-                || biome == Biomes.REDWOOD_TAIGA_HILLS || biome == Biomes.MUTATED_REDWOOD_TAIGA || biome == Biomes.COLD_TAIGA
-                || biome == Biomes.COLD_TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA_COLD)
-        {
-            generateBerryBush((BerriesBush)ModBlocks.BERRY_BUSH, world, blockPos, random, 0.15F);
-        }
+            if(biome == Biomes.FOREST || biome == Biomes.BIRCH_FOREST|| biome == Biomes.MUTATED_BIRCH_FOREST || biome == Biomes.BIRCH_FOREST_HILLS || biome == Biomes.MUTATED_BIRCH_FOREST_HILLS)
+            {
+                generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 10, 5, 0.25F);
+                generatePlant(ModBlocks.ROSE, world, blockPos, random, 10, 5, 0.12F);
+            }
 
-        if(biome == Biomes.SAVANNA || biome == Biomes.SAVANNA_PLATEAU || biome == Biomes.MUTATED_SAVANNA || biome == Biomes.MUTATED_SAVANNA_ROCK)
-        {
-            generateBerryBush((BerriesBush)ModBlocks.SAVANNA_BERRY_BUSH, world, blockPos, random, 0.15F);
-        }
+            if(biome == Biomes.ROOFED_FOREST || biome == Biomes.MUTATED_ROOFED_FOREST)
+            {
+                generatePlant(ModBlocks.ROSE, world, blockPos, random, 10, 5, 0.12F);
+                generatePlant(ModBlocks.LILY_OF_THE_VALLEY, world, blockPos, random, 10, 5, 0.25F);
+            }
 
-        generatePumpkin(world, chunkX * 16, chunkZ * 16);
+            if(biome == Biomes.TAIGA || biome == Biomes.TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA || biome == Biomes.REDWOOD_TAIGA
+                    || biome == Biomes.REDWOOD_TAIGA_HILLS || biome == Biomes.MUTATED_REDWOOD_TAIGA || biome == Biomes.COLD_TAIGA
+                    || biome == Biomes.COLD_TAIGA_HILLS || biome == Biomes.MUTATED_TAIGA_COLD)
+            {
+                generateBerryBush((BerriesBush)ModBlocks.BERRY_BUSH, world, blockPos, random, 0.15F);
+            }
+
+            if(biome == Biomes.SAVANNA || biome == Biomes.SAVANNA_PLATEAU || biome == Biomes.MUTATED_SAVANNA || biome == Biomes.MUTATED_SAVANNA_ROCK)
+            {
+                generateBerryBush((BerriesBush)ModBlocks.SAVANNA_BERRY_BUSH, world, blockPos, random, 0.15F);
+            }
+
+            generatePumpkin(world, chunkX * 16, chunkZ * 16);
+        }
     }
 
     private boolean generatePlant(Block block, World world, BlockPos pos, Random random, int extra){

@@ -2,6 +2,7 @@ package com.momo.fd.item;
 
 import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.item.food.Berries;
+import com.momo.fd.item.food.Cake;
 import com.momo.fd.item.food.GlowBerries;
 import com.momo.fd.item.food.SavannaBerries;
 import com.momo.fd.item.itemVariant.ItemVariantBase;
@@ -28,6 +29,8 @@ public class ModItems {
 	public static final Item SWEET_BERRIES = new Berries("sweet_berries", 2, 0.0F, false);
 	public static final Item SOUR_BERRIES = new SavannaBerries("sour_berries", 2, 0.0F, false);
 	public static final Item GLOW_BERRIES = new GlowBerries("glow_berries", 4, 0.4F, false);
+
+	public static final Item COCOA_CAKE = new Cake("cocoa_cake");
 
 	public static final Item ACACIA_SIGN = new ModItemSign("acacia_sign");
 	public static final Item BIRCH_SIGN = new ModItemSign("birch_sign");
@@ -57,5 +60,6 @@ public class ModItems {
 		((ModItemSign)SPRUCE_SIGN).setStandingSign(ModBlocks.SPRUCE_SIGN_STANDING);
 		((ModItemDoor)GOLD_DOOR).setDoor(ModBlocks.GOLD_DOOR);
 		((ModItemDoor)GLASS_DOOR).setDoor(ModBlocks.GLASS_DOOR);
+		((Cake)COCOA_CAKE).setCake(ModBlocks.COCOA_CAKE);
 	}
 }

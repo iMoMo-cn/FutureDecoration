@@ -55,7 +55,7 @@ public class Pumpkin extends BlockBase {
 
                 if(!world.isRemote)
                 {
-                    world.spawnEntity(new EntityItem(world, pos.getX(), pos.getY() + 1, pos.getZ(), new ItemStack(Items.PUMPKIN_SEEDS, 4)));
+                    world.spawnEntity(new EntityItem(world, pos.getX(), pos.getY() + 1, pos.getZ(), new ItemStack(Items.PUMPKIN_SEEDS, 3)));
                 }
 
                 player.swingArm(EnumHand.MAIN_HAND);

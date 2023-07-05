@@ -68,12 +68,6 @@ public class Azalea extends BlockVariantBase implements IGrowable, IPlantable {
         if (!worldIn.isRemote)
         {
             super.updateTick(worldIn, pos, state, rand);
-
-            if (!worldIn.isAreaLoaded(pos, 1)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light
-            if (worldIn.getLightFromNeighbors(pos.up()) >= 9 && rand.nextInt(7) == 0)
-            {
-                this.grow(worldIn, pos, state, rand);
-            }
         }
     }
 

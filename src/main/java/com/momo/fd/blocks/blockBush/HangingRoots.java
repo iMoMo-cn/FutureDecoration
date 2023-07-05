@@ -40,8 +40,6 @@ public class HangingRoots extends BlockBush implements IHasModel , IShearable {
         setHardness(0.0F);
         setLightOpacity(0);
 
-        setHarvestLevel("spade", 0);
-
         setRegistryName("hanging_roots");
         setUnlocalizedName("hanging_roots");
 

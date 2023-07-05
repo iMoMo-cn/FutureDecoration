@@ -4,14 +4,19 @@ item.dye_white.name=白色染料
 item.dye_blue.name=蓝色染料
 item.dye_black.name=黑色染料
 item.dye_brown.name=棕色染料
+
 item.sweet_berries.name=甜浆果
 item.sour_berries.name=酸浆果
 item.glow_berries.name=发光浆果
+
+item.cocoa_cake.name=巧克力蛋糕
+
 item.red_netherbrick.name=红色地狱砖
 item.copper_ingot.name=铜锭
 item.raw_ore_0.name=粗铁
 item.raw_ore_1.name=粗金
 item.raw_ore_2.name=粗铜
+
 item.crystal_shard_0.name=紫水晶碎片
 item.crystal_shard_1.name=黄水晶碎片
 item.crystal_shard_2.name=红水晶碎片
@@ -20,6 +25,7 @@ item.crystal_shard_4.name=白水晶碎片
 
 tile.charcoal_block.name=木炭块
 tile.crying_obsidian.name=哭泣的黑曜石
+tile.gritted_dirt.name=砾土
 
 tile.rock_block_0.name=平滑石头
 tile.rock_block_1.name=石瓦
@@ -405,8 +411,11 @@ tile.cave_vines.name=洞穴藤蔓
 tile.small_dripleaf.name=小型垂滴叶
 tile.big_dripleaf.name=大型垂滴叶
 
+tile.cocoa_cake.name=巧克力蛋糕
 tile.sweet_berry_bush.name=甜浆果丛
+tile.sour_berry_bush.name=酸浆果丛
 tile.pumpkin_stem.name=南瓜梗
+tile.lotus.name=莲花
 
 subtitles.block.barrel.close=木桶:关闭
 subtitles.block.barrel.open=木桶:打开

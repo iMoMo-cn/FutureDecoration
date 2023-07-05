@@ -7,6 +7,7 @@ import com.momo.fd.blocks.blockBasic.leaves.FloweringAzaleaLeaves;
 import com.momo.fd.blocks.blockBush.dripLeaf.BigDripleaf;
 import com.momo.fd.blocks.blockBush.dripLeaf.DripleafStem;
 import com.momo.fd.blocks.blockBush.dripLeaf.SmallDripleaf;
+import com.momo.fd.blocks.blockFood.BlockCake;
 import com.momo.fd.blocks.blockMisc.Crystal.*;
 import com.momo.fd.blocks.blockVariant.*;
 import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
@@ -69,7 +70,10 @@ public class ModBlocks {
     public static final Block PUMPKIN = new Pumpkin();
     public static final Block PUMPKIN_STEM = new PumpkinStem();
 
+    public static final Block GRITTED_DIRT = new GrittedDirt();
 	public static final Block MOSS_BLOCK = new MossBlock();
+	public static final Block ROOTED_DIRT = new RootedDirt();
+
 	public static final Block AZALEA = new Azalea();
 	public static final Block AZALEA_LEAVES = new AzaleaLeaves();
 	public static final Block FLOWERING_AZALEA_LEAVES = new FloweringAzaleaLeaves();
@@ -78,7 +82,6 @@ public class ModBlocks {
 	public static final Block DRIPLEAF_STEM = new DripleafStem();
 	public static final Block BIG_DRIPLEAF = new BigDripleaf();
 
-	public static final Block ROOTED_DIRT = new RootedDirt();
 	public static final Block HANGING_ROOTS = new HangingRoots();
 
 	public static final Block LILY_OF_THE_VALLEY = new Flower("lily_of_the_valley");
@@ -87,6 +90,9 @@ public class ModBlocks {
 	public static final Block WITHER_ROSE = new Flower("wither_rose");
 	public static final Block BERRY_BUSH = new BerriesBush("sweet_berry_bush");
 	public static final Block SAVANNA_BERRY_BUSH = new SavannaBerriBush("sour_berry_bush");
+	public static final Block LOTUS = new Lotus("lotus");
+
+	public static final Block COCOA_CAKE = new BlockCake("cocoa_cake");
 
 	public static final Block CAVE_VINE_PLANT = new CaveVinePlant("cave_vines_plant");
 	public static final Block CAVE_VINE = new CaveVine("cave_vines");

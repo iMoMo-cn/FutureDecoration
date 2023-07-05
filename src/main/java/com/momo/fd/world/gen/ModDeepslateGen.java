@@ -4,10 +4,12 @@ import com.momo.fd.blocks.ModBlocks;
 import com.momo.fd.blocks.blockVariant.baseVariant.BlockVariantBase;
 import com.momo.fd.blocks.blockVariant.baseVariant.EnumVariants;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockDirt;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldType;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
@@ -16,25 +18,30 @@ import java.util.Random;
 
 public class ModDeepslateGen implements IWorldGenerator {
     @Override
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-        int x = chunkX * 16;
-        int z = chunkZ * 16;
-
-        for(int i = 0; i < 16; i++)
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
+    {
+        if(world.getWorldType() != WorldType.FLAT && world.getWorldType() != WorldType.DEBUG_ALL_BLOCK_STATES)
         {
-            for(int j = 0; j < 16; j++)
+            int x = chunkX * 16;
+            int z = chunkZ * 16;
+
+            for(int i = 0; i < 16; i++)
             {
-                int x1 = x + i;
-                int z1 = z + j;
+                for(int j = 0; j < 16; j++)
+                {
+                    int x1 = x + i;
+                    int z1 = z + j;
 
-                BlockPos topPos = world.getHeight(new BlockPos(x1, 0, z1));
-                int height = topPos.getY();
+                    BlockPos topPos = world.getHeight(new BlockPos(x1, 0, z1));
+                    int height = topPos.getY();
 
-                generateDeepslate(world, height, x1, z1);
+                    generateDeepslate(world, height, x1, z1);
+                }
             }
-        }
 
-        generateTuff(world, random, x, z);
+            generateTuff(world, random, x, z);
+            generateGrittedDirt(world, random, x, z);
+        }
     }
 
     private boolean generateDeepslate(World world, int height, int x, int z)
@@ -81,12 +88,9 @@ public class ModDeepslateGen implements IWorldGenerator {
         return true;
     }
 
-
-
     private boolean generateTuff(World world, Random r, int x, int z)
     {
         IBlockState state = ModBlocks.ROCK_BLOCK.getDefaultState().withProperty(BlockVariantBase.VARIANT, EnumVariants.Block8);
-
 
         for(int i = 0; i < 16; i++)
         {
@@ -101,6 +105,32 @@ public class ModDeepslateGen implements IWorldGenerator {
                     boolean flag = world.getBlockState(pos).getBlock() == ModBlocks.RAW_ORE;
 
                     if(r.nextFloat() < 0.9 && flag)
+                    {
+                        world.setBlockState(pos, state, 2|16);
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
+    private boolean generateGrittedDirt(World world, Random r, int x, int z)
+    {
+        IBlockState state = ModBlocks.GRITTED_DIRT.getDefaultState();
+
+        for(int i = 0; i < 16; i++)
+        {
+            for(int j = 0; j < 16; j++)
+            {
+                for (int y = 0; y <= 30; y++)
+                {
+                    int x1 = x + i;
+                    int z1 = z + j;
+
+                    BlockPos pos = new BlockPos(x1, y, z1);
+                    boolean flag = world.getBlockState(pos) == Blocks.DIRT.getDefaultState().withProperty(BlockDirt.VARIANT, BlockDirt.DirtType.DIRT);
+
+                    if(r.nextFloat() < 0.5 && flag)
                     {
                         world.setBlockState(pos, state, 2|16);
                     }
